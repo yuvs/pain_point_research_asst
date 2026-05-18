@@ -89,4 +89,18 @@ We use a modified ICE framework with Willingness-to-Pay overlay:
 4. `@researcher` (orchestrator) sequences the above and produces the final report
 
 ## MCP Servers
-- **Firecrawl**: Web scraping and search — `npx -y firecrawl-mcp`
+- **Firecrawl**: Web scraping and search — `npx -y firecrawl-mcp` (used for X/Twitter and Quora)
+- **Exa**: Neural search with content retrieval — `npx -y exa-mcp-server` (used for Reddit and LinkedIn)
+
+Reddit's API is no longer self-serve, so Exa is used for both Reddit and LinkedIn
+via `includeDomains` filtering.
+
+## Credentials
+
+All credentials live in `.env` (gitignored). Copy `.env.example` → `.env` and fill
+in each value. MCP servers source this file automatically on startup.
+
+| Service | Env Var | How to obtain |
+|---------|---------|---------------|
+| Firecrawl | `FIRECRAWL_API_KEY` | firecrawl.dev → API Keys |
+| Exa | `EXA_API_KEY` | exa.ai → Dashboard → API Keys |

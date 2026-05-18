@@ -24,11 +24,12 @@
   },
   "mcpServers": {
     "firecrawl": {
-      "command": "npx",
-      "args": ["-y", "firecrawl-mcp"],
-      "env": {
-        "FIRECRAWL_API_KEY": ""
-      }
+      "command": "bash",
+      "args": ["-c", "set -a && source .env && set +a && exec npx -y firecrawl-mcp"]
+    },
+    "exa": {
+      "command": "bash",
+      "args": ["-c", "set -a && source .env && set +a && exec npx -y exa-mcp-server"]
     }
   },
   "hooks": {
