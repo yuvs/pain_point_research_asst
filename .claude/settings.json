@@ -1,0 +1,78 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node *)",
+      "Bash(python *)",
+      "Bash(cat data/*)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(jq *)",
+      "Bash(wc *)",
+      "Bash(date *)",
+      "Read",
+      "Write",
+      "Edit",
+      "Grep",
+      "Glob"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)"
+    ]
+  },
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": ""
+      }
+    }
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check: did the agent save all outputs to the correct data/ or reports/ directory with proper timestamps? If any data was generated but not persisted to disk, respond with {\"ok\": false, \"reason\": \"Data not saved: [details]\"}. If everything is saved, respond with {\"ok\": true}."
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Verify the subagent output: (1) Are all JSON files valid JSON? (2) Do all records have required fields per the schema in CLAUDE.md? (3) Are source URLs included? If any check fails, respond with {\"ok\": false, \"reason\": \"[what failed]\"}."
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/backup-data.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=\"$TOOL_INPUT_FILE\"; if [[ \"$FILE\" == data/*.json ]]; then python3 -c \"import json,sys; json.load(open(sys.argv[1]))\" \"$FILE\" 2>&1 || echo \"INVALID JSON: $FILE\" >&2; fi'",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}

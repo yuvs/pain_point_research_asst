@@ -1,0 +1,11 @@
+{
+  "name": "pain-point-researcher",
+  "version": "1.0.0",
+  "description": "Multi-agent Claude Code system for researching business pain points from online communities",
+  "private": true,
+  "scripts": {
+    "research": "bash scripts/schedule-run.sh",
+    "setup": "mkdir -p data/raw data/analyzed data/competitors data/backups reports logs && chmod +x scripts/*.sh"
+  },
+  "dependencies": {}
+}

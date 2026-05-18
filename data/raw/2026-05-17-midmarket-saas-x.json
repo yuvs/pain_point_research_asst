@@ -1,0 +1,50 @@
+[
+  {
+    "source": "x",
+    "subreddit_or_group": "Soumitra Sharma (early-stage VC)",
+    "url": "https://x.com/soumitra_sharma/status/1909067486424948950",
+    "author_type": "consultant",
+    "content": "Getting to the 'Rule of 40' for middling SaaS companies: Loved this @twentyminutevc convo between Mitchell Green of Lead Edge Capital and @HarryStebbings. Mitchell suggested that SaaS companies that aren't growing fast enough to be able to raise follow-on venture rounds, need to get to the 'Rule of 40' and become attractive for Private Equity. OG VC Brad Feld describes it nicely in this 2015 post: 'The 40% rule is that your growth rate + your profit should add up to 40%. So, if you are growing at 20%, you should be generating a profit of 20%.' Many US-India SaaS companies of the last cycle will be in this bucket where the Rule of 40 is likely going to be the way out. My sense is that most classic early stage VCs (like myself) might not be that ramped up on how Private Equity thinks about SaaS/enterprise software buyouts, and what needs to be done operationally to get the company ready & attractive for PEs. Private Equity is a very different world from early stage VC. With the advent of AI and continuing downstream effects of ZIRP/20-21 mayhem, this is the time to put in the work towards bridging these 2 worlds. It could turn out to be a great way to generate exits for scores of SaaS founders and investors that are feeling stuck right now.",
+    "title": "Getting to the 'Rule of 40' for middling SaaS companies",
+    "engagement": {"upvotes": 1, "comments": 0, "shares": 0},
+    "scraped_at": "2026-05-17T00:00:00Z",
+    "pain_point_signals": ["Rule of 40 as PE-attractiveness threshold", "middling SaaS without follow-on capital", "operational transformation for PE buyout", "ZIRP/20-21 mayhem downstream", "stuck founders without exit"],
+    "scrape_method": "firecrawl_scrape_full"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "Sergey (SaaS investor)",
+    "url": "https://x.com/SergeyCYW/status/2005255179763958216",
+    "author_type": "consultant",
+    "content": "This chart shows why the Rule of 40 is quietly deciding SaaS winners. Growth alone no longer gets rewarded. Profitability alone caps upside. The market is paying for balance. A few things stand out immediately: Green zone is scarce. Only a small group clears 40% on growth + GAAP EBITDA. This is where valuation support is strongest. Fast growth without margins is penalized. High-growth names sitting in red or yellow are signaling execution risk. Growth that doesn't translate into operating leverage loses premium fast. Strong Rule of 40 leaders (growth + profitability): $APP $MSFT $GOOGL $FICO $ORCL. High-growth but margin still developing: $PLTR $NET $ZETA. In this cycle, SaaS leadership isn't about being the fastest grower or the most profitable. It's about being one of the few that can do both at the same time.",
+    "title": "Rule of 40 is quietly deciding SaaS winners",
+    "engagement": {"upvotes": 86, "comments": 0, "shares": 12},
+    "scraped_at": "2026-05-17T00:00:00Z",
+    "pain_point_signals": ["Rule of 40 deciding winners", "growth without profitability penalized", "operating leverage missing", "green zone scarce"],
+    "scrape_method": "firecrawl_scrape_full"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "Sergey (SaaS investor)",
+    "url": "https://x.com/SergeyCYW/status/2040767931815186445",
+    "author_type": "consultant",
+    "content": "Rule of 40 is where SaaS valuation meets reality. Growth alone isn't enough. Chart combines NTM growth + GAAP EBITDA margin. >40 = high-quality balance (green). 30-40 = acceptable (yellow). <30 = weak efficiency (red). Market is clearly rewarding balance, not just growth. Leaders: $APP - rare combo: high growth + strong margins. $MSFT - scale + profitability still unmatched. $FICO / $ORCL / $DOCN - efficient growers with strong margins. High growth: $PLTR $ZETA. Premium names under pressure: $CRWD $DDOG $TEAM - good growth, but margins still catching up. Many SaaS names sit below 30x → growth slowing + profitability not there yet. SaaS is moving from 'grow fast' → 'grow efficiently'. Rule of 40 is becoming the filter. Which SaaS names actually deserve premium multiples?",
+    "title": "Rule of 40 is where SaaS valuation meets reality",
+    "engagement": {"upvotes": 15, "comments": 0, "shares": 2},
+    "scraped_at": "2026-05-17T00:00:00Z",
+    "pain_point_signals": ["Rule of 40 as valuation filter", "SaaS moving from grow-fast to grow-efficiently", "many names below 30%", "premium names under margin pressure"],
+    "scrape_method": "firecrawl_scrape_full"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "Perplexity AI / SaaS thread",
+    "url": "https://x.com/AskPerplexity/status/1926681110924218525",
+    "author_type": "operator",
+    "content": "The Rule of 40 is a benchmark used to evaluate SaaS and tech companies' health and growth. It combines revenue growth and profitability margin.",
+    "title": "Rule of 40 benchmark explained",
+    "engagement": {"upvotes": 0, "comments": 0, "shares": 0},
+    "scraped_at": "2026-05-17T00:00:00Z",
+    "pain_point_signals": ["Rule of 40 awareness rising", "benchmark used by buyers"],
+    "scrape_method": "firecrawl_scrape_full"
+  }
+]
