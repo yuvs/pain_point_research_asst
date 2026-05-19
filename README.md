@@ -42,25 +42,35 @@ claude "Research pain points for business executives in [your target industry]"
 ## Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────┐
-│              Main Orchestrator                    │
-│         (You talking to Claude Code)             │
-├─────────────┬───────────┬────────────────────────┤
-│  @scraper   │ @analyst  │  @competitive-intel     │
-│  Subagent   │ Subagent  │  Subagent               │
-│             │           │                          │
-│  Firecrawl  │ Reads     │  Firecrawl + Search      │
-│  MCP for    │ scraped   │  for competitor           │
-│  Reddit,    │ data,     │  analysis                 │
-│  LinkedIn,  │ applies   │                          │
-│  X, Quora   │ framework │                          │
-└─────────────┴───────────┴────────────────────────┘
-         │              │               │
-         ▼              ▼               ▼
-    data/raw/      data/analyzed/   data/competitors/
+┌─────────────────────────────────────────────────────────────┐
+│               @researcher (orchestrator)                     │
+│          sequences subagents, writes final report           │
+├───────────────┬──────────────────┬──────────────────────────┤
+│   @scraper    │    @analyst      │   @competitive-intel      │
+│   Subagent    │    Subagent      │   Subagent                │
+│               │                  │                           │
+│  Reddit:      │  Deduplicates &  │  Firecrawl MCP searches  │
+│  Firecrawl    │  categorizes     │  for solution providers,  │
+│  (URL disco.) │  findings, then  │  profiles pricing and     │
+│  + reddit_    │  scores with     │  positioning              │
+│  fetch.py     │  ICE + WTP       │                           │
+│  (content)    │                  │                           │
+│               │                  │                           │
+│  LinkedIn:    │                  │                           │
+│  Exa MCP      │                  │                           │
+│  neural search│                  │                           │
+│               │                  │                           │
+│  X/Twitter    │                  │                           │
+│  & Quora:     │                  │                           │
+│  Firecrawl    │                  │                           │
+│  MCP          │                  │                           │
+└───────────────┴──────────────────┴──────────────────────────┘
+        │                │                     │
+        ▼                ▼                     ▼
+   data/raw/      data/analyzed/       data/competitors/
                         │
                         ▼
-                reports/YYYY-MM-DD-pain-points.md
+            reports/YYYY-MM-DD-[topic].md
 ```
 
 ## Directory Structure
@@ -68,27 +78,31 @@ claude "Research pain points for business executives in [your target industry]"
 ```
 pain-point-researcher/
 ├── .claude/
-│   ├── settings.json          # Hooks + MCP server config
+│   ├── settings.json              # MCP server config + hooks
 │   ├── agents/
-│   │   ├── researcher.md      # Top-level orchestrator agent
-│   │   ├── scraper.md         # Web scraping subagent
-│   │   ├── analyst.md         # Synthesis & prioritization subagent
-│   │   └── competitive-intel.md  # Competitor mapping subagent
+│   │   ├── researcher.md          # Orchestrator agent
+│   │   ├── scraper.md             # Web scraping subagent
+│   │   ├── analyst.md             # Synthesis & prioritization subagent
+│   │   └── competitive-intel.md   # Competitor mapping subagent
 │   └── skills/
 │       ├── scrape-community.md
 │       ├── prioritize-pain-points.md
 │       └── competitor-analysis.md
-├── CLAUDE.md                  # Project memory & conventions
+├── CLAUDE.md                      # Project conventions & data schemas
+├── main.py                        # Optional entry point
 ├── scripts/
-│   ├── scrape-source.sh       # Hook: validate scrape targets
-│   ├── backup-data.sh         # Hook: backup before compaction
-│   └── schedule-run.sh        # Cron wrapper for recurring runs
+│   ├── reddit_fetch.py            # Fetches Reddit posts via public JSON API
+│   ├── backup-data.sh             # PreCompact hook: backs up data/
+│   └── schedule-run.sh            # Cron wrapper for recurring runs
 ├── data/
-│   ├── raw/                   # Raw scraped content (JSON)
-│   ├── analyzed/              # Intermediate analysis
-│   └── competitors/           # Competitor profiles
-├── reports/                   # Final deliverables
+│   ├── raw/                       # Raw scraped records (JSON)
+│   ├── analyzed/                  # Scored pain point findings (JSON)
+│   └── competitors/               # Competitor profiles (JSON)
+├── logs/                          # Run logs
+├── reports/                       # Final markdown deliverables
 ├── templates/
-│   └── report-template.md     # Report structure template
-└── package.json
+│   └── report-template.md         # Report structure template
+├── .env.example                   # API key template
+├── pyproject.toml                 # Python dependencies (uv)
+└── package.json                   # Node dependencies (Firecrawl/Exa MCP)
 ```
