@@ -38,7 +38,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "Check: did the agent save all outputs to the correct data/ or reports/ directory with proper timestamps? If any data was generated but not persisted to disk, respond with {\"ok\": false, \"reason\": \"Data not saved: [details]\"}. If everything is saved, respond with {\"ok\": true}."
+            "prompt": "Review the conversation transcript. If this session involved scraping, analysis, competitor research, or report generation (i.e. a research pipeline run), check whether all outputs were saved to the correct data/ or reports/ directory with proper timestamps. If outputs were generated but not persisted, respond with {\"ok\": false, \"reason\": \"Data not saved: [details]\"}. If this session only involved code edits, config changes, README updates, or other non-research work, respond with {\"ok\": true} immediately — there is nothing to persist."
           }
         ]
       }
