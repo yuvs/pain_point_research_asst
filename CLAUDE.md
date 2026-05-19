@@ -90,10 +90,17 @@ We use a modified ICE framework with Willingness-to-Pay overlay:
 
 ## MCP Servers
 - **Firecrawl**: Web scraping and search — `npx -y firecrawl-mcp` (used for X/Twitter and Quora)
-- **Exa**: Neural search with content retrieval — `npx -y exa-mcp-server` (used for Reddit and LinkedIn)
+- **Exa**: Neural search with content retrieval — `npx -y exa-mcp-server` (used for LinkedIn)
 
-Reddit's API is no longer self-serve, so Exa is used for both Reddit and LinkedIn
-via `includeDomains` filtering.
+Reddit's API is no longer self-serve. Reddit is scraped via Firecrawl search for URL
+discovery and `scripts/reddit_fetch.py` for full content (Reddit's public JSON API,
+no credentials required).
+
+## Reddit Fetcher Script
+`scripts/reddit_fetch.py` — discovers post URLs via Firecrawl search, then fetches
+full post text and top comments via Reddit's public `.json` endpoint. Returns Raw
+Scrape Records with real upvote/comment counts. No API key needed. Uses Python stdlib
+only — no extra dependencies beyond what's already installed.
 
 ## Credentials
 

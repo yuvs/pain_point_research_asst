@@ -1,0 +1,175 @@
+[
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1qg28nc/building_a_b2b_saas_for_midmarket_treasuryfx_risk/",
+    "author_type": "unknown",
+    "content": "Building a B2B SaaS for Mid-Market Treasury/FX Risk Management\n\nI've been building a treasury management SaaS targeting mid-market companies (50-500 employees) that need FX risk management but can't justify $50k+/year for enterprise solutions.\n\n\n\n\\*\\*The Problem:\\*\\*\n\nMid-market CFOs are stuck between manual Excel-based FX risk tracking and expensive enterprise treasury tools. Most solutions are either too basic or priced for Fortune 500 companies.\n\n\n\n\\*\\*Our Solution:\\*\\*\n\n\\- Automated multi-currency exposure tracking\n\n\\- Real-time risk alerts and threshold monitoring\n\n\\- Banking API integrations for live data\n\n\\- Hedging strategy recommendations\n\n\\- Compliance reporting\n\n\n\n\\*\\*Tech Stack:\\*\\* Node.js, PostgreSQL, React\n\n\n\n\\*\\*Progress:\\*\\* Running pilots with 3 mid-market companies. Initial feedback has been positive - they love the automation and the price point ($500-2000/month vs $50k/year).\n\n\n\n\\*\\*Biggest Challenge:\\*\\* Getting banks to provide API access to mid-market clients. Most banking APIs are built for enterprise customers.\n\n\n\nWould love to hear from other B2B SaaS founders - especially anyone in fintech or working with financial institutions. How did you handle bank integrations? Any advice on scaling B2B sales in a niche market?\n\nTop comments:\nSuper interesting niche. On the SaaS marketing side, I would lean hard into credibility assets early (case studies, quantified ROI, and very specific compliance/security answers), because CFO buyers will sniff out hand-wavy messaging instantly.\n\nFor bank integrations, have you tried starting with aggregators (Plaid, Tink, Teller, or even direct file-based imports like BAI2/MT940) as an interim path, then going direct API with the banks that show the most demand? Even a \"supported banks\" landing \n---\nLove the niche, \"mid-market CFO + multi-currency exposure\" is a real pain.\n\nOn marketing side, Id lean hard into trust signals: 1-2 very specific case studies (even from pilots) like \"reduced month-end FX reporting f",
+    "title": "Building a B2B SaaS for Mid-Market Treasury/FX Risk Management",
+    "engagement": {
+      "upvotes": 1,
+      "comments": 6,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:40:53.054816+00:00",
+    "pain_point_signals": [
+      "\\*\\*Biggest Challenge:\\*\\* Getting banks to provide API access to mid-market clients"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/tip0ql/boostrapping_mid_marketenterprise_saas_with_200k/",
+    "author_type": "unknown",
+    "content": "Boostrapping mid market/enterprise SaaS with 200k in own funding possible?\n\nHey, \n\nI\u2019m currently researching what kind of SaaS project I should do next. Previously I\u2019ve only done smaller stuff like Shopify apps.\n\nI like the idea of starting a SaaS for mid market customers in the ACV range of 10-25k, selling it with a low touch sales model and maybe later on expanding into an enterprise model.\n\nI have a 200k budget for my next project and I\u2019m not sure if it\u2019s even worth digging deep into the mid market/enterprise research with that amount. \n\nPossible budget allocation:\n\n* 10-25k for getting contracts drawn up from an attorney (SLAs, Terms of Service, Data Privacy)\n* 20k for GDPR consulting and testing\n* 25k for pen testing\n* 25k for soc2 type 1 (I hope it\u2019s not necessary for mid market customers if I have a well documented security page)\n\n**So that\u2019s a total of 95k for getting started.**\n\nI would also add on an experienced CTO to develop it. I thought of giving him equity (\\~30%) + a **development budget of 100k.** That can be used to finance the CTOs life and maybe some freelance help.\n\nIn the beginning the selling would be done by me. I would also try to get some pre-sales and lots of contacts in my target market before even starting the development.\n\nQuestions:\n\n1. Do you think that it sounds reasonable to develop something like this with such a budget, within 1,5 years? I want to bootstrap this.\n2. Do you have some good resources about selling and developing for the mid market?\n3. Almost all the resources I can find are either on SMBs or Enterprise. I\u2019m not even sure what the right definition of mid market companies is when I hear all these VC\u2019s talk about them. Is it a 100-1000 million revenue range?\n4. I would also be very interested in resources or stories about starting in the mid market. It seems like the most common way is to either start with SMBs and go up market or to take lots of funding and start with enterprise accounts.\n5. Do you think it\u2019s generally",
+    "title": "Boostrapping mid market/enterprise SaaS with 200k in own funding possible?",
+    "engagement": {
+      "upvotes": 13,
+      "comments": 33,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:40:54.310116+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1ecg712/how_do_small_saas_companies_showcase_trust_when/",
+    "author_type": "unknown",
+    "content": "How do small SaaS companies showcase trust when it comes to selling to mid-market &amp; enterprise customers?\n\nI\u2019ve seen companies ask for SOC 2 / ISO 27001 certifications to ensure that their data is secure. But we have no intentions of working on these in the next 6-8 months &amp; current focus is just getting more logos.\n\nMost of the times, customers are okay with us just filling a lengthy questionnaire &amp; when we assure that we\u2019ll work on compliance in the near future.\n\nI\u2019ve seen companies showcase their certifications/attestations etc on their trust page. \n\nMy question is - should we also just start a trust page &amp; showcase some basic controls &amp; policies we implement in our company? It will atleast show that we\u2019re proactively looking at compliance &amp; security. We should be able to do this in a day or two.\n\nDid any SaaS founder do this ? Will it help ?\n\nTop comments:\nIt's a bit of a chicken and egg problem for many B2B SaaS. On one hand, it's hard to justify the cost of investing in compliance and certifications until you have some great traction. On the other hand, its frustrating getting enterprise leads who won't move further forward in the sales process because you don't have those certifications!\n\nHere's a few tips which were either implemented at startups I've been a part of have advised:\n\n1. Fake it until you make it  \nOften your buyer couldn't give a",
+    "title": "How do small SaaS companies showcase trust when it comes to selling to mid-market &amp; enterprise customers?",
+    "engagement": {
+      "upvotes": 3,
+      "comments": 3,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:40:55.456922+00:00",
+    "pain_point_signals": [
+      "On one hand, it's hard to justify the cost of investing in compliance and certifications until you have some great traction"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1sfziw3/for_those_of_you_who_have_built_b2b_products_or/",
+    "author_type": "unknown",
+    "content": "For those of you who have built B2B products or services\n\nWhat was the biggest challenge you faced along the way?\n\nIt could be acquiring your first customers, fully understanding the problem, selling, closing long sales cycles, or adapting the product.\n\nAnd something else I\u2019m curious about: Did you go straight into B2B from the start, or did you get there after trying other things?\n\nTop comments:\nin B2B, trust is harder than tech\n---\nbiggest shift for me was realizing the problem and the buyer are more important than the idea sounding clever. b2b gets much easier when the pain is already costing someone time or money every week. if you have to educate them for 20 minutes before they care, it's usually a bad sign.\n---\nBiggest challenge for me was understanding the real problem vs the assumed problem. You think you know what they need, then talk to 10 customers and realize you've been solving the wrong layer of it.\n\n\n\nThe second biggest: validation before building. I wasted \\~4 months building features nobody asked for because I validated too late - basically just asked friends who said \"sounds cool\" instead of stress-testing the actual demand.\n\n\n\nNow I'm a lot more systematic about it. Tools like [IdeaProof.i",
+    "title": "For those of you who have built B2B products or services",
+    "engagement": {
+      "upvotes": 18,
+      "comments": 48,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:40:56.771982+00:00",
+    "pain_point_signals": [
+      "For those of you who have built B2B products or services  What was the biggest challenge you faced along the way?  It could be acquiring your first customers, fully understanding the problem, selling,"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1pj4xon/most_ai_agents_can_query_your_data_but_cant/",
+    "author_type": "unknown",
+    "content": "Most AI agents can query your data but can't understand your business. Building something to fix that.\n\nHi, \n\nObservation from years in enterprise data:\n\nCompanies have better data infrastructure than ever. Cloud warehouses, modern pipelines, good BI tools. The plumbing is solid.\n\nThen they plug in AI agents expecting transformation \u2014 and get disappointment.\n\nThe agent generates SQL. The SQL is correct. But the *insight* is wrong because the agent doesn't understand what the metrics actually mean in business context.\n\n\"Show me our best customers\" \u2192 Agent picks highest revenue. But Finance meant highest margin. CS meant lowest churn risk. Sales meant biggest growth potential.\n\nThe agent didn't ask. It doesn't know.\n\n**The gap:**\n\nThere's a missing layer between \"access to data\" and \"understanding the business.\" Most AI agents skip it entirely and jump straight to automation.\n\n**What I'm building:**\n\nSystem of Record agents \u2014 AI that's grounded in the operational systems (CRM, ERP, billing) and trained to be an analyst first.\n\nBefore it automates anything, it learns:\n\n* What do these metrics actually mean?\n* How do they relate to each other?\n* What's normal? What's an anomaly?\n* What's the tribal knowledge that explains the exceptions?\n\nThen \u2014 and only then \u2014 it starts automating.\n\n**Looking for:**\n\n* Feedback. Is this a real problem or am I in a bubble?\n* Design partners. SMB or mid-market companies who live this pain.\n\nCurious what this community thinks.\n\nTop comments:\nYou\u2019re absolutely right\u2014most agents can fetch the right numbers but they lack the business context that turns data into insight, so the output often feels off\u2011target. The sweet spot is a tight human\u2011in\u2011the\u2011loop loop where the system learns the meaning of key metrics from domain experts before it starts automating, and then continuously updates that knowledge as the business evolves. This is a genuine pain point for many mid\u2011market firms, so finding partners who can feed you real\u2011world context wi\n---\nT",
+    "title": "Most AI agents can query your data but can't understand your business. Building something to fix that.",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 3,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:40:57.925971+00:00",
+    "pain_point_signals": [
+      "This is a genuine pain point for many mid\u2011market firms, so finding partners who can feed you real\u2011world context wi --- That's a real issue that we are trying to address too at ailog"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1pdl7xx/need_help_validating_saas_idea_struggling_with/",
+    "author_type": "operator",
+    "content": "Need help validating SaaS idea - struggling with prospecting at scale\n\nHey everyone, \n\nI've been working on a SaaS side project for a few months with one interested user. There's competition in the space, but I believe my approach addresses a specific gap within that market. Now that I have learned more about the industry and pain points with this user, I am ready to validate. Now, I'm not married to this idea, **but I'm very interested in learning how to validate properly for future projects.**\n\nMy main experience so far has been cold email and community posting. The challenge is that I work full-time at a PPC agency with demanding hours, so I'm struggling to scale my outreach using automation tools. (Could I run PPC? Yes, but I'd like to as a last resort because I know it'll be a money pit in the beginning).\n\nMy biggest bottleneck: Prospecting &amp; Building a system\n\nI can manually find my ICP (cash home buyers - think \"we buy houses for cash\" companies with websites), but I'm having trouble scaling this with tools like Clay. My ICP isn't typical B2B, so they're not easy to find on LinkedIn. I tried creating a lookalike list in Clay using URLs of similar companies, but didn't have much success. I am probably using Clay wrong because I don't have that much experience with it. \n\nIf I could just automate prospecting and feed those contacts into an email automation tool, I'd be set. But right now, list building is eating all my time.\n\nQuestions for the group:\n\n1. Prospecting automation: Any tips for building large lists of non-LinkedIn B2B companies? Tools or methods that work for local service businesses?\n2. Validation metrics: What clear signals or goals should I shoot for? Number of signups? Discovery calls? Since I don't have a working product yet (no free trial to offer), I'm not sure what realistic validation looks like. Would anyone pay without trying it first?\n3. Is validation scalable? Can this process be automated to some degree, or does it require manual h",
+    "title": "Need help validating SaaS idea - struggling with prospecting at scale",
+    "engagement": {
+      "upvotes": 3,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:40:59.090342+00:00",
+    "pain_point_signals": [
+      "Need help validating SaaS idea - struggling with prospecting at scale  Hey everyone,   I've been working on a SaaS side project for a few months with one interested user",
+      "Now that I have learned more about the industry and pain points with this user, I am ready to validate"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1ew5ghe/saas_is_really_tough_here_are_the_top_reasons/",
+    "author_type": "business_owner",
+    "content": "SaaS is really tough. Here are the top reasons your SaaS will fail\n\nI speak with B2B SaaS founders on a daily bases through my marketing agency and through our pod-based community for B2B SaaS:\u00a0SaaS Growth Pods. Here are the 9 top reasons they have given for past failures:\n\n1. **Product-Market Misfit**: It's like trying to selll ice to Eskimos. If your SaaS doesn't solve a real problem or your target audience just doesn't care, you\u2019re doomed from the start. PMF is the #1 reason SaaS products fail, so take your time before dedicating too much time, effort, or money to a product. I have made this mistake too many times myself so I can't iterate it enough.\n2. **Bad User Experience (UX)**: If your software feels like navigating a labyrinth while blindfolded, users will run away. Remember, if grandma can\u2019t figure it out, neither can your average user.\n3. **Customer Support Nightmares**: Imagine calling customer support and feeling like you\u2019re speaking to a wall. If your support team is slow, unhelpful, or non-existent, you cannot expect to scale.\n4. **Poor Sales and Marketing**: You could have invented the next best thing since sliced bread, but if no one knows about it, who cares?\n5. **Pricing Disasters**: Either you price your product like it\u2019s made of gold, scaring away potential customers, or you sell it for peanuts, making people suspicious of its value. Finding the sweet spot is crucial.\n6. **Lack of Focus**: Trying to be everything to everyone means you end up being nothing to no one.\n7. **Ineffective Leadership**: A company led by Captain Clueless is bound to hit an iceberg.\n8. **Burning Through Cash**: Make sure you have a plan (and a bankroll) before building the next big thing.\n9. **Failing to Scale**: Growing pains are real, and if your SaaS can\u2019t handle more customers or expanding operations, it\u2019s like having a fabulous car with no gas \u2013 all show, no go.\n\nBonus:\n\n10.\u00a0**Siloing yourself as a founder:**\u00a0Building a SaaS can be fun, but only if you get to share ",
+    "title": "SaaS is really tough. Here are the top reasons your SaaS will fail",
+    "engagement": {
+      "upvotes": 36,
+      "comments": 34,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:41:00.431041+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1h85om5/struggling_with_email_marketing_for_your_saas/",
+    "author_type": "unknown",
+    "content": "Struggling with Email Marketing for Your SaaS?\n\nI\u2019m a software developer who just built a platform to make email marketing more effective with features like segmentation, personalization, analytics, and more. It even connects directly to databases like MongoDB for seamless integration with your data.\n\nWe\u2019re looking for one company to test it out and give feedback. In exchange, you\u2019ll get lifetime premium access and hands-on help with your email campaigns.\n\nIf you\u2019re already doing email marketing or want to start, drop a comment or DM me a bit about your business. Happy to set up a call as well.",
+    "title": "Struggling with Email Marketing for Your SaaS?",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 3,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:41:01.571165+00:00",
+    "pain_point_signals": [
+      "Struggling with Email Marketing for Your SaaS?  I\u2019m a software developer who just built a platform to make email marketing more effective with features like segmentation, personalization, analytics, a"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1s5i577/the_saas_model_is_quietly_falling_apart_for_small/",
+    "author_type": "operator",
+    "content": "the SaaS model is quietly falling apart for small businesses and nobody in tech wants to admit it\n\nI run a 12 person company and I just did our annual software audit and the number genuinely startled me so I want to see if other business owners are experiencing the same thing.\n\nWe are paying for 23 separate software subscriptions right now, everything from accounting to project management to CRM to email marketing to analytics to internal communication to file storage to scheduling to customer support to payroll, and the total monthly spend across all of them is $4,100 which is almost $50,000 a year on software for a 12 person company.\n\nfive years ago that number was about $1,200/month for roughly the same functionality\n\nthe thing that's happening is every tool is creeping their prices up 15 to 20% annually while simultaneously moving features that used to be included into higher tier plans, stuff that was in the basic plan two years ago is now \"premium\" and the basic plan has been hollowed out to the point where it barely does anything useful\n\nbut the part that really gets me is the tool sprawl problem, every category of software has been sliced thinner and thinner so you need more subscriptions to cover what one or two tools used to handle, we have separate tools for email finding and email sending and email warmup and CRM and analytics when five years ago your CRM just did all of that, there are newer platforms trying to reconsolidate like hubspot cramming everything into one suite or smaller ones like instantly and fuseai trying to merge the sales stack back together but the overall trend in SaaS is still toward fragmentation because every VC-backed startup needs its own category to raise money in\n\nI've started to wonder if the SaaS model as it exists today is fundamentally misaligned with the interests of small businesses, we're the ones paying for all these seats and subscriptions and annual increases and the value we're getting hasn't increased proportionally",
+    "title": "the SaaS model is quietly falling apart for small businesses and nobody in tech wants to admit it",
+    "engagement": {
+      "upvotes": 629,
+      "comments": 534,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:41:03.452919+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1q4ixoo/i_validated_4_saas_ideas_in_2_weeks_all_failed/",
+    "author_type": "unknown",
+    "content": "I validated 4 SaaS ideas in 2 weeks. All failed. Here's what I learned.\n\nI\u2019m a developer from Nepal. For the past few weeks, I\u2019ve been trying to find a SaaS idea that people would actually pay for.\n\nI didn\u2019t build anything. No code. Just landing pages and validation.\n\nHere\u2019s what happened.\n\nFirst idea was **Gigfolio**, a finance dashboard for freelancers. The pitch was tracking irregular income and setting aside taxes. I posted it on Reddit. It got a few views and zero signups. One comment said something like people who are surprised by income tax shouldn\u2019t freelance. That hit. The problem wasn\u2019t urgent. It was a nice-to-have, not a must-have.\n\nSecond idea was **Fileloop**, a file sharing portal for clients. The pitch was to stop sharing messy Google Drive links. I got a few signups, but when I talked to people they said Google Drive works fine. \u201cMessy\u201d wasn\u2019t painful enough. People tolerate it.\n\nThen I pivoted Fileloop into a **client onboarding portal**. The idea was to stop chasing clients for project info with auto reminders and auto saving responses. While researching, I found competitors like Content Snare and Dubsado. More importantly, I realized I\u2019m not a freelancer. I was guessing problems I don\u2019t personally live with.\n\nNext idea was a **Django + React payments boilerplate**. The pitch was a drop-in Stripe plus auth setup, cheaper than existing options. I posted it on r/django. The responses were blunt. People called it AI slop. Others said ChatGPT already helps them implement this fast. Some said copy paste works fine. That made something clear. AI changed the game. Developers don\u2019t want to pay for code anymore.\n\nHere\u2019s what I actually learned from all this.\n\nValidating before building saved me months. Not guessing problems matters more than clever ideas. Nice-to-have products don\u2019t sell. Developers are a hard market because they can build things themselves and now they have AI. Domain knowledge matters more than YouTube advice makes it seem. And failing e",
+    "title": "I validated 4 SaaS ideas in 2 weeks. All failed. Here's what I learned.",
+    "engagement": {
+      "upvotes": 20,
+      "comments": 26,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-18T21:41:04.770985+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  }
+]

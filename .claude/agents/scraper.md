@@ -2,8 +2,8 @@
 name: scraper
 description: >
   Web scraping specialist that collects pain point data from Reddit, LinkedIn,
-  X/Twitter, and Quora. Uses Exa MCP for Reddit and LinkedIn (neural search with
-  content retrieval), and Firecrawl MCP for X/Twitter and Quora. Use when you need
+  X/Twitter, and Quora. Uses Firecrawl search + Reddit's public JSON API for Reddit,
+  Exa MCP for LinkedIn, and Firecrawl MCP for X/Twitter and Quora. Use when you need
   to gather raw community posts where business owners express frustrations,
   challenges, or unmet needs.
 tools: Read, Write, Bash, Glob, mcp__firecrawl, mcp__exa
@@ -34,7 +34,19 @@ Use the platform-specific method described below for each platform.
 ### Step 3: Classify and Save
 For each post, determine:
 - **author_type**: Is this person a business owner, operator, employee, or unclear?
-  Look for signals like "my business", "we run a", "as a founder", "I manage"
+  Use these signals (case-insensitive):
+  - `business_owner`: "my business", "i own", "as a founder", "my company", "i started",
+    "i founded", "we founded", "i built", "i'm building", "we built", "my startup",
+    "our startup", "my product", "my app", "my saas", "i launched", "i co-founded",
+    "bootstrapped", "my side project", "i created", "i developed", "my service",
+    "i'm the founder"
+  - `operator`: "i manage", "i run", "our team", "i oversee", "i'm the ceo", "i'm the cto",
+    "i'm the coo", "i lead", "head of", "vp of", "director of", "i'm responsible for"
+  - `employee`: "my boss", "at my company", "our department", "my employer", "my manager",
+    "i work at", "i work for", "my job"
+  - `consultant`: "my clients", "i advise", "in my practice", "my consulting", "my agency",
+    "i help businesses", "i help companies", "i work with clients", "my consultancy"
+  - `unknown`: none of the above match
 - **pain_point_signals**: Extract the specific complaints or challenges mentioned
 - **engagement**: Note upvotes/likes/comments as a proxy for resonance
 
@@ -56,54 +68,46 @@ from CLAUDE.md.
 
 ## Platform-Specific Methods
 
-### Reddit — Use Exa MCP
+### Reddit — Firecrawl search + Reddit JSON API
 
-Reddit's API is no longer self-serve, so use Exa's neural search instead.
-Exa indexes Reddit and can retrieve full post text.
+Reddit's official API is no longer self-serve and Firecrawl's scrape endpoint
+is blocked on reddit.com. The reliable two-step approach:
 
-**Tool:** `mcp__exa__web_search_exa`
+1. **Discover URLs** via Firecrawl search (`site:reddit.com` queries)
+2. **Fetch full content** via Reddit's public unauthenticated JSON API using
+   `scripts/reddit_fetch.py` — returns full selftext, top comments, and native
+   upvote/comment counts with no credentials required
 
-**Search approach:**
-1. Use `includeDomains: ["reddit.com"]` to target Reddit
-2. Optionally narrow to a subreddit by including `site:reddit.com/r/smallbusiness`
-   in the query string
-3. Set `type: "neural"` for semantic relevance
-4. Set `contents: {text: true}` to retrieve full post text
-
-**Example Exa call:**
+**Step 1 — Discover URLs with Firecrawl:**
 ```
-mcp__exa__web_search_exa({
-  query: "business owner struggling with SaaS churn retention problem",
-  includeDomains: ["reddit.com"],
-  numResults: 10,
-  type: "neural",
-  contents: { text: true, maxCharacters: 2000 }
+mcp__firecrawl__firecrawl_search({
+  query: "site:reddit.com/r/SaaS struggling with churn biggest challenge",
+  limit: 10
 })
 ```
 
-**Query construction for Reddit:**
-Write queries as natural descriptions — Exa does semantic search, not keyword matching:
-- "small business owner frustrated by [pain area] looking for help"
-- "entrepreneur sharing biggest challenge running [industry] company"
-- "founder lesson learned mistake [topic] what I'd do differently"
-- "startup operator struggling with [topic] asking for advice"
+Run 3-4 query variations targeting different subreddits:
+- `site:reddit.com/r/smallbusiness` for SMB-focused posts
+- `site:reddit.com/r/entrepreneur` for founder-focused posts
+- `site:reddit.com/r/SaaS` or industry-specific subreddits as relevant
 
-Run 3-4 variations targeting different subreddits via the query string:
-- Include `reddit.com/r/smallbusiness` for SMB-focused posts
-- Include `reddit.com/r/entrepreneur` for founder-focused posts
-- Include `reddit.com/r/startups` or industry-specific subreddits as relevant
+Collect all unique Reddit post URLs from the search results.
 
-**From each Exa result, extract:**
-- `url`: the Reddit post URL
-- `content`: the text content Exa retrieved (trim to 2000 chars)
-- `title`: from Exa's title field
-- `subreddit_or_group`: parse from the URL (e.g. `r/smallbusiness`)
-- `author_type`: classify from content signals
-- `pain_point_signals`: extract complaint phrases
-- Set `source: "reddit"`, `scrape_method: "exa_neural_search"`
-- Set `engagement: {upvotes: 0, comments: 0, shares: 0}` (not available via Exa)
+**Step 2 — Fetch full post content:**
+```bash
+python scripts/reddit_fetch.py --urls "https://reddit.com/r/SaaS/comments/abc/title/ https://reddit.com/r/entrepreneur/comments/xyz/title/"
+```
+
+Pass all discovered URLs in one call (space-separated). The script fetches
+each post's `.json` endpoint, extracts title, selftext, and top 3 comments,
+and outputs schema-conformant records with real upvote/comment counts.
+
+**Fallback:** If Firecrawl search returns few results, use Exa as a URL
+discovery fallback with `includeDomains: ["reddit.com"]`, then still fetch
+full content via the Python script.
 
 Save to `data/raw/YYYY-MM-DD-[industry]-reddit.json`.
+`scrape_method` is set automatically by the script to `"reddit_json_api"`.
 
 ---
 
