@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "industry": "Small trades / home & commercial service contractors (electricians, plumbers, HVAC, roofers, GCs, remodelers)",
+    "business_size_focus": "SMB owner-operators (1-20 employees)",
+    "analysis_date": "2026-05-20",
+    "total_records_analyzed": 292,
+    "platform_breakdown": {
+      "reddit": 60,
+      "linkedin": 76,
+      "quora": 78,
+      "x": 78
+    },
+    "date_range_note": "Reddit posts span 2022-2026; LinkedIn Pulse articles 2023-2025; X/Quora snippets primarily 2024-2026.",
+    "data_quality_notes": {
+      "reddit": "60 high-quality first-person posts with real upvote/comment counts via public JSON API. Subreddits include r/Contractor, r/smallbusiness, r/HomeImprovement, r/Plumbing, r/electricians, r/HVAC, r/Roofing, r/Entrepreneur, r/skilledtrades, r/Construction.",
+      "linkedin": "76 Pulse articles and posts via Exa neural search. Engagement counts not exposed to anonymous fetch. Many posts are from industry coaches/operators with strong articulation of pain points.",
+      "quora": "78 question titles + meta description snippets via Firecrawl search. Direct full-text fetch is 403-blocked. Treat as weaker confidence signal than Reddit.",
+      "x": "78 X profile/post snippets via Firecrawl search. Many are profile pages from industry influencers (Mike Rowe, contracting coaches) rather than individual complaint posts \u2014 treat as a directional signal only."
+    },
+    "framework": "ICE + WTP \u2014 Final = (Impact + Confidence + Ease) / 3 * WTP_multiplier"
+  },
+  "pain_points": [
+    {
+      "pain_point": "Cash flow management and operating capital",
+      "cluster_id": "cash_flow",
+      "category": "finance",
+      "frequency": 25,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 10,
+        "ease": 7,
+        "wtp_multiplier": 1.5,
+        "total": 13.0
+      },
+      "platform_breakdown": {
+        "reddit": 4,
+        "linkedin": 9,
+        "quora": 4,
+        "x": 8
+      },
+      "representative_quotes": [
+        "Commercial client hasn\u2019t paid by due date  My company bid and landed a commercial job that we bid for $253k for an apartment complex updates \u2014 [reddit (37u/62c)] https://www.reddit.com/r/Contractor/comments/1t2t7bn/commercial_client_hasnt_pai",
+        "--- You could offer to pay the supplier directly for the materials if you wish. \u2014 [reddit (3u/70c)] https://www.reddit.com/r/Contractor/comments/1lopiue/i_have_a_question_about_a_p",
+        "We don\u2019t want to nickel and dime, but it seems more straightforward if one person (us or the contractor) pays for everything so things don\u2019t get lost in translation \u2014 [reddit (9u/64c)] https://www.reddit.com/r/Contractor/comments/1r8lhr0/who_purchases_materials/",
+        "* What's the biggest pain point or thing that wastes your time \u2014 [reddit (0u/43c)] https://www.reddit.com/r/Plumbing/comments/1rqe4dh/plumberswhat_appsoftware_do_y",
+        "# John Wilson\u2019s Post  John Wilson  10mo  - Report this post  Not your typical HVAC owner origin story \u2014 [linkedin] https://www.linkedin.com/posts/johnbwilson1_how-to-scale-a-small-hvac-business-w"
+      ],
+      "source_urls": [
+        "https://x.com/CashFlowSolver",
+        "https://www.reddit.com/r/Contractor/comments/1r8lhr0/who_purchases_materials/",
+        "https://www.reddit.com/r/Plumbing/comments/1rqe4dh/plumberswhat_appsoftware_do_you_use_to_handle/",
+        "https://www.linkedin.com/pulse/tackling-payment-delays-ensuring-cash-flow-eni-demja-zx9le",
+        "https://www.reddit.com/r/Contractor/comments/1t2t7bn/commercial_client_hasnt_paid_by_due_date/",
+        "https://www.linkedin.com/posts/johnbwilson1_how-to-scale-a-small-hvac-business-with-proven-activity-7321178622545821697-PYtG",
+        "https://www.quora.com/Why-is-the-construction-business-so-difficult",
+        "https://x.com/mooninvoice/status/2054174404100391086",
+        "https://www.linkedin.com/pulse/managing-cash-flow-excavating-businesses-nitin-business-builder-r5mec",
+        "https://x.com/pymnts/status/2029617939062669529",
+        "https://www.quora.com/What-are-the-biggest-challenges-about-opening-a-business-in-construction",
+        "https://www.linkedin.com/pulse/navigating-cash-flow-challenges-stories-success-solutions-cook-fw26c",
+        "https://www.quora.com/What-is-it-like-running-a-construction-business-What-factors-should-be-considered-when-starting-one",
+        "https://www.linkedin.com/pulse/mastering-cash-flow-construction-strategies-financial-aaron-mills-tkpqc",
+        "https://x.com/truss_payments/status/1887636192159469725",
+        "https://www.linkedin.com/pulse/cash-flow-solutions-service-based-businesses-keeping-your-woods-oemvc",
+        "https://www.linkedin.com/pulse/how-keep-your-contractor-businesss-cash-flow-flowing-dhobe",
+        "https://x.com/crm_repair",
+        "https://www.linkedin.com/posts/nick-garrity-8b3a55151_toolboxtalks-podcast-activity-7432366446162219008-ionP",
+        "https://www.linkedin.com/pulse/construction-cash-flow-answers-subcontractors-owen-hagger-oo1fe",
+        "https://www.quora.com/What-s-the-biggest-reason-many-local-plumbing-businesses-don-t-stay-profitable-even-when-they-get-enough-jobs",
+        "https://x.com/SitelineHQ",
+        "https://www.reddit.com/r/Contractor/comments/1lopiue/i_have_a_question_about_a_payment_situation_with/",
+        "https://x.com/pymnts/status/2021252911829791020",
+        "https://x.com/BeaconBusinessC"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "general contracting",
+        "plumbing",
+        "HVAC",
+        "roofing",
+        "remodeling"
+      ],
+      "rank": 1
+    },
+    {
+      "pain_point": "Getting paid: slow / non-paying customers and GCs",
+      "cluster_id": "getting_paid",
+      "category": "finance",
+      "frequency": 14,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 8,
+        "ease": 8,
+        "wtp_multiplier": 1.5,
+        "total": 12.5
+      },
+      "platform_breakdown": {
+        "reddit": 9,
+        "linkedin": 2,
+        "x": 3
+      },
+      "representative_quotes": [
+        "I Took Over a Commercial Gym and it's Been a Nightmare \u2014 [reddit (1349u/294c)] https://www.reddit.com/r/smallbusiness/comments/1lfs3wn/i_took_over_a_commercial",
+        "Not rich enough to get paid  I now understand how screwed up the court system is \u2014 [reddit (266u/155c)] https://www.reddit.com/r/Contractor/comments/1pufmg5/not_rich_enough_to_get_paid",
+        "It\u2019s really frustrating, I feel like they are the sort of people that it is impossible to argue with. \u2014 [reddit (43u/103c)] https://www.reddit.com/r/smallbusiness/comments/1tfshrp/non_paying_customers/",
+        "Never had any problems getting paid \u2014 [reddit (5u/91c)] https://www.reddit.com/r/Contractor/comments/1l5uf4j/being_told_to_invoice_gc_on",
+        "Proposal signed, windows and doors installed.. \u2014 [reddit (25u/79c)] https://www.reddit.com/r/Contractor/comments/1nro3cd/proposal_signed_windows_and"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/smallbusiness/comments/1lfs3wn/i_took_over_a_commercial_gym_and_its_been_a/",
+        "https://www.reddit.com/r/smallbusiness/comments/1tfshrp/non_paying_customers/",
+        "https://x.com/mooninvoice/status/2054174404100391086",
+        "https://www.reddit.com/r/Contractor/comments/1nro3cd/proposal_signed_windows_and_doors_installed_no/",
+        "https://www.reddit.com/r/Contractor/comments/1pufmg5/not_rich_enough_to_get_paid/",
+        "https://www.linkedin.com/pulse/cash-flow-solutions-service-based-businesses-keeping-your-woods-oemvc",
+        "https://www.reddit.com/r/Contractor/comments/1l5uf4j/being_told_to_invoice_gc_once_a_month_and_pay/",
+        "https://x.com/BeaconBusinessC",
+        "https://www.reddit.com/r/Contractor/comments/1lljhzl/how_to_you_guys_get_people_to_pay_emailed/",
+        "https://x.com/pronovos",
+        "https://www.linkedin.com/posts/nick-garrity-8b3a55151_toolboxtalks-podcast-activity-7432366446162219008-ionP",
+        "https://www.reddit.com/r/Contractor/comments/1po2cyh/which_invoicing_software_is_actually_enough_for_a/",
+        "https://www.reddit.com/r/smallbusiness/comments/1scesh0/running_an_hvac_company_by_myself_without_a/",
+        "https://www.reddit.com/r/Contractor/comments/1t2t7bn/commercial_client_hasnt_paid_by_due_date/"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "electrical",
+        "HVAC",
+        "plumbing",
+        "general contracting"
+      ],
+      "rank": 2
+    },
+    {
+      "pain_point": "Lead generation and customer acquisition for small contractors",
+      "cluster_id": "lead_gen",
+      "category": "marketing",
+      "frequency": 23,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 9,
+        "ease": 7,
+        "wtp_multiplier": 1.5,
+        "total": 12.5
+      },
+      "platform_breakdown": {
+        "reddit": 5,
+        "linkedin": 11,
+        "quora": 5,
+        "x": 2
+      },
+      "representative_quotes": [
+        "**Please do not conduct market research on our community.**  We are not your focus group and asking us about our pain points, needs, what is hardest about X, etc \u2014 [reddit (151u/269c)] https://www.reddit.com/r/smallbusiness/comments/1sfps91/quoted_3500month_for_loc",
+        "Anyone else's job leads drying up \u2014 [reddit (21u/102c)] https://www.reddit.com/r/Contractor/comments/1lqribn/anyone_elses_job_leads_dryi",
+        "Fellow remodelers: who\u2019s got the magic \u2014 [reddit (7u/54c)] https://www.reddit.com/r/Contractor/comments/1r223a8/how_are_you_finding_leads/",
+        "private company - best route to own business  I'm moving from IT to plumbing (in the Central Valley of CA) and I have 2 opportunities that I'm considering:     **Option #1: UA Local apprenticeship**  \\- $26 (as an apprentice)  \\- A formal, structured training program \u2014 [reddit (2u/50c)] https://www.reddit.com/r/skilledtrades/comments/1qyjcez/union_apprenticeship_vs_",
+        "How much did a website help your business \u2014 [reddit (9u/43c)] https://www.reddit.com/r/smallbusiness/comments/1n9a893/how_much_did_a_website_h"
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/pulse/why-lead-generation-lifeline-home-service-businesses-tyrone-sims-4iyse",
+        "https://www.quora.com/As-a-local-business-owner-such-as-plumbers-electricians-landscapers-and-cleaners-whats-your-main-struggle-when-finding-clients-to-work-for",
+        "https://www.quora.com/How-do-plumbers-find-a-nearby-customer-in-real-time",
+        "https://www.linkedin.com/pulse/7-most-common-mistakes-i-see-small-businesses-make-google-hossen-czy8c",
+        "https://www.linkedin.com/pulse/top-5-mistakes-business-owners-make-google-ads-everett-minshall",
+        "https://www.reddit.com/r/smallbusiness/comments/1sfps91/quoted_3500month_for_local_seo_as_a_plumbing/",
+        "https://www.quora.com/What-advice-do-you-have-for-a-plumber-whos-seriously-thinking-about-starting-his-own-business",
+        "https://www.quora.com/What-should-be-asked-before-hiring-local-service-professionals-like-electricians-plumbers-painters-etc",
+        "https://x.com/jon_torrey",
+        "https://www.reddit.com/r/smallbusiness/comments/1n9a893/how_much_did_a_website_help_your_business/",
+        "https://www.reddit.com/r/Contractor/comments/1lqribn/anyone_elses_job_leads_drying_up_how_do_you_guys/",
+        "https://www.linkedin.com/posts/tradesman-digital-marketing_how-to-successfully-run-google-ads-for-small-activity-7199846622585868288-cXUU",
+        "https://www.linkedin.com/pulse/google-ads-mistakes-costing-home-service-businesses-10000s-risher-8cmbe",
+        "https://www.linkedin.com/pulse/home-remodeling-lead-generation-strategies-land-more-leads-convoso-2yjbc",
+        "https://www.linkedin.com/pulse/what-small-businesses-need-know-google-ads-pauline-jakober-yv7pe",
+        "https://www.linkedin.com/posts/philrisher_the-most-dangerous-number-in-a-home-service-activity-7425886908754538496-9u50",
+        "https://www.reddit.com/r/Contractor/comments/1r223a8/how_are_you_finding_leads/",
+        "https://www.linkedin.com/posts/brigserman_serviceprosleads-leadsforservicepros-serviceprosgrow-activity-7384258573482110976-5rIy",
+        "https://www.reddit.com/r/skilledtrades/comments/1qyjcez/union_apprenticeship_vs_private_company_best/",
+        "https://www.linkedin.com/pulse/5-powerful-lead-generation-strategies-my-home-service-john-mctighe-lzehc",
+        "https://www.linkedin.com/posts/david-fitzmaurice-303787199_most-roofers-think-google-ads-dont-work-activity-7398748333403467776-f9LX",
+        "https://x.com/MichLieben/status/2054258286908813690",
+        "https://www.quora.com/How-do-I-get-customers-for-a-plumbing-business"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "plumbing",
+        "electrical",
+        "remodeling",
+        "roofing",
+        "general contracting"
+      ],
+      "rank": 3
+    },
+    {
+      "pain_point": "Pricing jobs profitably and competing with lowballers",
+      "cluster_id": "pricing",
+      "category": "finance",
+      "frequency": 7,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 6,
+        "ease": 9,
+        "wtp_multiplier": 1.5,
+        "total": 12.0
+      },
+      "platform_breakdown": {
+        "reddit": 2,
+        "linkedin": 3,
+        "quora": 2
+      },
+      "representative_quotes": [
+        "My competitors thought I was insane \u2014 [reddit (482u/109c)] https://www.reddit.com/r/smallbusiness/comments/1q71vdk/most_hvac_companies_comp",
+        "Bootstrapped an HVAC company from $3,200 to debt-free exit over 24 years - Here\u2019s what actually mattered  After my business story hit 289K views on Reddit last week, I got flooded with DMs asking for specifics on how I built and sold my contracting business \u2014 [reddit (36u/65c)] https://www.reddit.com/r/Entrepreneur/comments/1q70tnu/bootstrapped_an_hvac_comp",
+        "Learn more in our[Cookie Policy](https://www.linkedin.com/legal/cookie-policy) \u2014 [linkedin] https://www.linkedin.com/pulse/why-contractors-struggle-profit-marginsand-how-fi",
+        "Remember, the right pricing strategy is key to solving problems, growing your business, and delivering exceptional service \u2014 [linkedin] https://www.linkedin.com/videos/bryan-peralta-54a550178_starting-a-business-can-",
+        "It\u2019s Time to Raise Your Prices (Here\u2019s Why and How)  Seriously.. \u2014 [linkedin] https://www.linkedin.com/pulse/seriously-its-time-raise-your-prices-heres-why-ho"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/smallbusiness/comments/1q71vdk/most_hvac_companies_compete_on_price_i_competed/",
+        "https://www.quora.com/What-s-the-biggest-reason-many-local-plumbing-businesses-don-t-stay-profitable-even-when-they-get-enough-jobs",
+        "https://www.reddit.com/r/Entrepreneur/comments/1q70tnu/bootstrapped_an_hvac_company_from_3200_to/",
+        "https://www.linkedin.com/pulse/why-contractors-struggle-profit-marginsand-how-fix-donna-febus-msa-ap0gc",
+        "https://www.quora.com/Why-are-general-contractors-so-notoriously-poor-at-being-responsive-on-time-and-communicative",
+        "https://www.linkedin.com/pulse/seriously-its-time-raise-your-prices-heres-why-how-justin-hubbard-ppite",
+        "https://www.linkedin.com/videos/bryan-peralta-54a550178_starting-a-business-can-be-challenging-especially-activity-7308296698039083009-XwBM"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "HVAC",
+        "plumbing",
+        "general contracting"
+      ],
+      "rank": 4
+    },
+    {
+      "pain_point": "Licensing, permits, insurance, and compliance overhead",
+      "cluster_id": "licensing_compliance",
+      "category": "compliance",
+      "frequency": 18,
+      "intensity": "high",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 9,
+        "ease": 7,
+        "wtp_multiplier": 1.5,
+        "total": 11.5
+      },
+      "platform_breakdown": {
+        "reddit": 11,
+        "linkedin": 4,
+        "quora": 3
+      },
+      "representative_quotes": [
+        "The third service which isn't as prominent was very friendly at first, but when I texted them asking them if they were licensed and insured, it caused a major problem \u2014 [reddit (296u/148c)] https://www.reddit.com/r/HomeImprovement/comments/1ti6ox4/angry_backlash_from_as",
+        "22 y/o GC Making $95K\u2014Am I Crazy to Leave and Start My Own Company \u2014 [reddit (61u/245c)] https://www.reddit.com/r/Construction/comments/1kw2dcs/22_yo_gc_making_95kam_i_c",
+        "Contractor wants 100 percent pay before job is finished  Is this normal \u2014 [reddit (57u/242c)] https://www.reddit.com/r/Contractor/comments/1l5jq4x/contractor_wants_100_percen",
+        "When I called to ask about the discrepancy, they told me they charge per \u201cindividual scope of work,\u201d not by labor hours or crew size, and they can't tell me the exact labor cost of the work \u2014 [reddit (43u/160c)] https://www.reddit.com/r/Roofing/comments/1r2e5tk/1655_to_replace_2_roof_vents_f",
+        "Painter did poor prep, house already failing after 1 year \u2014 [reddit (107u/79c)] https://www.reddit.com/r/HomeImprovement/comments/1rq2uo0/painter_did_poor_prep_"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/HVAC/comments/1rig0t4/information_on_mods_banning_and_post_removal/",
+        "https://www.reddit.com/r/Entrepreneur/comments/1s5rswx/buying_a_roofing_company_in_2026_100b_market_2x/",
+        "https://www.linkedin.com/pulse/owning-your-own-hvac-business-hard-scott-smith",
+        "https://www.reddit.com/r/HomeImprovement/comments/1sv0mhu/paid_electrician_to_install_an_ev_charger_and/",
+        "https://www.reddit.com/r/Roofing/comments/1r2e5tk/1655_to_replace_2_roof_vents_flashing_repair_did/",
+        "https://www.reddit.com/r/smallbusiness/comments/1p3b1fi/help_me_choose_the_best_plumbing_business_name/",
+        "https://www.linkedin.com/pulse/how-deal-insurance-claims-canadian-roofing-industry-nitin-khanna-cfa-xul4e",
+        "https://www.linkedin.com/pulse/highs-lows-filing-commercial-roof-insurance-claims-eric-kirberg",
+        "https://www.reddit.com/r/Construction/comments/1kw2dcs/22_yo_gc_making_95kam_i_crazy_to_leave_and_start/",
+        "https://www.reddit.com/r/Contractor/comments/1l5jq4x/contractor_wants_100_percent_pay_before_job_is/",
+        "https://www.reddit.com/r/Contractor/comments/1m878fb/new_business_owner_at_24_finding_certain_clients/",
+        "https://www.reddit.com/r/HomeImprovement/comments/1rq2uo0/painter_did_poor_prep_house_already_failing_after/",
+        "https://www.reddit.com/r/HomeImprovement/comments/1tfqe0m/unpermitted_deck_question/",
+        "https://www.quora.com/What%E2%80%99s-running-an-HVAC-company-like",
+        "https://www.reddit.com/r/HomeImprovement/comments/1ti6ox4/angry_backlash_from_asking_people_if_they_are/",
+        "https://www.linkedin.com/pulse/why-its-important-have-your-roof-insurance-claim-bill-ragan",
+        "https://www.quora.com/What-level-of-business-knowledge-would-I-need-to-start-my-own-electrician-business-Btw-Im-a-sophomore-in-high-school-and-planning-on-going-to-trade-school-and-starting-a-business-after-but-idk-if-I-should-go-to",
+        "https://www.quora.com/Im-a-mechanical-engineer-and-want-to-start-an-HVAC-business-I-have-no-technical-kwledge-in-the-field-How-do-I-start"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "roofing",
+        "HVAC",
+        "electrical",
+        "general contracting",
+        "remodeling"
+      ],
+      "rank": 5
+    },
+    {
+      "pain_point": "Hiring/retaining skilled technicians and apprentices",
+      "cluster_id": "hiring_trades",
+      "category": "hiring",
+      "frequency": 6,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 6,
+        "ease": 6,
+        "wtp_multiplier": 1.5,
+        "total": 10.5
+      },
+      "platform_breakdown": {
+        "reddit": 3,
+        "linkedin": 2,
+        "x": 1
+      },
+      "representative_quotes": [
+        "PE is dumping billions into home care despite 79% caregiver turnover \u2014 [reddit (308u/123c)] https://www.reddit.com/r/Entrepreneur/comments/1rqjot3/pe_is_dumping_billions_in",
+        "So of course they\u2019re having a hard time getting hired \u2014 [reddit (45u/59c)] https://www.reddit.com/r/HVAC/comments/1scpq8r/influx_of_green_techs/",
+        "private company - best route to own business  I'm moving from IT to plumbing (in the Central Valley of CA) and I have 2 opportunities that I'm considering:     **Option #1: UA Local apprenticeship**  \\- $26 (as an apprentice)  \\- A formal, structured training program \u2014 [reddit (2u/50c)] https://www.reddit.com/r/skilledtrades/comments/1qyjcez/union_apprenticeship_vs_",
+        "Learn more in our[Cookie Policy](https://www.linkedin.com/legal/cookie-policy) \u2014 [linkedin] https://www.linkedin.com/posts/phip-woodhatch-owen-5837724_classroom-electrician",
+        "Thursday night on ITV, Are you struggling to find a plumber .. \u2014 [x] https://x.com/ITVTonight/status/1757826546994131100/media_tags"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/Entrepreneur/comments/1rqjot3/pe_is_dumping_billions_into_home_care_despite_79/",
+        "https://www.reddit.com/r/skilledtrades/comments/1qyjcez/union_apprenticeship_vs_private_company_best/",
+        "https://www.linkedin.com/pulse/why-small-businesses-have-quietly-quit-barry-sharp-fpqoe",
+        "https://www.reddit.com/r/HVAC/comments/1scpq8r/influx_of_green_techs/",
+        "https://x.com/ITVTonight/status/1757826546994131100/media_tags",
+        "https://www.linkedin.com/posts/phip-woodhatch-owen-5837724_classroom-electrician-courses-waste-of-money-activity-7298261156740104192-gWAQ"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "plumbing",
+        "electrical",
+        "HVAC"
+      ],
+      "rank": 6
+    },
+    {
+      "pain_point": "Marketing/SEO/website spend with unclear ROI",
+      "cluster_id": "marketing_tech",
+      "category": "marketing",
+      "frequency": 6,
+      "intensity": "high",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 8,
+        "wtp_multiplier": 1.5,
+        "total": 10.5
+      },
+      "platform_breakdown": {
+        "reddit": 2,
+        "linkedin": 1,
+        "x": 3
+      },
+      "representative_quotes": [
+        "**Please do not conduct market research on our community.**  We are not your focus group and asking us about our pain points, needs, what is hardest about X, etc \u2014 [reddit (151u/269c)] https://www.reddit.com/r/smallbusiness/comments/1sfps91/quoted_3500month_for_loc",
+        "22 y/o GC Making $95K\u2014Am I Crazy to Leave and Start My Own Company \u2014 [reddit (61u/245c)] https://www.reddit.com/r/Construction/comments/1kw2dcs/22_yo_gc_making_95kam_i_c",
+        "Last month, I had the opportunity to speak with 25 home service business owners about their Google Ads strategies \u2014 [linkedin] https://www.linkedin.com/pulse/google-ads-mistakes-costing-home-service-business",
+        "Jon-Torrey (@jon_torrey) / Posts / X - Twitter  Does Facebook drive revenue for HVAC contractors \u2014 [x] https://x.com/jon_torrey",
+        "Hunter Lapeyre (@HunterLapeyre) / Posts and Replies / X - Twitter  I run a roofing company + SEO agency \u2014 [x] https://x.com/HunterLapeyre/with_replies"
+      ],
+      "source_urls": [
+        "https://x.com/HunterLapeyre/with_replies",
+        "https://x.com/jon_torrey",
+        "https://www.reddit.com/r/Construction/comments/1kw2dcs/22_yo_gc_making_95kam_i_crazy_to_leave_and_start/",
+        "https://www.reddit.com/r/smallbusiness/comments/1sfps91/quoted_3500month_for_local_seo_as_a_plumbing/",
+        "https://www.linkedin.com/pulse/google-ads-mistakes-costing-home-service-businesses-10000s-risher-8cmbe",
+        "https://x.com/contractorsweb"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "plumbing",
+        "general contracting",
+        "remodeling",
+        "HVAC",
+        "roofing"
+      ],
+      "rank": 7
+    },
+    {
+      "pain_point": "Buying/selling a trades business, succession, valuation",
+      "cluster_id": "buying_or_selling_business",
+      "category": "operations",
+      "frequency": 3,
+      "intensity": "high",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 5,
+        "ease": 8,
+        "wtp_multiplier": 1.5,
+        "total": 10.0
+      },
+      "platform_breakdown": {
+        "reddit": 3
+      },
+      "representative_quotes": [
+        "PE is dumping billions into home care despite 79% caregiver turnover \u2014 [reddit (308u/123c)] https://www.reddit.com/r/Entrepreneur/comments/1rqjot3/pe_is_dumping_billions_in",
+        "Landscaping is bigger then most people realize because it includes maintenance, design-build, hardscaping, irrigation, tree care, pest control for lawns, and commercial grounds management \u2014 [reddit (91u/41c)] https://www.reddit.com/r/Entrepreneur/comments/1rwquoo/landscaping_might_be_the_",
+        "Buying a roofing company in 2026: $100B market, 2x entry multiples, and one PE roll-up that went bankrupt \u2014 [reddit (52u/29c)] https://www.reddit.com/r/Entrepreneur/comments/1s5rswx/buying_a_roofing_company_"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/Entrepreneur/comments/1s5rswx/buying_a_roofing_company_in_2026_100b_market_2x/",
+        "https://www.reddit.com/r/Entrepreneur/comments/1rwquoo/landscaping_might_be_the_most_obvious_rollup_in/",
+        "https://www.reddit.com/r/Entrepreneur/comments/1rqjot3/pe_is_dumping_billions_into_home_care_despite_79/"
+      ],
+      "business_sizes": [
+        "smb",
+        "mid_market"
+      ],
+      "industries_affected": [
+        "HVAC",
+        "roofing"
+      ],
+      "rank": 8
+    },
+    {
+      "pain_point": "Scheduling, dispatch, and field service ops chaos",
+      "cluster_id": "scheduling_dispatch",
+      "category": "operations",
+      "frequency": 12,
+      "intensity": "high",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 6,
+        "wtp_multiplier": 1.2,
+        "total": 8.4
+      },
+      "platform_breakdown": {
+        "reddit": 2,
+        "linkedin": 6,
+        "x": 4
+      },
+      "representative_quotes": [
+        "What\u2019s the best contractor management software for a small construction crew \u2014 [reddit (0u/52c)] https://www.reddit.com/r/Construction/comments/1q78j0d/whats_the_best_contractor",
+        "* What's the biggest pain point or thing that wastes your time \u2014 [reddit (0u/43c)] https://www.reddit.com/r/Plumbing/comments/1rqe4dh/plumberswhat_appsoftware_do_y",
+        "John Wilson\u2019s Post  As you grow, it\u2019s easy to get caught up in acquisitions and big-picture strategies, but you can\u2019t forget the operational basics \u2014 [linkedin] https://www.linkedin.com/posts/johnbwilson1_as-you-grow-its-easy-to-get-caught-u",
+        "7 Field Service Management Challenges (And How To Solve Them)  7 Field Service Management Challenges (And How To Solve Them)  Agree & Join LinkedIn  By clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy \u2014 [linkedin] https://www.linkedin.com/pulse/7-field-service-management-challenges-how-solve-t",
+        "Housecall Pro vs Jobber vs ServiceTitan Choose wisely  Housecall Pro vs Jobber vs ServiceTitan Choose wisely   Agree & Join LinkedIn  By clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy \u2014 [linkedin] https://www.linkedin.com/pulse/housecall-pro-vs-jobber-servicetitan-r-m-09mpf"
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/servicetitan_hvac-software-for-commercial-and-residential-activity-7295862903084113920-e8gs",
+        "https://www.linkedin.com/pulse/7-field-service-management-challenges-how-solve-them-totalmobile-t2nwe",
+        "https://x.com/quoteiqcrm",
+        "https://x.com/melisatokmak/status/1866894323100553623",
+        "https://www.reddit.com/r/Construction/comments/1q78j0d/whats_the_best_contractor_management_software_for/",
+        "https://www.linkedin.com/pulse/housecall-pro-vs-jobber-servicetitan-r-m-09mpf",
+        "https://x.com/fieldbin/status/1809094106775273814/photo/1",
+        "https://www.linkedin.com/products/housecallpro-hvac-service-software/",
+        "https://www.reddit.com/r/Plumbing/comments/1rqe4dh/plumberswhat_appsoftware_do_you_use_to_handle/",
+        "https://www.linkedin.com/pulse/service-fusion-vs-servicetitan-r-m-h6ref",
+        "https://www.linkedin.com/posts/johnbwilson1_as-you-grow-its-easy-to-get-caught-up-in-activity-7262833660402237440-tm7H",
+        "https://x.com/Organilog_EN"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "HVAC",
+        "general contracting",
+        "plumbing"
+      ],
+      "rank": 9
+    },
+    {
+      "pain_point": "Owner burnout: working in vs. on the business",
+      "cluster_id": "owner_burnout",
+      "category": "operations",
+      "frequency": 4,
+      "intensity": "high",
+      "willingness_to_pay": "unclear",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 5,
+        "ease": 7,
+        "wtp_multiplier": 1.0,
+        "total": 7.0
+      },
+      "platform_breakdown": {
+        "reddit": 2,
+        "linkedin": 2
+      },
+      "representative_quotes": [
+        "**Please do not conduct market research on our community.**  We are not your focus group and asking us about our pain points, needs, what is hardest about X, etc \u2014 [reddit (25u/37c)] https://www.reddit.com/r/smallbusiness/comments/1scesh0/running_an_hvac_company_",
+        "I'm a small owner-operator experiencing growing pains \u2014 [reddit (26u/31c)] https://www.reddit.com/r/Contractor/comments/1obdeoz/owneroperators_how_much_tim",
+        "Just long days, hard lessons, and the realisation that what gets you to \u00a3300k will not get you to \u00a31M and what gets you to \u00a31M will not get you to \u00a32M \u2014 [linkedin] https://www.linkedin.com/posts/nick-garrity-8b3a55151_toolboxtalks-podcast-activ",
+        "Phil Risher\u2019s Post  Too many home service businesses think they have a lead problem \u2014 [linkedin] https://www.linkedin.com/posts/philrisher_too-many-home-service-businesses-think"
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/nick-garrity-8b3a55151_toolboxtalks-podcast-activity-7432366446162219008-ionP",
+        "https://www.reddit.com/r/smallbusiness/comments/1scesh0/running_an_hvac_company_by_myself_without_a/",
+        "https://www.linkedin.com/posts/philrisher_too-many-home-service-businesses-think-they-activity-7317881911282917376-elnx",
+        "https://www.reddit.com/r/Contractor/comments/1obdeoz/owneroperators_how_much_time_do_you_spend_on_site/"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "HVAC",
+        "plumbing"
+      ],
+      "rank": 10
+    },
+    {
+      "pain_point": "Difficult customers, scope creep, and disputes",
+      "cluster_id": "customer_relations",
+      "category": "customer_success",
+      "frequency": 4,
+      "intensity": "medium",
+      "willingness_to_pay": "unclear",
+      "ice_score": {
+        "impact": 6,
+        "confidence": 5,
+        "ease": 7,
+        "wtp_multiplier": 1.0,
+        "total": 6.0
+      },
+      "platform_breakdown": {
+        "reddit": 3,
+        "linkedin": 1
+      },
+      "representative_quotes": [
+        "Annoying customer  So I did this painting project for this lady, she wouldn\u2019t pay me until project was completed which is 100% okay \u2014 [reddit (62u/126c)] https://www.reddit.com/r/Contractor/comments/1p7pgpv/annoying_customer/",
+        "New business owner at 24 finding certain clients more difficult \u2014 [reddit (36u/97c)] https://www.reddit.com/r/Contractor/comments/1m878fb/new_business_owner_at_24_fi",
+        "Information on Mods Banning and Post Removal  There has been an uptick on posts and complaints about mods banning \u2014 [reddit (0u/105c)] https://www.reddit.com/r/HVAC/comments/1rig0t4/information_on_mods_banning_and_p",
+        "Show the problem, the fix, maybe even the cost \u2014 [linkedin] https://www.linkedin.com/pulse/5-strategies-id-use-grow-my-plumbing-business-rig"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/HVAC/comments/1rig0t4/information_on_mods_banning_and_post_removal/",
+        "https://www.linkedin.com/pulse/5-strategies-id-use-grow-my-plumbing-business-right-now-ken-kai-qqahc",
+        "https://www.reddit.com/r/Contractor/comments/1m878fb/new_business_owner_at_24_finding_certain_clients/",
+        "https://www.reddit.com/r/Contractor/comments/1p7pgpv/annoying_customer/"
+      ],
+      "business_sizes": [
+        "smb"
+      ],
+      "industries_affected": [
+        "HVAC",
+        "roofing",
+        "plumbing"
+      ],
+      "rank": 11
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+[
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1sg4d3w/phd_in_finance_applied_for_200_jobs_still_no/",
+    "author_type": "unknown",
+    "content": "PhD in finance, applied for 200+ jobs. Still no offer. What went wrong?\n\nI have a PhD in finance and several years of work experience as consultant, general manager, and current doing AI model evaluation at Uber. I applied for 200+ jobs and got two interviews. The pay and the industry weren\u2019t a good fit and kinda got rejected by over qualification. Both were manager roles.\n\nDo you guys have any feedback on the resume, or if you were me, how would you do your job search?\n\nI just relocated to US a year ago. Not really have any professional network yet. I heard networking is really helpful for finding a job, but I\u2019m still struggling to find the right people\n\nTop comments:\nOne thing that sticks out to me about your most recent role is the title. \u201cSenior Finance Expert\u201d doesn\u2019t sound like a standard title and might trip up an ATS that\u2019s looking for exact matches. Was that your actual title? Can you make it something more industry standard (i.e. Senior Manager, Global Finance)?\n---\nYour resume lacks a center of gravity, or what they call a \u201cpersonal brand\u201d. It\u2019s not clear what 2-3 differentiating factors you bring to an employer. All of the details leave it up to the reader to figure out, which they typically won\u2019t bother doing. Some tips:\n- You graduated in \u201823, so that\u2019s really 3 years of full time experience. But you have \u201cexpertise\u201d in 12 areas. You won\u2019t catch opportunities by casting a wide net. You need to focus on areas that set you apart from everyone else. Pick 3\n---\nI'm not an expert or anything, but your resume feels a bit dense. You could probably tighten up the bullet points and focus more on clear, measurable impact instead of longer descriptions.\n\nThe summary at the top also comes across as pretty generic, tailoring it to the specific roles you're applying for and maybe trimming older or less relevant experience would help it stand out more.\n\nI had similar issues and couldn't land interviews despite applying a lot, but once I got resume professionally ",
+    "title": "PhD in finance, applied for 200+ jobs. Still no offer. What went wrong?",
+    "engagement": {
+      "upvotes": 111,
+      "comments": 87,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:43.394349+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1q93cq0/we_lost_1200_paying_customers_last_quarter/",
+    "author_type": "unknown",
+    "content": "We lost 1,200 paying customers last quarter because our KYC rejected them, and I'm still trying to figure out what acceptable loss looks like\n\nFinance ran the numbers last week and apparently we've been bleeding revenue for months without realizing it. We thought our identity verification was doing its job catching fraud, but turns out it was also catching way too many legitimate customers who just wanted to give us money.\n\nThe problem is nobody tells you what good looks like. Our vendor dashboard shows an 87% pass rate which sounds pretty decent until you realize that means 13% of people who want to become customers are getting rejected. Some of those are actual fraudsters sure, but a lot of them are just people with passports that photograph badly or old IDs with wear and tear or they took their selfie in shitty lighting and failed the liveness check.\n\nWe only figured out the scale of this when support tickets kept piling up about verification failures and someone finally connected it to the drop in conversions. Now I'm trying to figure out what's an acceptable number of legitimate users to lose in exchange for catching fraud, and nobody seems to have a straight answer for that.\n\nHow do you even measure this like what metrics tell you if your KYC setup is actually helping or just costing you customers?\n\nTop comments:\nPersonally, manually review the ones who fail.\n\nYou have 87% automated, that is pretty good by anyone's standards.\n---\nThe real issue is treating all failures the same instead of tracking false positives separately from fraud blocks. If for example 'poor image quality' tops your rejection reasons, your UX is the problem, not fraud prevention. Let users retry with better instructions instead of hard rejecting on first attempt.\n---\nNo one knows what you're even doing because you've not said. Every business is different.",
+    "title": "We lost 1,200 paying customers last quarter because our KYC rejected them, and I'm still trying to figure out what acceptable loss looks like",
+    "engagement": {
+      "upvotes": 23,
+      "comments": 75,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:44.734939+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1ogbars/why_are_instant_crossborder_payments_still_so/",
+    "author_type": "unknown",
+    "content": "Why are instant cross-border payments still so hard in 2025?\n\nI\u2019ve been diving into how international money movement actually works, and it\u2019s wild how *slow* and *fragmented* things still are.Even with modern rails, APIs (Wise, Nium, etc.), and blockchain solutions around, true **instant cross-border transfers** still seem out of reach. Why is that? Is it mainly about **regulation, liquidity, or technical infrastructure**? Or are the legacy systems (SWIFT, correspondent banking, etc.) just too entrenched to replace?\n\nI might explore this space more deeply later, but right now I\u2019m just trying to understand the core friction points \u2014 why can\u2019t moving money globally be as simple as sending a message?\n\nWould love to hear thoughts from people working in or studying fintech/payments\n\nTop comments:\nmoney laundering, you don\u2019t want people to be able to take their money elsewhere without proper checks",
+    "title": "Why are instant cross-border payments still so hard in 2025?",
+    "engagement": {
+      "upvotes": 28,
+      "comments": 56,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:46.023163+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1t5ijq5/built_an_ainative_banking_backend_looking_for/",
+    "author_type": "unknown",
+    "content": "Built an AI-native banking backend \u2014 looking for feedback / early partners Banking and /or Credit\n\nHey everyone,\n\nI\u2019ve been building a banking system from the ground up, not just a neobank UI, but the underlying **financial infrastructure layer** (ledger, payments, compliance) with an AI decision layer on top.\n\nInstead of dashboards first, the idea is that software should be able to **decide and execute financial actions safely**\n\nWhat\u2019s built so far:\n\n* Double-entry ledger (real-time, deterministic)\n* Payments orchestration (ACH / wires / internal transfers)\n* Compliance + AML rules engine\n* AI layer for:\n   * payment approval/risk scoring\n   * fraud detection\n   * cash flow insights\n* More than 26 Microservices\n\nThe direction I\u2019m exploring:  \n\u2192 API-first (not a consumer bank-)  \n\u2192 eventually: \u201cAI-assisted financial execution\u201d (with strict guardrails + auditability)\n\nRight now I\u2019m trying to validate **what to productize first**:\n\n1. Embedded accounts + payments API (Stripe-like)\n2. AI-powered approval/fraud layer (drop-in for existing systems) or others\n\nI\u2019d really value input from:\n\n* founders building SaaS/fintech\n* engineers who\u2019ve worked with banking APIs\n* Anyone who\u2019s dealt with payment ops, fraud, or finance workflows\n\nMain question:  \n\ud83d\udc49 *What would you actually adopt first if you had this available?* Also open to chatting with anyone interested in testing/partnering. Appreciate any honest feedback \u2014 even if it\u2019s critical.\n\nTop comments:\nthe ai approval layer sounds pretty interesting but 26 microservices for this stage feels like massive overengineering\n---\nYou used AI to write this so I assume the whole thing is vibecoded. It will be riddled with flaws and vulnerabilities. \n\nIn 2026 you can't actually build something this complicated without a tremendous amount of expert human oversight.\n---\nFrom the investor and institutional side the answer to what to productise first is almost always the one that gets you to a paying customer fastest rather than the one",
+    "title": "Built an AI-native banking backend \u2014 looking for feedback / early partners Banking and /or Credit",
+    "engagement": {
+      "upvotes": 27,
+      "comments": 56,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:47.386412+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/payments",
+    "url": "https://www.reddit.com/r/payments/comments/1sdqfda/are_chargebacks_just_legal_theft_at_this_point_or/",
+    "author_type": "unknown",
+    "content": "Are chargebacks just legal theft at this point or am i missing something\n\nGot dinged on a 500 dollar chargeback yesterday for a car part order guy got it shipped confirmed delivery then claimed non receipt couple weeks later bank sided with him i lost product fee and time fighting it.\n\nthis happen to everyone now or just me scaling up. feels rigged when customers game it and merchants foot bill tried better fraud checks on checkout but these sneak through what you all using to stop this crap before it lands. any workflow caught real ones without killing legit sales.\n\nTop comments:\nThis crap is everywhere now, especially as you scale. i was dealing with the same until i found charge flow, it automates the whole dispute process and uses ai to prevent a lot of these friendly fraud cases before they hit. saved me time and got back some money on old chargebacks i thought were gone. feels good not to foot the bill every time.\n---\nNeed to make certain that you are documenting the delivery of said merchandise along with pictures and also on your invoice,  you need to have a statement where there is not a possibility of return of installed parts. All interactions MUST be with the merchant FIRST, and no credit/ refunds after a specific amount of days..\n---\nChargebacks are 1000% rigged against sellers. The only way to win one, is to prove that the item ordered and paid for on that particular card was delivered to the billing address that card has registered.\n\nWe run an online auction, an ebay shop and a shopify store. The only one who's actually proactive about it, is shopify. If the shipping is different from billing they show a yellow warning to look at the order more in depth, if the cvv wasnt entered its an orange warning and if more then those",
+    "title": "Are chargebacks just legal theft at this point or am i missing something",
+    "engagement": {
+      "upvotes": 27,
+      "comments": 57,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:48.713415+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1r2zrd4/moved_from_seed_stage_to_series_b/",
+    "author_type": "unknown",
+    "content": "Moved from seed stage to series B\n\nMy new job at a series B is different(by a lot) from the seed stage companies I worked at before  \n  \nThere's 120 people here and everything has actual structure. My previous places had 40 people MAX and you'd just figure things out as you went  \n  \nOnboarding was 2 weeks with actual training instead of someone showing me where slack is and good luck. There's an org chart that makes sense and product roadmap instead of whatever the founders decided that week  \n  \nEngineering has processes now too. PR reviews aren't just whoever's around like there's sprint planning and we don't push to prod on Fridays(sounds basic but coming from seed stage chaos it feels almost corporate)  \n  \nHiring takes multiple rounds and forever compared to the week long process I'm used to but people fit their roles instead of everyone doing everything  \n  \nI didn't expect the jump to feel this big with way more meetings and process but things move faster because nobody's constantly figuring out what we're even doing  \nI am very happy with my current state here and I would love to hear if you guys who have transitioned similarly to me/from seed to series B feel the same  \nShare your experiences\n\nTop comments:\nI feel the same way as u man I remember starting at a seed company and it was like here's your laptop figure it out. Series B actually had documentation and training sessions and people whose job was to help new hires get set up\n---\nWent the opposite direction recently I left a series B for a seed company and I miss the structure way more than I thought I would\n---\nDo you miss anything about the seed stage or is it all better at series B",
+    "title": "Moved from seed stage to series B",
+    "engagement": {
+      "upvotes": 101,
+      "comments": 15,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:49.881492+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1pslzwo/barclays_built_fraud_detection_that_explains/",
+    "author_type": "unknown",
+    "content": "Barclays built fraud detection that explains itself and I think most fintechs are approaching this completely backwards\n\nI was looking into how different banks handle fraud detection for a project and stumbled onto something Barclays did that I can't stop thinking about.\n\nmost fraud systems I've seen work like this: security team builds something \"robust\" and \"aggressive,\" ships it, moves on. then six months later product is scrambling because trust metrics are tanking and support tickets are through the roof.\n\nthe problem isn't that these systems fail to catch fraud. it's that they flag too many legitimate people in the crossfire. every false positive is a blocked transaction. every blocked transaction is a \"yes, that really was me\" message. every one of those is a customer doing work your system should've handled on its own.\n\nBarclays apparently flipped the whole approach. instead of optimizing for security first and smoothing friction later, they designed for customer experience from the start and built security into that foundation.\n\nthree things stood out: their ML engine thinks in milliseconds but behaves more like a human analyst. they run continuous feedback loops - model retraining, testing, error audits - so the system doesn't drift over time. And when they do block a transaction, they actually explain why. not \"suspicious activity detected\" but \"this differs from your normal spending pattern because X, Y, Z.\"\n\nthat last part is what got me. most systems just block you and make you prove yourself. Barclays tells you the reasoning. seems small but I think that's actually the difference between a customer who shrugs it off and one who starts looking for a new bank.\n\nmost fintechs treat fraud as a backend compliance function. Barclays treated it as a customer experience problem that happens to involve security.\n\ndo you think this approach actually scales or is it one of those things that only works when you have Barclays-level resources? I keep going back and",
+    "title": "Barclays built fraud detection that explains itself and I think most fintechs are approaching this completely backwards",
+    "engagement": {
+      "upvotes": 69,
+      "comments": 19,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:51.055133+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1peub1z/building_a_core_banking_system_what_team_do_i/",
+    "author_type": "consultant",
+    "content": "Building a Core Banking System \u2014 What team do I actually need, and how long would it take?\n\nHey everyone,\n\nI\u2019m exploring the idea of building a **Core Banking system** (ledger, accounts, cards/payments integrations, compliance flows, user management, etc.), and before going any further I\u2019d love to get input from people who\u2019ve worked in fintech or banking infrastructure.\n\nI\u2019m trying to understand:\n\n# 1. What team structure is actually needed to start?\n\nHere\u2019s what I think I\u2019d need at a minimum:\n\n* **1\u00d7 Software Architect** (experienced with financial systems)\n* **1\u00d7 DevOps Engineer**\n* **2\u00d7 Senior Backend Developers**\n* **2\u00d7 Senior Frontend Developers**\n* **1\u00d7 Senior QA / Tester**\n\nAll of them would ideally have **experience in finance / banking / payments**, not just general software development.\n\n# 2. Is this a realistic team to begin building a Core Banking platform from scratch?\n\nShould I add/remove roles?  \nWould a dedicated security engineer be required early on?  \nWhat about a business analyst / product owner with banking knowledge?\n\n# 3. How long would a team like this realistically need to build:\n\n* a **Core Banking MVP**, and\n* a more **robust, production-ready system**?\n\nI\u2019ve heard everything from 6 months to 3+ years depending on scope, so I'm trying to get a realistic baseline.\n\n# 4. About costs (especially in Portugal):\n\nI\u2019m based in Europe and considering building the team in **Portugal** (but I\u2019m open to other countries with strong fintech talent).  \nWhat are the approximate monthly salaries for senior roles like these?\n\nI\u2019m not looking for exact quotes \u2014 just **real-world insight** from people who\u2019ve built similar systems or worked in fintech infrastructure.\n\nThanks a lot!\n\nTop comments:\nIm sitting here working a job for a salary like a chump when all along I should have been asking chatGPT to make me a get rich quick scheme and then asking Reddit if it will work\n---\nYou need a compliance team, a compliance team, and a compliance team.\n---\nImagine a ",
+    "title": "Building a Core Banking System \u2014 What team do I actually need, and how long would it take?",
+    "engagement": {
+      "upvotes": 5,
+      "comments": 50,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:52.404407+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1n29oih/how_a_50m_fintech_lost_everything_to_ai_fraud/",
+    "author_type": "unknown",
+    "content": "How a $50M Fintech Lost Everything to AI Fraud Detection Gone Wrong\n\nEver heard of Revolut's 2019 \"Black Friday Disaster\"? Their AI fraud system went haywire and blocked nearly 60% of legitimate transactions on the biggest shopping day of the year.\n\nThe aftermath was brutal: $12M in lost revenue, thousands of angry customers, and a CEO publicly apologizing on Twitter.\n\n**Here's what actually happened:** Their ML model was trained on normal spending patterns. But Black Friday behavior looked \"fraudulent\" to the algorithm:\n\n* People buying 10x their usual amounts\n* Shopping from new merchants\n* Making purchases at weird hours\n* Using cards in different locations\n\nThe AI did exactly what it was trained to do \u2013 flag unusual behavior. The problem? Nobody defined \"unusual\" correctly.\n\n**Real fraud detection isn't sexy AI magic:**\n\n* Start with simple rules (velocity checks, geo-fencing)\n* Layer ML for pattern detection, not primary decisions\n* Always have human review for high-value transactions\n* Test with seasonal data, not just last month's transactions\n\nThe companies crushing fraud detection today use hybrid approaches: AI finds the patterns, humans make the final calls, and simple rules catch the obvious stuff.\n\nMost \"AI-powered fraud detection\" I've seen is just decision trees with extra marketing budget.\n\nWhat fraud detection challenges are you dealing with? The real-world problems are way more interesting than the vendor demos.\n\n*Meir from* [*gliltech.com*](http://gliltech.com) *- been building fintech systems for 8 years. Love discussing real-world AI implementation vs. the marketing hype!*\n\nTop comments:\nThat moment when payment services provider decides for you whether you have the right to spend your own money.. And \"fraud detection\" isnt optional but mandatory.\n---\nHow do you have a human review thousands of orders per minute?\n---\nAt least there was no fraud losses.",
+    "title": "How a $50M Fintech Lost Everything to AI Fraud Detection Gone Wrong",
+    "engagement": {
+      "upvotes": 28,
+      "comments": 33,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:53.645832+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1ok6j5b/weve_automated_everything_except_chargebacks_why/",
+    "author_type": "unknown",
+    "content": "We\u2019ve automated everything\u2026 except chargebacks. Why?\n\nI see people here every day asking what app should I build next? Well, hello\u2026 chargeback fraud is projected to be a $300 million industry by 2028.\n\nEvery side hates this system:\n\n* Merchants lose hours building evidence packets by hand.  \n* Banks deal with inconsistent, outdated formats.  \n* Buyers get stuck in slow, confusing disputes.  \n* Networks take the blame no matter what.  \n\nWith all the AI and data sync tools we have, why hasn\u2019t anyone built a system that fixes it for merchants, issuers, processors and buyers alike?\n\nTop comments:\nChargeback is just a symptom. As your description said itself, you are talking about fraud, there are plenty of tools, methods and techniques for fraud-prevention. Many use AI, before AI was synonymous of LLMs. It\u2019s constantly evolving, but when you put dozens of years of legacy infrastructure, privacy, banks, fraudsters also using new tools, etc. it\u2019s a complex task.\n---\nWhat\u2019s wild is that the same psychology driving \"friendly fraud\" drives return abuse. People rationalize it as minor payback against faceless corporations. But when you\u2019re a small merchant, it\u2019s personal. Maybe fixing chargebacks also means re-educating consumers about what \u201cfraud\u201d actually costs beyond their refund.\n---\nUntil networks modernize dispute protocols, even the smartest automation, Justt, Chargeflow, Chargebast, Midigator, you name it, can only patch, not reform, the process.",
+    "title": "We\u2019ve automated everything\u2026 except chargebacks. Why?",
+    "engagement": {
+      "upvotes": 23,
+      "comments": 32,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:54.893817+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1sw7xfn/whats_it_actually_like_working_on_hugevolume/",
+    "author_type": "unknown",
+    "content": "What\u2019s it actually like working on huge-volume payment systems?\n\nHey all, looking for some perspective from people who\u2019ve worked on really high-volume financial infra.\n\nQuick background: I\u2019m a software engineer with \\~4 years experience on the acquiring side of fintech. We process around \u20ac500M/month, integrating with PSPs and financial institutions to debit customer accounts into our merchants\u2019. The system has been built up over many years (lots of legacy clots of moving parts)Despite the volume, I\u2019m in a pretty small team, and honestly I\u2019ve learned a huge amount about how banking systems work across different countries and rails.\n\nThe main thing I\u2019m curious about is how people at even bigger scale handle the stress. Our SLA is effectively 100% uptime if anything in the pipeline breaks, money stops moving and the business stops making money. It can get really intense. I can only imagine what it\u2019s like for the core teams at the billion-a-month (or billion-a-day) shops, where you\u2019re the team responsible for the system that literally brings revenue in.\n\nA few things I\u2019d love to hear about from people working on that kind of infra:\n\n\t\u2022\tThe stress itself. Do you ever genuinely get used to it? Or do you just build better tolerance / better processes around it? What does a bad incident actually feel like when the stakes are that high?\n\n\t\u2022\tWhat makes it manageable. Is it the runbooks, the on-call rotations, the team size, the culture, the comp? What\u2019s the thing that actually keeps people from burning out?\n\n\t\u2022\tDay-to-day reality. How much is interesting distributed systems work vs. reconciliation, compliance, edge cases, and chasing weird PSP/bank behaviour?\n\n\t\u2022\tGrowing in the space. What separates a solid mid-level engineer from someone who becomes genuinely valuable at scale in payments? Anything specific worth doubling down on?\n\n\t\u2022\tBig shop vs. startup. I\u2019m weighing staying put vs. moving to something smaller. For those who\u2019ve done both \u2014 where did you actually learn the ",
+    "title": "What\u2019s it actually like working on huge-volume payment systems?",
+    "engagement": {
+      "upvotes": 16,
+      "comments": 33,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:56.112673+00:00",
+    "pain_point_signals": [
+      "The difference between incident and disaster is usually how well the sys --- You asked about stress but until you\u2019ve seen the teams and systems in place, it\u2019s hard to understand the scale"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1r7mr46/the_hidden_problem_with_ai_agents_in_finance/",
+    "author_type": "business_owner",
+    "content": "The hidden problem with AI agents in finance: making them audit-ready\n\nThe hidden problem with AI agents in finance: making them audit-ready...\n\n\n\nI've been knee-deep in AI agent deployments in fintech, and I've hit a wall that many others might be facing, too. Building the agents themselves? Challenging, but doable. The real headache, though, is making them audit-ready.\n\n\n\nThe core issue is that AI models are inherently probabilistic. They can spit out different answers for the same input based on a bunch of variables \u2013 model version, temperature, token limits, even API response times. But financial regulators demand determinism. They want to replay a transaction approval from months ago and get the exact same reasoning path every single time.\n\n\n\nThis creates a huge compliance gap. Simply logging AI outputs isn't enough. Auditors will inevitably ask, 'Why did your agent approve this loan?' and 'Can you prove it would make the same decision today?' If you can't answer with certainty and a clear, repeatable process, you're not going to pass muster.\n\n\n\nMy approach has been to build a validation layer that sits between the AI agent and the production environment. It's designed to capture the agent's reasoning chain, validate it against a set of deterministic rules, and then create an immutable audit trail. This way, the agent can still be probabilistic during development and exploration, but any decision pushed to production has a deterministic, auditable validation behind it.\n\n\n\nThis layer needs to ensure:\n\n\\- Reproducibility: The same input always yields the same validation outcome.\n\n\\- Explainability: A clear, step-by-step reasoning path for every decision.\n\n\\- Auditability: Immutable logs that regulators can easily review.\n\n\\- Version control: Tracking exactly which model version was involved in each decision.\n\n\n\nIs anyone else in r/fintech grappling with this challenge of making probabilistic AI compliant with deterministic financial regulations? How are you bridg",
+    "title": "The hidden problem with AI agents in finance: making them audit-ready",
+    "engagement": {
+      "upvotes": 19,
+      "comments": 30,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:57.351474+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1t0srda/baas_platforms_are_selling_a_dream_but_the/",
+    "author_type": "unknown",
+    "content": "BaaS platforms are selling a dream but the integration reality is an absolute nightmare\n\nim losing my mind trying to get this sponsor bank integration over the finish line.\n\nEveryone in the fintech space talks about \"embedded finance\" like it's just flipping a switch, but nobody mentions that the actual banking cores you have to connect to were seemingly built in 1998. Our BaaS provider promised seamless modern apis and what we actually got was six months of undocumented error codes and compliance officers who take three weeks to answer a single technical question.\n\nwe're just trying to launch a pretty standard B2B lending product. nothing crazy. but the amount of data transformation required just to get a simple ledger update to reflect correctly is insane. I was looking at some architecture case studies on Tech Quarter earlier about how teams end up building out massive custom middleware just to sanitize data before it even hits the legacy banking layer, and it's dawning on me that we probably need to do the exact same thing and just eat the engineering cost\n\ntbh it feels like the whole \"fintech infrastructure\" space is heavily overhyped marketing covering up ancient tech debt\n\nare any of you guys actually working with a provider that has functioning, accurate dev docs? or is the industry secret that everyone just burns a ton of cash on custom dev work just to get the basic plumbing to function?\n\nTop comments:\nThe gap between BaaS marketing and integration reality is one of the worst-kept secrets in fintech. The \"seamless APIs\" almost always sit on top of core banking systems that predate most of the engineers working on them. Your BaaS provider built a REST facade over something that still thinks in batch files and EOD processing.\n\nThe six-month timeline with undocumented error codes is painfully normal. The core systems weren't designed to surface meaningful errors to external consumers because they\n---\nIf you think the docs are bad, wait until you see the unann",
+    "title": "BaaS platforms are selling a dream but the integration reality is an absolute nightmare",
+    "engagement": {
+      "upvotes": 23,
+      "comments": 27,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:58.562618+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1sainnv/what_i_used_to_underestimate_when_choosing_a/",
+    "author_type": "business_owner",
+    "content": "What I used to underestimate when choosing a payment orchestration platform\n\nI used to judge a payment orchestration platform by what looked the most impressive in a demo. I mean all the obvious things: the number of integrations, routing logic, retries, and dashboard views.\n\nBut the deeper I got into it, the more I realized how many important things I had either underestimated or missed completely, but it turned out you only see their real cost later.\n\n**Full visibility across multiple providers**\n\nOnce you have multiple providers, you want and need to clearly see what is happening across the whole setup. That changes how you think about reporting, declines, reconciliation, and control.\n\nI learned this the hard way. In one setup, we could see that performance was slipping, but not clearly enough to understand where the issue was coming from, which provider was underperforming, which routes were causing the drop, or how much it was really costing us. We ended up wasting a lot of time on manual investigation when this should have been visible from the start.\n\n**Ability to scale and add new connectors without delays**\n\nA payment orchestration platform may look fine at first and have the connectors you need at the time. But in my experience, sooner or later you will need to add a new provider if you plan to expand to local markets, launch another payment method, adjust routing rules, or support a different business model.\n\nAnd if the setup is rigid, that becomes expensive very quickly. In one case, I had to wait almost one month just to add a new connector, and that alone delayed the launch much more than anyone expected. That was the moment I started looking at flexibility very differently, as something that should be at the core of the software.\n\nThat was the biggest shift for me: I stopped focusing only on what looks good on the surface and started paying more attention to what will still work when the business grows.\n\nSo, my priorities now are on connector coverage",
+    "title": "What I used to underestimate when choosing a payment orchestration platform",
+    "engagement": {
+      "upvotes": 20,
+      "comments": 26,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:43:59.875137+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1m0ecnk/realistically_can_i_start_a_digital_wallet/",
+    "author_type": "unknown",
+    "content": "Realistically can I start a digital wallet / digital payments platform in Europe with 4 people and a maximum of 300,000 Euros?\n\nRealistically can I start a digital wallet / digital payments platform in Europe with 4 people and a maximum of 300,000 Euros?\n\nI have found a niche in the market.\n\nTop comments:\nYes. Use Modulr/Swan/Railsr. You\u2019ll need to make sure one of the four know the regulations and can make the BaaS provider comfortable.  \n\nIf you need card issuing, that adds cost but still possible within budget\n---\nNot impossible but you have some selling to do. Getting a bank to sponsor your program will be the big lift. One of our bank partners just sponsored a very early stage company and they had a weak balance sheet - but the bank CEO believed in the product/concept. Not impossible.\n---\nIf you need additional funding I can connect you with VCs that support such projects. Drop me a message",
+    "title": "Realistically can I start a digital wallet / digital payments platform in Europe with 4 people and a maximum of 300,000 Euros?",
+    "engagement": {
+      "upvotes": 23,
+      "comments": 25,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:01.060252+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1qv0gjy/kyc_document_verification_how_granular_should/",
+    "author_type": "unknown",
+    "content": "KYC document verification, how granular should fraud detection be?\n\nFor fintechs handling KYC:\u00a0We're building a customer onboarding flow requiring proof of address and business documentation. Compliance wants \"document authenticity verification\" but we're struggling to define what that means technically.\n\nIs it enough to validate extracted data matches expected format? Or do we need actual forgery detection (checking if PDF was tampered with, validating document structure, metadata integrity)?\n\nCurrent vendor does OCR + basic format checks. Compliance says that's insufficient for detecting sophisticated fakes. But building forensic document analysis in-house seems extreme.\n\nWhere's the reasonable middle ground for document fraud prevention in regulated industries?\n\nTop comments:\nOCR plus format checks is literally just reading the document. That's not fraud detection at all.\n---\nWent through this exact debate last quarter. Compliance kept saying \"we need more\" without defining what more meant technically. Eventually mapped out attack types we actually faced versus theoretical ones and built detection around real threats. \n\nTurns out most document fraud hitting regulated companies isn't sophisticated at all, it's recycled templates and edited PDFs. Save the forensic analysis budget for the cases that need it.\n---\nOCR catches what the document says, not whether it's authentic. The forensic piece needs to run parallel, not sequential. We had similar pushback until switching to au10tix where document structure validation and tampering detection happen during the same verification pass instead of after. Turns out most sophisticated fakes fail multiple checks simultaneously, you just need tools that actually look for those signals instead of trusting extracted text matches format.",
+    "title": "KYC document verification, how granular should fraud detection be?",
+    "engagement": {
+      "upvotes": 13,
+      "comments": 26,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:02.267965+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1nflglx/building_a_payment_gateway_in_morocco_whitelabel/",
+    "author_type": "unknown",
+    "content": "Building a payment gateway in Morocco \u2014 white-label vs Stripe-lite, licensing questions\n\nHey everyone,\n\nI\u2019m part of a small team of 3 software engineers in Morocco, and we\u2019re exploring building a payment processing platform (similar to Stripe but localized for Moroccan businesses).\n\nWe\u2019ve done some research and here\u2019s what we\u2019ve learned so far:\n\t\u2022\tIn Morocco, Bank Al-Maghrib requires a PSP (payment institution) license to operate legally.\n\t\u2022\tTransaction fees are capped at 0.65% for local card payments.\n\t\u2022\tSolutions like Stripe-lite (where you build on top of Stripe) aren\u2019t officially available in Morocco.\n\t\u2022\tA possible route is using a white-label provider (like BoxoPay, Rapyd, etc.), but it seems we\u2019d still need to get the Moroccan PSP license from the central bank.\n\t\u2022\tOur main goal: provide custom APIs, merchant dashboards, and webhooks, but avoid handling PCI-DSS directly if possible.\n\nWhat I\u2019m trying to figure out is:\n\t1.\tIf we use a white-label solution, do we still need to apply for the full Bank Al-Maghrib license ourselves, or can we operate under their regulatory umbrella?\n\t2.\tHas anyone here gone through the licensing process in Morocco (or a similar emerging market)? What kind of costs and timelines should we expect (excluding coding costs)?\n\t3.\tDo you think starting with a white-label solution is a smart move compared to trying to replicate a Stripe-lite approach from scratch?\n\t4.\tAny advice on talking to acquiring banks in Morocco, or whether there are easier partnerships to explore first?\n\nWe\u2019re still in early planning and want to understand the real regulatory and financial hurdles before we dive in too deep.\n\nAny insights, experiences, or resources would be hugely appreciated \ud83d\ude4f\n\nTop comments:\nDon't know about the Moroccan market but generally this boils down to who is the counterparty. If the merchant is signing a deal with you then you need the license. If the merchant is signing with the real gateway for acquiring and you for facilitation then prob",
+    "title": "Building a payment gateway in Morocco \u2014 white-label vs Stripe-lite, licensing questions",
+    "engagement": {
+      "upvotes": 11,
+      "comments": 27,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:03.501387+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1t2eodp/building_an_api_that_turns_messy_bank/",
+    "author_type": "unknown",
+    "content": "Building an API that turns messy bank transactions into parsable data for AI Agents. Would you use this?\n\nHey everyone,\n\nI\u2019m currently building a fintech venture focused on credit modeling using the Account Aggregator framework, and I hit a massive bottleneck: the raw transaction data from banks is an absolute nightmare.\n\nWhether it's UPI, NEFT, or standard POS swipes, parsing strings like\u00a0`UPI/ZOMATO/123456/PAYMENT`\u00a0or\u00a0`POS/DOMINOS/NEW DELHI`\u00a0into usable data requires writing insane custom rules. Trying to pass thousands of these raw strings into an LLM completely blows up the context window, introduces hallucinations, and spikes costs.\n\nBecause I need this for my own risk engine, I\u2019m spinning out the core parsing logic into a standalone API designed explicitly for automated workflows, AI agents, and fintech dashboards.\n\n**Here is exactly what it does:**\n\nYou send it a batch of messy transaction strings or a raw CSV export.\n\nInstead of returning a wall of text, it instantly cleans it and gives you back structured data. For example, if you send it\u00a0`UPI/SWIGGY/987654321/OrderPayment`, it tells you:\n\n* The exact merchant is\u00a0**Swiggy**.\n* The category is\u00a0**Food &amp; Beverage**.\n* The transaction type is a\u00a0**Debit**.\n* And it gives a\u00a0**Confidence Score**\u00a0so you know how accurate the categorization is.\n\n**How it works under the hood:**\u00a0It\u2019s completely headless, no clunky dashboard, no UI. It uses a heavily optimized Python rule engine to handle 90% of the cleaning locally in milliseconds (so there is zero AI latency or high compute cost). It only falls back to a lightweight model for the weird, edge case transactions. It's built for machines to read and use instantly.\n\n**I have three questions for founders and builders in this space:**\n\n1. **Is this a hair on fire problem for you?**\u00a0Are you currently wrestling with raw bank statement parsing for automated bookkeeping, expense tracking, or credit models?\n2. **Pricing model:**\u00a0Because this is built for automated systems, ",
+    "title": "Building an API that turns messy bank transactions into parsable data for AI Agents. Would you use this?",
+    "engagement": {
+      "upvotes": 13,
+      "comments": 26,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:04.738751+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1nm8ecf/fintech_paytech_experience/",
+    "author_type": "unknown",
+    "content": "Fintech - PayTech Experience\n\nThis is all the certificates in my CV. I am currently working in the banking and finance sector but have not yet started any hands-on FinTech or PayTech tasks. I would appreciate your guidance on how and where I can gain practical experience, and whom I should reach out to.\n\nCertifications:\n\n-FINTECH360 Programme - Centre for Finance, Technology and Entrepreneurship (CFTE)\n\n-The Future of Payment Technologies - University of Michigan\n\n-FinTech Security and Regulation (RegTech) - The University of Hong Kong (HKUX)\n\n-Fintech: Shaping the Financial World - Massachusetts Institute of\n\n-Technology (MIT)\n\n-Digital Banking-Masterclass &amp; Introduction to Fintech-Udemy\n\n-Cards and Payment Domain - Udemy.\n\n-API and Web Service Introduction - Udemy\n\n-PCI DSS 4.0 Compliance Masterclass-Foundation of Mastery - Udemy\n\n-Mastering SWIFT Messaging: From MT to ISO 20022-\n\nTop comments:\nFor Paytech, try implementing products from Stripe, Adyen, etc in a test environment. It\u2019ll give you hands on experience to see why it\u2019s like to implemen in a no code/ low code environment. If you have coding experience, then try practicing your coding. Implement different products that are available. That\u2019ll give you direct hands on experience. Overlay that with the strategic thinking about why the products are built in a particular way and how does this tie into industry trends like open banki",
+    "title": "Fintech - PayTech Experience",
+    "engagement": {
+      "upvotes": 20,
+      "comments": 22,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:05.929567+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1sl4b9p/pain_points_in_industry/",
+    "author_type": "unknown",
+    "content": "pain points in industry\n\nI am making a case study around fintech pain points like where people get a nerve in a fintech . can anybody mention that . thanks in advance .\n\nTop comments:\nThe KYC verification process is absolutely nightmare - takes forever and sometimes fails for no clear reason, especially when you need access to your money quickly\n---\nhigh fees, slow transfers, bad UX, hidden charges, and random account restrictions. People hate fintech when moving money feels harder than it should be.\n---\nLack of open banking in developed countries. Bro, just use AI for this.",
+    "title": "pain points in industry",
+    "engagement": {
+      "upvotes": 14,
+      "comments": 21,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:07.102566+00:00",
+    "pain_point_signals": [
+      "pain points in industry  I am making a case study around fintech pain points like where people get a nerve in a fintech"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1p6j9g6/why_are_fintechs_adopting_ai_compliance_agents/",
+    "author_type": "operator",
+    "content": "Why are fintechs adopting AI compliance agents for KYC/AML in 2025 and beyond ??\n\nhey everyone, hope your week is going ok. i'm digging into a question that\u2019s been cropping up a lot on my team: what\u2019s really driving fintechs to adopt agent\u2011based AI solutions for compliance (KYC, AML) in 2025 and beyond, not just the usual rule engines or dashboards?\n\nhere\u2019s the pain we feel:\n\n* Onboarding volumes explode, alerts multiply + docs pile up, yet risk and regulation and audit pressure keep growing. According to a recent report, 70% of firms lost clients due to slow onboarding in 2025.\n* Traditional compliance tools ( rule engines, static workflows ) struggle to keep up with dynamic risk vectors like synthetic IDs, generative fraud, sanctions evasion.\n* Fintechs can\u2019t hire analysts fast enough. cost, retention, training all tax operations.\n* Regulatory expectations are shifting: they want real-time, data\u2011driven, auditable compliance, not checklists.\n\nSo the main hypothesis is: fintechs are turning to AI compliance agents because these systems promise to execute workflows end\u2011to\u2011end, not just flag issues. They can integrate doc review, decision\u2011making, case orchestration, and audit trails in one chain.\n\nif you\u2019ve gone down this path ( or even evaluated it ), i would love to hear:\n\n* What was the trigger for your team? ( volume, cost, risk ? )\n* Where did you apply agents first? Onboarding? Alerts? SARs ?\n* What measurable difference did you actually see ( speed, false positives, headcount) ?\n\nlooking forward to a productive exchange with all of you!!\n\nTop comments:\nwe hit that same inflection point mid this year, in our case onboarding was taking weeks, analysts were cycling through repetitive alerts, and compliance review queues kept stacking. headcount wasn\u2019t the answer anymore and we\u2019d already burned out half the junior team ( bad leadership decisions ). what actually pushed us to try AI agents was less about \u201cgoing cutting edge\u201d and more about survival. we weren\u2019t looki",
+    "title": "Why are fintechs adopting AI compliance agents for KYC/AML in 2025 and beyond ??",
+    "engagement": {
+      "upvotes": 23,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:08.261988+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/payments",
+    "url": "https://www.reddit.com/r/payments/comments/1t3cxfs/chargebacks_are_stealing_hours_and_our_team_cant/",
+    "author_type": "operator",
+    "content": "Chargebacks are stealing hours and our team can\u2019t keep up\n\nOur small team is getting crushed by chargebacks. every day its hours collecting receipts, writing up these long dispute responses, pulling transaction data from stripe and paypal, then submitting everything through the banks portal. one chargeback can take 2 hours easy, and we are seeing 10 15 a week now that volume picked up.\n\nits not even the money, its the time sink. we are all staying late just to keep up also tried templates but banks keep rejecting half of them anyway.\n\nis there some tool that actually handles the whole thing?\n\nTop comments:\nBeen there with the endless dispute grind, especially when banks picky about submissions. checked out chargeflow recently, they automate pulling transaction data from stripe and paypal, even writes up responses based on ai that matches bank rules.\n---\nWe cut ours by reviewing patterns in disputes, like common reasons customers claim. but yeah, manual work is brutal. op, you mentioned volume picked up, so u need to check on changes that you made on your sales that brought you on more chargebacks\n---\nWe went through similar thing couple months back, pulling all that stripe data manually and writing responses late into night. its frustrating when volume picks up and suddenly youre drowning. I suggest u try any prevention stuff like better fraud checks at checkout.",
+    "title": "Chargebacks are stealing hours and our team can\u2019t keep up",
+    "engagement": {
+      "upvotes": 15,
+      "comments": 19,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:09.485483+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1nepvff/looking_for_bankingasaservice_baas_partner/",
+    "author_type": "unknown",
+    "content": "Looking for Banking-as-a-Service (BaaS) partner\n\nHey everyone,\n\nI\u2019m working on a fintech product and need to choose a Banking-as-a-Service (BaaS) partner. Basically, I need to be able to **hold individual users\u2019 funds, make money from it, and handle the compliance side properly**.\n\nI\u2019m looking for a provider that offers:\n\n* Custodial (FBO) accounts for holding user funds.\n* FDIC insurance via partner banks.\n* **Float revenue** (so the pooled funds generate interest).\n* Debit card issuing (ideally with Apple Pay integration).\n* Instant transfer options for payouts.\n\nI\u2019ve been researching Unit, Treasury Prime, Synapse, Rize, Solid, and Stripe Treasury.\n\nFor those of you who\u2019ve launched with a BaaS provider:\n\n* Which one did you go with and why?\n* Any red flags I should know about (fees, contracts, compliance, etc.)?\n* How easy was it to set up float revenue in practice?\n\nWould love to hear your recommendations and experiences before I commit.\n\nThanks!\n\nTop comments:\nWorking at a company that solves tough engineering problems for startups and researchers, and I've seen enough fintech teams go through this exact decision to have some strong opinions.\n\nSynapse is basically dead in the water right now after their recent meltdown, so scratch that one off your list immediately. Treasury Prime and Unit are the two that our clients have had the most success with, but for very different reasons.\n\nUnit's API is cleaner and their developer experience doesn't make you \n---\nSynctera is another good option. Not sure they have the Apple Pay integration though. \n\nCustodial FBOs \nFDIC through banking partners \nDebit Cards\nOCT enabled \n\nI believe Ingo Money is also starting to offer BaaS\n---\nI think i can help you out. Dm me",
+    "title": "Looking for Banking-as-a-Service (BaaS) partner",
+    "engagement": {
+      "upvotes": 8,
+      "comments": 21,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:10.665419+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1sguikz/running_wire_and_stablecoin_rails_in_parallel/",
+    "author_type": "unknown",
+    "content": "Running wire and stablecoin rails in parallel sounds clean in theory but the orchestration logic is messier than anyone admits\n\nWe're adding stablecoin as a rail option to an existing payment product that currently runs on traditional wires. The plan is to run both in parallel for a period, route based on geo and amount, and eventually migrate volume as confidence builds. In theory this sounds straightforward but balancing between the two is turning into the hard part.\n\nThe specific problems: routing logic when one rail fails mid transaction and you need to fall back to the other without the customer seeing it. Reconciliation when two different rails produce two different data formats and settlement confirmation timelines. And customer experience consistency when the same payment type resolves in 15 minutes via stablecoin and 3 days via wire depending on which rail it hit.\n\nWhat payment orchestration platforms actually support stablecoins well enough to handle this cleanly or is everyone building the routing layer themselves?\n\nTop comments:\nThe fallback problem is the one that bites everyone. It sounds like a simple if then routing rule until youre mid transaction and you have to decide whether to retry the same rail, fail over to the other rail, or surface the failure to the customer. Each of those choices has different reconciliation and compliance implications and most platforms don't have a clean opinion on it.\n---\nEveryone is building the routing layer themselves. The payment orchestration platforms that exist weren't designed for stablecoin rails, and the stablecoin infrastructure providers don't provide orchestration across traditional rails.\n\nThe mid-transaction fallback problem is where most teams underestimate complexity. A wire failure before submission is clean, you just route to stablecoin. A wire that's been submitted but hasn't settled is ugly. You can't easily cancel it, you don't know if it wi\n---\nThe data format problem is underrated. Wire settleme",
+    "title": "Running wire and stablecoin rails in parallel sounds clean in theory but the orchestration logic is messier than anyone admits",
+    "engagement": {
+      "upvotes": 17,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:11.832633+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Banking",
+    "url": "https://www.reddit.com/r/Banking/comments/1qmq0tx/is_ai_actually_helping_your_team/",
+    "author_type": "operator",
+    "content": "Is ai actually helping your team?\n\nI\u2019ve been working in fintech compliance for a few years now and it feels like ai is suddenly everywhere in this space.\n\nI get that it\u2019s supposed to produce fewer false positives and minimize manual work, but when you\u2019re actually sitting in the queue day to day, most alerts still need a human to look at them. especially anything even slightly high risk.\n\nI\u2019m genuinely curious if ai automation has actually helped anyone in banking compliance in a meaningful way or if this is all just marketing noise?\n\nfintech is such a heavily regulated industry, i fail to see how ai is going to make much of a difference to our workloads\u2026\n\nTop comments:\nWhen the hype dies down and AI actually works well, we shouldn't even see it. It should just be baked into the functionality of our applications so that they anticipate what we want to do without us ever having to ask the AI agent to do anything.\n---\nNot in compliance but in training and development at a financial institution. AI has actually helped us a ton, it's helping write courses faster than ever and we have been building different AI agents to help get bankers solutions to any questions they have. It's actually been a lot of fun!\n---\nYes and no.  AI spreading for financials is starting to pop up and it does an okay job on easy stuff, but is riddled with errors on anything slightly complex.  Managers are using AI to write performance reviews (love the personal touch here).  Some analysts are using it to do credit write ups and making mistakes.  \n\nMy opinion, it slightly helps your productivity right now but isn\u2019t a substitute for a person.  I don\u2019t see how these AI companies can pass on any meaningful costs yet since you stil",
+    "title": "Is ai actually helping your team?",
+    "engagement": {
+      "upvotes": 29,
+      "comments": 11,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:12.985958+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1shbkm2/what_fbo_sponsor_bank_are_you_using_as_a_startup/",
+    "author_type": "unknown",
+    "content": "What FBO / sponsor bank are you using as a startup fintech?\n\nI\u2019ve been trying to figure this out for a few months now and keep hitting a wall.\n\nI\u2019m building a wallet product and already using Plaid to connect bank accounts, but I\u2019m stuck on the part where I actually need to hold user funds (FBO setup).\n\nIt feels like most sponsor banks don\u2019t want to work with startups unless you already have traction or volume.\n\nFor those who\u2019ve actually gone through this:\n\n* what bank or setup did you end up using?\n* did you go directly with a bank or through a provider?\n* anything that worked at MVP stage?\n\nAlso trying to think ahead for US + Europe (France), so if you\u2019ve dealt with that too I\u2019d love to hear how you approached it.\n\nNot looking for general advice, just trying to hear what people actually used and what worked.\n\nTop comments:\nYou\u2019ll need a bit of runway, the baas provider is gonna cost 100-500k to get started. The sponsor bank will make a bet on you and want to see a solid team + 12m runway. Your compliance consultants will cost 100-500k until you hire in-house compliance. Then SOC2, etc.\n---\nLook through the service agreements for fintechs and it will clearly list out their sponsor banks\n\nBe careful on the FBO structure and read the rules/regs so you truly understand how you\u2019re treasury function needs to be put together.\n\nIt\u2019s much more than just putting customer funds in FBOs.\n---\nTry Column, Lead, Cross River.",
+    "title": "What FBO / sponsor bank are you using as a startup fintech?",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 22,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:14.171443+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1tafucm/small_fintech_team_when_should_we_bring_in_hsmkms/",
+    "author_type": "unknown",
+    "content": "Small fintech team: when should we bring in HSM/KMS specialists instead of relying on managed cloud HSM?\n\nWe\u2019re a small B2B payments/software company, 8 people total. Mostly backend/product, no full-time security engineer yet. Up to now we\u2019ve mostly built around payment APIs and processor integrations, but starting to talk with larger financial clients who ask more serious questions about encryption, key custody, audit logs, rotation, PCI scope, HSM-backed operations, etc.  \n  \nWe are not processing PINs ourselves, and we\u2019re definitely not trying to roll our own crypto. But clients/partners are asking whether our platform can support proper HSM software development workflows and longer-term Key management systems (KMS) development - things like secure key generation, key storage, key rotation, access controls, auditability, and maybe EMV/PIN block type stuff later.  \n  \nFor a small fintech at our stage, what\u2019s the practical path here?  \n  \nIs it normal to start with managed/cloud HSM or cloud KMS, with help from a consultant, or do banks/processors usually expect physical payment HSM setups like Thales/Utimaco/Futurex once you get serious?  \n  \nSome things I need to know now:  \n  \n\\- What mistakes do early fintech teams usually make with key management architecture?  \n\\- Should HSM/KMS design be done before PCI planning, or is it normal to work it out during PCI prep?  \n\\- If we hire outside help, how do we tell if they actually understand payment HSMs and KMS development, not just general cloud security?  \n\\- Are there clear red flags where we should stop building internally and bring in specialists immediately?  \n  \nI\u2019m asking because bad key management seems like one of those things that looks fine in MVP stage, but becomes too massive problem once banks / processors / auditors start digging into it.  \n  \nWould love to hear from anyone who\u2019s gone through this complicated transition before. What would you do differently if you were a small team starting again?\n\nTo",
+    "title": "Small fintech team: when should we bring in HSM/KMS specialists instead of relying on managed cloud HSM?",
+    "engagement": {
+      "upvotes": 21,
+      "comments": 13,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:15.339236+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1rwbwpf/we_almost_failed_a_regulatory_audit_because_of/",
+    "author_type": "operator",
+    "content": "We almost failed a regulatory audit because of our mobile app. Here's what nobody talks about when it comes to compliance and mobile releases.\n\nI've been in compliance for eleven years, for last four at a mid-sized lending company. My job is to make sure that what our app does in the real world matches what we've told regulators it does on paper. That sounds straightforward until you've lived through a release cycle where the engineering team is shipping updates every two weeks and your audit documentation is already three sprints behind.\n\nThe problem nobody really talks about is the gap between what a mobile app is supposed to do and what it actually does on a user's device. In fintech that gap isn't just a quality issue, it's a liability. A broken KYC flow, a payment screen that renders incorrectly on certain devices, an error message that contradicts your disclosed terms, any of those can become a compliance finding. And compliance findings in lending or payments don't stay internal for long.\n\nFor a long time our process relied on QA teams signing off before a release and me trusting that sign-off as evidence of compliance validation. The issue was that the QA team was under pressure to ship and their testing coverage on the mobile side was inconsistent. There was no reliable record of exactly which flows were tested, on which devices, under which conditions. When an auditor asks you to demonstrate that a specific user journey behaved correctly on a specific date, \"our QA team checked it\" is not an answer that holds up.\n\nWe started requiring documented, repeatable test runs for every regulated flow before any release could go out through a tool named Drizz(dot)dev. Login, identity verification, loan application, repayment, transaction history, every flow that touches something a regulator might look at needed a recorded, timestamped execution on a real device. Not a screenshot, not a manual tester's notes, an actual run with a full log of what happened at each st",
+    "title": "We almost failed a regulatory audit because of our mobile app. Here's what nobody talks about when it comes to compliance and mobile releases.",
+    "engagement": {
+      "upvotes": 14,
+      "comments": 16,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:16.507846+00:00",
+    "pain_point_signals": [
+      "A broken KYC flow, a payment screen that renders incorrectly on certain devices, an error message that contradicts your disclosed terms, any of those can become a compliance finding"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1rrij4d/we_found_5_unapproved_ai_meeting_tools_running/",
+    "author_type": "unknown",
+    "content": "We found 5 unapproved AI meeting tools running across our fintech company\n\nAbout 150 people. Compliance ran a review of AI meeting tools employees were using and the result was a mess. Sales on Gong, product on Otter, random ops people running Fathom individually, engineering using some Chrome extension IT never approved, some folks using Fellow. IR still fully manual because they didn't trust anything.\n\nThe tools individually weren't bad. The problem was AI meeting notes scattered across five or six platforms with five permission models and zero visibility for compliance or IT. Then someone found the Chrome extension engineering was using trains on customer data per its own terms. Months of product discussions and strategy calls fed into model training.\n\nWe consolidated onto fellow company-wide. Zoom and Teams coverage, admin controls for IT, doesn't train on data. Six months later the biggest impact isn't productivity. It's that compliance has one system to audit instead of five vendors with five different data handling policies every quarter. In fintech that's not theoretical.\n\nGetting people off their preferred tool was the harder part. Sales was attached to Gong. Once AI meeting summary quality proved comparable and call notes auto-populated HubSpot the resistance faded.\n\nBet most fintech companies our size have the same shadow AI situation and don't know it yet\n\nTop comments:\nCan everyone install anything? Meeting tools may be the least of your worries.\n---\n80 people. Four AI meeting tools plus Zoom's built-in summary. Client recordings in three systems with three retention policies. Compliance doesn't know yet.",
+    "title": "We found 5 unapproved AI meeting tools running across our fintech company",
+    "engagement": {
+      "upvotes": 13,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:17.713380+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1ta22rm/do_we_really_need_data_warehouse_consulting/",
+    "author_type": "operator",
+    "content": "Do we really need data warehouse consulting services or can we build it ourselves?\n\nOur current data setup is a complete disaster, and I\u2019ve finally reached a breaking point. Right now, we have marketing data in one place, sales in another, and our production DB somewhere else entirely, making it impossible to get a \"single source of truth\" without three days of manual SQL merging. I\u2019m under heavy pressure from the C-suite to build out a centralized architecture, but my small team is already buried under daily ad-hoc requests and pipeline maintenance. I\u2019m seriously trying to weigh the pros and cons of hiring external data warehouse consulting services versus attempting to grit our teeth and build this thing in-house.\n\nBuilding it ourselves sounds like a great way to keep the knowledge internal and save on upfront costs, but I\u2019m terrified we\u2019ll mess up the schema design or choose a tech stack that doesn't scale. The last thing I want is to spend six months building a legacy mess that we have to rebuild in 2027. On the flip side, I've heard that consultants can be hit-or-miss - sometimes they deliver a masterpiece, and other times they just leave behind a bunch of expensive, over-engineered documentation that nobody knows how to use.\n\nAnd here is what I am interested in:\n\n\\- Do [data warehouse consulting services](https://www.n-ix.com/data-warehouse-consulting/) actually help with the long-term strategy, or are they just there to set up a few basic ETL pipelines and leave?\n\n\\- How do you justify the high cost of external consultants to a finance team that thinks \"it's just a database\"?\n\n\\- What are the common pitfalls companies face when trying to build their first warehouse without outside help?\n\n\\- Is it realistic to expect a 3-person data team to design, build, and maintain a modern data stack from scratch while still handling their regular work?\n\n\\- How do you handle the knowledge transfer to ensure we aren't tethered to the consulting firm forever?\n\n\\- If we go th",
+    "title": "Do we really need data warehouse consulting services or can we build it ourselves?",
+    "engagement": {
+      "upvotes": 6,
+      "comments": 19,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:18.901683+00:00",
+    "pain_point_signals": [
+      "And here is what I am interested in:  \\- Do [data warehouse consulting services](https://www.n-ix.com/data-warehouse-consulting/) actually help with the long-term strategy, or are they just there to s"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1swi6fv/if_youre_a_fintech_founder_whats_actually_slowing/",
+    "author_type": "unknown",
+    "content": "If you're a fintech founder, what\u2019s actually slowing you down  right now?\n\nIf you\u2019re pre-seed \u2192 Series B, what\u2019s the *real* thing getting in the way of growth?\n\nNot fundraising or \u201chiring is hard\u201d\u2014I mean the stuff that shows up in the product and operations, like:\n\n* Users dropping off in places that are harder to fix than expected\n* Customers not adopting what you\u2019ve built (even when it *should* solve their problem)\n* Constant tradeoffs between moving fast vs compliance vs engineering cost\n\nFeels like a lot of teams hit a wall going from early traction \u2192 repeatable growth, and it shows up earlier than expected.\n\nCurious what\u2019s actually been a blocker for you.\n\nTop comments:\nIt's marketing. Getting users and adoption. Most founders in that position burn up runway on marketing and it doesn't pay off. \n\nIf you don't have customers before you start, you're doomed.\n---\nMost teams think they\u2019re hitting a growth wall but it\u2019s really the shift from handled&gt; unhandled systems. early on, things \u201cwork\u201d because: edge cases are handled manually, founders make the risk calls, ops quietly fills the gaps then volume increases  \nedge cases multiply  \ndecisions can\u2019t all go through you\n\nthat\u2019s where it breaks: no clear rules for approvals, exceptions pile up, teams slow things down to stay safe. growth doesn\u2019t stall because demand drops it stalls because the system can\u2019\n---\nYou can build a great product, but if KYC/compliance makes onboarding painful, users drop before they ever experience the value. And if you loosen it too much, risk/compliance becomes a problem.\n\nAnother one is solving a \u201cclear\u201d problem without changing user behavior. People stick to old habits, even when your product is objectively better.\n\nI work in fintech/remittance, and honestly the constant tradeoff between speed, compliance, and margins is probably the hardest thing to balance long term.",
+    "title": "If you're a fintech founder, what\u2019s actually slowing you down  right now?",
+    "engagement": {
+      "upvotes": 8,
+      "comments": 18,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:20.060232+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1n7fpov/how_do_you_detect_fake_users_before_they_trigger/",
+    "author_type": "unknown",
+    "content": "How do you detect fake users before they trigger payment fraud?\n\nMost fraud prevention tools seem to focus on transactions or chargebacks, but we want to catch bad actors earlier, ideally before they even reach checkout.\n\nWe\u2019ve seen fake users testing cards, abusing discounts, and creating multiple accounts.  \nWhat tools or strategies are people using to flag this type of behavior in real time?\n\nTop comments:\nThe best prevention is not letting them onboard at all. There are some good suggestions in the comments already, but it\u2019s a constantly evolving practice to keep bad actors off a platform and it\u2019s difficult to scale this if it\u2019s not your primary focus. Fraud vendors are going to have a lot more data points and actually help you build an identity graph of all potential or active users. The risk scoring they offer also gives you flexibility on how to handle users beyond a strict yes or no.\n\nYou can\n---\nIP intelligence + monitor actions of every user (link failed attempts to an ip or a session, device id etc). Some outsource fraud monitoring to tools like Stripe radar but I personally find it very expensive\n---\nIt\u2019s a combination of different things tbh. What works for one platform may not work for another but the basics include device fingerprinting + ip address analysis + dynamic limits. I\u2019ve built ( and exited ) fraud prevention products &amp; startups in the past. Happy to help",
+    "title": "How do you detect fake users before they trigger payment fraud?",
+    "engagement": {
+      "upvotes": 3,
+      "comments": 20,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:21.244182+00:00",
+    "pain_point_signals": [
+      "There are some good suggestions in the comments already, but it\u2019s a constantly evolving practice to keep bad actors off a platform and it\u2019s difficult to scale this if it\u2019s not your primary focus"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/payments",
+    "url": "https://www.reddit.com/r/payments/comments/1simjor/chargeback_alerts_eating_my_revenue_any_tools/",
+    "author_type": "unknown",
+    "content": "Chargeback alerts eating my revenue, any tools that catch them early without a full team?\n\nRunning a small online store and these chargebacks are killing me. last month lost like 15 percent revenue just from disputes i didnt even see coming. tried quickbooks rules but they miss half the stuff, zaps half work until apis change. googled around and saw some reddit threads on automation but nothing specific. anyone got a tool that sends chargeback alerts right when they hit, pulls the data and fights them auto? no way im hiring a team for this.\n\nTop comments:\nMan, chargebacks are the worst for small shops like yours. i had the same issue last year, losing chunks of revenue on stuff i couldnt even track properly. quickbooks rules helped a bit but yeah, they miss a ton.\n---\nThis sounds exactly like what i went through running my side hustle store. 15 percent is brutal, especially when youre solo.\n---\nYes there are tools for this like chargeblast, fraud deflect, Riskified. All of them screen transactions and block suspicious ones. Riskified goes a step further and will insure you against any transactions that become chargebacks that they screened and allowed and will cover the cost of those charges.\n\nHope this is helpful. Happy to help further if you need.",
+    "title": "Chargeback alerts eating my revenue, any tools that catch them early without a full team?",
+    "engagement": {
+      "upvotes": 4,
+      "comments": 19,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:22.496626+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1pq4tni/bad_experience_with_a_dev_shop_that_had_fintech/",
+    "author_type": "unknown",
+    "content": "Bad experience with a dev shop that \u201chad fintech experience\u201d (EU launch). How do you vet teams that actually understand compliance?\n\nWe are a US based team building a fintech product and we just learned the hard way that \u201cwe\u2019ve built for fintech\u201d doesn\u2019t mean \u201cwe understand fintech.\u201d\n\nWe hired a dev shop that looked great on paper but a few months in we start prepping for an EU rollout and bring in outside counsel + compliance to sanity-check the architecture.\n\nAnd yeah\u2026 that wasnt fun. Stuff like data residency assumptions, audit trails, access controls, logging, and how we handle KYC/AML workflows was either hand-wavy or bolted on as an afterthought. Nobody was malicious, it just felt like they were building a normal saas app and hoping compliance would just be a checklist at the end or something.\n\nNow we\u2019re rewriting parts of the stack and it\u2019s making me rethink the way we pick engineering partners.\n\nIf you\u2019ve hired external dev teams for fintech, how do you vet whether they actually get regulatory requirements (KYC/AML, GDPR, auditability, security controls, vendor risk...)? What were the signals that a team is actually legit vs just saying the right words?\n\nTop comments:\nI\u2019ve worked with internal and external dev teams all over the world and the key part to getting this done correctly is having detailed business requirements documented which includes all aspects of the regulatory requirements. A high-level overview, context, who the regulators are and how they all impact each others as well as why it\u2019s important should also be included. I\u2019d say in this case you\u2019ll have to take a lot of the blame and ensure that you proper document this going forward for each and\n---\nBeen there. The gap between \"we've done fintech\" and \"we understand regional compliance nuance\" is massive, especially for EU rollouts.\n\n\n\nHere's what I've learned vetting teams for cross-border launches (we work across SEA, MENA, ASPAC at FyscalTech, so similar complexity):\n\n\n\nAsk them to walk you ",
+    "title": "Bad experience with a dev shop that \u201chad fintech experience\u201d (EU launch). How do you vet teams that actually understand compliance?",
+    "engagement": {
+      "upvotes": 23,
+      "comments": 9,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:23.656780+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1peshbx/stablecoins_in_remittance_overhyped_or_the_future/",
+    "author_type": "unknown",
+    "content": "Stablecoins in Remittance: Overhyped or the Future of Cross-Border Payments?\n\nThe $685+ billion global remittance market is a critical lifeline, yet it remains burdened by slow transfers, high fees, and opaque FX rates. Stablecoins, acting as digital bridges between traditional finance and blockchain, have emerged as a compelling solution. The question for FinTech professionals is: are they an overhyped novelty or the inevitable future infrastructure?\n\n# Defining the Present Context of Stablecoin Remittance\n\n**Stable Coins** are cryptocurrencies designed to maintain a stable value, typically pegged 1:1 to a fiat currency like the US Dollar (e.g., USDT, USDC). This fiat-peg is critical, eliminating the volatility that makes assets like Bitcoin unsuitable for day-to-day transfers and payroll.\n\nIn the remittance space, stablecoins are primarily used in a \"stablecoin sandwich\" model: fiat is converted to a stablecoin (on-ramp), the stablecoin is instantly transferred across borders via blockchain, and then converted back to the recipient's local fiat currency (off-ramp).\n\nThe current remittance system relies on the decades-old correspondent banking network (SWIFT), which involves multiple intermediaries, pre-funding of nostro/vostro accounts, and batch-settlement windows. This friction results in the global average cost for sending a $200 remittance still exceeding **6.6%**, according to recent reports.\n\n# The Clear Advantages: Speed and Cost\n\nThe value proposition of stablecoins is straightforward and impactful:\n\n* **Near-Instant Settlement:** Traditional transfers can take 1\u20135 business days. Stablecoin transactions on high-throughput blockchains (like Solana, Stellar, or Polygon) can settle in **minutes**, sometimes even seconds, operating 24/7/365.\n* **Drastic Cost Reduction:** By eliminating correspondent bank intermediaries, the marginal cost of a stablecoin transfer can be reduced to fractions of a penny. Even with on/off-ramp and FX fees factored in, total remitt",
+    "title": "Stablecoins in Remittance: Overhyped or the Future of Cross-Border Payments?",
+    "engagement": {
+      "upvotes": 10,
+      "comments": 14,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:24.859533+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1oy1mpr/payments_pain_points_whats_still_broken_in_2025/",
+    "author_type": "unknown",
+    "content": "Payments Pain Points: What\u2019s Still Broken in 2025?\n\nI\u2019ve spent this year knee-deep in payments ops, building for both high-risk merchants and mainstream platforms. Despite all the progress, the same pain points keep coming up: slow or missing payouts, inconsistent risk decisions, compliance bottlenecks, and the constant challenge of balancing conversion with security.\n\nI\u2019m curious about what\u2019s still broken for you in payments or money movement?\n\n* Are outages or settlement delays your top headache?\n* Is fraud evolving faster than your tools?\n* How are you handling alternative rails (crypto, P2P, new PSPs)?\n* Are open banking APIs actually creating new value or just more layers of checks?\n* If you\u2019ve tried rolling your own infrastructure, what did you learn the hard way?\n\nWould love to crowdsource up-to-date war stories and tactical advice from builders, ops, and anyone wrangling payment rails in real time. Feel free to drop experiences, rants, or optimistic takes.... bonus for anyone willing to share practical, non-obvious fixes or lessons.\n\nLet\u2019s benchmark the actual state of payments innovation vs. the pitch decks.\n\nLooking forward to the debate! since we are approaching towards 2026 a new year expective some more new innovative changes or solutions.\n\nTop comments:\nI think my crystal ball is that everyone is adopting stable coins (some for good reasons) but a big one being less regulation, but now all the banks are entering the market and my spidysense is that regulation will quickly follow and we\u2019ll be back to where we are today\u2026\n---\nChargeback management\n---\nIt's fraud, as it's always been. But not just the fraud but proving you can prevent it.",
+    "title": "Payments Pain Points: What\u2019s Still Broken in 2025?",
+    "engagement": {
+      "upvotes": 17,
+      "comments": 10,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:26.012238+00:00",
+    "pain_point_signals": [
+      "Payments Pain Points: What\u2019s Still Broken in 2025?  I\u2019ve spent this year knee-deep in payments ops, building for both high-risk merchants and mainstream platforms",
+      "Payments Pain Points: What\u2019s Still Broken in 2025?  I\u2019ve spent this year knee-deep in payments ops, building for both high-risk merchants and mainstream platforms"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/payments",
+    "url": "https://www.reddit.com/r/payments/comments/1sqlh35/need_payment_processor_for_digital_business_with/",
+    "author_type": "unknown",
+    "content": "Need payment processor for digital business with higher chargeback volume\n\nHey everyone,\n\nLooking for real suggestions from people who understand this space.\n\nWe run an online business selling digital products/subscriptions and need a payment processor that can handle a category with higher than average chargeback rates. Sales are growing, but processing has become the bottleneck.\n\nMain issues with current setup:\n\n* Chargebacks above what standard providers seem comfortable with\n* Random reviews and holds\n* Payout delays that affect cash flow\n* Concern about sudden account limits if volume rises\n* Limited support when problems happen\n\nWe\u2019re fully legitimate, clear terms, proper customer support, etc. It just seems like some business models get labeled risky even when they\u2019re operating normally.\n\nWhat we need:\n\n* Processor comfortable with high risk merchants or digital sellers\n* Stable card payments\n* Faster onboarding / realistic underwriting\n* Fraud prevention options\n* Dependable payouts\n* Possible backup option if primary goes down\n\nI\u2019ve been researching a few alternatives and saw some people mention allpays.co for higher risk categories and faster payouts, but I don\u2019t know anyone personally using it yet.\n\nIf you\u2019ve solved something similar, what route worked best for you? Specialist high risk gateway, multiple processors, or something else?\n\nWould appreciate honest recommendations and actual experience.\n\nTop comments:\nHave you considered a crypto payment method?\n---\nwe can handle it when we have some more detail but I dont know how to work on reddit when I leave my contact details they block me\n---\nDepending on where you're located and how much payment volume you do, Nuvei could be an option.",
+    "title": "Need payment processor for digital business with higher chargeback volume",
+    "engagement": {
+      "upvotes": 6,
+      "comments": 16,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:27.177011+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1muedcq/how_are_fintech_companies_making_sure_aidriven/",
+    "author_type": "unknown",
+    "content": "How are fintech companies making sure AI-driven decisions (like credit scoring or fraud detection) stay fair and transparent, instead of just becoming black-box models?\n\nWith AI becoming such a big part of fintech  from automating credit scoring to powering fraud detection how are companies making sure these systems stay transparent and unbiased? I keep wondering if too much reliance on black-box models could hurt trust in financial services. Curious to hear how others see this balance being managed\n\nTop comments:\nYeah the black-box thing is definitely a problem. A lot of fintechs are trying to deal with it by using models they can actually explain (so if you get denied credit, they can tell you why), and doing bias checks so they don\u2019t accidentally screw over certain groups. Plus regulators are starting to crack down, so companies can\u2019t just throw in a mystery AI and call it a day.\n\nAt the end of the day, AI is awesome for catching fraud and speeding up approvals, but if people feel it\u2019s unfair or random\n---\nyou build an assessment methodology (rather just tell it to decide) and ask AI to assess specific score factors one by one, test,  finetune until it makes decisions that seem fair and logical. Some factors you will precalculate and just give for context.\n---\nFintech firms are tackling these challenges by implementing explainable AI (XAI) methods that clarify how models make decisions, conducting regular audits to detect and correct bias, and leveraging diverse, high-quality datasets to minimize discrimination. Many also adhere to regulatory standards for fairness and transparency, while keeping humans in the loop for critical decisions. This combination of automation with accountability ensures trust and reliability in financial services.",
+    "title": "How are fintech companies making sure AI-driven decisions (like credit scoring or fraud detection) stay fair and transparent, instead of just becoming black-box models?",
+    "engagement": {
+      "upvotes": 10,
+      "comments": 14,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:28.317955+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1m7p57n/what_baas_providers_should_i_go_with/",
+    "author_type": "unknown",
+    "content": "What BaaS providers should I go with?\n\nI'm a founder of an early-stage fintech startup with $250k in funding and technical resources in place. We\u2019ve already established payment processing partnerships with **Fiserv**, **Nuvei**, and **Maverick Payments**.\n\nWe're now looking for a **Banking-as-a-Service (BaaS)** provider that can support a developer-led team building in-house and scaling quickly.\n\n# Must-Haves:\n\n* **Card Issuing** (virtual and physical, ideally with control over spend limits, merchant category restrictions, etc.)\n* **ACH support** (credits + debits, with access to real account/routing numbers)\n* **Dedicated Account Numbers** (FBO or direct, required for ledgering funds and settlements)\n* **KYC/KYB flows** (hosted or API-based, for onboarding end users and businesses)\n\n# Nice-to-Haves:\n\n* **Crypto rails** (on/off ramp, custody, or at least crypto-friendly compliance)\n* **IBANs / SEPA / SWIFT support** (for EU/UK international capabilities)\n* **Multicurrency wallet or FX support**\n* **Programmatic card controls** (freeze, limits, tokenization, etc.)\n* **Compliance support** (e.g., fraud monitoring, BSA/AML tools)\n* **Pass-through or custom pricing models**\n\nWe\u2019re building in public, shipping fast, and looking for a partner that supports startups with real traction and serious intent.\n\nIf you're a provider or know one that fits these criteria, feel free to **DM me**. Happy to walk through our roadmap, stack, and setup.\n\nThanks!\n\nTop comments:\nYou need to raise at least 3m usd to be talking about all this mess. Problem number one is card issuing.\n---\nWhich countries do you want to be able to issue cards to?",
+    "title": "What BaaS providers should I go with?",
+    "engagement": {
+      "upvotes": 5,
+      "comments": 16,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:29.505246+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/payments",
+    "url": "https://www.reddit.com/r/payments/comments/1s37jji/just_realized_15k_in_chargebacks_were_from/",
+    "author_type": "operator",
+    "content": "Just realized 15k in chargebacks were from customers i could have saved but ignored the warning signs\n\nI run a small online store, mostly apparel and accessories, pulling in decent volume through ads and email lists. chargebacks have always been this nagging background thing i hated but dealt with by just disputing what i could. last week everything imploded.\n\nlogged into stripe dashboard monday morning and saw 17 chargebacks hit over the weekend, totaling 15k. thats my entire ad budget for the month gone, plus weeks of margin. heart just stopped. started pulling details and realized every single one followed the exact same pattern: order placed late thursday night with a high risk score flashing red in the gateway, shipped anyway because i was rushing to hit quota, then dispute filed 4 days later claiming 'didnt authorize' with zero response to my emails.\n\nthe worst part\u2026 i had this basic alert setup that flags risky transactions over 200 with suspicious ip or billing mismatches. it emailed me every time but i dismissed them as false positives because everyone disputes sometimes right? never followed up with a quick call or holding shipment. now those 17 customers all used the same boilerplate reason and i have zero evidence because i never got them on record.\n\nteam is freaking out, im staring at negative cash flow, and my processor is threatening higher fees unless i tighten up. spent all day manually reviewing past orders and found another 8 at risk sitting there. how do people even survive this. chargebacks really are just free money for buyers and no one prepares you for the volume.\n\nhas anyone turned this around after a hit like this and what tools or processes actually catch these before they bankrupt you or am i just done?\n\nTop comments:\nThis is why i stopped relying just on basic gateways for risk scoring, they flag but dont act. after my own chargeback wave wiped out a months profit, i looked into tools that automate the whole prevention side. chargeflow e",
+    "title": "Just realized 15k in chargebacks were from customers i could have saved but ignored the warning signs",
+    "engagement": {
+      "upvotes": 8,
+      "comments": 14,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:30.666136+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1q4t469/researching_the_best_fraud_detection_software_for/",
+    "author_type": "unknown",
+    "content": "researching the best fraud detection software for 2026, scaling our e commerce platform.\n\nour e commerce business is growing fast, and so are the sophisticated fraud attempts. our current basic rules based system is missing too much and declining good customers. were planning a major upgrade to our fraud prevention stack for 2026 and need to start evaluating the best fraud detection software now.\n\nwe need a solution that can handle payment fraud, account takeover, and promo abuse in real time. machine learning capability that adapts to new fraud patterns is a must. its also critical that it minimizes false positives to protect our conversion rate. we process a high volume of transactions across multiple countries.\n\nif any e commerce managers, risk analysts, or developers have implemented a modern fraud solution recently, id appreciate your hard won insights. we need to build a scalable defense without hurting legitimate sales. any advice is gold.\n\nTop comments:\niDenfy, Stripe Radar, SEON, and Riskified are worth comparing based on volume and regions.\n---\nwhat part of the false positive problem is hurting conversion most right now?\n---\nscaling fast brings all kinds of fraud headaches. If you're looking into real-time protection and account takeover defense, you might also want to look at what Malwarebytes is doing with scam and phishing protection. Their stuff is surprisingly good at catching the more human-engineered angles like fake promos or account phishing before it hits your stack.",
+    "title": "researching the best fraud detection software for 2026, scaling our e commerce platform.",
+    "engagement": {
+      "upvotes": 5,
+      "comments": 16,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:31.811083+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1safbrz/does_ai_financial_advice_actually_have_a_future/",
+    "author_type": "unknown",
+    "content": "Does AI financial advice actually have a future?\n\nBuilding an AI financial advisor targeted at people in Spain and Europe who have savings but don't really know how to invest. Not a neobank, no cards, no accounts. Just advice.\n\n\n\nThe way it works: the AI gets context from your actual financial situation, goals, and portfolio before responding. We pull real macro data (ECB rates, CPI, bond yields) so the advice is grounded in what's happening now, not generic rules. For more complex questions it uses extended thinking to reason through the answer properly instead of just pattern matching.\n\n\n\nThe hard part we keep running into is the trust problem. The model quality is there. But getting someone to actually act on AI advice with real money is a different challenge entirely.\n\n\n\nWhat we're trying to figure out is what would actually make people trust a product like this more. Is it transparency in how the AI reasons? Showing sources? A human in the loop for big decisions? Or is it just time and track record\n\nTop comments:\nthe trust issue is real but i think you're overthinking it a bit. people already follow random advice from reddit and youtube for their investments lol\n\n  \nwhat might work is starting smaller - maybe begin with educational content that shows your reasoning process, then gradually move people toward actionable advice once they see the AI actually knows what it's talking about. transparency helps but track record trumps everything\n---\nI know a lot of people who ask AI for financial advice and share data with it too. I think the bigger problem is getting people to act on it. But that's the case even if it's a human giving advice. So I'd focus on putting out some content that handles objections and highlights the pros/cons of the tool.\n---\nTo gain trust, you have to move past \"black box\" logic and lean into traceable reasoning. If the AI can't show its work with real-time citations, users won't bet their savings on it.  \n  \nIn the European market, a \"Human",
+    "title": "Does AI financial advice actually have a future?",
+    "engagement": {
+      "upvotes": 3,
+      "comments": 16,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:33.015827+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1stn9hx/aml_false_positives_are_costing_us_customers/",
+    "author_type": "unknown",
+    "content": "AML false positives are costing us customers\n\nWe're a small neobank and our AML screening is flagging legitimate transactions at a rate that's starting to hurt retention. The irony is we probably have less actual fraud than the big banks, we just have a provider that's tuned way too conservatively. \n\nCurious how others have approached this tradeoff, especially if you've switched providers because of it.\n\nTop comments:\nBefore switching providers, have you asked your current one to retune. Au10tix gives you visibility into why specific transactions are flagging so the tuning conversation is based on actual data rather than guesswork. Most will retune if you push hard enough.\n---\nThe conservative tuning is not an accident, your provider is protecting themselves from regulatory liability, not optimizing for your retention. \n\nThat misalignment is structural and retuning conversations tend to go nowhere because their incentive is to flag more not less. \n\nSwitching to a provider whose business model aligns with your pass rate is a different conversation entirely.\n---\nI believe some banks only file certain amounts of flagged transactions as cases to further inspection. The system should suggest scores or possibilities and you can sort or rank and pick only highest possible ones.",
+    "title": "AML false positives are costing us customers",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:34.180926+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1t0njcq/tokenization_of_realworld_assets_rwas_is_quietly/",
+    "author_type": "unknown",
+    "content": "Tokenization of real-world assets (RWAs) is quietly moving from narrative to core financial infrastructure.\n\nTokenization of real-world assets (RWAs) is quietly moving from narrative to core financial infrastructure.\n\nWe are seeing traditional finance players increasingly explore on-chain representations of bonds, funds, private credit, and deposits to improve settlement efficiency, liquidity, and access.\n\nRecent signals reinforce this shift: institutions like Ondo Finance are building institutional bridges with legacy infrastructure such as Clearstream, while HSBC is piloting tokenized deposits. At the same time, the European Central Bank has openly acknowledged tokenization as a structural change in financial markets.\n\nRegulatory movement in regions like the UK is also adding momentum, especially around stablecoins and tokenized deposits.\n\nThe direction is becoming clearer: tokenization is not a parallel financial system, it is becoming the underlying rail for parts of traditional finance.\n\nThe shift is gradual, but structural.\n\nTop comments:\nThe shift from narrative to infrastructure is the right direction and what makes this moment different from previous cycles is that the institutions building on-chain rails now are not doing it for the press release but because the settlement efficiency and liquidity benefits are measurable enough to justify the operational complexity.\n\nThe interesting question is not whether tokenisation succeeds but which layer of the stack captures the most value as it does. The asset issuance layer is becomi\n---\nI've been watching this space for a while and the shift from hype to actual plumbing is pretty wild. The biggest hurdle I keep seeing at my old job isn't even the tech, it's just the messy legal framework for cross-border ownership. If we can't standardize the underlying asset rights, does the tokenization part really matter that much? Imo, that is where the real work needs to happen",
+    "title": "Tokenization of real-world assets (RWAs) is quietly moving from narrative to core financial infrastructure.",
+    "engagement": {
+      "upvotes": 9,
+      "comments": 12,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:35.331606+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1mrv5qe/banking_ops_professional_seeking_transition_into/",
+    "author_type": "unknown",
+    "content": "Banking Ops Professional Seeking Transition Into Fintech Payments \u2013 Need Guidance\n\nHi everyone,\n\nI\u2019m 35 years old and have spent the last **13 years working in banking operations**. My experience includes:\n\n* SWIFT transfers &amp; payment processing\n* Letters of Credit &amp; trade operations\n* Reconciliations &amp; settlements\n* AML/KYC compliance (2 years )\n* Training staff and optimizing workflows\n\nI feel I\u2019ve built a strong career in traditional banking, but now I really want to **transition into fintech**. The roles I\u2019m most interested in are:\n\n* **Payment Operations / Settlement &amp; Reconciliation**\n* **Payment Gateway (PSP) Management**\n* **Fraud Prevention / Transaction Monitoring**\n\n\ud83d\udca1 My questions:\n\n1. Is it realistic at my age (35) to make this shift into fintech?\n2. Based on my background, which path fits me best \u2014 **Payment Operations Specialist** or **Fraud/Risk Analyst**?\n3. What **skills, certifications, or platforms** (e.g., Stripe, Adyen, PCI-DSS, SQL, data analysis tools) should I prioritize to strengthen my profile?\n4. Are there **other fintech roles where banking experience is highly valued** that I should consider?\n\nI want to build on my banking expertise while showing recruiters I can adapt to new systems and technologies.\n\nWould love to hear from anyone who\u2019s made a similar move or works in fintech now. Any advice, resources, or guidance would mean a lot \ud83d\ude4f\n\nTop comments:\nhttps://merchantriskcouncil.org/professional-development/get-certified\n\nYou could get this. I think it's 1500.\n\nYou should be easily be able to transition to PSP focused role. Put Sr. payments analyst + job alert on LinkedIn.\n---\nWhat country are you building?\n---\nI work in merchant implementations for a top 5 global payment processor and would definitely consider hiring someone with your background.  In fact, we should be posting a new opening on my team in the coming weeks.  If you are interested, I can share a link to the posting as soon as  it's available.  My team suppor",
+    "title": "Banking Ops Professional Seeking Transition Into Fintech Payments \u2013 Need Guidance",
+    "engagement": {
+      "upvotes": 6,
+      "comments": 14,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-19T04:44:36.523347+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  }
+]

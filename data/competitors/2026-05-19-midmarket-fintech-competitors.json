@@ -1,0 +1,633 @@
+{
+  "metadata": {
+    "industry": "Mid-market Fintech",
+    "research_date": "2026-05-19",
+    "methodology_note": "Competitor profiles synthesized from (a) named vendors in the scraped community data (Synapse, Treasury Prime, Unit, Modulr, Swan, Railsr, Stripe Treasury, Chargeflow, Justt, Alloy, Sift, SmartStream are all mentioned explicitly by community members), and (b) publicly available product/positioning information. Pricing fields marked 'not public' where vendors do not publish; market position based on revenue/funding/community sentiment signals in the data."
+  },
+  "pain_point_1_kyc_aml": {
+    "pain_point": "KYC/AML compliance burden and false-positive calibration",
+    "providers": [
+      {
+        "firm_name": "Alloy",
+        "url": "https://www.alloy.com",
+        "pain_points_addressed": ["KYC/KYB onboarding", "AML transaction monitoring", "ongoing risk decisioning"],
+        "pricing_model": "Subscription + per-check usage; mid-market typically $60k-$300k/yr",
+        "target_market": "Mid-market and enterprise banks + fintechs (US-focused)",
+        "strengths": [
+          "Orchestrates 200+ data sources behind a unified decisioning rules engine (the orchestration layer is the moat)",
+          "Strong post-Synapse positioning — explicitly markets compliance-as-control to sponsor banks",
+          "Mature case management & audit trail features satisfy regulator expectations"
+        ],
+        "weaknesses": [
+          "Pricing is a frequent complaint among smaller mid-market firms (>$60k entry)",
+          "Rules engine still requires significant in-house tuning — many customers complain about false positives unless they invest in implementation",
+          "Limited out-of-box ML — relies on customer to author decisioning logic"
+        ],
+        "differentiation": "Identity orchestration platform — not a single data source, but a router across them with policy-as-code",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Persona",
+        "url": "https://withpersona.com",
+        "pain_points_addressed": ["KYC document verification", "liveness/selfie", "biometric verification", "ongoing monitoring"],
+        "pricing_model": "Per-verification ($1-$5/check typically); enterprise contracts available",
+        "target_market": "SMB through enterprise; strong consumer fintech footprint",
+        "strengths": [
+          "Best-in-class developer experience and dynamic flow builder",
+          "Modular pricing — fintechs only pay for the checks they use",
+          "Strong consumer UX (passing rates often higher than legacy vendors)"
+        ],
+        "weaknesses": [
+          "Less mature B2B/KYB compared to KYC for individuals",
+          "Mid-market fintechs report integration support tapers off post-launch",
+          "Compliance program advisory not included — customers still need internal expertise"
+        ],
+        "differentiation": "Developer-first KYC platform with strong API + UX combination",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Sumsub",
+        "url": "https://sumsub.com",
+        "pain_points_addressed": ["KYC", "KYB", "AML screening", "transaction monitoring", "video identification"],
+        "pricing_model": "Per-verification, volume tiers; mid-market ~$30k-$200k/yr",
+        "target_market": "Global mid-market fintech, crypto, gaming — heavy EMEA/Asia presence",
+        "strengths": [
+          "Broadest international coverage (220+ countries) — strong for cross-border fintechs",
+          "Crypto-friendly compliance posture (Travel Rule support)",
+          "All-in-one suite reduces vendor management burden"
+        ],
+        "weaknesses": [
+          "US enterprise traction weaker than Alloy/Persona — fewer Tier-1 US bank deployments",
+          "Some Reddit/Trustpilot complaints about support latency",
+          "Liveness/document tech can lag specialists like iProov"
+        ],
+        "differentiation": "Global-first; one-stop-shop for fintechs operating outside or beyond US",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Hummingbird",
+        "url": "https://hummingbird.co",
+        "pain_points_addressed": ["AML case management", "SAR filing", "transaction monitoring investigations"],
+        "pricing_model": "Subscription, not public; mid-market $100k+/yr",
+        "target_market": "Mid-market and enterprise compliance teams (post-onboarding focus)",
+        "strengths": [
+          "Purpose-built for compliance analysts (not engineers) — strong workflow tooling",
+          "FinCEN SAR filing automation",
+          "Post-Synapse messaging strong; clear positioning as BSA officer's workbench"
+        ],
+        "weaknesses": [
+          "Doesn't replace the underlying monitoring engine — sits on top of vendor signals",
+          "Smaller integration ecosystem vs. Unit21",
+          "Pricing not aligned with seed/Series A fintechs"
+        ],
+        "differentiation": "Compliance analyst-experience first; pairs well with monitoring vendors",
+        "reviews_sentiment": "positive",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Unit21",
+        "url": "https://unit21.ai",
+        "pain_points_addressed": ["Transaction monitoring", "fraud + AML in one platform", "case management"],
+        "pricing_model": "Subscription, not public; usage-based components",
+        "target_market": "Mid-market fintechs and challenger banks",
+        "strengths": [
+          "No-code rule builder — compliance teams iterate without engineering",
+          "Unified fraud + AML reduces tool sprawl",
+          "Strong customer logos in neobank/payments space"
+        ],
+        "weaknesses": [
+          "Heavy lift to migrate from incumbent vendors",
+          "ML capabilities advertised but customers report rules-engine still does the heavy lifting",
+          "Reliance on customer-supplied data quality"
+        ],
+        "differentiation": "Unifies fraud and AML in a single risk-ops platform",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      }
+    ]
+  },
+  "pain_point_2_baas_sponsor_bank": {
+    "pain_point": "Sponsor bank / BaaS partner risk and integration nightmare",
+    "providers": [
+      {
+        "firm_name": "Treasury Prime",
+        "url": "https://www.treasuryprime.com",
+        "pain_points_addressed": ["Bank-fintech integration", "multi-bank network", "embedded accounts/payments"],
+        "pricing_model": "Platform fee + per-transaction; not public",
+        "target_market": "Mid-market fintechs needing bank-direct relationships",
+        "strengths": [
+          "Multi-bank model differentiates post-Synapse (redundancy, less concentration risk)",
+          "API quality praised by Reddit users vs Synapse/Unit alternatives",
+          "Strong bank-side compliance partnership posture"
+        ],
+        "weaknesses": [
+          "Required to bring your own bank relationship — not turnkey for new fintechs",
+          "Pricing/contract terms reported as complex",
+          "Limited international coverage"
+        ],
+        "differentiation": "Bank-direct integration model with multi-bank optionality",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Unit",
+        "url": "https://unit.co",
+        "pain_points_addressed": ["Banking-as-a-Service", "card issuing", "deposit accounts", "payments"],
+        "pricing_model": "Platform + interchange share + per-account fees; mid-market $5k-$50k/mo platform fee",
+        "target_market": "Fintechs and embedded-finance SaaS",
+        "strengths": [
+          "Cleanest API/developer experience among BaaS competitors (cited explicitly in r/fintech)",
+          "Faster speed-to-market for embedded financial products",
+          "Strong compliance program (vs. now-bankrupt Synapse)"
+        ],
+        "weaknesses": [
+          "Less flexible for non-standard use cases (crypto, complex flows)",
+          "Sponsor bank concentration risk — limited number of partner banks",
+          "Pricing can be opaque; volume tiers not standardized"
+        ],
+        "differentiation": "Developer-experience-first BaaS",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Column",
+        "url": "https://column.com",
+        "pain_points_addressed": ["Direct-to-bank API (Column is itself a chartered bank)", "ACH/wire/Fed access"],
+        "pricing_model": "Per-transaction; published rate card",
+        "target_market": "Mid-market fintechs wanting bank-as-API without a sponsor middleman",
+        "strengths": [
+          "Owns the bank — eliminates the sponsor-bank middleman that caused Synapse",
+          "Modern API on top of an owned charter (rare combination)",
+          "Increasingly cited as the post-Synapse 'safe choice'"
+        ],
+        "weaknesses": [
+          "Newer entrant — limited track record at scale",
+          "Smaller team than Treasury Prime/Unit",
+          "Single-charter dependency"
+        ],
+        "differentiation": "Bank + API in one entity — no third-party sponsor bank involved",
+        "reviews_sentiment": "positive",
+        "market_position": "emerging"
+      },
+      {
+        "firm_name": "Modulr",
+        "url": "https://www.modulr.com",
+        "pain_points_addressed": ["UK/EU embedded payments", "e-money accounts", "direct-debit/payment scheme access"],
+        "pricing_model": "Platform fee + per-transaction; not public",
+        "target_market": "UK and EU fintechs, payroll, lending platforms",
+        "strengths": [
+          "Direct settlement member of UK Faster Payments and Bacs",
+          "Strong UK FCA standing (EMI license)",
+          "Cited as a recommended option for EU fintechs (Reddit)"
+        ],
+        "weaknesses": [
+          "FCA imposed restrictions on Modulr in 2023 — regulatory pressure ongoing",
+          "Limited US presence",
+          "Mid-market pricing not aggressive"
+        ],
+        "differentiation": "Direct scheme participant; deep UK/EU rails",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Swan",
+        "url": "https://swan.io",
+        "pain_points_addressed": ["Embedded banking in Europe", "IBAN issuance", "card issuing"],
+        "pricing_model": "Subscription tiers, published",
+        "target_market": "European SMB+mid-market embedded-finance customers",
+        "strengths": [
+          "Holds its own EU credit institution license — like Column, eliminates sponsor middleman",
+          "Modern API, strong documentation",
+          "EU-native compliance posture"
+        ],
+        "weaknesses": [
+          "European focus only — no US offering",
+          "Smaller than US BaaS leaders by GTV",
+          "Brand recognition outside Europe limited"
+        ],
+        "differentiation": "Own credit institution license + modern API in EU",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      }
+    ]
+  },
+  "pain_point_3_reconciliation": {
+    "pain_point": "Payment reconciliation across multiple providers and rails",
+    "providers": [
+      {
+        "firm_name": "Modern Treasury",
+        "url": "https://moderntreasury.com",
+        "pain_points_addressed": ["Payment operations", "reconciliation", "multi-bank cash management", "ledger"],
+        "pricing_model": "Subscription tiers + transaction fees; mid-market $50k-$300k/yr",
+        "target_market": "Mid-market and enterprise fintech and operations teams",
+        "strengths": [
+          "Best-in-class payment-ops UX combining reconciliation with payment initiation",
+          "Strong bank integrations (50+ direct)",
+          "Ledger product (Modern Treasury Ledgers) addresses the double-entry-at-scale problem"
+        ],
+        "weaknesses": [
+          "Steep implementation effort — typically 3-6 months to value",
+          "Pricing aimed at well-funded mid-market+",
+          "Limited support for non-US rails"
+        ],
+        "differentiation": "Combines payment ops + reconciliation + ledger in one stack",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "FloQast",
+        "url": "https://floqast.com",
+        "pain_points_addressed": ["Month-end close", "account reconciliation", "controls compliance"],
+        "pricing_model": "Subscription per-user; mid-market $50k-$200k/yr",
+        "target_market": "Finance/accounting teams in mid-market to enterprise",
+        "strengths": [
+          "Strong accounting-team UX (built by ex-auditors)",
+          "SOX controls workflow integrated with close",
+          "Large mid-market customer base"
+        ],
+        "weaknesses": [
+          "Not built for fintech transaction-level reconciliation — better for GL/sub-ledger close",
+          "Manual matching still common in practice",
+          "Limited automation for high-volume payment use cases"
+        ],
+        "differentiation": "Close-process automation for accounting/finance teams",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "SmartStream",
+        "url": "https://www.smartstream-stp.com",
+        "pain_points_addressed": ["Trade & transaction reconciliation", "cash reconciliation", "exception management"],
+        "pricing_model": "Enterprise licensing; not public; typically $250k+/yr",
+        "target_market": "Banks and mid/large fintechs with complex multi-asset flows",
+        "strengths": [
+          "Decades of pedigree — used by global tier-1 banks",
+          "Handles complex reconciliations (securities, derivatives, multi-currency)",
+          "Featured explicitly in LinkedIn Pulse coverage of fintech reconciliation"
+        ],
+        "weaknesses": [
+          "Heavy enterprise software — expensive and complex to deploy",
+          "UX dated compared to modern entrants like Modern Treasury",
+          "Long sales cycles unsuitable for emerging fintechs"
+        ],
+        "differentiation": "Enterprise-grade reconciliation engine for the most complex flows",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Numeric",
+        "url": "https://numeric.io",
+        "pain_points_addressed": ["AI-driven close & reconciliation", "automated journal entries", "controls"],
+        "pricing_model": "Subscription, not public",
+        "target_market": "High-growth mid-market finance teams",
+        "strengths": [
+          "AI-native approach — reduces analyst time on routine matches",
+          "Modern UX",
+          "Aggressive product velocity"
+        ],
+        "weaknesses": [
+          "Limited track record at scale",
+          "Coverage of fintech-specific edge cases (multi-rail, stablecoin) still maturing",
+          "Smaller integration ecosystem"
+        ],
+        "differentiation": "AI-first finance automation stack",
+        "reviews_sentiment": "positive",
+        "market_position": "emerging"
+      }
+    ]
+  },
+  "pain_point_4_fraud_detection": {
+    "pain_point": "Fraud detection model risk and false-positive calibration",
+    "providers": [
+      {
+        "firm_name": "Sift",
+        "url": "https://sift.com",
+        "pain_points_addressed": ["Payment fraud", "account fraud", "promo abuse", "content abuse"],
+        "pricing_model": "Subscription + volume-based; mid-market $100k-$500k/yr",
+        "target_market": "Mid-market to enterprise digital businesses + fintech",
+        "strengths": [
+          "Largest cross-customer signal network ('Digital Trust & Safety Network')",
+          "Strong ML platform with policy-as-code overlay",
+          "Mature integrations and self-serve dashboards"
+        ],
+        "weaknesses": [
+          "Expensive for early mid-market",
+          "Black-box ML — customers report explainability gaps (echoed in Reddit Barclays thread)",
+          "Generalist — less fintech-specific than Sardine or Unit21"
+        ],
+        "differentiation": "Massive shared fraud network and mature decisioning engine",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Sardine",
+        "url": "https://sardine.ai",
+        "pain_points_addressed": ["Real-time fraud detection", "crypto fraud", "AML/KYC consolidated risk"],
+        "pricing_model": "Subscription + per-event; not public",
+        "target_market": "Fintech, crypto, neobanks, payment processors",
+        "strengths": [
+          "Fintech/crypto-native — strong device intelligence and behavioral signals",
+          "Founded by ex-Coinbase risk leaders — credibility",
+          "Unifies KYC/AML + fraud in one risk decisioning layer"
+        ],
+        "weaknesses": [
+          "Smaller customer footprint than Sift",
+          "ML model risk-management documentation still maturing for regulator scrutiny",
+          "Pricing not transparent"
+        ],
+        "differentiation": "Real-time consumer-risk decisioning for fintech & crypto",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Featurespace (acquired by Visa, 2025)",
+        "url": "https://www.featurespace.com",
+        "pain_points_addressed": ["Card fraud", "ACH fraud", "AML monitoring", "scams (APP fraud)"],
+        "pricing_model": "Enterprise; not public",
+        "target_market": "Banks and large fintechs",
+        "strengths": [
+          "Adaptive Behavioral Analytics ML — strong cross-channel detection",
+          "Now part of Visa = unmatched cross-bank signal access",
+          "Best-in-class for first-party / scam fraud (APP)"
+        ],
+        "weaknesses": [
+          "Long sales cycle (enterprise vendor)",
+          "Heavy implementation",
+          "Post-acquisition integration risk with Visa"
+        ],
+        "differentiation": "ARIC ML platform + Visa scale post-acquisition",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Chargeflow",
+        "url": "https://www.chargeflow.io",
+        "pain_points_addressed": ["Chargeback dispute automation", "evidence collection", "friendly-fraud prevention"],
+        "pricing_model": "Pay-only-when-you-win (success-based ~25% of recovered funds)",
+        "target_market": "SMB to mid-market e-commerce and payments-heavy fintech",
+        "strengths": [
+          "Explicit positive Reddit testimonial in our scraped data ('saved me time, got back money')",
+          "Success-fee model = aligned incentives, no upfront cost",
+          "Strong Stripe/Shopify ecosystem"
+        ],
+        "weaknesses": [
+          "Limited above mid-market — enterprises prefer Verifi/Ethoca",
+          "Coverage limited primarily to card chargebacks",
+          "Not a full fraud-prevention platform — point solution"
+        ],
+        "differentiation": "Success-fee chargeback automation",
+        "reviews_sentiment": "positive",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Justt",
+        "url": "https://justt.ai",
+        "pain_points_addressed": ["Chargeback representment", "AI evidence generation"],
+        "pricing_model": "Success-based fee",
+        "target_market": "Mid-market merchants & payments players",
+        "strengths": [
+          "AI-generated rebuttal letters tailored per reason code",
+          "Risk-free pricing model",
+          "Growing footprint in payments/fintech"
+        ],
+        "weaknesses": [
+          "Newer than Chargeflow; less Reddit social proof",
+          "Limited to chargeback dispute resolution",
+          "Industry skepticism about AI rebuttals winning ratio claims"
+        ],
+        "differentiation": "AI-first dispute representment",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      }
+    ]
+  },
+  "pain_point_5_core_banking_modernization": {
+    "pain_point": "Legacy core banking modernization and selection",
+    "providers": [
+      {
+        "firm_name": "Thought Machine",
+        "url": "https://www.thoughtmachine.net",
+        "pain_points_addressed": ["Cloud-native core banking", "smart contracts for financial products"],
+        "pricing_model": "Enterprise licensing; not public; multi-million $/yr",
+        "target_market": "Tier-1/2 banks and large fintechs",
+        "strengths": [
+          "Vault platform = cleanest cloud-native core on the market",
+          "Smart Contract Engine enables novel product design",
+          "Trust signal: Lloyds, JPMorgan, Standard Chartered customers"
+        ],
+        "weaknesses": [
+          "Enterprise-only pricing — out of reach for true mid-market fintechs",
+          "Implementation is multi-year",
+          "Requires deep internal engineering capability"
+        ],
+        "differentiation": "Most modern core banking platform; smart contract product model",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Mambu",
+        "url": "https://www.mambu.com",
+        "pain_points_addressed": ["Cloud-native core for retail/SME banking and lending"],
+        "pricing_model": "SaaS subscription; mid-market $250k-$2M/yr",
+        "target_market": "Challenger banks, lending, mid-market financial services",
+        "strengths": [
+          "Composable architecture — most fintech-friendly enterprise core",
+          "Strong international presence (Europe, LATAM, APAC)",
+          "Faster time-to-launch than incumbents"
+        ],
+        "weaknesses": [
+          "Configuration is still complex — implementation partner usually required",
+          "Lending capability stronger than deposit-side",
+          "US footprint smaller than in EU/LATAM"
+        ],
+        "differentiation": "Composable cloud core for mid-market and challenger banks",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "10x Banking",
+        "url": "https://www.10xbanking.com",
+        "pain_points_addressed": ["Next-gen core banking; meta-core architecture"],
+        "pricing_model": "Enterprise; not public",
+        "target_market": "Large banks and challenger banks",
+        "strengths": [
+          "Founded by ex-Barclays CEO Antony Jenkins — deep domain credibility",
+          "Modern meta-core architecture",
+          "Customer wins include Chase UK"
+        ],
+        "weaknesses": [
+          "High price point",
+          "Long implementation timelines",
+          "Strongest in retail banking — less fit for embedded/specialist fintechs"
+        ],
+        "differentiation": "'SuperCore' meta-core — multi-tenant cloud-native",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Temenos",
+        "url": "https://www.temenos.com",
+        "pain_points_addressed": ["Full-stack core banking", "wealth management", "payments"],
+        "pricing_model": "Enterprise licensing; not public",
+        "target_market": "Banks worldwide — incumbent",
+        "strengths": [
+          "Most installed cores worldwide (~700 banks)",
+          "Comprehensive product suite (deposits, lending, wealth, payments)",
+          "Strong partner ecosystem"
+        ],
+        "weaknesses": [
+          "Often the 'legacy' system that mid-market fintechs are trying to replace",
+          "Slow to modernize — UX and APIs lag cloud-native peers",
+          "Cost overruns common in implementations"
+        ],
+        "differentiation": "Scale and breadth — but increasingly the incumbent under attack",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Big-4 / Accenture / Capgemini consulting",
+        "url": "https://www.accenture.com / https://www.capgemini.com / https://www.deloitte.com",
+        "pain_points_addressed": ["Core banking transformation advisory + implementation"],
+        "pricing_model": "T&M or fixed-fee; multi-million $ engagements",
+        "target_market": "Tier-1/2 banks; some mid-market crossover",
+        "strengths": [
+          "Capacity to deliver multi-year, multi-hundred-FTE transformations",
+          "Vendor-agnostic positioning",
+          "Risk transfer (when contracts allow)"
+        ],
+        "weaknesses": [
+          "Pricing prohibitive for mid-market fintechs",
+          "Boilerplate playbooks — often weak on fintech-native nuance",
+          "Mixed reputation on outcome quality"
+        ],
+        "differentiation": "Scale and execution capacity",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      }
+    ]
+  },
+  "pain_point_6_embedded_finance_compliance_advisory": {
+    "pain_point": "Hidden compliance cost of in-house embedded finance",
+    "providers": [
+      {
+        "firm_name": "FS Vector",
+        "url": "https://www.fsvector.com",
+        "pain_points_addressed": ["Fintech compliance & regulatory advisory", "licensing strategy", "BSA/AML programs"],
+        "pricing_model": "Retainer + project; mid-market $15k-$50k/mo",
+        "target_market": "Mid-market fintech, crypto, payments",
+        "strengths": [
+          "Senior team includes ex-OCC, ex-CFPB regulators — deep credibility",
+          "Strong post-Synapse advisory practice",
+          "Project + retainer flexibility"
+        ],
+        "weaknesses": [
+          "Premium pricing locks out seed/Series A fintechs",
+          "Capacity constrained — long lead times",
+          "US-centric"
+        ],
+        "differentiation": "Ex-regulator senior bench focused on fintech",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Klaros Group",
+        "url": "https://klarosgroup.com",
+        "pain_points_addressed": ["Bank-fintech program advisory", "regulatory examinations", "remediation"],
+        "pricing_model": "Retainer + project; not public",
+        "target_market": "Sponsor banks and their fintech programs",
+        "strengths": [
+          "Deeply networked with bank regulators",
+          "Specializes in bank-fintech partnerships — exactly the post-Synapse pain",
+          "Cited in industry press as a go-to remediation firm"
+        ],
+        "weaknesses": [
+          "Smaller team; capacity limits",
+          "Bank-side reputation may put fintechs off",
+          "Limited tech tooling"
+        ],
+        "differentiation": "Bank-fintech partnership specialist",
+        "reviews_sentiment": "positive",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "PwC / EY / Deloitte / KPMG (Big-4 fintech practices)",
+        "url": "https://www.pwc.com (and equivalents)",
+        "pain_points_addressed": ["Regulatory advisory", "model risk", "audit readiness", "transformation"],
+        "pricing_model": "T&M; mid-market $200k-$1M/engagement",
+        "target_market": "Mid-market to enterprise",
+        "strengths": [
+          "Brand trust with regulators and boards",
+          "Cross-jurisdictional capability",
+          "Audit + advisory combinations (where allowed)"
+        ],
+        "weaknesses": [
+          "Often staffed with juniors — leverage model = inconsistent quality",
+          "Expensive",
+          "Slow to recommend cutting-edge tooling"
+        ],
+        "differentiation": "Brand and scale",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Mercury Risk Advisors / Promontory (IBM) / Treliant",
+        "url": "Various",
+        "pain_points_addressed": ["AML/BSA program builds", "regulator-mandated lookbacks", "fractional CCO"],
+        "pricing_model": "Retainer + project",
+        "target_market": "Banks + fintechs under regulator scrutiny",
+        "strengths": [
+          "Heavy ex-regulator benches",
+          "Strong for lookback/remediation engagements (post-MRA/consent-order)",
+          "Mature methodology"
+        ],
+        "weaknesses": [
+          "Bank-side first, fintech second — culture mismatch sometimes reported",
+          "Premium pricing",
+          "Less product/tech orientation"
+        ],
+        "differentiation": "Regulator-perspective expertise on remediation",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      }
+    ]
+  },
+  "white_space": [
+    {
+      "gap_id": "WS-1",
+      "title": "Independent multi-bank sponsor-bank-due-diligence + contract structuring service for mid-market fintechs",
+      "related_pain_points": ["pain_point_2_baas_sponsor_bank", "pain_point_7_embedded_finance_compliance_advisory"],
+      "why_gap_exists": "Post-Synapse, every fintech CEO is reassessing sponsor-bank risk, but the providers in this space are either (a) the sponsor banks themselves (conflicted), (b) Big-4 consultancies that are too expensive, or (c) FS Vector / Klaros which are capacity-constrained and primarily US. There is no productized, fixed-fee 'sponsor-bank diligence + contract red-team + redundancy strategy' offering aimed specifically at fintechs with 100-500 employees.",
+      "opportunity_size_signal": "Multiple Reddit posts asking 'what FBO/sponsor bank are you using?', explicit consent orders being referenced in LinkedIn Pulse, 6+ industry articles in our data referencing 'BaaS 2.0 trust crisis'."
+    },
+    {
+      "gap_id": "WS-2",
+      "title": "Calibration-as-a-service for KYC/fraud false-positive optimization",
+      "related_pain_points": ["pain_point_1_kyc_aml", "pain_point_4_fraud_detection"],
+      "why_gap_exists": "Vendors (Alloy, Persona, Sift, Sardine, Unit21) provide tools but expect customers to tune them. Mid-market fintechs lack dedicated risk-data-science teams. No firm explicitly positions as 'we'll cut your false-positive rate by X% in 90 days using your vendor of choice'. The 1,200-customer-loss Reddit post (23/75) directly quantifies the gap.",
+      "opportunity_size_signal": "Direct revenue link in scraped quotes: 1,200 customers lost, 13% reject rate including legitimates, $12M Revolut loss, '70% of firms lost clients due to slow onboarding'."
+    },
+    {
+      "gap_id": "WS-3",
+      "title": "Multi-rail (ACH + wire + RTP + stablecoin) reconciliation playbook + integration service",
+      "related_pain_points": ["pain_point_3_reconciliation", "pain_point_8_cross_border_payments"],
+      "why_gap_exists": "Modern Treasury covers payment ops, FloQast covers close, SmartStream covers complex enterprise — but no single provider gives a mid-market fintech a playbook for 'we just added stablecoin/RTP, here is how to reconcile cleanly without rebuilding your ledger'. The orchestration logic Reddit post (16/17) explicitly highlights this.",
+      "opportunity_size_signal": "Multiple Reddit threads + LinkedIn Pulse + X posts all describing same problem; X user explicitly notes 'reconciliation is not optional → it's your safety net'."
+    },
+    {
+      "gap_id": "WS-4",
+      "title": "Fractional CCO / Fractional Security Architect for mid-market fintech (100-500 employees)",
+      "related_pain_points": ["pain_point_7_embedded_finance_compliance_advisory", "pain_point_10_security_audit_readiness", "pain_point_9_hiring"],
+      "why_gap_exists": "Mid-market fintechs face mandatory CCO/CISO functions but can't easily hire senior talent in the current market. Big-4 advisory is project-based, not fractional. FS Vector/Klaros are retainer but premium. There is room for a productized fractional offering at $10k-$25k/mo with clear deliverables (BSA program, SOC2/PCI roadmap, HSM/KMS architecture review).",
+      "opportunity_size_signal": "Reddit: 'small fintech team... when should we bring in HSM/KMS specialists' (21/13), 'we almost failed a regulatory audit because of our mobile app', and broader hiring-pain signals."
+    },
+    {
+      "gap_id": "WS-5",
+      "title": "AI Model Risk Management (MRM) consulting tailored to fintech's emerging AI-fraud and AI-credit use cases",
+      "related_pain_points": ["pain_point_4_fraud_detection", "pain_point_12_shadow_ai"],
+      "why_gap_exists": "Banks have SR 11-7 MRM frameworks but mid-market fintechs deploying AI agents in compliance/credit have no comparable practice. EU AI Act 2026 and US SR 11-7 will increasingly apply to fintechs. Big-4 firms charge enterprise rates; there is white space for a fintech-specialist MRM + AI governance offering. The Reddit post 'The hidden problem with AI agents in finance: making them audit-ready' (19/30) is the canonical signal."
+    }
+  ]
+}

@@ -1,0 +1,920 @@
+{
+  "metadata": {
+    "industry": "Small trades / home & commercial service contractors (electricians, plumbers, HVAC, roofers, general contractors, remodelers)",
+    "business_size_focus": "SMB owner-operators (1-20 employees)",
+    "research_date": "2026-05-20",
+    "methodology_note": "Competitor URLs and product titles were discovered via Firecrawl search across queries tied to the top 8 pain points (see /tmp/smalltrades/competitor_search_raw.json). Each profile combines those search-surfaced facts (URL, target market signaled by site copy) with widely-known public positioning. Pricing marked 'not public' where vendors do not publish list prices. Reviews_sentiment reflects aggregated patterns from G2/Capterra/Reddit community discussions referenced in the raw data.",
+    "framework": "ICE+WTP \u2014 Final = (Impact + Confidence + Ease) / 3 * WTP_multiplier"
+  },
+  "pain_point_1_cash_flow": {
+    "pain_point": "Cash flow management and operating capital for small trades contractors",
+    "providers": [
+      {
+        "firm_name": "Levelset (a Procore company)",
+        "url": "https://www.levelset.com",
+        "pain_points_addressed": [
+          "mechanics lien filing",
+          "payment dispute resolution",
+          "preliminary notice management",
+          "subcontractor cash flow"
+        ],
+        "pricing_model": "Tiered subscription + per-document fees. Self-serve ~$49-$199/month entry; enterprise managed services higher.",
+        "target_market": "Subs, GCs, suppliers from solo trades through enterprise construction firms (US-focused)",
+        "strengths": [
+          "Most comprehensive lien-rights database in the US \u2014 automates state-specific notice requirements",
+          "Strong community brand among subcontractors (free 'Payment Help' content drives top-of-funnel)",
+          "Post-Procore acquisition (2021) gives integration path into broader construction PM stack"
+        ],
+        "weaknesses": [
+          "Recurring fee can feel heavy for solo trades that file only 1-3 liens/year",
+          "Filing automation still requires accurate project data the customer has to enter \u2014 solo owner-operators report data-entry friction",
+          "Does not actually advance cash \u2014 adjacent to factoring, not a substitute"
+        ],
+        "differentiation": "Workflow tool for lien-rights compliance built around US state-by-state legal nuance",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "1st Commercial Credit",
+        "url": "https://www.1stcommercialcredit.com/industries/construction-contractor",
+        "pain_points_addressed": [
+          "construction invoice factoring",
+          "AR financing",
+          "purchase-order financing"
+        ],
+        "pricing_model": "Factor fees typically 1-4% per 30-day period (industry standard); advance rates 80-95%.",
+        "target_market": "Construction subs and trades doing $25K-$10M+ monthly invoicing",
+        "strengths": [
+          "Specializes in construction (handles progress billing, retainage, joint checks) \u2014 most generalist factors won't",
+          "Same-day funding once setup is complete",
+          "Approves on the strength of the GC's credit, not the contractor's"
+        ],
+        "weaknesses": [
+          "Factoring is expensive financing (effective APR 18-40%) and erodes margin",
+          "GC notification requirement (assignment of receivable) can damage GC relationships",
+          "Approval still requires extensive paperwork \u2014 slow for first invoice (3-10 days)"
+        ],
+        "differentiation": "Construction-specialty factor that understands retainage and progress billing",
+        "reviews_sentiment": "mixed",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Mobilization Funding",
+        "url": "https://mobilizationfunding.com",
+        "pain_points_addressed": [
+          "mobilization capital",
+          "project-based financing",
+          "materials prefunding"
+        ],
+        "pricing_model": "Project-based loans. Fees vary by deal size and term; not publicly listed.",
+        "target_market": "Subs and trades that win larger commercial jobs but lack the cash to start them",
+        "strengths": [
+          "Targets the specific 'I won the bid but can't afford to start' problem that factoring doesn't solve",
+          "Founder-led, content-driven brand (podcast, community presence) builds trust with owners",
+          "More flexible than bank loans for sub-$5M contractors with thin financials"
+        ],
+        "weaknesses": [
+          "Pricing not transparent \u2014 owners report fee shock during diligence",
+          "Underwriting requires a signed contract and GC verification \u2014 won't fund speculative bids",
+          "Smaller balance sheet than bank lenders \u2014 caps on deal size"
+        ],
+        "differentiation": "Mobilization-stage capital, not invoice-stage capital \u2014 fills a real gap",
+        "reviews_sentiment": "positive",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Fundbox",
+        "url": "https://fundbox.com",
+        "pain_points_addressed": [
+          "short-term working capital line",
+          "AR-backed line of credit"
+        ],
+        "pricing_model": "Revolving line up to ~$150K; weekly fees ~4.66-8.99% over 12-24 weeks (effective APR 20-50%).",
+        "target_market": "Generalist SMB ($100K+ annual revenue, 6+ months in business)",
+        "strengths": [
+          "Fast: connects to QuickBooks/Xero and approves in minutes",
+          "Self-serve \u2014 no factor-style invoice assignment",
+          "Lower friction than bank lines for sub-$1M-revenue contractors"
+        ],
+        "weaknesses": [
+          "Effective APR is high \u2014 contractors who need it often can't escape the cycle",
+          "Not construction-specialty: doesn't handle retainage, progress billing, or lien rights",
+          "Line caps (~$150K) too small for commercial trades doing mid-six-figure jobs"
+        ],
+        "differentiation": "Self-serve AR-backed line aimed at generalist SMB",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      }
+    ]
+  },
+  "pain_point_2_getting_paid": {
+    "pain_point": "Getting paid: slow / non-paying customers and GCs",
+    "providers": [
+      {
+        "firm_name": "Housecall Pro",
+        "url": "https://www.housecallpro.com",
+        "pain_points_addressed": [
+          "mobile invoicing",
+          "card-on-file",
+          "instant deposit",
+          "consumer financing offers",
+          "automated payment reminders"
+        ],
+        "pricing_model": "$49-$279/month/user tiers; payment processing fees 2.59-2.99% + $0.30 per transaction",
+        "target_market": "SMB home-services trades \u2014 plumbing, HVAC, electrical, cleaning, locksmith (1-15 employees sweet spot)",
+        "strengths": [
+          "Strong consumer-finance integration (Wisetack) \u2014 boosts close rate on big-ticket repairs",
+          "Tech-on-site mobile UX is best-in-class for getting paid before leaving the driveway",
+          "Instant deposit removes the 2-3 day Stripe wait that crushes weekly cash flow"
+        ],
+        "weaknesses": [
+          "Payment processing fees are higher than what a contractor would pay direct with Stripe (~30bps markup)",
+          "Reporting is shallow \u2014 owners with 3+ techs complain about job-cost visibility",
+          "Pricing climbs fast as you add seats and modules \u2014 $49/mo entry quickly becomes $300+/mo"
+        ],
+        "differentiation": "Mobile-first 'collect payment before you leave the job' UX baked into core product",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Jobber",
+        "url": "https://www.getjobber.com",
+        "pain_points_addressed": [
+          "quoting",
+          "scheduling",
+          "invoicing",
+          "online payments",
+          "automated follow-up"
+        ],
+        "pricing_model": "$39-$349/month (Core/Connect/Grow) \u2014 annual billed; payments ~2.9% + $0.30",
+        "target_market": "1-15 employee home-services and trades businesses globally (strong in US/Canada/UK/AU)",
+        "strengths": [
+          "Best-in-class quoting \u2192 job \u2192 invoice workflow \u2014 fewer 'where did this job go?' problems",
+          "Strong G2 reviews on ease-of-use; tradesmen report low onboarding friction",
+          "Robust client portal + automated reminders measurably shrink AR days"
+        ],
+        "weaknesses": [
+          "Multi-day-job and progress-billing support is thinner than ServiceTitan/Sera",
+          "Reporting/job-costing complaints from owners scaling past 8-10 techs",
+          "Some users report the auto-reminder cadence is too aggressive and damages customer relationships"
+        ],
+        "differentiation": "All-in-one for SMB trades \u2014 wider job-type coverage than HCP (lawn, cleaning, etc.)",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Joist (formerly part of EverCommerce)",
+        "url": "https://www.joist.com",
+        "pain_points_addressed": [
+          "mobile estimates and invoices",
+          "payment collection",
+          "client portal"
+        ],
+        "pricing_model": "Free tier + Joist Pro ~$13/month/user; payments 2.95% + $0.30",
+        "target_market": "Solo trades and small remodelers (1-3 person crews)",
+        "strengths": [
+          "Aggressive price point \u2014 explicitly targets the solo electrician/plumber who can't justify Jobber",
+          "Free tier with paid upgrade for deposits \u2014 strong land-and-expand motion",
+          "Estimate-to-invoice in <60 seconds on mobile"
+        ],
+        "weaknesses": [
+          "No scheduling/dispatch \u2014 owners outgrow it the moment they hire a second tech",
+          "Reporting is virtually non-existent",
+          "Support thinner than Housecall/Jobber"
+        ],
+        "differentiation": "The cheapest credible mobile invoicing app for solo trades",
+        "reviews_sentiment": "mixed",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Levelset (lien rights, as above)",
+        "url": "https://www.levelset.com",
+        "pain_points_addressed": [
+          "mechanics lien rights for non-paying GCs",
+          "demand letters",
+          "payment escalation"
+        ],
+        "pricing_model": "Subscription $49-$199/mo; managed-services higher",
+        "target_market": "Subs/trades exposed to GC payment risk",
+        "strengths": [
+          "The escalation lever that actually changes GC behavior when invoices age past 60 days",
+          "Free educational content lowers entry barrier",
+          "Network effect \u2014 Levelset reputation among GCs creates payment pressure"
+        ],
+        "weaknesses": [
+          "Many owners only discover Levelset after they've already missed the preliminary-notice deadline",
+          "Not a substitute for primary invoicing \u2014 additive cost",
+          "State-by-state nuance means smaller contractors still need legal review on disputed claims"
+        ],
+        "differentiation": "Only player with full lien-rights automation at SMB price points",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      }
+    ]
+  },
+  "pain_point_3_lead_gen": {
+    "pain_point": "Lead generation and customer acquisition for small contractors",
+    "providers": [
+      {
+        "firm_name": "Angi (formerly Angie's List + HomeAdvisor)",
+        "url": "https://www.angi.com",
+        "pain_points_addressed": [
+          "consumer-side lead delivery",
+          "pay-per-lead",
+          "marketplace exposure"
+        ],
+        "pricing_model": "Pay-per-lead ($15-$80+ per lead depending on category/geo) + membership fees",
+        "target_market": "Home-services contractors of all sizes; heavy SMB skew",
+        "strengths": [
+          "Largest consumer brand in home services \u2014 drives high search intent traffic",
+          "Volume \u2014 contractors who can convert can scale fast",
+          "Multi-trade coverage means a single account works for diversified contractors"
+        ],
+        "weaknesses": [
+          "Universally panned in contractor communities for lead quality (shared leads, tire-kickers, fake addresses)",
+          "Pricing has crept up while conversion rates fall \u2014 many contractors report negative ROI",
+          "Reputation damage from post-merger consumer trust issues actually hurts conversion"
+        ],
+        "differentiation": "Largest scale, worst reputation in the space \u2014 incumbent by default",
+        "reviews_sentiment": "negative",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Thumbtack",
+        "url": "https://www.thumbtack.com",
+        "pain_points_addressed": [
+          "consumer-side matched leads",
+          "instant quoting"
+        ],
+        "pricing_model": "Pay-per-quote (no per-lead exclusivity); $8-$60+ per quote depending on category",
+        "target_market": "Solo and 1-5 person home services pros across the US",
+        "strengths": [
+          "Better lead exclusivity than Angi in many categories",
+          "Lower entry barrier for solo trades",
+          "Mobile-first contractor experience"
+        ],
+        "weaknesses": [
+          "Pricing model penalizes quotes even if you don't win the job \u2014 fast way to burn $500/week with no work",
+          "Algorithm changes have repeatedly tanked individual contractors' lead flow",
+          "Quality varies wildly by region"
+        ],
+        "differentiation": "Quote-based marketplace; lower lead price than Angi but pay-to-pitch model",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Hook Agency",
+        "url": "https://hookagency.com",
+        "pain_points_addressed": [
+          "SEO",
+          "Google Ads",
+          "website builds for roofing/home services"
+        ],
+        "pricing_model": "Retainer ~$1,500-$5,000/month + ad spend",
+        "target_market": "Roofers, plumbers, HVAC, remodelers ($500K-$10M revenue)",
+        "strengths": [
+          "Specialty agency \u2014 trades-only, not generalist",
+          "Strong content marketing presence in the contractor community",
+          "Cap on clients per geography reduces internal competition"
+        ],
+        "weaknesses": [
+          "Retainer pricing inaccessible for sub-$500K-revenue contractors",
+          "12-month minimum is friction for owners burned by past agencies",
+          "Some clients report results taking 6-9 months \u2014 long ramp"
+        ],
+        "differentiation": "Trades-niche digital agency with geographic exclusivity",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "33 Mile Radius",
+        "url": "https://www.33mileradius.com",
+        "pain_points_addressed": [
+          "exclusive job leads for water damage / remodeling / restoration"
+        ],
+        "pricing_model": "Pay-per-lead, exclusive (not shared); typically $50-$200+ per lead by category",
+        "target_market": "Restoration, water damage, remediation, niche remodeling contractors",
+        "strengths": [
+          "Exclusive (non-shared) leads \u2014 directly addresses #1 contractor complaint about Angi",
+          "Phone-validated leads, not just form fills",
+          "Specialty positioning means higher intent"
+        ],
+        "weaknesses": [
+          "Higher per-lead cost than shared marketplaces",
+          "Coverage limited outside core categories",
+          "Lead volume can be inconsistent month-to-month"
+        ],
+        "differentiation": "Exclusive (not shared) pay-per-lead in restoration verticals",
+        "reviews_sentiment": "positive",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Houzz Pro",
+        "url": "https://pro.houzz.com",
+        "pain_points_addressed": [
+          "design-led project leads",
+          "client communication",
+          "3D floor plans"
+        ],
+        "pricing_model": "$85-$399+/month subscription tiers",
+        "target_market": "Remodelers, designers, kitchen/bath contractors",
+        "strengths": [
+          "High-intent design-led consumer audience (homeowners ready to spend)",
+          "Tooling bundled with leads \u2014 CRM + 3D tools + payments",
+          "Strong fit for remodelers vs. emergency-service trades"
+        ],
+        "weaknesses": [
+          "Poor fit for HVAC/plumbing/electrical emergency work",
+          "Subscription cost is significant for solo remodelers",
+          "Lead volume highly geo-dependent"
+        ],
+        "differentiation": "Design-driven lead source bundled with project management",
+        "reviews_sentiment": "mixed",
+        "market_position": "niche"
+      }
+    ]
+  },
+  "pain_point_4_pricing": {
+    "pain_point": "Pricing jobs profitably and competing with lowballers",
+    "providers": [
+      {
+        "firm_name": "Profit Rhino (a ServiceTitan company)",
+        "url": "https://www.profitrhino.com",
+        "pain_points_addressed": [
+          "flat-rate pricing book",
+          "good-better-best presentation",
+          "tablet-based pricing in front of customers"
+        ],
+        "pricing_model": "Subscription, typically $99-$199/month/user; pricing not fully public",
+        "target_market": "Residential HVAC, plumbing, electrical (1-30 trucks)",
+        "strengths": [
+          "Pre-built flat-rate book maintained by industry pros \u2014 saves months of price-build work",
+          "Good-better-best presentation measurably raises average ticket",
+          "ServiceTitan integration deepens long-term lock-in"
+        ],
+        "weaknesses": [
+          "Pre-built prices skew high \u2014 contractors in low-cost markets find them uncompetitive without major edits",
+          "Maintenance subscription expensive for solo techs",
+          "Best ROI requires ServiceTitan, which is itself expensive"
+        ],
+        "differentiation": "Industry-curated flat-rate book with consumer-facing presentation layer",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "FlatRateSoftware (Coolfront alternative)",
+        "url": "https://flatratesoftware.com",
+        "pain_points_addressed": [
+          "flat-rate pricing for HVAC/plumbing/electrical",
+          "QuickBooks integration"
+        ],
+        "pricing_model": "~$49-$129/month/user tiers",
+        "target_market": "Sub-10 truck residential HVAC/plumbing/electrical shops",
+        "strengths": [
+          "Lower price point than Profit Rhino \u2014 strong fit for solo and 2-truck shops",
+          "QuickBooks Online sync reduces double entry",
+          "Mobile app usable without a separate FSM platform"
+        ],
+        "weaknesses": [
+          "Price book curation is weaker than Profit Rhino \u2014 more DIY required",
+          "Limited integrations outside QuickBooks",
+          "Brand awareness lower; less community discussion to vet"
+        ],
+        "differentiation": "Cheapest credible flat-rate software for owner-operators",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "FieldEdge (an Xplor company) \u2014 Flat Rate Pricing module",
+        "url": "https://fieldedge.com/flat-rate-pricing-software",
+        "pain_points_addressed": [
+          "flat-rate pricing",
+          "service agreements",
+          "field invoicing"
+        ],
+        "pricing_model": "Bundled in FieldEdge FSM (~$100-$300+/month/user); pricing not public",
+        "target_market": "Mid-sized HVAC/plumbing/electrical ($1M-$15M revenue)",
+        "strengths": [
+          "Tight FSM integration \u2014 pricing lives where the tech already is",
+          "Backed by Xplor's payment processing for monetization",
+          "Solid support reputation in mid-market trades"
+        ],
+        "weaknesses": [
+          "Has to be bought as part of FieldEdge \u2014 not standalone",
+          "UI feels dated vs. newer competitors (Sera, Workiz)",
+          "Heavier implementation than HCP/Jobber"
+        ],
+        "differentiation": "Mid-market FSM with built-in flat-rate pricing",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "CertainPath (formerly Success Group International) \u2014 coaching",
+        "url": "https://www.certainpath.com",
+        "pain_points_addressed": [
+          "pricing strategy coaching",
+          "owner training",
+          "P&L benchmarking"
+        ],
+        "pricing_model": "Membership ~$500-$2,000+/month; live events extra",
+        "target_market": "Residential HVAC/plumbing/electrical owners scaling from $500K to $5M",
+        "strengths": [
+          "Deep operator-led curriculum on pricing/margin from people who ran the trades",
+          "Peer benchmarking groups \u2014 owners see real P&Ls in their cohort",
+          "Strong community/event flywheel"
+        ],
+        "weaknesses": [
+          "Significant monthly investment for sub-$500K shops",
+          "Long-term contracts that owners struggle to exit",
+          "Methodology can feel formulaic \u2014 works less well for unique service lines"
+        ],
+        "differentiation": "Operator coaching + benchmarking community, not software",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      }
+    ]
+  },
+  "pain_point_5_licensing_compliance": {
+    "pain_point": "Licensing, permits, insurance, and compliance overhead",
+    "providers": [
+      {
+        "firm_name": "The Hartford",
+        "url": "https://www.thehartford.com/general-liability-insurance/contractors",
+        "pain_points_addressed": [
+          "general liability",
+          "workers comp",
+          "tools/equipment",
+          "commercial auto"
+        ],
+        "pricing_model": "Premiums vary; quote-based. GL typically $500-$3,000/year for solo trades",
+        "target_market": "Small business contractors across all trades, US-wide",
+        "strengths": [
+          "Established brand \u2014 banks/GCs accept their COIs without friction",
+          "Bundling discounts across GL + WC + auto",
+          "Online quote-to-bind for low-risk trades"
+        ],
+        "weaknesses": [
+          "Premium increases at renewal frequently complained about \u2014 opaque underwriting",
+          "Claims experience can be slow vs. specialty insurers",
+          "Not always cheapest for higher-risk trades (roofing, electrical with high voltage)"
+        ],
+        "differentiation": "Legacy carrier \u2014 trust + bundling, not innovation",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "NEXT Insurance",
+        "url": "https://www.nextinsurance.com",
+        "pain_points_addressed": [
+          "instant online GL/WC/commercial auto",
+          "mobile COI delivery"
+        ],
+        "pricing_model": "Quote-based; often 20-40% below legacy carriers for low-risk trades",
+        "target_market": "Solo and small contractors, US-wide",
+        "strengths": [
+          "Instant quote-to-bind in <10 minutes \u2014 addresses 'I need a COI for tomorrow's job' pain",
+          "Mobile COI delivery on demand",
+          "Lower premiums for low-risk solo trades"
+        ],
+        "weaknesses": [
+          "Coverage limits sometimes insufficient for commercial GC requirements",
+          "Some larger commercial customers won't accept NEXT COIs (perception issue)",
+          "Claims process less mature than legacy carriers"
+        ],
+        "differentiation": "Digital-first carrier \u2014 speed and price for solo trades",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Thimble",
+        "url": "https://www.thimble.com",
+        "pain_points_addressed": [
+          "on-demand short-term GL",
+          "event/project coverage",
+          "ACORD COI generation"
+        ],
+        "pricing_model": "Per-hour/day/month policies; $5-$60/hour, $25-$300/day depending on trade",
+        "target_market": "Side-hustle trades, one-off project contractors, handymen",
+        "strengths": [
+          "Unique short-duration policies (1 hour, 1 day) \u2014 no other carrier does this well",
+          "App-based COI in under 60 seconds",
+          "Pay-as-you-go avoids annual lump-sum"
+        ],
+        "weaknesses": [
+          "Per-hour math gets expensive vs. annual policies for full-time contractors",
+          "Coverage limits often too low for serious commercial work",
+          "Not accepted by all GCs"
+        ],
+        "differentiation": "Hour/day insurance for one-off jobs \u2014 totally unique product",
+        "reviews_sentiment": "mixed",
+        "market_position": "niche"
+      },
+      {
+        "firm_name": "Procore (Compliance Manager module)",
+        "url": "https://www.procore.com",
+        "pain_points_addressed": [
+          "sub compliance tracking",
+          "COI collection from subs",
+          "permit/document management"
+        ],
+        "pricing_model": "Procore platform pricing not public \u2014 typically $X,000s/year",
+        "target_market": "GCs and mid-market construction firms managing 10+ subs",
+        "strengths": [
+          "Centralizes COI/license tracking that subs currently chase via email",
+          "Integrates with full project management stack",
+          "Compliance automation reduces audit risk"
+        ],
+        "weaknesses": [
+          "GC-side tool \u2014 most small subs interact with it as a passive participant",
+          "Cost prohibitive for sub-$5M revenue contractors",
+          "Steep learning curve"
+        ],
+        "differentiation": "GC-side compliance hub, not a sub-side product",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      }
+    ]
+  },
+  "pain_point_6_hiring_trades": {
+    "pain_point": "Hiring/retaining skilled technicians and apprentices",
+    "providers": [
+      {
+        "firm_name": "Blue Collar Recruiter",
+        "url": "https://thebluecollarrecruiter.com",
+        "pain_points_addressed": [
+          "HVAC/plumbing/electrical recruiting",
+          "passive candidate sourcing",
+          "owner placement"
+        ],
+        "pricing_model": "Contingent ~20-30% of first-year salary, or retainer; not fully public",
+        "target_market": "HVAC, plumbing, electrical shops $500K-$10M scaling teams",
+        "strengths": [
+          "Trades-only firm \u2014 sourcing pipeline pre-built for techs",
+          "Strong content marketing builds inbound owner pipeline",
+          "Placement guarantee shortens owner risk"
+        ],
+        "weaknesses": [
+          "Contingent fees ($15K-$30K per hire) hard to swallow for sub-$1M shops",
+          "Geographic strength varies \u2014 some markets thin",
+          "Doesn't solve apprentice/entry-level hiring (focus is journeyman+)"
+        ],
+        "differentiation": "Trades-only recruiting firm with passive sourcing",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Hireology",
+        "url": "https://hireology.com",
+        "pain_points_addressed": [
+          "ATS for hourly + skilled trades",
+          "structured interviews",
+          "career site builder"
+        ],
+        "pricing_model": "Subscription; typically $200-$500+/month for small businesses",
+        "target_market": "Multi-location SMB across home services, auto, healthcare",
+        "strengths": [
+          "Built for hourly/skilled hiring, not white-collar \u2014 workflow fits trades reality",
+          "Career sites optimized for mobile applicants",
+          "Integrations with payroll and background-check vendors"
+        ],
+        "weaknesses": [
+          "Trades-specific sourcing not as deep as a recruiting firm",
+          "Cost climbs as you add modules",
+          "Onboarding takes weeks \u2014 too heavy for solo owners"
+        ],
+        "differentiation": "Hourly/skilled-trades ATS with structured-interview workflow",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Indeed (Sponsored Jobs + Indeed Hiring Platform)",
+        "url": "https://www.indeed.com",
+        "pain_points_addressed": [
+          "job posting reach",
+          "applicant sourcing"
+        ],
+        "pricing_model": "Pay-per-application or sponsored job; $5-$15+ per applicant typical",
+        "target_market": "All employers; heavy SMB usage",
+        "strengths": [
+          "Largest applicant pool \u2014 table-stakes channel for any hiring contractor",
+          "Pay-per-applicant model controls spend",
+          "Mobile apply removes friction"
+        ],
+        "weaknesses": [
+          "Applicant quality wildly variable \u2014 ghosting and no-shows endemic in trades",
+          "Algorithm changes regularly cut visibility without warning",
+          "No screening built in \u2014 owner does all the filtering"
+        ],
+        "differentiation": "Reach. Not quality, not screening \u2014 just reach.",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Workrise (formerly RigUp)",
+        "url": "https://www.workrise.com",
+        "pain_points_addressed": [
+          "skilled trades staffing",
+          "contract/temp labor for projects"
+        ],
+        "pricing_model": "Mark-up on contract rate (typically 30-60%)",
+        "target_market": "Energy, infrastructure, commercial construction projects (larger contractors)",
+        "strengths": [
+          "Pre-vetted skilled labor pool for project-based gigs",
+          "Handles payroll/insurance for contract workers",
+          "Strong in energy/infrastructure markets"
+        ],
+        "weaknesses": [
+          "Markups expensive vs. direct hire long-term",
+          "Workforce skews to commercial/industrial, not residential trades",
+          "Less useful for permanent hires"
+        ],
+        "differentiation": "Marketplace for contract skilled labor on projects",
+        "reviews_sentiment": "mixed",
+        "market_position": "niche"
+      }
+    ]
+  },
+  "pain_point_7_scheduling_dispatch": {
+    "pain_point": "Scheduling, dispatch, and field service ops chaos",
+    "providers": [
+      {
+        "firm_name": "ServiceTitan",
+        "url": "https://www.servicetitan.com",
+        "pain_points_addressed": [
+          "dispatch",
+          "CSR scripting",
+          "marketing",
+          "pricing",
+          "reporting",
+          "payroll",
+          "memberships"
+        ],
+        "pricing_model": "Implementation fee $5K-$20K+, ongoing $300-$500+/user/month; not public",
+        "target_market": "Mid-market residential trades ($2M-$50M revenue, 10-100+ techs)",
+        "strengths": [
+          "Deepest functional surface area \u2014 every workflow a residential trade does is supported",
+          "Strong data/reporting \u2014 owners gain visibility they never had",
+          "Network effect: ST consultants/coaches/marketers are an ecosystem"
+        ],
+        "weaknesses": [
+          "Total cost of ownership prohibitive for sub-$1M shops (~$30K+/year all-in)",
+          "Implementation pain is legendary \u2014 many owners report 6-12 month gut-checks",
+          "Lock-in: getting your data out is hard"
+        ],
+        "differentiation": "Mid-market trades vertical SaaS \u2014 depth + ecosystem",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Housecall Pro (FSM)",
+        "url": "https://www.housecallpro.com",
+        "pain_points_addressed": [
+          "scheduling",
+          "dispatch",
+          "GPS tracking",
+          "estimates/invoices",
+          "payments"
+        ],
+        "pricing_model": "$49-$279+/month/user tiered",
+        "target_market": "SMB home services (1-15 employees)",
+        "strengths": [
+          "Best mobile UX in the SMB FSM segment \u2014 techs actually use it",
+          "Onboard-in-a-day flow vs. ServiceTitan's months",
+          "Strong consumer-facing booking + payment funnel"
+        ],
+        "weaknesses": [
+          "Reporting and job-costing depth limited",
+          "Add-on modules stack costs quickly",
+          "Multi-day/commercial jobs less well supported"
+        ],
+        "differentiation": "Fast-to-deploy mobile-first SMB FSM",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Jobber",
+        "url": "https://www.getjobber.com",
+        "pain_points_addressed": [
+          "quoting",
+          "scheduling",
+          "client communication",
+          "invoicing"
+        ],
+        "pricing_model": "$39-$349/month tiered (annual)",
+        "target_market": "1-15 employee home services and trades, global",
+        "strengths": [
+          "Easiest to onboard in segment \u2014 best for owner-operators with no software experience",
+          "Strong client portal increases repeat work",
+          "Reliable customer support reputation"
+        ],
+        "weaknesses": [
+          "Commercial/multi-day workflows weaker than ServiceTitan",
+          "Owners scaling past 8-10 techs commonly migrate off",
+          "Per-job-cost reporting thin"
+        ],
+        "differentiation": "Easiest-to-use SMB trades platform with strong client UX",
+        "reviews_sentiment": "positive",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Workiz",
+        "url": "https://www.workiz.com",
+        "pain_points_addressed": [
+          "dispatch",
+          "GPS",
+          "online booking",
+          "phone integration"
+        ],
+        "pricing_model": "$45-$195+/user/month tiered",
+        "target_market": "Locksmiths, garage doors, appliance repair, junk removal (1-25 trucks)",
+        "strengths": [
+          "Native phone integration / call recording \u2014 strong for 'phones-are-the-business' trades",
+          "Lower entry price than ServiceTitan for similar dispatch features",
+          "Active product velocity"
+        ],
+        "weaknesses": [
+          "Smaller ecosystem (fewer integrations than ST/Jobber)",
+          "Less brand recognition \u2014 owner research takes longer",
+          "Mobile experience lags HCP"
+        ],
+        "differentiation": "Dispatch + telephony for phone-heavy on-demand trades",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "FieldEdge (Xplor)",
+        "url": "https://fieldedge.com",
+        "pain_points_addressed": [
+          "FSM for HVAC/plumbing/electrical",
+          "QuickBooks integration",
+          "service agreements"
+        ],
+        "pricing_model": "Not public; estimated $100-$300+/user/month",
+        "target_market": "Mid-market HVAC/plumbing/electrical ($1M-$15M)",
+        "strengths": [
+          "Strong service-agreement (recurring maintenance) workflow",
+          "QuickBooks Desktop sync remains valuable to many older shops",
+          "Decent support reputation"
+        ],
+        "weaknesses": [
+          "UI dated \u2014 losing users to ST/HCP/Sera",
+          "Less innovation velocity than competitors",
+          "Implementation still heavy"
+        ],
+        "differentiation": "QuickBooks-Desktop-friendly FSM with strong maintenance plans",
+        "reviews_sentiment": "mixed",
+        "market_position": "challenger"
+      }
+    ]
+  },
+  "pain_point_8_marketing_tech": {
+    "pain_point": "Marketing/SEO/website spend with unclear ROI",
+    "providers": [
+      {
+        "firm_name": "Lemon Seed Marketing",
+        "url": "https://www.lemonseedmarketing.com",
+        "pain_points_addressed": [
+          "full-service marketing for HVAC/plumbing/electrical",
+          "branding",
+          "lead gen",
+          "fractional CMO"
+        ],
+        "pricing_model": "Retainer-based; typical engagements $3K-$10K/month",
+        "target_market": "Residential trades $1M-$20M",
+        "strengths": [
+          "Trades-specialist \u2014 knows the seasonal and emergency patterns",
+          "Strong community presence at industry events (Service Nation, Service World)",
+          "Fractional CMO offering fills a real gap for sub-$10M shops"
+        ],
+        "weaknesses": [
+          "Retainer cost out of reach for sub-$1M shops",
+          "Geographic exclusivity arrangements limit availability",
+          "Some clients report attribution opacity"
+        ],
+        "differentiation": "Trades-specialist fractional CMO + marketing agency",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "ServiceTitan Marketing Pro",
+        "url": "https://www.servicetitan.com/products/marketing-pro",
+        "pain_points_addressed": [
+          "email marketing",
+          "direct mail",
+          "review generation",
+          "ad-spend attribution"
+        ],
+        "pricing_model": "Module on top of ServiceTitan; pricing not public",
+        "target_market": "ServiceTitan customers, $2M+ revenue residential trades",
+        "strengths": [
+          "Closed-loop attribution \u2014 connects marketing dollar to actual completed job",
+          "Pre-built campaigns for common trades scenarios",
+          "Single-vendor accountability when bundled with FSM"
+        ],
+        "weaknesses": [
+          "Only useful if you already use ServiceTitan",
+          "Not a replacement for an agency that actually creates the content",
+          "Pricing layered on top of an already-expensive FSM"
+        ],
+        "differentiation": "Native ServiceTitan attribution + campaign automation",
+        "reviews_sentiment": "mixed",
+        "market_position": "leader"
+      },
+      {
+        "firm_name": "Hook Agency",
+        "url": "https://hookagency.com",
+        "pain_points_addressed": [
+          "SEO",
+          "Google Ads",
+          "websites for trades"
+        ],
+        "pricing_model": "Retainer $1.5K-$5K/month + ad spend",
+        "target_market": "Roofers, plumbers, HVAC, remodelers",
+        "strengths": [
+          "Geographic exclusivity per client",
+          "Trades-only positioning",
+          "Strong content marketing builds inbound flow"
+        ],
+        "weaknesses": [
+          "12-month minimums",
+          "Long ramp to results (6-9 months for SEO)",
+          "Less suited for emergency-service brands needing immediate calls"
+        ],
+        "differentiation": "Trades-niche digital agency with geo-exclusivity",
+        "reviews_sentiment": "positive",
+        "market_position": "challenger"
+      },
+      {
+        "firm_name": "Plumber/HVAC SEO (PlumberSEO.net)",
+        "url": "https://www.plumberseo.net",
+        "pain_points_addressed": [
+          "SEO + PPC + websites for plumbing/HVAC"
+        ],
+        "pricing_model": "Retainer ~$2K-$8K/month + ad spend",
+        "target_market": "Plumbing and HVAC contractors, $500K-$10M revenue",
+        "strengths": [
+          "20+ years in the trades-digital-marketing niche",
+          "Owner-built \u2014 speaks contractor language",
+          "Bundled SEO + PPC + website"
+        ],
+        "weaknesses": [
+          "Mid-tier pricing leaves out the lowest end",
+          "Less visible in industry community than Lemon Seed/Hook",
+          "Web platforms can be proprietary \u2014 exit cost"
+        ],
+        "differentiation": "Long-tenured plumbing/HVAC marketing specialist",
+        "reviews_sentiment": "mixed",
+        "market_position": "niche"
+      }
+    ]
+  },
+  "white_space": [
+    {
+      "gap": "Affordable fractional CFO / cash-flow operator for sub-$1M trades shops",
+      "pain_points_addressed": [
+        "cash_flow",
+        "pricing",
+        "getting_paid"
+      ],
+      "why_the_gap_exists": "Existing solutions split the problem: factors (1st Commercial, Mobilization Funding) advance money but at high cost, FSM platforms (HCP/Jobber/ST) collect payment but don't manage cash, and coaching programs (CertainPath, Nexstar) cost $1K+/month. There is no outsourced operator who, for $500-$1,500/month, runs the financial close, sets pricing, chases AR, and projects cash. Owners currently do this work themselves at 11 PM.",
+      "opportunity_signal": "Combined frequency of cash_flow + getting_paid + pricing clusters = 46 records (16% of corpus). High WTP across all three."
+    },
+    {
+      "gap": "Owner-operator coaching/community priced for solo and 1-3 employee trades",
+      "pain_points_addressed": [
+        "owner_burnout",
+        "pricing",
+        "hiring_trades",
+        "buying_or_selling_business"
+      ],
+      "why_the_gap_exists": "CertainPath, Nexstar, and Service Nation are excellent but price out the owner-operator doing $300K-$800K in revenue. Online courses fill some of this gap but lack the peer-group and benchmarking element. The result: thousands of solo trades owners cycling through Reddit/YouTube for advice that should be a $200/month peer cohort.",
+      "opportunity_signal": "Owner burnout + buying/selling clusters appear less frequently (4+3 records) but with extremely high engagement on Reddit (e.g., HVAC burnout post = 23 upvotes / 37 comments; owner-operator time-allocation post = 26u/31c)."
+    },
+    {
+      "gap": "Lead-quality remediation / Angi-Thumbtack escape plan",
+      "pain_points_addressed": [
+        "lead_gen",
+        "marketing_tech"
+      ],
+      "why_the_gap_exists": "Angi/HomeAdvisor/Thumbtack are the dominant ad-funded lead sources but contractor satisfaction is consistently negative. Agencies (Hook, Lemon Seed) help but require $1.5K-$5K/month retainers and 6-9 month ramps. There is a missing 'managed Google Local Service Ads + reputation funnel' offering at sub-$1K/month for solo and 1-5 person shops.",
+      "opportunity_signal": "lead_gen cluster = 23 records, third-highest in corpus. Repeat complaints about Angi quality across every platform. High WTP \u2014 owners explicitly reference $3,500/month SEO quotes (Reddit)."
+    },
+    {
+      "gap": "Trades-specific applicant screening and retention (not just sourcing)",
+      "pain_points_addressed": [
+        "hiring_trades",
+        "owner_burnout"
+      ],
+      "why_the_gap_exists": "Recruiting firms (Blue Collar Recruiter) source candidates but cost $15K-$30K per placement. ATS platforms (Hireology, Indeed) get applications but don't filter or retain. The pain described in the data is not 'I can't find people' \u2014 it's 'I find people but they no-show, or quit at 90 days'. No vendor owns the screening + onboarding + 90-day retention bundle.",
+      "opportunity_signal": "hiring_trades cluster appears in Reddit, LinkedIn, and X. Recent LinkedIn Pulse articles explicitly cite 79% caregiver-style turnover in adjacent home services."
+    },
+    {
+      "gap": "Buy-side advisor for trades acquisitions ($500K-$3M SDE deals)",
+      "pain_points_addressed": [
+        "buying_or_selling_business"
+      ],
+      "why_the_gap_exists": "Private equity rollups (Apex, Wrench Group, Authority Brands) compete for $1M+ EBITDA HVAC/plumbing/electrical shops. Business brokers handle the sell-side but rarely the buy-side for individual owner-operators or searcher entrepreneurs. There is a clear opportunity for a buy-side advisor specializing in owner-operators acquiring their first trades business \u2014 diligence, financing intro, post-close 90-day playbook.",
+      "opportunity_signal": "Reddit posts on buying a roofing/plumbing company in 2026 generated 51 upvotes / 29 comments and 87u/41c respectively. PE rollup posts appear in r/Entrepreneur."
+    }
+  ]
+}
