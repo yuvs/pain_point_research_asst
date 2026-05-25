@@ -1,0 +1,870 @@
+{
+  "industry": "wealth-management",
+  "research_date": "2026-05-25",
+  "competitors": [
+    {
+      "firm_name": "Orion Advisor Solutions",
+      "url": "https://orion.com",
+      "pain_points_addressed": [
+        "tech-stack-fragmentation",
+        "performance-reporting-consolidation",
+        "billing-fee-calculation",
+        "client-comms-reporting"
+      ],
+      "pricing_model": "Per-account / tiered subscription; integrated suite pricing not public, generally $2-10K/mo+ for boutique RIA",
+      "target_market": "SMB and mid-market RIAs ($100M \u2013 $10B AUM)",
+      "strengths": [
+        "Broadest integrated suite \u2014 portfolio accounting, billing, CRM (Redtail acquisition), planning (Advizr), trading (Eclipse)",
+        "Strong open API and integrations ecosystem (300+ third-party tools)",
+        "Acquired Redtail giving them CRM + integrated client comms"
+      ],
+      "weaknesses": [
+        "Constant acquisitions (Redtail, Advizr, HiddenLevers, Brinker) cause UX inconsistency and integration gaps between owned products",
+        "Heavy implementation cost and 6-12 month go-live; SMB RIAs frequently complain in r/CFP about complexity",
+        "Customer support deteriorated post-aggregation (consistent r/CFP and AdvisorHub complaints)"
+      ],
+      "differentiation": "Only player offering single-vendor suite from CRM through trading and reporting",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Envestnet | Tamarac",
+      "url": "https://www.envestnet.com/tamarac",
+      "pain_points_addressed": [
+        "tech-stack-fragmentation",
+        "performance-reporting-consolidation",
+        "billing-fee-calculation"
+      ],
+      "pricing_model": "Enterprise subscription; minimums often $50K+/yr; not transparent",
+      "target_market": "Mid-market and enterprise RIAs ($500M \u2013 $20B+ AUM)",
+      "strengths": [
+        "Deep portfolio accounting and rebalancing engine (Tamarac Trading)",
+        "MoneyGuidePro planning integration (under same parent)",
+        "Strong reporting customization for sophisticated firms"
+      ],
+      "weaknesses": [
+        "Pricing prohibitive for sub-$300M RIAs",
+        "Reputation for slow product velocity post-Bain acquisition (2024) and layoffs",
+        "Salesforce-based CRM (Envestnet Tamarac CRM) is dated and not loved by users"
+      ],
+      "differentiation": "Trading + rebalancing engine remains best-in-class for tax-loss harvesting at scale",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Black Diamond Wealth Platform (SS&C Advent)",
+      "url": "https://www.advent.com/products/black-diamond",
+      "pain_points_addressed": [
+        "tech-stack-fragmentation",
+        "performance-reporting-consolidation"
+      ],
+      "pricing_model": "Per-account subscription; ~$0.50-1.50/account/mo blended; enterprise contracts",
+      "target_market": "Mid-market RIAs ($200M \u2013 $5B AUM)",
+      "strengths": [
+        "Polished client portal and modern UI relative to Tamarac/Orion",
+        "Strong data reconciliation team and back-office services",
+        "Well-regarded client reporting templates"
+      ],
+      "weaknesses": [
+        "Weaker integration ecosystem than Orion",
+        "No native CRM \u2014 forces parallel Salesforce/Wealthbox/Redtail",
+        "Pricing increases under SS&C ownership cited by users"
+      ],
+      "differentiation": "Premium UX + outsourced reconciliation back-office",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Advyzon",
+      "url": "https://www.advyzon.com",
+      "pain_points_addressed": [
+        "tech-stack-fragmentation",
+        "performance-reporting-consolidation",
+        "billing-fee-calculation",
+        "client-comms-reporting"
+      ],
+      "pricing_model": "All-in monthly per-firm pricing; starts ~$250-500/advisor/mo; transparent",
+      "target_market": "Solo and small RIAs (<$500M AUM)",
+      "strengths": [
+        "True all-in-one (CRM + portfolio mgmt + billing + reporting + client portal) \u2014 most integrated single product on market",
+        "Transparent pricing and SMB-friendly",
+        "Active product development and responsive support"
+      ],
+      "weaknesses": [
+        "Less mature than incumbents for complex multi-custodian operations",
+        "Reporting customization more limited than Black Diamond/Tamarac",
+        "Smaller integration ecosystem"
+      ],
+      "differentiation": "Built ground-up as single integrated system rather than acquired bolt-ons",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "F2 Strategy",
+      "url": "https://f2strategy.com",
+      "pain_points_addressed": [
+        "tech-stack-fragmentation",
+        "ai-automation-adoption",
+        "wirehouse-breakaway-transition",
+        "client-onboarding-paperwork"
+      ],
+      "pricing_model": "Project-based consulting ($50K-$500K+) and fractional CIO/CTO retainers",
+      "target_market": "Mid-market and large RIAs, MFOs, breakaway teams",
+      "strengths": [
+        "Deep wealthtech advisory practice \u2014 vendor-agnostic platform selection and implementation",
+        "Founders (Doug Fritz, Tim Welsh) are recognized industry voices and frequent T3/Schwab Impact speakers",
+        "Strong track record on M&A integration and tech roadmap for $1B+ firms"
+      ],
+      "weaknesses": [
+        "Pricing puts them out of reach for sub-$300M RIAs",
+        "Project timelines often slip per industry chatter; engagements can balloon",
+        "Heavy reliance on senior founder access \u2014 junior team less differentiated"
+      ],
+      "differentiation": "Independent wealthtech strategy consultancy \u2014 only true peer is The Ezra Group",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "COMPLY",
+      "url": "https://www.comply.com",
+      "pain_points_addressed": [
+        "compliance-burden",
+        "cybersecurity-data-privacy",
+        "regulatory-aml-kyc"
+      ],
+      "pricing_model": "SaaS subscription ($300-2,000+/mo) plus managed-compliance retainer ($1.5-10K/mo)",
+      "target_market": "SMB and mid-market RIAs and broker-dealers",
+      "strengths": [
+        "Roll-up of leading compliance brands (RIA in a Box, ComplySci, NRS, illumis, Foreside) \u2014 most comprehensive single vendor",
+        "Combined managed-service plus software \u2014 true outsourced CCO option for small RIAs",
+        "Strong SEC exam prep playbooks"
+      ],
+      "weaknesses": [
+        "Post-acquisition integration friction \u2014 clients report inconsistent service across legacy product lines",
+        "Pricing increases following PE consolidation (Marlin Equity)",
+        "Some advisors report cookie-cutter compliance manuals not customized to firm specifics"
+      ],
+      "differentiation": "Only firm offering software + outsourced CCO + ADV filings + 28e + Marketing Rule under one roof",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "ACA Group",
+      "url": "https://www.acaglobal.com",
+      "pain_points_addressed": [
+        "compliance-burden",
+        "cybersecurity-data-privacy",
+        "regulatory-aml-kyc"
+      ],
+      "pricing_model": "Project-based and retained consulting; mock SEC exam $25-75K; ongoing retainers $30K-$300K/yr",
+      "target_market": "Mid-market RIAs, hedge funds, private equity ($500M+ AUM)",
+      "strengths": [
+        "Largest compliance consulting firm globally; ex-SEC staff bench",
+        "Mock SEC exam practice is gold standard \u2014 known across industry",
+        "Deep expertise in private funds / hybrid RIA / dual-registered models"
+      ],
+      "weaknesses": [
+        "Pricing prohibitive for sub-$200M RIAs",
+        "Less digital/SaaS \u2014 relies on consultant hours rather than productized tools",
+        "Junior staff turnover means relationship continuity issues"
+      ],
+      "differentiation": "Ex-SEC examiner bench gives them unique insight into what exams actually focus on",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "MyComplianceOffice (MCO)",
+      "url": "https://www.mycomplianceoffice.com",
+      "pain_points_addressed": [
+        "compliance-burden",
+        "regulatory-aml-kyc"
+      ],
+      "pricing_model": "Enterprise SaaS subscription; not public",
+      "target_market": "Mid-market and enterprise asset managers / RIAs",
+      "strengths": [
+        "Strong personal trading / Code of Ethics module",
+        "Good for global firms \u2014 multi-jurisdiction support",
+        "Active analytics and dashboards"
+      ],
+      "weaknesses": [
+        "UI dated relative to Hadrius and ComplySci",
+        "Implementation complexity high \u2014 multi-month onboardings",
+        "Limited managed-service overlay; software-only"
+      ],
+      "differentiation": "Cross-border / multi-jurisdiction compliance is its strength",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "Smarsh",
+      "url": "https://www.smarsh.com",
+      "pain_points_addressed": [
+        "compliance-burden",
+        "cybersecurity-data-privacy"
+      ],
+      "pricing_model": "Per-user subscription; ~$25-75/user/mo",
+      "target_market": "All RIAs, broker-dealers, banks",
+      "strengths": [
+        "Market leader for email/text/social media archiving (Books & Records compliance)",
+        "Broad communication channel coverage (Slack, Teams, WhatsApp, LinkedIn)",
+        "Strong AI-based supervision tools"
+      ],
+      "weaknesses": [
+        "Pricing has crept up over time per r/CFP threads",
+        "UX for compliance review queues considered clunky",
+        "Doesn't cover full CCO program \u2014 point solution only"
+      ],
+      "differentiation": "Default communication-archiving incumbent across the industry",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Hadrius",
+      "url": "https://www.hadrius.com",
+      "pain_points_addressed": [
+        "compliance-burden"
+      ],
+      "pricing_model": "SaaS subscription; rumored $500-2,500/mo for small RIAs",
+      "target_market": "Emerging and small RIAs (<$500M AUM)",
+      "strengths": [
+        "Modern AI-native compliance platform \u2014 Marketing Rule, social media review, ADV maintenance",
+        "Strong UX vs incumbents; built for solo and small firms",
+        "Y Combinator backed, fast product iteration"
+      ],
+      "weaknesses": [
+        "Young company (founded 2022) \u2014 limited SEC exam track record visible to market",
+        "Doesn't replace full outsourced CCO \u2014 software-only",
+        "Narrow product depth vs COMPLY"
+      ],
+      "differentiation": "AI-first compliance built natively for the SEC Marketing Rule era",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging"
+    },
+    {
+      "firm_name": "Snappy Kraken",
+      "url": "https://snappykraken.com",
+      "pain_points_addressed": [
+        "client-acquisition-marketing"
+      ],
+      "pricing_model": "SaaS subscription ~$200-600/mo per advisor",
+      "target_market": "Solo and small RIA advisors",
+      "strengths": [
+        "Pre-built compliant marketing campaigns (email, social, landing pages)",
+        "Strong content library refreshed for current events",
+        "Easy onboarding for non-marketer advisors"
+      ],
+      "weaknesses": [
+        "Generic content \u2014 many advisors look identical when using it",
+        "Doesn't drive measurable lead gen \u2014 more brand-awareness than pipeline",
+        "Compliance review still on advisor's CCO"
+      ],
+      "differentiation": "Done-for-you advisor marketing automation at SMB price",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "FMG (FMG Suite)",
+      "url": "https://fmgsuite.com",
+      "pain_points_addressed": [
+        "client-acquisition-marketing"
+      ],
+      "pricing_model": "SaaS subscription; tiered $99-499+/mo",
+      "target_market": "Solo and small advisors; many BD-affiliated",
+      "strengths": [
+        "Website + email + social media platform under one roof",
+        "Largest install base among independent advisors",
+        "Compliance-pre-approved content library"
+      ],
+      "weaknesses": [
+        "Templated websites \u2014 limited brand differentiation",
+        "Mixed reviews on customer support post-PE acquisition",
+        "Lead-gen efficacy disputed by users"
+      ],
+      "differentiation": "Most widely-adopted advisor marketing platform",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Indigo Marketing Agency",
+      "url": "https://indigomarketingagency.com",
+      "pain_points_addressed": [
+        "client-acquisition-marketing"
+      ],
+      "pricing_model": "Monthly retainer $2-5K; one-time website projects $8-25K",
+      "target_market": "Independent fee-only RIAs",
+      "strengths": [
+        "Done-for-you agency model \u2014 full marketing department outsourced",
+        "Niche specialization (fee-only RIA) gives strong vertical understanding",
+        "Reasonable pricing relative to general digital agencies"
+      ],
+      "weaknesses": [
+        "Templated approach \u2014 not bespoke strategy",
+        "Limited paid-acquisition expertise (Google Ads, Meta) per advisor reports",
+        "Capacity-constrained \u2014 long onboarding waitlist"
+      ],
+      "differentiation": "Niche fee-only RIA marketing agency",
+      "reviews_sentiment": "positive",
+      "market_position": "niche"
+    },
+    {
+      "firm_name": "Carson Coaching (Carson Group)",
+      "url": "https://www.carsongroup.com/coaching/",
+      "pain_points_addressed": [
+        "client-acquisition-marketing",
+        "succession-continuity",
+        "talent-recruiting-retention"
+      ],
+      "pricing_model": "Membership/coaching $20-50K/yr; partnership/aggregator equity model on top",
+      "target_market": "Solo and small RIAs aiming to scale",
+      "strengths": [
+        "Combines coaching + aggregator path \u2014 built-in succession option",
+        "Strong brand led by Ron Carson; high industry profile",
+        "Active practice-management curriculum and peer community"
+      ],
+      "weaknesses": [
+        "Aggressive sales motion pushing toward Carson Partners equity sale",
+        "Coaching content has been criticized as repetitive across years",
+        "Conflicts of interest \u2014 they recruit your firm while coaching you"
+      ],
+      "differentiation": "Only major coach that doubles as an aggregator buyer",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Succession Resource Group (SRG)",
+      "url": "https://successionresource.com",
+      "pain_points_addressed": [
+        "succession-continuity",
+        "talent-recruiting-retention"
+      ],
+      "pricing_model": "Project-based ($15-75K) and ongoing equity advisory",
+      "target_market": "Solo and small RIA/BD advisors planning internal succession",
+      "strengths": [
+        "Specialized solely in advisor succession and internal equity transfer",
+        "Strong legal/tax templates for buy-sell, deferred comp, partner buy-ins",
+        "David Grau Sr/Jr brand recognized industry-wide"
+      ],
+      "weaknesses": [
+        "Heavy focus on internal succession \u2014 less help if you want external sale",
+        "Templated frameworks can feel generic for unique firm situations",
+        "Pricing inconsistent \u2014 quoted projects often expand"
+      ],
+      "differentiation": "Pure-play internal succession specialist",
+      "reviews_sentiment": "positive",
+      "market_position": "niche"
+    },
+    {
+      "firm_name": "FP Transitions",
+      "url": "https://www.fptransitions.com",
+      "pain_points_addressed": [
+        "succession-continuity"
+      ],
+      "pricing_model": "Valuation $5-15K; deal facilitation 4-8% of transaction value",
+      "target_market": "All independent advisors considering sale or internal succession",
+      "strengths": [
+        "Largest practice marketplace \u2014 most listings and buyer reach",
+        "Standardized valuation methodology accepted by lenders",
+        "Combines valuation + listing + deal facilitation"
+      ],
+      "weaknesses": [
+        "Valuation methodology criticized as below-market in PE-fueled environment",
+        "Marketplace model attracts more small-deal volume than premium HNW firms",
+        "Mixed reviews on hands-on deal advisory vs purely brokerage"
+      ],
+      "differentiation": "Largest practice-sale marketplace in industry",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "DeVoe & Company",
+      "url": "https://www.devoeandcompany.com",
+      "pain_points_addressed": [
+        "succession-continuity",
+        "fee-compression-pricing"
+      ],
+      "pricing_model": "Project-based M&A advisory; quarterly RIA M&A research subscription",
+      "target_market": "Mid-market and large RIAs ($500M+)",
+      "strengths": [
+        "Most-cited RIA M&A research/quarterly deal report",
+        "Strong banker-side track record on large mid-market deals",
+        "David DeVoe has high industry credibility"
+      ],
+      "weaknesses": [
+        "Focused on sell-side M&A \u2014 less help with operational succession",
+        "Pricing not accessible to sub-$500M firms",
+        "Bandwidth-limited senior team"
+      ],
+      "differentiation": "Premier sell-side M&A banker for $500M+ RIAs",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Advisor Growth Strategies",
+      "url": "https://advisorgrowthllc.com",
+      "pain_points_addressed": [
+        "succession-continuity",
+        "client-acquisition-marketing",
+        "talent-recruiting-retention"
+      ],
+      "pricing_model": "Project-based ($25-150K) and ongoing strategy retainer",
+      "target_market": "Mid-market RIAs ($300M \u2013 $3B)",
+      "strengths": [
+        "Combines strategy, M&A, comp, and org design \u2014 broader than pure M&A bankers",
+        "Strong comp/equity benchmarking research",
+        "John Furey and team have deep RIA operator experience"
+      ],
+      "weaknesses": [
+        "Less name recognition than DeVoe for pure sell-side",
+        "Smaller team \u2014 bandwidth constraints",
+        "Pricing not transparent"
+      ],
+      "differentiation": "Strategy-plus-M&A boutique with strong comp/equity expertise",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "Mercer Capital",
+      "url": "https://mercercapital.com",
+      "pain_points_addressed": [
+        "succession-continuity",
+        "fee-compression-pricing"
+      ],
+      "pricing_model": "Project-based valuations $10-50K",
+      "target_market": "RIAs needing valuation for succession, buy-sell, gifting, litigation",
+      "strengths": [
+        "Long-tenured RIA valuation practice \u2014 Matt Crow widely cited",
+        "Defensible methodology for IRS/litigation contexts",
+        "Quarterly RIA valuation newsletter"
+      ],
+      "weaknesses": [
+        "Valuation-only \u2014 doesn't handle deal execution",
+        "Slower turnaround than newer entrants",
+        "Pricing reflects litigation-defensible rigor (not budget option)"
+      ],
+      "differentiation": "Litigation/IRS-grade RIA valuation expertise",
+      "reviews_sentiment": "positive",
+      "market_position": "niche"
+    },
+    {
+      "firm_name": "Dynasty Financial Partners",
+      "url": "https://dynastyfinancialpartners.com",
+      "pain_points_addressed": [
+        "wirehouse-breakaway-transition",
+        "tech-stack-fragmentation",
+        "compliance-burden"
+      ],
+      "pricing_model": "AUM-based platform fee (~10-25 bps) plus transition financing",
+      "target_market": "Breakaway advisors $200M+ from wirehouses",
+      "strengths": [
+        "Most prominent breakaway platform \u2014 full stack (tech, compliance, marketing, capital)",
+        "Transition capital and equity participation a major draw",
+        "Strong custodian relationships (Schwab, Fidelity, Pershing)"
+      ],
+      "weaknesses": [
+        "Platform fee a meaningful drag on net economics vs full independence",
+        "Some advisors regret losing optionality \u2014 locked into Dynasty stack",
+        "Recent leadership turnover (CEO change)"
+      ],
+      "differentiation": "Highest-touch breakaway support with capital + equity",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Sanctuary Wealth",
+      "url": "https://sanctuarywealth.com",
+      "pain_points_addressed": [
+        "wirehouse-breakaway-transition",
+        "tech-stack-fragmentation"
+      ],
+      "pricing_model": "AUM-based platform fee; not public",
+      "target_market": "Breakaway wirehouse advisors $100M+",
+      "strengths": [
+        "Partners Plus equity program for affiliated advisors",
+        "Aggressive recruiting and deal economics",
+        "International presence (UK expansion)"
+      ],
+      "weaknesses": [
+        "PE ownership (Azimut + later parties) raises long-term cultural concerns",
+        "Smaller than Dynasty \u2014 less brand recognition with HNW clients",
+        "Some advisors cite slower tech roadmap"
+      ],
+      "differentiation": "Equity-heavy breakaway platform",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "tru Independence",
+      "url": "https://truindependence.com",
+      "pain_points_addressed": [
+        "wirehouse-breakaway-transition",
+        "tech-stack-fragmentation",
+        "compliance-burden"
+      ],
+      "pricing_model": "Tiered platform fee; transparent and lower than Dynasty",
+      "target_market": "Breakaway and existing RIAs $100M-$1B",
+      "strengths": [
+        "Transparent fee structure vs incumbents",
+        "Strong tech support and operational integration",
+        "Founder-led (Craig Stuvland) with personal involvement"
+      ],
+      "weaknesses": [
+        "Smaller scale than Dynasty \u2014 less leverage on third-party deals",
+        "Less brand recognition with prospective HNW clients",
+        "Light on transition capital"
+      ],
+      "differentiation": "Transparent, lower-fee breakaway alternative to Dynasty",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "Diamond Consultants",
+      "url": "https://www.diamond-consultants.com",
+      "pain_points_addressed": [
+        "wirehouse-breakaway-transition",
+        "talent-recruiting-retention"
+      ],
+      "pricing_model": "Success-fee on recruit/transition (paid by hiring firm)",
+      "target_market": "Wirehouse advisors $200M+ exploring options",
+      "strengths": [
+        "Top-of-mind recruiter for wirehouse-to-RIA moves",
+        "Mindy Diamond podcast is industry-leading thought-leadership",
+        "Deep knowledge of competing platforms"
+      ],
+      "weaknesses": [
+        "Recruiter incentives \u2014 paid by hiring firm, not advisor",
+        "Can be biased toward larger/branded platforms that pay better",
+        "Doesn't help with post-transition operations"
+      ],
+      "differentiation": "Industry-leading wirehouse-to-RIA transition recruiter",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Mariner",
+      "url": "https://www.marinerwealthadvisors.com",
+      "pain_points_addressed": [
+        "wirehouse-breakaway-transition",
+        "succession-continuity",
+        "family-office-ops"
+      ],
+      "pricing_model": "Acquisition or partnership equity model",
+      "target_market": "Advisors selling or affiliating; $100M+ practices",
+      "strengths": [
+        "$100B+ AUM aggregator \u2014 significant scale and infrastructure",
+        "Built-in succession exit for selling founders",
+        "Family office and tax services integrated"
+      ],
+      "weaknesses": [
+        "PE-backed roll-up \u2014 culture and autonomy concerns voiced by sellers",
+        "Branding standardization may not fit boutique identity",
+        "Recent layoffs and integration friction reported"
+      ],
+      "differentiation": "Largest mid-market aggregator with family-office bench",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Addepar",
+      "url": "https://addepar.com",
+      "pain_points_addressed": [
+        "family-office-ops",
+        "performance-reporting-consolidation",
+        "tech-stack-fragmentation"
+      ],
+      "pricing_model": "Enterprise SaaS; ~$25-100K+/yr minimums",
+      "target_market": "MFOs, SFOs, UHNW-focused RIAs ($1B+ AUM with complex alts)",
+      "strengths": [
+        "Best-in-class for alternatives and illiquid investment reporting",
+        "Multi-entity/multi-currency consolidation gold standard",
+        "Strong analytics and benchmarking"
+      ],
+      "weaknesses": [
+        "Pricing inaccessible to firms below $500M AUM",
+        "Implementation 6-18 months with significant data-cleanup cost",
+        "Steep learning curve \u2014 clients often need dedicated power user"
+      ],
+      "differentiation": "Most sophisticated alts and multi-entity reporting platform",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Eton Solutions (AtlasFive)",
+      "url": "https://etonsolutions.com",
+      "pain_points_addressed": [
+        "family-office-ops",
+        "performance-reporting-consolidation",
+        "client-onboarding-paperwork"
+      ],
+      "pricing_model": "Subscription + managed services; enterprise pricing",
+      "target_market": "SFOs and MFOs ($500M+)",
+      "strengths": [
+        "Single-platform GL + portfolio + bill pay + tax reporting",
+        "Managed-service wrap means client doesn't staff a back office",
+        "Strong family-office native design"
+      ],
+      "weaknesses": [
+        "Pricing opaque and high",
+        "Long onboarding (12+ months)",
+        "Less developed alts reporting than Addepar"
+      ],
+      "differentiation": "Tech + managed services bundled for family offices",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger"
+    },
+    {
+      "firm_name": "Sage Intacct (family office configurations)",
+      "url": "https://www.sage.com/en-us/products/sage-intacct/",
+      "pain_points_addressed": [
+        "family-office-ops",
+        "billing-fee-calculation"
+      ],
+      "pricing_model": "SaaS subscription $10-50K/yr typical for FO config",
+      "target_market": "SFOs and MFOs needing multi-entity GL",
+      "strengths": [
+        "Battle-tested multi-entity GL \u2014 best in class for accounting backbone",
+        "Large partner ecosystem (FOX, family-office consultants)",
+        "Strong audit support and reporting"
+      ],
+      "weaknesses": [
+        "Not purpose-built for family office \u2014 needs configuration",
+        "No native portfolio/performance reporting \u2014 must integrate Addepar/Black Diamond",
+        "Implementation requires specialist consultant"
+      ],
+      "differentiation": "Best general-ledger backbone configurable for family office",
+      "reviews_sentiment": "positive",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Masttro",
+      "url": "https://www.masttro.com",
+      "pain_points_addressed": [
+        "family-office-ops",
+        "performance-reporting-consolidation",
+        "cybersecurity-data-privacy"
+      ],
+      "pricing_model": "Subscription; UHNW-focused; premium pricing",
+      "target_market": "Single-family offices and UHNW families",
+      "strengths": [
+        "Built for UHNW wealth-owner viewpoint, not advisor",
+        "Strong document vault and security focus",
+        "Multi-generational access controls"
+      ],
+      "weaknesses": [
+        "Smaller install base than Addepar \u2014 fewer integrations",
+        "Less powerful analytics for alts",
+        "Limited US sales/support footprint historically"
+      ],
+      "differentiation": "Family-centric (not advisor-centric) wealth platform",
+      "reviews_sentiment": "positive",
+      "market_position": "niche"
+    },
+    {
+      "firm_name": "Cresset Family Office Solutions",
+      "url": "https://cressetcapital.com",
+      "pain_points_addressed": [
+        "family-office-ops",
+        "alts-due-diligence-access",
+        "estate-tax-planning-complexity"
+      ],
+      "pricing_model": "AUM fee for full MFO service; not transparent",
+      "target_market": "UHNW families ($25M+)",
+      "strengths": [
+        "Full-service MFO with strong alts and private investments platform",
+        "Eldridge Industries backing provides access to deals",
+        "Concierge service model"
+      ],
+      "weaknesses": [
+        "Expensive \u2014 only viable for true UHNW",
+        "Rapid growth created service-quality variability",
+        "PE-backed model raises long-term independence questions"
+      ],
+      "differentiation": "Full-service MFO with strong alts deal flow",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader"
+    },
+    {
+      "firm_name": "Jump",
+      "url": "https://jumpapp.com",
+      "pain_points_addressed": [
+        "ai-automation-adoption"
+      ],
+      "pricing_model": "SaaS subscription ~$99-149/advisor/mo",
+      "target_market": "All independent advisors",
+      "strengths": [
+        "Meeting-note AI purpose-built for advisor workflows",
+        "Integrates with CRMs (Redtail, Wealthbox, Salesforce)",
+        "Compliance-aware transcription handling"
+      ],
+      "weaknesses": [
+        "Young product \u2014 feature gaps vs general AI tools",
+        "Custom workflow logic still limited",
+        "Pricing higher than generic Fathom/Otter"
+      ],
+      "differentiation": "Advisor-native meeting AI with CRM integrations",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging"
+    },
+    {
+      "firm_name": "Zocks",
+      "url": "https://www.zocks.io",
+      "pain_points_addressed": [
+        "ai-automation-adoption",
+        "client-comms-reporting"
+      ],
+      "pricing_model": "SaaS subscription ~$99-149/advisor/mo",
+      "target_market": "Independent advisors and small RIAs",
+      "strengths": [
+        "Privacy-first (no audio recording, runs on transcript)",
+        "Strong CRM integrations and structured data outputs",
+        "Recent fundraise + active product velocity"
+      ],
+      "weaknesses": [
+        "Young \u2014 limited enterprise references",
+        "Competing with Jump for same wallet",
+        "Doesn't yet replace planning-software workflows"
+      ],
+      "differentiation": "Privacy-first AI meeting-note architecture",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging"
+    },
+    {
+      "firm_name": "Zeplyn",
+      "url": "https://www.zeplyn.ai",
+      "pain_points_addressed": [
+        "ai-automation-adoption",
+        "client-onboarding-paperwork"
+      ],
+      "pricing_model": "SaaS subscription; pricing not public",
+      "target_market": "Independent advisors",
+      "strengths": [
+        "Meeting notes + structured client data extraction",
+        "Integrates planning + CRM workflows",
+        "Active VC-backed development"
+      ],
+      "weaknesses": [
+        "Smaller install base than Jump/Zocks",
+        "Brand awareness limited",
+        "Workflow scope still narrowing"
+      ],
+      "differentiation": "Combines meeting AI with planning-form pre-fill",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging"
+    },
+    {
+      "firm_name": "Finny AI",
+      "url": "https://finnyai.com",
+      "pain_points_addressed": [
+        "ai-automation-adoption",
+        "client-acquisition-marketing"
+      ],
+      "pricing_model": "SaaS subscription; pricing not public",
+      "target_market": "Independent advisors focused on growth",
+      "strengths": [
+        "AI for prospect research and personalized outreach",
+        "Targets a different workflow than meeting-note tools",
+        "Differentiates on growth/marketing AI"
+      ],
+      "weaknesses": [
+        "Very young \u2014 limited track record",
+        "Outreach effectiveness depends on advisor follow-through",
+        "Compliance review still needed on outputs"
+      ],
+      "differentiation": "AI for advisor prospecting (not just meetings)",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging"
+    },
+    {
+      "firm_name": "FP Alpha",
+      "url": "https://www.fpalpha.com",
+      "pain_points_addressed": [
+        "ai-automation-adoption",
+        "estate-tax-planning-complexity"
+      ],
+      "pricing_model": "SaaS subscription $200-500/advisor/mo",
+      "target_market": "Advisors serving HNW with tax/estate planning needs",
+      "strengths": [
+        "AI extracts data from tax returns, estate docs, insurance policies",
+        "Adjacent to planning workflow \u2014 flags planning opportunities",
+        "Strong differentiator on document-AI vs meeting-note AI"
+      ],
+      "weaknesses": [
+        "Doesn't replace human estate-planning attorney",
+        "Output quality depends on document quality",
+        "Pricing higher than meeting-AI alternatives"
+      ],
+      "differentiation": "Document-AI for tax/estate document parsing",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger"
+    }
+  ],
+  "white_space": [
+    {
+      "gap": "Outsourced CCO + cybersecurity bundle for sub-$200M RIAs",
+      "description": "COMPLY and ACA Group serve mid-market and above; sub-$200M RIAs are stuck between expensive consultants and software-only tools (Hadrius) that don't cover full CCO duties. Reg S-P amendments and increasing SEC examination cadence create urgent need.",
+      "pain_points_addressed": [
+        "compliance-burden",
+        "cybersecurity-data-privacy"
+      ],
+      "why_gap_exists": "Outsourced CCO services are labor-intensive and economics for small accounts are thin; existing players moved upmarket post-PE.",
+      "demand_signal": "60 of 292 unique posts (21%) touched compliance burden; Reddit r/CFP threads explicitly ask 'what are sub-$300M RIAs doing for compliance?' with limited answers."
+    },
+    {
+      "gap": "Wealthtech selection + implementation consulting for $100M-$500M RIAs",
+      "description": "F2 Strategy and Ezra Group serve $500M+ firms with $50K+ engagements. Below that, advisors face the same tech-stack decision (Orion vs Black Diamond vs Tamarac vs Advyzon) with no vendor-agnostic guide. Custodian-sponsored 'consultants' are conflicted.",
+      "pain_points_addressed": [
+        "tech-stack-fragmentation",
+        "wirehouse-breakaway-transition",
+        "ai-automation-adoption"
+      ],
+      "why_gap_exists": "Project economics push consultants upmarket; productized fixed-fee assessments don't exist for SMB.",
+      "demand_signal": "Tech-stack questions are the most-frequent topic in r/CFP (31 posts in corpus); recurring pleading for unbiased opinion."
+    },
+    {
+      "gap": "Productized HNW client-acquisition consulting (vs templated marketing software)",
+      "description": "Snappy Kraken/FMG are software-as-marketing; Indigo Marketing is a templated agency; Carson Coaching is biased toward selling to Carson. No mid-cost ($25-75K) productized engagement helps a $200M-$1B RIA build a true HNW marketing engine (positioning + COI program + paid media + content + measurement).",
+      "pain_points_addressed": [
+        "client-acquisition-marketing",
+        "fee-compression-pricing"
+      ],
+      "why_gap_exists": "Agencies optimize for retainer; coaches sell content not execution; software doesn't deliver leads.",
+      "demand_signal": "20+ posts in corpus on 'how do I grow' with strong willingness-to-pay signals; LinkedIn data shows advisors paying for memberships, coaching, and marketing agencies separately."
+    },
+    {
+      "gap": "Affordable family-office tech + ops outsourcing for SFOs below $250M",
+      "description": "Addepar/Eton serve $500M+ family offices; below that, families typically use Sage Intacct + Excel + a part-time CFO. No clear 'family-office-as-a-service' offering for the growing $50-250M emerging-wealth-creator segment.",
+      "pain_points_addressed": [
+        "family-office-ops",
+        "performance-reporting-consolidation",
+        "estate-tax-planning-complexity"
+      ],
+      "why_gap_exists": "MFOs concentrate on AUM fees and won't take small accounts; software-only doesn't solve the human bandwidth problem.",
+      "demand_signal": "17 family-office-ops posts in corpus; fatFIRE threads repeatedly ask 'how do I run a one-family family office at $20-50M'."
+    },
+    {
+      "gap": "G2 advisor recruiting + retention service productized for $200M-$1B RIAs",
+      "description": "Most RIAs in this band can't afford a full-time recruiter and can't compete with PE aggregators on comp. There's no productized 'next-gen advisor pipeline' service (sourcing + comp design + career-path framework + initial retention coaching).",
+      "pain_points_addressed": [
+        "talent-recruiting-retention",
+        "succession-continuity"
+      ],
+      "why_gap_exists": "Executive recruiters target senior moves with success fees; coaching firms don't do sourcing.",
+      "demand_signal": "33 posts on talent/retention; succession crisis (13 posts) is fundamentally a G2-pipeline problem."
+    },
+    {
+      "gap": "Compliance-aware AI deployment consulting for RIAs",
+      "description": "AI tools (Jump, Zocks, FP Alpha) proliferate but advisors are paralyzed by Marketing Rule, Reg S-P, and Books & Records uncertainty. No consultant productizes 'evaluate, select, deploy 2-3 AI tools with compliant policies and supervision in 6 weeks'.",
+      "pain_points_addressed": [
+        "ai-automation-adoption",
+        "compliance-burden"
+      ],
+      "why_gap_exists": "Compliance consultants don't speak tech; tech consultants don't speak compliance.",
+      "demand_signal": "AI adoption questions are exploding in 2025 corpus posts; LinkedIn vendor posts admit advisor confusion as the #1 adoption blocker."
+    }
+  ],
+  "methodology_notes": [
+    "Competitor profiles assembled from (a) presence in scraped Reddit/LinkedIn discussions, (b) widely-known industry market intelligence (T3 Tech Tools survey, Kitces tech map, AdvisorHub coverage), (c) Firecrawl-validated public websites and reviews",
+    "Where pricing is marked 'not public,' we have stated approximate ranges based on industry chatter and noted the imprecision",
+    "Each profile lists at least 2-3 specific strengths and 2-3 specific weaknesses",
+    "White-space gaps are derived from cross-referencing the analyzed pain-point frequency against the competitor coverage map"
+  ]
+}

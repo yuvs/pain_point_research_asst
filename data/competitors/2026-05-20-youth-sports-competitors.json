@@ -1,0 +1,517 @@
+{
+  "industry": "youth-sports",
+  "research_date": "2026-05-20",
+  "pain_points_mapped": [
+    "Runaway cost of competitive/travel youth sports",
+    "Volunteer coach shortage and coach quality",
+    "Referee/umpire shortage",
+    "Toxic parent behavior",
+    "Athlete burnout / overscheduling",
+    "Registration, scheduling, and payment software",
+    "Tryout politics and roster transparency",
+    "Sponsorship and fundraising"
+  ],
+  "competitors": [
+    {
+      "firm_name": "SportsEngine (NBC Sports / Comcast)",
+      "url": "https://www.sportsengine.com",
+      "pain_points_addressed": [
+        "Registration, scheduling, and payment software (Pain #6)",
+        "Field/gym scheduling (Pain #8)",
+        "Communication overload (Pain #9)"
+      ],
+      "pricing_model": "Tiered SaaS — HQ subscription plus transaction fees; pricing not public on site but typically $1-3/registrant plus 3-3.5% payment processing",
+      "target_market": "Mid-market to large youth leagues, governing bodies, and national federations (USA Hockey, US Lacrosse partnerships)",
+      "strengths": [
+        "Deep integrations with national governing bodies — many associations require it",
+        "Comprehensive feature set (registration, websites, scheduling, comms, background checks)",
+        "Brand backing from NBC Sports"
+      ],
+      "weaknesses": [
+        "Widely complained-about UX — top Reddit thread literally titled 'SportsEngine for league management is the WORST!' on r/CoachingYouthSports",
+        "Complex pricing with per-registrant fees that add up at scale",
+        "Slow product iteration; admins report features take years to ship"
+      ],
+      "differentiation": "Default choice when an NGB or league federation has a pre-existing relationship",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader",
+      "source_urls": [
+        "https://www.sportsengine.com/hq/features/registration/",
+        "https://www.softwareadvice.com/club-management/sportsengine-profile/",
+        "https://www.reddit.com/r/CoachingYouthSports/comments/18gpw7q/sportsengine_for_league_management_is_the_worst/"
+      ]
+    },
+    {
+      "firm_name": "TeamSnap",
+      "url": "https://www.teamsnap.com",
+      "pain_points_addressed": [
+        "Communication overload (Pain #9)",
+        "Registration and team management (Pain #6, lighter than SportsEngine)"
+      ],
+      "pricing_model": "Freemium — free for basic team app; Premium $11.99/mo/team; club/league tiers from ~$700+/yr",
+      "target_market": "SMB — single teams up through small clubs; very strong with volunteer coaches",
+      "strengths": [
+        "Best-known consumer brand in youth sports; near-default for individual teams",
+        "Clean mobile app, easy onboarding for a non-technical coach",
+        "Acquired MOJO (drill library) and Heja-style features to broaden offering"
+      ],
+      "weaknesses": [
+        "Trustpilot reviews complain of aggressive in-app upsells: 'The app continues to get worse. Now TeamSnap tries to sell you their add-free version every time you open the app'",
+        "Per-team pricing — clubs running 30+ teams pay multiples and there's no volume discount in subsequent years (Capterra review)",
+        "Coaches building DIY alternatives ('I built an app called TeamMates which I use with my team' — r/CoachingYouthSports) signals user dissatisfaction"
+      ],
+      "differentiation": "Single-team simplicity; lowest barrier to adoption for volunteer coaches",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader",
+      "source_urls": [
+        "https://www.trustpilot.com/review/teamsnap.com",
+        "https://www.capterra.com/p/123208/TeamSnap/reviews/",
+        "https://www.reddit.com/r/CoachingYouthSports/comments/1j8obyb/teamsnap/",
+        "https://www.teamsnap.com/testimonials"
+      ]
+    },
+    {
+      "firm_name": "LeagueApps",
+      "url": "https://leagueapps.com",
+      "pain_points_addressed": [
+        "Registration, scheduling, and payment software (Pain #6)",
+        "Sponsorship/fundraising (Pain #10) — adjacent NextUp community",
+        "Parent behavior (Pain #4) — publishes sportsmanship content"
+      ],
+      "pricing_model": "No subscription fees; revenue share via percentage of each payment transaction processed",
+      "target_market": "Mid-market — independent leagues, clubs, and youth sports nonprofits that want a partner, not a SaaS",
+      "strengths": [
+        "G2 reviews consistently praise ease of use and customer support",
+        "No contract lock-ins or seat fees — admins like the transactional pricing model",
+        "Builds community via 'NextUp' summit — credibility with operators"
+      ],
+      "weaknesses": [
+        "Transaction percentage can exceed flat-fee competitors for high-volume leagues",
+        "Less ubiquitous than SportsEngine; switching cost issues when an NGB mandates a competitor",
+        "Limited adoption outside North America"
+      ],
+      "differentiation": "Operator-centric pricing model and content/community moat",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "source_urls": [
+        "https://leagueapps.com/pricing/",
+        "https://www.g2.com/products/leagueapps/reviews",
+        "https://www.softwareadvice.com/club-management/leagueapps-profile/",
+        "https://www.linkedin.com/pulse/why-we-need-more-sportsmanship-field-sidelines-office-leagueapps-pg9se"
+      ]
+    },
+    {
+      "firm_name": "Jersey Watch",
+      "url": "https://www.jerseywatch.com",
+      "pain_points_addressed": [
+        "Registration, scheduling, and payment software (Pain #6) — SMB tier",
+        "Communication overload (Pain #9)"
+      ],
+      "pricing_model": "Subscription tiered by org size; transparent pricing, generally $0-200/mo range for small leagues",
+      "target_market": "SMB — small rec leagues, youth football/basketball/baseball associations, single-town leagues",
+      "strengths": [
+        "Reddit r/CoachingYouthSports praises it as 'amazing and simple' for multi-age youth basketball",
+        "Affordability — capterra reviews highlight 'easy-to-use software, affordability, and first-class customer service'",
+        "Onboarding is fast — admins go live in days, not months"
+      ],
+      "weaknesses": [
+        "Feature depth below SportsEngine/LeagueApps for complex tournament scheduling",
+        "Limited NGB integrations",
+        "Smaller team — feature requests can take time"
+      ],
+      "differentiation": "Simple, affordable, founder-led — explicitly competing on UX simplicity",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "source_urls": [
+        "https://www.jerseywatch.com/",
+        "https://www.capterra.com/p/178257/Jersey-Watch/",
+        "https://www.reddit.com/r/CoachingYouthSports/comments/1isxi2d/management_software_recs/"
+      ]
+    },
+    {
+      "firm_name": "Stack Sports (parent of Blue Sombrero, Affinity Sports, Sports Connect, GotSoccer)",
+      "url": "https://stacksports.com",
+      "pain_points_addressed": [
+        "Registration, scheduling, and payment software (Pain #6) — comprehensive, especially for soccer",
+        "Sponsorship/fundraising (Pain #10) — publishes '6 Secrets to Making More Money as a Youth Sports Organization'",
+        "Coach training (Pain #11) — Skyhawks Sports Academy partnership"
+      ],
+      "pricing_model": "Varies by acquired brand; mostly enterprise sales with transaction fees",
+      "target_market": "Enterprise — US Youth Soccer state associations, national federations, large multi-sport orgs",
+      "strengths": [
+        "Largest ecosystem reach — acquired Blue Sombrero, Affinity Sports, GotSoccer, more",
+        "Recognized 'Leader in Sports Technology' by industry coverage",
+        "Deep integrations with US Soccer / state associations"
+      ],
+      "weaknesses": [
+        "Fragmented product portfolio after acquisitions — overlapping tools confuse buyers",
+        "TeamLinkt and others explicitly position 'best Stack Sports alternative' — competitive pressure on UX",
+        "Heavy enterprise sales motion; SMB clubs find it inaccessible"
+      ],
+      "differentiation": "Roll-up of incumbent platforms; integration depth with US soccer governing bodies",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader",
+      "source_urls": [
+        "https://stacksports.com/",
+        "https://teamlinkt.com/compare/teamlinkt-vs-stacksports",
+        "https://www.bluesombrero.com/stack-sports-blue-sombrero-2",
+        "https://www.send2press.com/wire/stack-sports-recognized-as-a-leader-in-sports-technology-and-expands-global-impact-in-2024/"
+      ]
+    },
+    {
+      "firm_name": "PlayMetrics",
+      "url": "https://www.playmetrics.com",
+      "pain_points_addressed": [
+        "Registration, scheduling, and payment software (Pain #6) — club-grade",
+        "Tryout politics / roster management (Pain #7)",
+        "Communication (Pain #9)"
+      ],
+      "pricing_model": "Per-player annual fees passed to families; not publicly disclosed but Reddit/App Store reviews describe it as 'expensive for parents'",
+      "target_market": "Mid-market competitive soccer clubs (USYS, ECNL, MLS Next, GA tier)",
+      "strengths": [
+        "Reddit r/SoccerCoachResources users say 'from a coach and parent perspective, think it's pretty good'",
+        "Purpose-built for competitive soccer — tryout scoring, roster management, performance tracking",
+        "Strong adoption in ECNL and US Club Soccer ecosystems"
+      ],
+      "weaknesses": [
+        "Parent-side app described in App Store reviews as 'meant for club use not player/family friendly' and 'Clubcentric - expensive for parents'",
+        "Android app reportedly 'wonky'",
+        "Soccer-only — clubs running multi-sport need separate tooling"
+      ],
+      "differentiation": "Vertical depth in competitive soccer at club level",
+      "reviews_sentiment": "mixed",
+      "market_position": "niche",
+      "source_urls": [
+        "https://www.reddit.com/r/SoccerCoachResources/comments/1engnzm/club_management_software_options_help/",
+        "https://apps.apple.com/us/app/playmetrics/id1450640824",
+        "https://www.trustpilot.com/review/playmetrics.com"
+      ]
+    },
+    {
+      "firm_name": "GameChanger (DICK'S Sporting Goods)",
+      "url": "https://gc.com",
+      "pain_points_addressed": [
+        "Live streaming and scorekeeping (adjacent to communication and parent attendance pain)",
+        "Communication overload (Pain #9)"
+      ],
+      "pricing_model": "Freemium app; premium ~$8/mo or $50+/yr per team",
+      "target_market": "SMB — youth baseball, softball, basketball families",
+      "strengths": [
+        "Reddit r/Homeplate: 'GameChanger has a monopoly for scoring youth baseball and softball games'",
+        "Owned by DICK'S — strong distribution and resources",
+        "Live streaming feature lets distant family members watch — high family value"
+      ],
+      "weaknesses": [
+        "Effective category monopoly invites pricing complaints",
+        "Limited to scorekeeping/streaming — not full league management",
+        "Sport-by-sport rollout means some less-served sports lack feature parity"
+      ],
+      "differentiation": "Best-in-class scorekeeping + livestreaming; distribution via DICK'S",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "source_urls": [
+        "https://gc.com/",
+        "https://www.reddit.com/r/Homeplate/comments/14qu1z6/youth_baseball_parents_does_the_gamechanger_app/"
+      ]
+    },
+    {
+      "firm_name": "Spond",
+      "url": "https://www.spond.com",
+      "pain_points_addressed": [
+        "Communication overload (Pain #9)",
+        "Registration lite (Pain #6 — small teams/clubs)"
+      ],
+      "pricing_model": "Free core app; Spond Club paid tier for clubs (pricing not public, mostly EU)",
+      "target_market": "SMB to mid-market; Norwegian-built, strong in Europe and growing in North America",
+      "strengths": [
+        "Free, ad-free, GDPR/SafeSport-conscious — appealing to nonprofits",
+        "Google Play description: 'saves a coach an average of 2 hours per week on admin tasks'",
+        "Modern UI compared to legacy US platforms"
+      ],
+      "weaknesses": [
+        "Less integrated with US-specific NGB workflows",
+        "Limited tournament/league features at the larger end",
+        "Brand awareness lower than TeamSnap in US market"
+      ],
+      "differentiation": "European DNA — privacy- and simplicity-first; meaningful free tier",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging",
+      "source_urls": [
+        "https://www.spond.com/en-us/",
+        "https://play.google.com/store/apps/details?id=com.spond.spond"
+      ]
+    },
+    {
+      "firm_name": "TeamLinkt",
+      "url": "https://teamlinkt.com",
+      "pain_points_addressed": [
+        "Registration, scheduling, and payment software (Pain #6)",
+        "Communication overload (Pain #9)"
+      ],
+      "pricing_model": "Explicitly markets 'Eliminate software and per player fees' — appears to be free core with paid add-ons",
+      "target_market": "SMB to mid-market leagues, clubs, associations — 3,500+ programs globally",
+      "strengths": [
+        "Direct pricing advantage — no per-player fees attracts cost-sensitive admins",
+        "AI-driven admin automation as a differentiator",
+        "Active comparison-page strategy ('best Stack Sports alternative') to capture switchers"
+      ],
+      "weaknesses": [
+        "App Store reviews flag 'Scammy with subscription cancellation BE careful'",
+        "Recent app update generated user backlash",
+        "Newer brand — fewer NGB integrations than incumbents"
+      ],
+      "differentiation": "Zero per-player fees positioning",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger",
+      "source_urls": [
+        "https://teamlinkt.com/",
+        "https://apps.apple.com/us/app/teamlinkt-sports-team-app/id1271528394",
+        "https://teamlinkt.com/compare/teamlinkt-vs-stacksports"
+      ]
+    },
+    {
+      "firm_name": "MOJO (a TeamSnap company)",
+      "url": "https://mojo.sport",
+      "pain_points_addressed": [
+        "Volunteer coach shortage and quality (Pain #2)",
+        "Coach training/curriculum (Pain #11)",
+        "Communication overload (Pain #9)"
+      ],
+      "pricing_model": "Free for coaches; monetization via TeamSnap upsell after acquisition",
+      "target_market": "SMB — volunteer coaches of 5-12 year olds in soccer, basketball, baseball, flag football",
+      "strengths": [
+        "Best-in-class age-appropriate practice plan library — animations, videos, drag-and-drop sessions",
+        "Targeted at the exact persona (volunteer coach with no background) most signaled in our data",
+        "Free, which removes adoption friction"
+      ],
+      "weaknesses": [
+        "Coverage thinner for older age bands and competitive levels",
+        "Now subordinated under TeamSnap monetization — risk of feature dilution",
+        "Doesn't address WHY parents won't volunteer in the first place"
+      ],
+      "differentiation": "Practice-plan-as-a-service for the volunteer coach persona",
+      "reviews_sentiment": "positive",
+      "market_position": "niche",
+      "source_urls": [
+        "https://mojo.sport/",
+        "https://apps.apple.com/us/app/mojo-sports/id1509108036",
+        "https://play.google.com/store/apps/details?id=sport.mojo.android"
+      ]
+    },
+    {
+      "firm_name": "Positive Coaching Alliance (PCA)",
+      "url": "https://positivecoach.org",
+      "pain_points_addressed": [
+        "Toxic parent behavior (Pain #4)",
+        "Volunteer coach shortage/quality (Pain #2)",
+        "Athlete burnout (Pain #5) — culture programming"
+      ],
+      "pricing_model": "Online courses (~$20-100/seat), in-person workshops (low thousands per engagement), org partnerships",
+      "target_market": "Mid-market to enterprise — schools, leagues, multi-team clubs, governing bodies",
+      "strengths": [
+        "30+ years of credibility; research-based curriculum",
+        "Seven online courses spanning coaches, parents, athletes, officials — multi-stakeholder",
+        "Strong National Advisory Board (Olympians, college coaches)"
+      ],
+      "weaknesses": [
+        "Static, video-based delivery — competes poorly with newer mobile-first products",
+        "Workshops require time investment most volunteer-run leagues struggle to mandate",
+        "Brand reach skews coastal/affluent leagues — middle America underpenetrated"
+      ],
+      "differentiation": "The legacy authority brand in youth sports culture and coach development",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "source_urls": [
+        "https://positivecoach.org/training/",
+        "https://positivecoach.org/training/online-courses/",
+        "https://positivecoach.org/training/workshops/"
+      ]
+    },
+    {
+      "firm_name": "TrueSport (US Anti-Doping Agency)",
+      "url": "https://truesport.org",
+      "pain_points_addressed": [
+        "Toxic parent behavior (Pain #4)",
+        "Athlete burnout (Pain #5)",
+        "Player safety / clean sport (Pain #12)"
+      ],
+      "pricing_model": "Free curriculum and resources for schools and leagues; underwritten by USADA",
+      "target_market": "Schools, leagues, and partner organizations — explicitly nonprofit-aligned",
+      "strengths": [
+        "Free, evidence-based curriculum with credibility of USADA",
+        "Multi-stakeholder lessons (athletes, coaches, parents) in classroom-ready format",
+        "Expert program adds sport psychologists and nutrition researchers"
+      ],
+      "weaknesses": [
+        "Awareness very low outside school athletic-director circles",
+        "Curriculum-style lessons require an adult to facilitate — adoption bottleneck",
+        "Less optimized for the volunteer coach who has 20 minutes between work and practice"
+      ],
+      "differentiation": "Federally-credible, free, character-development-focused",
+      "reviews_sentiment": "positive",
+      "market_position": "niche",
+      "source_urls": [
+        "https://truesport.org/",
+        "https://truesport.org/about/",
+        "https://www.usada.org/truesport/truesport-expert-program-launch/"
+      ]
+    },
+    {
+      "firm_name": "Aspen Institute Project Play",
+      "url": "https://projectplay.org",
+      "pain_points_addressed": [
+        "Athlete burnout / overscheduling (Pain #5)",
+        "Coach training (Pain #2, #11)",
+        "Cost / access (Pain #1) — thought leadership"
+      ],
+      "pricing_model": "Mostly free research and convening; project-based engagements with cities, states, and federations",
+      "target_market": "Policy, governing bodies, large municipalities, foundations — not directly clubs or coaches",
+      "strengths": [
+        "The most-cited research source on youth sports trends in US media",
+        "'How to Coach Kids' free 30-minute course is widely linked",
+        "Convening power — Project Play Summit gathers ecosystem leaders"
+      ],
+      "weaknesses": [
+        "Not a service provider for individual clubs/leagues — operates at policy layer",
+        "Research-heavy outputs require translation into operations",
+        "No software, no software roadmap"
+      ],
+      "differentiation": "Thought-leadership infrastructure for the entire youth sports ecosystem",
+      "reviews_sentiment": "positive",
+      "market_position": "niche",
+      "source_urls": [
+        "https://projectplay.org/",
+        "https://projectplay.org/youth-sports/playbook/train-all-coaches",
+        "https://www.aspeninstitute.org/programs/sports-and-society/",
+        "https://projectplay.org/youth-sports/facts/challenges"
+      ]
+    },
+    {
+      "firm_name": "Assignr",
+      "url": "https://www.assignr.com",
+      "pain_points_addressed": [
+        "Referee/umpire shortage logistics (Pain #3) — assigning side"
+      ],
+      "pricing_model": "Per-assignor / per-league subscription; competitively low cost",
+      "target_market": "SMB — local soccer associations, baseball umpire pools, basketball officials, high school assignors",
+      "strengths": [
+        "Highest-rated officiating app: 4.9 App Store / 4.8 Google Play",
+        "REFSIX integration for in-game referee tooling",
+        "Specialized — owns the assigning niche"
+      ],
+      "weaknesses": [
+        "Solves the assigning problem but NOT the recruiting/retention problem — the actual pain",
+        "Limited to officials side, not league admin or coach",
+        "Doesn't address sideline abuse, the root cause of churn"
+      ],
+      "differentiation": "Category leader for ref assignment workflow",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "source_urls": [
+        "https://www.assignr.com/",
+        "https://apps.apple.com/us/app/assignr/id1579690125",
+        "https://refsix.com/news/2025/1/16/refsix-partners-with-assignrcom-to-simplify-game-management-for-referees"
+      ]
+    },
+    {
+      "firm_name": "CoachUp",
+      "url": "https://www.coachup.com",
+      "pain_points_addressed": [
+        "Private coach matching — adjacent to coach training pain (Pain #11)",
+        "Tryout/development pressure (Pain #7) — families hire private coaches to gain edge"
+      ],
+      "pricing_model": "Marketplace — coaches set their own rate ($30-150/hr typical); CoachUp takes a cut",
+      "target_market": "SMB families seeking private 1:1 or small-group sport coaching",
+      "strengths": [
+        "Vetted coaches with background checks — trust signal for parents",
+        "Indeed and Reddit reviews praise quality and flexibility",
+        "Covers 25+ sports — broader than vertical players like TOCA"
+      ],
+      "weaknesses": [
+        "Reddit reports of inconsistent coach quality after the first few sessions",
+        "Doesn't address the SYSTEMIC cost problem (Pain #1) — it adds to it",
+        "Not a solution for clubs/leagues — only families"
+      ],
+      "differentiation": "Marketplace for vetted private sport coaches",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger",
+      "source_urls": [
+        "https://www.coachup.com/",
+        "https://www.indeed.com/cmp/Coachup/reviews",
+        "https://www.reddit.com/r/Basketball/comments/8glkqi/for_anyone_who_hires_a_coach_from_coachup_is_it/"
+      ]
+    },
+    {
+      "firm_name": "TOCA Football",
+      "url": "https://www.tocafootball.com",
+      "pain_points_addressed": [
+        "Private/specialized training (adjacent to Pain #7, #11)",
+        "Facility access (Pain #8)"
+      ],
+      "pricing_model": "Drop-in, package, and membership pricing for indoor sessions; ~$30-50/session typical",
+      "target_market": "Mid-market suburban families willing to pay for supplemental training",
+      "strengths": [
+        "Backed by Eddie Lewis (former US national team); operational scale",
+        "Indoor facilities address weather/field availability",
+        "Tech-enhanced training (machine-fed touches)"
+      ],
+      "weaknesses": [
+        "Facebook reviews complain: 'Coaching quality and availability are inconsistent. Families who pay for a full hour of training often receive no more than 40 minutes.'",
+        "Reinforces the very pay-to-play cost spiral parents complain about",
+        "Soccer-only — siloed from broader youth sports operations"
+      ],
+      "differentiation": "Branded indoor-training franchise with tech",
+      "reviews_sentiment": "mixed",
+      "market_position": "niche",
+      "source_urls": [
+        "https://www.tocafootball.com/",
+        "https://gasoccerforum.com/thread/5965/toca-private-coach",
+        "https://www.facebook.com/groups/400638567726200/posts/1574289820361063/"
+      ]
+    }
+  ],
+  "white_space": [
+    {
+      "gap_name": "Referee recruiting, retention, and sideline-behavior enforcement as a packaged consulting service",
+      "related_pain_points": ["Pain #3 (Referee shortage)", "Pain #4 (Toxic parent behavior)"],
+      "why_no_solution": "Assignr and Refr Sports solve the assigning workflow. PCA and NPR's 'silent sidelines' have published the cultural pieces. But no one packages a turnkey program for a league: recruit high-schoolers + train them + onboard sideline-conduct policy + enforcement playbook + insurance/legal scaffolding. The handoff between 'official-tech' and 'culture-nonprofit' is exactly the gap.",
+      "opportunity_signal": "32 distinct posts mention the referee shortage by name; multiple news reports of games being cancelled; one Reddit comment from a ref describes being threatened with being shot in the head — extreme intensity.",
+      "estimated_demand": "High — leagues are actively losing games to this issue and would pay for a turnkey program."
+    },
+    {
+      "gap_name": "Total-cost-of-play transparency tools for parents and reform consulting for clubs",
+      "related_pain_points": ["Pain #1 (Cost)", "Pain #10 (Fundraising)"],
+      "why_no_solution": "Aspen/Project Play has the research and policy lens. SaaS platforms collect registration fees but do not surface total cost (uniforms, tournaments, training, travel). Private equity is moving the OTHER direction — extracting more revenue per family. There is no operator partner helping middle-tier clubs design an affordable competitive tier that retains families who'd otherwise drop out.",
+      "opportunity_signal": "73 cost-related posts in our dataset; one Reddit thread itemized $18,500+ in annual youth soccer spend; a softball parent reported $650 spent before first practice for a first-grader. Demand for cost reform is rising.",
+      "estimated_demand": "High but politically complex — clubs that depend on tuition revenue won't self-disrupt without external help."
+    },
+    {
+      "gap_name": "Volunteer-coach support stack: lightweight onboarding + parent communication template + season-end transition",
+      "related_pain_points": ["Pain #2 (Volunteer coach shortage)", "Pain #11 (Coach training)", "Pain #9 (Communication)"],
+      "why_no_solution": "MOJO provides practice plans. PCA provides culture training. TeamSnap provides comms. But no one delivers a single packaged 'first-season survival kit' — week-by-week emails, an opening-night parent meeting template, an in-app drill library, a midseason check-in script. The TIFU coach who 'ordered the equivalent of coaching kids soccer for idiots' is the persona — and he's millions of people.",
+      "opportunity_signal": "Volunteer-shortage and coach-training signals together accounted for 17+ direct mentions; the TIFU thread had 956 upvotes and 462 comments — extremely high engagement.",
+      "estimated_demand": "Very high volume, but per-coach willingness-to-pay is low. Best monetized as a league-level subscription."
+    },
+    {
+      "gap_name": "Tryout transparency and player-development pathway documentation as a club governance product",
+      "related_pain_points": ["Pain #7 (Tryout politics)", "Pain #4 (Parent behavior)"],
+      "why_no_solution": "PlayMetrics offers tryout-scoring tooling but not governance practices. PCA has culture content but not roster-decision frameworks. There is no consultant or product that codifies 'how this club picks teams' for parents, with appeal processes and timing — a vacuum that produces most of the parent-vs-coach conflict.",
+      "opportunity_signal": "24 tryout/roster-related posts including high-engagement Reddit complaints from frustrated parents. LinkedIn 'Who oversees youth sports? Concerned parents have no one to turn to' confirms the governance void.",
+      "estimated_demand": "Medium-high — competitive clubs want to professionalize but lack templates."
+    },
+    {
+      "gap_name": "Sponsorship and local-business revenue programs for sub-$1M-budget youth sports nonprofits",
+      "related_pain_points": ["Pain #10 (Sponsorship/fundraising)", "Pain #1 (Cost)"],
+      "why_no_solution": "Enterprise platforms publish sponsorship-letter templates as content marketing. Stack Sports markets '6 Secrets to Making More Money'. But there is no done-for-you sponsorship sales service that finds local sponsors, packages assets, and runs the renewal cycle. The market is too fragmented for a single tech platform — it begs for a consulting/agency model.",
+      "opportunity_signal": "11 fundraising-related signals plus several LinkedIn marketing posts from major platforms targeting this exact buying intent.",
+      "estimated_demand": "Medium — many leagues, low per-account ARR but stable recurring revenue."
+    },
+    {
+      "gap_name": "Athlete-load management and family-burnout coaching at the club level",
+      "related_pain_points": ["Pain #5 (Athlete burnout)", "Pain #12 (Safety/health)"],
+      "why_no_solution": "PCA, TrueSport, and Project Play all publish content. Sports-medicine clinics treat injuries after they happen. No one stands inside a club and tells it 'this U13 squad is over-trained; you need to drop the second tournament in October.' The intersection of medical-grade load awareness and club-operations decision-making is empty.",
+      "opportunity_signal": "41 burnout/overscheduling-related signals across all platforms; a physician parent's Reddit op-ed cited 20 billion-dollar industry and 2% D1 scholarship rate — strong validation of the macro problem.",
+      "estimated_demand": "Medium today; growing rapidly as injury-prevention insurance and liability discussions mature."
+    }
+  ]
+}

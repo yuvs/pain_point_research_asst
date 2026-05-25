@@ -5,5 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "anthropic>=0.40.0",
     "firecrawl-py>=4.26.0",
 ]

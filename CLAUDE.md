@@ -111,3 +111,21 @@ in each value. MCP servers source this file automatically on startup.
 |---------|---------|---------------|
 | Firecrawl | `FIRECRAWL_API_KEY` | firecrawl.dev → API Keys |
 | Exa | `EXA_API_KEY` | exa.ai → Dashboard → API Keys |
+| Anthropic | `ANTHROPIC_API_KEY` | console.anthropic.com → API Keys (required for eval check 3) |
+
+## Eval Script
+
+`scripts/eval_report.py` — runs after each research cycle to verify report quality.
+
+```
+python scripts/eval_report.py --date 2026-05-25 --industry wealth-management
+python scripts/eval_report.py --date 2026-05-25 --industry wealth-management --skip-llm
+```
+
+Four checks:
+1. **Quote grounding** — verifies `representative_quotes` are traceable to raw source records via exact substring or token-overlap matching (≥65%)
+2. **Source URL spot-check** — HTTP HEAD-checks a 20% random sample of `source_urls`; flags 4xx/5xx
+3. **ICE score calibration** — uses `claude-opus-4-7` as an independent judge; flags any dimension where stored vs. judge score diverges by >2 points. Requires `ANTHROPIC_API_KEY`. Skip with `--skip-llm`.
+4. **Platform coverage gate** — flags platforms with <10 posts (warn) or <5 (critical)
+
+Saves eval report to `reports/YYYY-MM-DD-[industry]-eval.md`. Exits 0 if all checks pass, 1 otherwise.

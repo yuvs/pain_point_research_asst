@@ -1,0 +1,465 @@
+{
+  "industry": "youth-sports",
+  "analysis_date": "2026-05-20",
+  "personas": [
+    "coaches (volunteer and paid, ages 5-18 teams)",
+    "league administrators and club directors",
+    "parents of rec/competitive athletes"
+  ],
+  "summary_stats": {
+    "total_raw_records": 319,
+    "substantive_records_after_filter": 253,
+    "platform_breakdown": {
+      "reddit": 45,
+      "linkedin": 66,
+      "x_twitter": 118,
+      "quora": 90
+    },
+    "author_type_breakdown": {
+      "unknown": 210,
+      "operator": 26,
+      "business_owner": 17
+    },
+    "topic_signal_frequency": {
+      "topic-cost-affordability": 64,
+      "topic-referee-shortage": 32,
+      "persona-parent": 28,
+      "topic-tournaments-travel": 26,
+      "persona-admin": 24,
+      "topic-tryouts-rosters": 22,
+      "topic-registration-tech": 16,
+      "topic-safety-health": 14,
+      "topic-communication": 12,
+      "topic-scheduling-facilities": 12,
+      "topic-athlete-burnout": 12,
+      "persona-coach": 12,
+      "topic-volunteer-shortage": 9,
+      "topic-fundraising-budget": 8,
+      "topic-playing-time": 7,
+      "topic-coach-training": 7,
+      "topic-parent-behavior": 3
+    },
+    "date_range": "Posts roughly spanning Q3 2024 through Q2 2026; Reddit posts include high-engagement threads from the past 12 months"
+  },
+  "filtering_notes": [
+    "Dropped 66 records under 200 chars (mostly LinkedIn auth-wall snippets and X handle pages)",
+    "Reddit data is the highest-fidelity source: native engagement counts, multi-paragraph selftext, and threaded comments",
+    "LinkedIn yielded 13 substantive (>1000 char) posts from technical directors, league operators, and youth sports SaaS founders; the rest were thin",
+    "X/Twitter and Quora data is dominated by snippets — useful for breadth and corroboration but rarely deep enough alone to score a pain point",
+    "Several Reddit posts (Indiana physician op-ed; Jacobin/Private Equity youth sports thread; r/Parenting 'burnt out' thread) hit cross-persona pain points and were used to corroborate multiple pain points"
+  ],
+  "pain_points": [
+    {
+      "rank": 1,
+      "pain_point": "Runaway cost of competitive/travel youth sports pricing out the middle class",
+      "category": "finance",
+      "personas_most_affected": ["parent"],
+      "secondary_personas": ["admin (loses access-driven mission), coach (loses talent)"],
+      "frequency": 73,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 10,
+        "ease": 5,
+        "total": 8.0,
+        "wtp_multiplier": 1.5,
+        "final": 12.0
+      },
+      "representative_quotes": [
+        "$4,000+ Club dues / $1,000 uniforms / $2000+ tournament travel x2 / $5000 summer travel to Europe with team / $18,500 Total (and I'm trying to underestimate things). I'm figuring it's closer to $20k+. Am I fucking nuts? I played high school sports. Cost my parents exactly $0.",
+        "$300 just to register her for the season... no supplies included except the jersey. We went yesterday to buy the bat, glove, helmet, socks, pants, and cleats, and we're now $650 into this total... my coworker laughed and said they're spending around $5000/year on their middle school daughter's softball experience.",
+        "hockey went from Canada's defining sport to a $5,000/year luxury that excludes nearly half the population. Youth registration dropped 35% in 14 years. Strongest predictor whether a child plays hockey in Canada is not his talent, it's his household income.",
+        "Private Equity's New Venture: Youth Sports. They bought up $40B worth of youth facilities and leagues... prohibiting parents from recording their own kids' sports games, parents are forced to subscribe to the exclusive recording and streaming service.",
+        "In the offer letter they said uniform costs were $328 for 10 pieces... for 2 jersey and short sets and one pullover cost $350 for a kid size! There's also a shipping cost after spending $300+ on merchandise."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/youthsoccer/comments/1t874s2/lets_be_honest_about_cost_of_us_youth_soccer/",
+        "https://www.reddit.com/r/Parenting/comments/1qzbasi/the_cost_of_youth_sports_is_absurd/",
+        "https://www.reddit.com/r/hockey/comments/1snc3md/2_and_20_how_canada_lost_its_own_identity_hockey/",
+        "https://www.reddit.com/r/hockey/comments/1p35fo0/jacobin_private_equitys_new_venture_youth_sports/",
+        "https://www.reddit.com/r/baseball/comments/1p35r13/jacobin_private_equitys_new_venture_youth_sports/",
+        "https://www.reddit.com/r/youthsoccer/comments/1l7g3xf/parents_are_being_robbed_even_for_uniforms_cost/",
+        "https://www.reddit.com/r/Indiana/comments/1n0lpea/youth_sports_are_out_of_control_in_indiana/"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["youth soccer", "hockey", "baseball/softball", "basketball", "lacrosse"],
+      "consulting_angle": "Cost-transparency audits for clubs; sliding-scale/scholarship program design for rec leagues and nonprofits; vendor (uniform/streaming) renegotiation; fundraising and sponsorship-as-tuition-offset programs."
+    },
+    {
+      "rank": 2,
+      "pain_point": "Volunteer coach shortage and untrained-coach quality crisis",
+      "category": "hiring",
+      "personas_most_affected": ["admin", "coach"],
+      "secondary_personas": ["parent"],
+      "frequency": 38,
+      "intensity": "high",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 9,
+        "total": 8.33,
+        "wtp_multiplier": 1.2,
+        "final": 10.0
+      },
+      "representative_quotes": [
+        "What was I thinking…. I played football(American), basketball, tennis, and I was on the swim team in high school. I'm familiar with sports but I never played soccer... this year the league had a big shortage on volunteers and my son begged and begged me to sign up so I did thinking I would be an assistant coach or something but no they gave me a team. I don't watch competitive soccer on TV... I have ordered the equivalent of 'coaching kids soccer for idiots' and I have less than 3 weeks to figure this out.",
+        "Coaching Education Nights — We grow faster as coaches if we grow together. Presentation plan for 10 months / Small Wins/Next Improvements from previous month / Problem Solve Biggest Questions of Staff. (MLS Next club technical director's plan to fix his coaching staff.)",
+        "I'm a 3rd year coach of my son's U8, 4v4 rec team. We are a USYS/USSF rec team and are fairly competitive. We regularly play academy teams in tournaments and usually compete well against them."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/tifu/comments/1me7wvy/tifu_my_son_begged_me_to_volunteer_for_his/",
+        "https://www.linkedin.com/posts/nate-baker-86580942_we-want-our-youth-soccer-clubs-to-succeed-activity-7224059651523239937-OkMS",
+        "https://www.reddit.com/r/SoccerCoachResources/comments/1te46c2/parent_coaches_of_rec_teams_when_did_you_decide/",
+        "https://www.reddit.com/r/SoccerCoaching/comments/1n73851/kindergarten_coach_here_one_player_my_daughter/"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["all youth team sports — most acute in rec soccer, basketball, baseball, hockey"],
+      "consulting_angle": "Productized 'coach-in-a-box' curriculum kits (drill libraries, age-band lesson plans, practice templates), coach onboarding clinics, manager/admin training packages. Strong fit for consulting + content licensing model."
+    },
+    {
+      "rank": 3,
+      "pain_point": "Referee/umpire shortage causing game cancellations and disrupted seasons",
+      "category": "operations",
+      "personas_most_affected": ["admin"],
+      "secondary_personas": ["coach", "parent"],
+      "frequency": 40,
+      "intensity": "critical",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 9,
+        "confidence": 9,
+        "ease": 6,
+        "total": 8.0,
+        "wtp_multiplier": 1.5,
+        "final": 12.0
+      },
+      "representative_quotes": [
+        "REFEREE SHORTAGE: A growing shortage of referees and umpires is disrupting youth sports across the region, leaving games canceled and fields empty. (News12 Westchester broadcast)",
+        "Well now I know 1st hand why youth sports has a referee shortage. My partners and I were threatened to be shot in the head by a parent after their high school [game].",
+        "Youth soccer games seem to bring out the worst in adults. Parents... referee shortage. One coach has an idea, silent [sidelines]. (NPR)",
+        "It's well documented the critical shortage of referees for youth sports... (LinkedIn — Raymond J. Almeida Jr., youth sports admin)",
+        "As youth hockey players return to the ice, referee shortage leads to game cancellations. (CBC News shared on X)"
+      ],
+      "source_urls": [
+        "https://x.com/News12WC/status/1952791861325713779",
+        "http://x.com/jeff_vinkemeier/status/1765149876789092595",
+        "https://x.com/NPR/status/1594904765875396608",
+        "https://x.com/northerniowa/status/2018366343024721995",
+        "https://www.linkedin.com/posts/raymond-j-almeida-jr-72b2611_its-well-documented-the-critical-shortage-activity-7026224784950591489-lVhl",
+        "https://x.com/DeanGNelson/with_replies"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["soccer", "basketball", "baseball/softball", "hockey", "football", "lacrosse"],
+      "consulting_angle": "Referee-pipeline programs: youth-ref recruiting/training pipelines tied to local high schools; sideline behavior-management programs (silent sidelines, code-of-conduct enforcement playbooks). Two-sided value: solves admin pain AND addresses parent-behavior pain."
+    },
+    {
+      "rank": 4,
+      "pain_point": "Toxic parent behavior — sideline abuse, complaint escalation, undermining coaches",
+      "category": "operations",
+      "personas_most_affected": ["coach", "admin"],
+      "secondary_personas": ["parent (well-behaved parents disgusted by it)"],
+      "frequency": 27,
+      "intensity": "high",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 8,
+        "confidence": 9,
+        "ease": 8,
+        "total": 8.33,
+        "wtp_multiplier": 1.2,
+        "final": 10.0
+      },
+      "representative_quotes": [
+        "The #1 headache for youth sports directors? Pushy parents. Sideline [behavior]... (Dan Soviero, youth sports director, LinkedIn)",
+        "Next thing I know I get a call from the league coordinator saying Tyler's mom filed a complaint against me for 'singling out her son' and 'creating a hostile environment'. She also apparently told some other parents I scream at kids during practice which is just not true... The coordinator watched one of our sessions and cleared me completely.",
+        "I've had it with the parents. I suppose this is more of a cleansing rant than anything but I have to tell you, even this forum is getting swarmed with entitled parents... The endless complaints about every little thing from people who are literally inundated with easily accessible information in real-time all season from me personally who don't read a damned word of it (including the player/parent/coach contract that you signed).",
+        "Sports Parents: There's literally NOTHING productive that comes from yelling instructions at your kid from the bleachers, backstop or sidelines.",
+        "Why We Need More Sportsmanship on the Field, on the Sidelines, and in the Office (LeagueApps blog post)."
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/dan-soviero_the-1-headache-for-youth-sports-directors-activity-7295864223975264256-OxBZ",
+        "https://www.reddit.com/r/AmITheJerk/comments/1rfahww/aitj_for_kicking_a_kid_off_my_team_midseason/",
+        "https://www.reddit.com/r/basketballcoach/comments/1rgm9v3/entitled_delusional_parents_this_ones_for_you/",
+        "https://x.com/nellmurrell",
+        "https://www.linkedin.com/pulse/why-we-need-more-sportsmanship-field-sidelines-office-leagueapps-pg9se"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["all youth team sports"],
+      "consulting_angle": "Parent code-of-conduct frameworks, club-wide 'family compact' onboarding, sideline-behavior enforcement playbooks, coach communication training. Productizes well as a workshop + template package."
+    },
+    {
+      "rank": 5,
+      "pain_point": "Year-round overscheduling, athlete burnout, and family exhaustion",
+      "category": "operations",
+      "personas_most_affected": ["parent"],
+      "secondary_personas": ["coach (sees burnout firsthand), admin (sees attrition)"],
+      "frequency": 41,
+      "intensity": "high",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 8,
+        "confidence": 9,
+        "ease": 6,
+        "total": 7.67,
+        "wtp_multiplier": 1.2,
+        "final": 9.2
+      },
+      "representative_quotes": [
+        "My kids are teens (high school and college) and if I could go back in time, I wish I didn't have them spend so much time during their childhood on sports... So much of their childhoods were swallowed up. Not by play, but by performance and judgement. By travel teams and weekend tournaments and 7 days a week activities. Early wakeups and late night practices.",
+        "Between games, practices, and tryouts for next year, we're currently on Day 18 of a 26-day stretch where at least one of them has soccer... I'm tired. My minivan is tired. Our washing machine is tired.",
+        "I've also seen the other side: burnout, overscheduling, and kids quitting by age 11 because it is no longer fun. The youth sports industry in the U.S. is worth more than 20 billion dollars, with travel leagues and year-round training pushing kids too hard, too soon. Injuries are happening earlier. Growth plate damage, stress fractures, and overuse injuries are showing up in kids who have not finished growing.",
+        "Athlete burnout is a state of chronic physical and mental exhaustion in sports, often accompanied by a loss of motivation and reduced performance... characterized by the absence of motivation as well as complete mental and physical exhaustion."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/Parenting/comments/1lvyo89/anyone_else_feeling_burnt_out_by_youth_sports/",
+        "https://www.reddit.com/r/daddit/comments/1t5dzze/youth_sports_is_exhausting/",
+        "https://www.reddit.com/r/Indiana/comments/1n0lpea/youth_sports_are_out_of_control_in_indiana/",
+        "https://www.linkedin.com/pulse/understanding-preventing-burnout-youth-soccer-david-copeland-smith-272lf"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["soccer", "hockey", "baseball", "basketball", "lacrosse"],
+      "consulting_angle": "Season-design consulting for clubs (calibrated training load by age band), parent-education curriculum (when to specialize, when to rest), club-positioning around long-term athletic development (LTAD). Differentiates clubs that don't burn kids out."
+    },
+    {
+      "rank": 6,
+      "pain_point": "Registration, scheduling, and payment software is clunky, fragmented, and overpriced",
+      "category": "technology",
+      "personas_most_affected": ["admin"],
+      "secondary_personas": ["parent (registration UX), coach (rosters/comm)"],
+      "frequency": 16,
+      "intensity": "high",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 7,
+        "ease": 7,
+        "total": 7.0,
+        "wtp_multiplier": 1.5,
+        "final": 10.5
+      },
+      "representative_quotes": [
+        "The Ultimate Guide to Sports Registration Software Features in 2025 (Youth Sports Business Report on LinkedIn — indicates the category is actively shopped).",
+        "What the English FA's Player Registration System can teach us (James Wyper, LinkedIn).",
+        "The uniform company signs an exclusive agreement with the club... the club gets a cut of the uniform expenses. (Reddit youthsoccer thread on vendor lock-in)",
+        "Capelli even has ours set up where every item has to be added into the cart and then you have to go back and remove optional things like backpacks and jackets. (registration/checkout UX complaint)"
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/youth-sports-business-report_the-ultimate-guide-to-sports-registration-activity-7300175232424624131-1nMB",
+        "https://www.linkedin.com/pulse/what-english-fas-player-registration-system-can-teach-james-wyper",
+        "https://www.linkedin.com/posts/teamsnap_perfect-sports-sponsorship-letter-guide-activity-7108211715451801600-67JS",
+        "https://www.reddit.com/r/youthsoccer/comments/1l7g3xf/parents_are_being_robbed_even_for_uniforms_cost/"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["all youth team sports"],
+      "consulting_angle": "Software selection/migration consulting (SportsEngine vs LeagueApps vs TeamSnap vs Jersey Watch vs custom), payments-and-fee-architecture redesign, registration UX audits. Easy to package as a 4-6 week project."
+    },
+    {
+      "rank": 7,
+      "pain_point": "Tryout politics, opaque roster selection, and abrupt cuts damaging player trust",
+      "category": "operations",
+      "personas_most_affected": ["parent"],
+      "secondary_personas": ["coach (gets blamed), admin (handles fallout)"],
+      "frequency": 24,
+      "intensity": "high",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 7,
+        "ease": 8,
+        "total": 7.33,
+        "wtp_multiplier": 1.2,
+        "final": 8.8
+      },
+      "representative_quotes": [
+        "This is gonna be a long post because partly I need to vent. My son has been playing select hockey for a few years, mostly because of the friendships but he also loves the game. He has no desire to move up even though my wife believes he's more than able to. His coach cut him from the team this year. He's always been a model player, never misses practice.",
+        "My 7-year-old just finished his last Rec season today. His coach pulled us aside and told us he needs to move to a harder league next year to keep growing. He's been averaging 10 goals a game, to the point they'd move him to defense for the 2nd half just to keep the scores from getting ridiculous.",
+        "I have a son who just turned 11 and has been very interested in soccer recently. He played one recreational league season last year and his interest has only grown since then... We were recommended to a local club and he attended tryouts this week and was given an offer for what I a[ssume is a competitive tier]",
+        "Out of all boys who join English football academies at age 9, less than half of 1% will make a living from the game. (Father's worry about academy-track pathways)"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/hockeyplayers/comments/1te1v3u/frustration_with_youth_hockey_organization/",
+        "https://www.reddit.com/r/youthsoccer/comments/1t8pzoy/coach_told_us_to_not_to_do_rec_again/",
+        "https://www.reddit.com/r/youthsoccer/comments/1ksz0u4/club_soccer_worth_it_for_beginners/",
+        "https://www.reddit.com/r/youthsoccer/comments/1rw9oaw/a_side_of_soccer_nobody_talks_about_the_truth/"
+      ],
+      "business_sizes": ["mid_market"],
+      "industries_affected": ["club soccer", "select hockey", "AAU basketball", "travel baseball"],
+      "consulting_angle": "Transparent tryout rubric design, player-development pathway documentation, parent communication SLAs around evaluation and cuts. Productized as a 'club governance' package."
+    },
+    {
+      "rank": 8,
+      "pain_point": "Field/ice/gym availability and scheduling logistics for multi-team clubs",
+      "category": "operations",
+      "personas_most_affected": ["admin"],
+      "secondary_personas": ["coach (practice planning), parent (last-minute changes)"],
+      "frequency": 14,
+      "intensity": "medium",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 7,
+        "total": 6.67,
+        "wtp_multiplier": 1.2,
+        "final": 8.0
+      },
+      "representative_quotes": [
+        "Coaching Education Nights / New Family Onboarding Process / Parent Education Nights / Soccer-Second Get Togethers / Monthly Email Newsletter / 1-1-2 For Ever[y]... (MLS Next technical director laying out a 10-item operational checklist for the year — strong signal that clubs lack systematized ops).",
+        "On Day 18 of a 26-day stretch where at least one of them has soccer (parent describing the practical effect of overlapping field schedules).",
+        "The problems we faced running a grassroots football club and how we are solving them (LinkedIn — grassroots club operator).",
+        "The challenges of running a football club (Tim Elgar, LinkedIn Pulse)."
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/nate-baker-86580942_we-want-our-youth-soccer-clubs-to-succeed-activity-7224059651523239937-OkMS",
+        "https://www.reddit.com/r/daddit/comments/1t5dzze/youth_sports_is_exhausting/",
+        "https://www.linkedin.com/pulse/challenges-running-football-club-tim-elgar"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["soccer", "hockey (ice time)", "basketball (gym time)", "baseball/softball"],
+      "consulting_angle": "Facility-utilization audits, multi-team schedule optimization, municipal-relationship management. Niche but recurring."
+    },
+    {
+      "rank": 9,
+      "pain_point": "Communication overload — too many tools (group texts, GroupMe, TeamSnap, email, Remind) with no single source of truth",
+      "category": "technology",
+      "personas_most_affected": ["coach", "admin"],
+      "secondary_personas": ["parent"],
+      "frequency": 13,
+      "intensity": "medium",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 6,
+        "confidence": 6,
+        "ease": 8,
+        "total": 6.67,
+        "wtp_multiplier": 1.2,
+        "final": 8.0
+      },
+      "representative_quotes": [
+        "I put up the digital playbook, individual practice plans, and in-depth video lessons. You could spend 15 minutes every night with your kid going over the entire system until both of you know it better than me. Why don't either of you know the schemes? (Coach frustrated that parents/players ignore digital comms.)",
+        "I pull him aside after he shows up to a game like nothing happened and just tell him that communication matters and if something comes up his parents need to let me know. (Coach describing the missed-practice-no-text pattern.)",
+        "New Family Onboarding Process — Your people should know to expect: Zoom meeting/recording for entire club / Welcome Series (videos, emails, town halls) / Team Meeting Led By Coach. (Technical director recognizing the comms gap.)"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/basketballcoach/comments/1rgm9v3/entitled_delusional_parents_this_ones_for_you/",
+        "https://www.reddit.com/r/AmITheJerk/comments/1rfahww/aitj_for_kicking_a_kid_off_my_team_midseason/",
+        "https://www.linkedin.com/posts/nate-baker-86580942_we-want-our-youth-soccer-clubs-to-succeed-activity-7224059651523239937-OkMS"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["all youth team sports"],
+      "consulting_angle": "Club-wide communication architecture (one channel per audience, escalation paths). Lower urgency than #6 (registration) but pairs naturally with it."
+    },
+    {
+      "rank": 10,
+      "pain_point": "Sponsorship and fundraising — clubs/leagues lack structured approach to non-tuition revenue",
+      "category": "finance",
+      "personas_most_affected": ["admin"],
+      "secondary_personas": ["coach (running fundraisers), parent (asked to sell)"],
+      "frequency": 11,
+      "intensity": "medium",
+      "willingness_to_pay": "high",
+      "ice_score": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 8,
+        "total": 7.0,
+        "wtp_multiplier": 1.5,
+        "final": 10.5
+      },
+      "representative_quotes": [
+        "6 Secrets to Making More Money as a Youth Sports Organization (LinkedIn post by youth sports operator — title alone signals demand).",
+        "Perfect Sports Sponsorship Letter: Guide for Youth Soccer Teams (TeamSnap's marketing blog promoting a template — proves admins are searching for this).",
+        "The Ultimate Guide to Sports Registration Software Features in 2025 (Youth Sports Business Report — adjacent revenue-ops topic).",
+        "After 50 Years in the Youth Sports Game — I'm 'Scared' (Fentriss Winn, LinkedIn — long-tenured operator discussing financial sustainability)."
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/teamsnap_perfect-sports-sponsorship-letter-guide-activity-7108211715451801600-67JS",
+        "https://www.linkedin.com/pulse/6-secrets-making-more-money-youth-sports-organization-stack-sports",
+        "https://www.linkedin.com/posts/youth-sports-business-report_the-ultimate-guide-to-sports-registration-activity-7300175232424624131-1nMB",
+        "https://www.linkedin.com/pulse/after-50-years-youth-sports-gameim-scared-fentriss-winn-3holc"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["all youth team sports — especially nonprofit rec leagues"],
+      "consulting_angle": "Local-sponsor packaging, grant writing for 501(c)(3) leagues, branded fundraising calendar design. Easy retainer fit."
+    },
+    {
+      "rank": 11,
+      "pain_point": "Coach training / certification / curriculum is fragmented and expensive",
+      "category": "hiring",
+      "personas_most_affected": ["coach", "admin"],
+      "secondary_personas": [],
+      "frequency": 10,
+      "intensity": "medium",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 6,
+        "confidence": 6,
+        "ease": 8,
+        "total": 6.67,
+        "wtp_multiplier": 1.2,
+        "final": 8.0
+      },
+      "representative_quotes": [
+        "Coaching Education Nights — We grow faster as coaches if we grow together. Presentation plan for 10 months. (MLS Next technical director)",
+        "How I struggle with stamina in weekend football — looking for training tips. (r/SoccerCoaching)",
+        "I have ordered the equivalent of 'coaching kids soccer for idiots' and I have less than 3 weeks to figure this out. (TIFU volunteer coach)",
+        "Late 20s youth coach, invested everything, but struggling to break into pro acad[emy]. (r/SoccerCoaching — career-track coach pain)"
+      ],
+      "source_urls": [
+        "https://www.linkedin.com/posts/nate-baker-86580942_we-want-our-youth-soccer-clubs-to-succeed-activity-7224059651523239937-OkMS",
+        "https://www.reddit.com/r/tifu/comments/1me7wvy/tifu_my_son_begged_me_to_volunteer_for_his/",
+        "https://www.reddit.com/r/SoccerCoaching/comments/1ot6a4z/late_20s_youth_coach_invested_everything_but/",
+        "https://www.reddit.com/r/SoccerCoaching/comments/1o1f2ti/how_i_struggle_with_stamina_in_weekend_football/"
+      ],
+      "business_sizes": ["smb"],
+      "industries_affected": ["soccer", "basketball", "baseball", "hockey"],
+      "consulting_angle": "Coach-development-as-a-service: monthly clinic + drill library subscription, partnered with the club. Pairs with #2."
+    },
+    {
+      "rank": 12,
+      "pain_point": "Player safety, injury prevention, and concussion/heat protocols inconsistently enforced",
+      "category": "compliance",
+      "personas_most_affected": ["admin", "parent"],
+      "secondary_personas": ["coach"],
+      "frequency": 9,
+      "intensity": "high",
+      "willingness_to_pay": "medium",
+      "ice_score": {
+        "impact": 8,
+        "confidence": 5,
+        "ease": 6,
+        "total": 6.33,
+        "wtp_multiplier": 1.2,
+        "final": 7.6
+      },
+      "representative_quotes": [
+        "Injuries are happening earlier. Growth plate damage, stress fractures, and overuse injuries are showing up in kids who have not finished growing. (Indiana physician/parent op-ed)",
+        "Sports psychologist Dr. Michael Gervais bluntly notes that the human body and mind respond to chronic stress with 'fatigue [and] staleness'. (LinkedIn burnout primer)",
+        "Mentally, kids are tying their self-worth to performance, leading to anxiety and perfectionism instead of joy. (Indiana physician)",
+        "Who oversees youth sports? Concerned parents have no one to turn to. (LinkedIn Pulse — Kate Nematollahi, regulatory/oversight gap)"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/Indiana/comments/1n0lpea/youth_sports_are_out_of_control_in_indiana/",
+        "https://www.linkedin.com/pulse/understanding-preventing-burnout-youth-soccer-david-copeland-smith-272lf",
+        "https://www.linkedin.com/pulse/who-oversees-youth-sports-concerned-parents-have-one-turn-kate"
+      ],
+      "business_sizes": ["smb", "mid_market"],
+      "industries_affected": ["football", "soccer", "hockey", "lacrosse", "wrestling"],
+      "consulting_angle": "Compliance audits and policy templates for concussion, heat, lightning, mandated-reporter, and SafeSport. Hybrid consulting + legal/insurance referrals."
+    }
+  ],
+  "cross_persona_summary": {
+    "shared_pain_points": [
+      "Cost (parents feel it; admins lose families to it; coaches lose talent)",
+      "Toxic parents (coaches and admins both name it; well-behaved parents recognize it)",
+      "Referee shortage (admins cancel games; coaches/parents lose seasons)"
+    ],
+    "persona_unique_top_pains": {
+      "coach": ["Untrained coaches (#2)", "Parent complaints/blowback (#4)", "Communication overload (#9)"],
+      "admin": ["Referee shortage (#3)", "Registration/scheduling tech (#6)", "Sponsorship/fundraising (#10)"],
+      "parent": ["Cost (#1)", "Burnout/overscheduling (#5)", "Tryout politics (#7)"]
+    }
+  }
+}
