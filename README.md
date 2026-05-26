@@ -56,6 +56,17 @@ Open `.env` and fill in each key:
 
 ### 3. Run a research cycle
 
+**Option A — Structured intake form (recommended)**
+
+Type `/research-brief` in Claude Code to open a guided form. It collects:
+- Target industry and niche
+- Ideal company size
+- Trade publication preferences (geographic scope, content type)
+
+Claude presents the form as a series of choices, builds a structured ResearchBrief, and launches the full pipeline automatically. Use this when you want precise, targeted research with richer trade publication coverage.
+
+**Option B — Free-form prompt**
+
 ```bash
 claude "Research pain points for [role] in [industry]"
 ```
@@ -69,7 +80,7 @@ claude "Research pain points for HR managers at mid-size B2B companies"
 claude "Research pain points for wealth managers of high net worth clients"
 ```
 
-The researcher orchestrator will sequence the scraper, analyst, and competitive-intel subagents automatically and write a dated report to `reports/`.
+The researcher orchestrator sequences the scraper, analyst, and competitive-intel subagents and writes a dated report to `reports/`. Both options produce the same output — the structured form just gives the scraper richer context for trade publication searches.
 
 ## Architecture Overview
 

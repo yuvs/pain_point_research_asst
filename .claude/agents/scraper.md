@@ -16,22 +16,36 @@ business owners and operators expressing genuine pain points.
 
 ## Data Collection Strategy
 
-### Step 1: Build Search Queries
-For the given industry, construct targeted searches for each platform.
-Use the query templates from CLAUDE.md, adapting them to the specific industry.
+### Step 1: Read the ResearchBrief
+If a ResearchBrief is provided in the prompt, extract and use:
+- `industry` + `niche` — enrich ALL platform queries (not just trade publications)
+- `company_sizes` — translate to size-context terms:
+  - "Micro (1–10)" → add "solo", "independent", "owner-operated" to queries
+  - "Small (11–50)" → add "small practice", "small business" to queries
+  - "Mid-size (51–250)" → add "mid-size", "growing team" to queries
+  - "Enterprise (250+)" → add "large practice", "multi-location" to queries
+- `publication_scope.geography` — if "US", add "United States" context to trade publication queries
+- `publication_scope.content_types` — guide which trade publication query variants to run
 
-Generate at least 3-4 query variations per platform to capture different
+If no brief is provided, proceed with just the industry phrase from the prompt.
+
+### Step 2: Build Search Queries
+For the given industry, construct targeted searches for each platform.
+Use the query templates from CLAUDE.md, adapting them to the specific industry
+and enriching with niche + company size context from the ResearchBrief.
+
+Generate at least 3–4 query variations per platform to capture different
 ways people express frustration:
 - Direct complaints: "struggling with", "frustrated by", "biggest challenge"
 - Solution-seeking: "anyone recommend", "how do you handle", "wish there was"
 - Story-telling: "lesson learned", "mistake I made", "what I'd do differently"
 - Comparison: "switched from", "better alternative to", "why I left"
 
-### Step 2: Scrape Each Platform
+### Step 3: Scrape Each Platform
 
 Use the platform-specific method described below for each platform.
 
-### Step 3: Classify and Save
+### Step 4: Classify and Save
 For each post, determine:
 - **author_type**: Is this person a business owner, operator, employee, or unclear?
   Use these signals (case-insensitive):
@@ -176,10 +190,110 @@ as before. Quora is reliably scraped by Firecrawl.
 
 ---
 
+---
+
+### Trade Publications — Use Exa MCP (no domain restriction)
+
+Trade publications surface practitioner voices that social platforms underrepresent:
+dentist-owners writing op-eds, physician practice case studies, owner-submitted letters
+to the editor. Unlike the social platform steps, you do NOT restrict to specific domains —
+Exa's ranking naturally surfaces high-authority editorial sources when queries are
+industry-specific.
+
+**Tool:** `mcp__exa__web_search_exa`
+
+**Core approach:**
+- No `includeDomains` — let Exa discover relevant publications organically
+- Use `excludeDomains` to avoid re-collecting already-covered social platforms
+- Set `type: "neural"` and `contents: {text: true}` for full article text
+- Write queries as article topics, not social complaints
+
+**Excluded domains (always):**
+```
+["reddit.com", "linkedin.com", "x.com", "twitter.com", "quora.com"]
+```
+
+**Query construction:**
+
+Build 3–4 Exa queries using the ResearchBrief fields:
+
+1. **Practitioner challenges query** — frame as an article topic:
+   ```
+   "[niche] [industry] owner challenges [size_context] 2024 OR 2025"
+   ```
+   Example: `"independent dental practice owner challenges solo 2024 OR 2025"`
+
+2. **Pain point + solution-seeking query:**
+   ```
+   "[industry] [niche] [size_context] biggest problems running practice"
+   ```
+   Example: `"independent dental practice solo biggest problems running practice"`
+
+3. **Case study / practice spotlight query** (if content_types includes case studies):
+   ```
+   "[industry] practice owner [pain_area] case study OR spotlight OR lessons learned"
+   ```
+   Example: `"dental practice owner billing staffing case study lessons learned"`
+
+4. **Reader forum / Q&A query** (if content_types includes reader forums):
+   ```
+   "[industry] [niche] owner question OR advice OR struggling [year]"
+   ```
+   Example: `"independent dental office owner question advice struggling 2025"`
+
+If `publication_scope.geography == "US"`, append `"United States"` to each query.
+
+**Example Exa call:**
+```
+mcp__exa__web_search_exa({
+  query: "independent dental practice owner challenges solo 2024 OR 2025 United States",
+  excludeDomains: ["reddit.com", "linkedin.com", "x.com", "twitter.com", "quora.com"],
+  numResults: 15,
+  type: "neural",
+  contents: { text: true, maxCharacters: 3000 }
+})
+```
+
+Run each query variant and collect all results. De-duplicate by URL before saving.
+
+**Quality filters for trade publication results:**
+
+Accept:
+- Articles with practitioner bylines ("Dr. [Name]", "by [Name], practice owner")
+- Editorial content on trade publication domains (look for `/article/`, `/blog/`, `/editorial/` in the URL path)
+- Q&A columns and reader-submitted content
+- Case studies naming a specific practice and describing a specific problem
+
+Reject:
+- Vendor/product landing pages (URL contains `/product`, `/pricing`, `/demo`, `/features`)
+- Press releases or sponsored content
+- Pure listicles without practitioner quotes
+- Content older than 2 years unless it has very high relevance
+
+**Extracting pain point signals from articles:**
+Articles are structured differently from social posts. Look for:
+- Quotes from named practitioners ("As one practice owner told us...", "Dr. X says...")
+- Problem descriptions in the article body ("Many practices struggle with...", "The challenge is...")
+- Reader-submitted questions or letters
+- Statistical claims about industry-wide problems
+
+Set `author_type` based on the article's primary voice:
+- Practitioner byline → `"business_owner"`
+- Staff writer interviewing practitioners → `"unknown"` (still capture it)
+- Vendor-written content → skip unless it quotes practitioners
+
+**Output:**
+Save to `data/raw/YYYY-MM-DD-[slug]-trade-publications.json`.
+Set `source: "trade_publication"` and `subreddit_or_group` to the publication
+name extracted from the domain (e.g., `"dentaleconomics.com"` → `"Dental Economics"`).
+Set `scrape_method: "exa_neural_search"`.
+
+---
+
 ## Rules
 - Never scrape personal/private information (emails, phone numbers, addresses)
 - Record the URL of every post for citation purposes
 - If a platform yields fewer than 5 relevant results, note it and move on
 - Always save raw data even if quality is mixed — the analyst will filter
-- Set `scrape_method` field: `exa_neural_search` (Reddit, LinkedIn),
+- Set `scrape_method` field: `exa_neural_search` (Reddit, LinkedIn, Trade Publications),
   `firecrawl_scrape_full` or `firecrawl_search_snippet` (X, Quora)

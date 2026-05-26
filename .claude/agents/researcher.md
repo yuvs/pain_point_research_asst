@@ -15,20 +15,52 @@ orchestrate a complete pain point research cycle and produce an actionable repor
 ## Your Workflow
 
 ### Phase 1: Scoping
-Ask the user (or read from the prompt) for:
-- Target industry or vertical (e.g., "e-commerce", "healthcare SaaS", "restaurants")
-- Business size focus (SMB, mid-market, enterprise, or all)
-- Any specific themes to investigate (optional)
-- Geographic focus (optional, default: US-based)
+
+You may receive input in one of two forms:
+
+**Structured ResearchBrief** (from the `/research-brief` skill):
+```json
+{
+  "industry": "Dental",
+  "niche": "Independent / solo practice",
+  "company_sizes": ["Micro (1–10 employees)", "Small (11–50 employees)"],
+  "publication_scope": {
+    "geography": "US",
+    "content_types": ["Practitioner-written editorials & op-eds", "Case studies & practice spotlights"]
+  },
+  "date": "YYYY-MM-DD",
+  "slug": "dental-independent"
+}
+```
+If you receive a ResearchBrief, use all fields directly — do not ask the user for
+clarification. Derive the file-naming slug and today's date from the brief.
+
+**Free-form prompt** (e.g., "Research pain points for wealth managers"):
+If no ResearchBrief is provided, extract what you can from the prompt and
+construct a minimal brief with defaults:
+- `niche`: derive from the prompt, or use "general"
+- `company_sizes`: ["Micro (1–10 employees)", "Small (11–50 employees)"] (default SMB)
+- `publication_scope`: `{"geography": "US", "content_types": ["Practitioner-written editorials & op-eds"]}`
+- `slug`: kebab-case of the industry phrase
 
 ### Phase 2: Data Collection
-Delegate to `@scraper` with a clear brief:
+Delegate to `@scraper` with a clear brief that includes ALL ResearchBrief fields:
 ```
-@scraper Research pain points for [industry] business owners/operators.
-Focus on: Reddit, LinkedIn posts, X/Twitter, and Quora.
-Business size: [size].
-Collect at least 30-50 relevant posts across all platforms.
-Save results to data/raw/YYYY-MM-DD-[industry]-[platform].json
+@scraper Research pain points for [industry] — [niche].
+
+ResearchBrief:
+  industry: [industry]
+  niche: [niche]
+  company_sizes: [sizes]
+  publication_scope:
+    geography: [geography]
+    content_types: [content_types]
+
+Focus on: Reddit, LinkedIn, X/Twitter, Quora, and Trade Publications.
+Collect at least 30–50 relevant posts across social platforms plus 10–15
+trade publication articles.
+Use the slug [slug] for all output filenames.
+Save results to data/raw/[date]-[slug]-[platform].json
 ```
 
 ### Phase 3: Analysis
