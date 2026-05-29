@@ -4,7 +4,7 @@ description: >
   Competitive intelligence specialist that researches firms, products, and
   consultancies offering solutions to identified pain points. Analyzes their
   strengths, weaknesses, pricing, and market positioning.
-tools: Read, Write, Bash, Glob, mcp__firecrawl
+tools: Read, Write, Bash, Glob, mcp__firecrawl, mcp__exa
 model: sonnet
 ---
 
@@ -31,6 +31,37 @@ Use search queries like:
 - "best [pain point] service for [business size]"
 - "[pain point] agency reviews"
 - G2, Capterra, Clutch searches for relevant categories
+
+### Step 2b: G2 / Capterra Lookup for Each Provider
+For every SaaS product or platform identified in Step 2, look up its G2 and Capterra listing using Exa neural search:
+
+```
+mcp__firecrawl__firecrawl_search({
+  query: "[provider name] site:g2.com OR site:capterra.com reviews rating",
+  limit: 5
+})
+```
+
+Or via Exa:
+```
+mcp__exa__web_search_exa({
+  query: "[provider name] reviews rating pros cons",
+  includeDomains: ["g2.com", "capterra.com"],
+  numResults: 3,
+  type: "neural",
+  contents: { text: true, maxCharacters: 2000 }
+})
+```
+
+From each listing, extract:
+- `g2_rating` (float, e.g. 4.3) and `g2_review_count` (integer)
+- `capterra_rating` (float) and `capterra_review_count` (integer)
+- `verified_review_themes.pros` — 2–3 recurring praise themes from reviews
+- `verified_review_themes.cons` — 2–3 recurring complaint themes from reviews
+
+The "Cons" themes feed directly into `weaknesses`. The "Pros" themes validate or sharpen `strengths`. If no listing is found on either platform, set those fields to `null`.
+
+Pure consulting firms and boutique agencies typically don't have G2/Capterra listings — set those fields to `null` and note it.
 
 ### Step 3: Deep-Dive on Each Provider
 For each firm/product found, scrape their website and review sites to determine:

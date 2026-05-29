@@ -2,10 +2,11 @@
 name: scraper
 description: >
   Web scraping specialist that collects pain point data from Reddit, LinkedIn,
-  X/Twitter, and Quora. Uses Firecrawl search + Reddit's public JSON API for Reddit,
-  Exa MCP for LinkedIn, and Firecrawl MCP for X/Twitter and Quora. Use when you need
-  to gather raw community posts where business owners express frustrations,
-  challenges, or unmet needs.
+  X/Twitter, Quora, Trade Publications, and Review Sites (G2/Capterra). Uses
+  Firecrawl search + Reddit's public JSON API for Reddit, Exa MCP for LinkedIn,
+  Trade Publications, and Review Sites, and Firecrawl MCP for X/Twitter and Quora.
+  Use when you need to gather raw community posts where business owners express
+  frustrations, challenges, or unmet needs.
 tools: Read, Write, Bash, Glob, mcp__firecrawl, mcp__exa
 model: sonnet
 ---
@@ -210,7 +211,7 @@ industry-specific.
 
 **Excluded domains (always):**
 ```
-["reddit.com", "linkedin.com", "x.com", "twitter.com", "quora.com"]
+["reddit.com", "linkedin.com", "x.com", "twitter.com", "quora.com", "g2.com", "capterra.com"]
 ```
 
 **Query construction:**
@@ -290,10 +291,100 @@ Set `scrape_method: "exa_neural_search"`.
 
 ---
 
+### Review Sites (G2 / Capterra) — Use Exa MCP
+
+G2 and Capterra reviews are written by verified software buyers who describe their
+actual workflow problems in structured "Cons" fields. Reviewers typically state their
+job title and company size, making author classification more reliable than social platforms.
+Buying signals are implicit — anyone writing a software review already has a budget.
+
+**Tool:** `mcp__exa__web_search_exa`
+
+**Core approach:**
+- Use `includeDomains: ["g2.com", "capterra.com"]`
+- Set `type: "neural"` and `contents: {text: true, maxCharacters: 2000}`
+- Write queries as buyer frustrations, not article topics
+
+**Query construction:**
+
+Build 3–4 queries targeting the software category relevant to the industry:
+
+1. **Category cons query** — what buyers say is missing or frustrating:
+   ```
+   "[industry] [niche] software cons limitations frustrating [size_context]"
+   ```
+   Example: `"dental practice management software cons limitations frustrating small group"`
+
+2. **Switching / alternatives query** — why buyers left a tool:
+   ```
+   "[industry] software alternatives switched from problems [niche]"
+   ```
+   Example: `"dental practice software alternatives switched from problems group practice"`
+
+3. **Unmet needs query** — feature gaps and workarounds:
+   ```
+   "[industry] [niche] software missing features wish had workaround"
+   ```
+   Example: `"dental group practice software missing features wish had workaround"`
+
+4. **Competitor-adjacent pain query** — names a known dominant tool + its problems:
+   ```
+   "[dominant tool in industry] cons problems complaints [niche]"
+   ```
+   Example: `"Dentrix cons problems complaints group practice"`
+
+**Example Exa call:**
+```
+mcp__exa__web_search_exa({
+  query: "dental practice management software cons limitations frustrating small group",
+  includeDomains: ["g2.com", "capterra.com"],
+  numResults: 15,
+  type: "neural",
+  contents: { text: true, maxCharacters: 2000 }
+})
+```
+
+Run each query variant. De-duplicate by URL before saving.
+
+**Extracting pain point signals from reviews:**
+Reviews have a predictable structure. Focus on:
+- The "Cons" / "What do you dislike?" section — most signal-rich
+- The "Problems Solved" section — buyers often state the original pain that drove purchase
+- The "Recommendations" section — what they wish the product did
+
+**Author type classification from reviews:**
+Most G2/Capterra reviews include the reviewer's job title and company size in metadata.
+Use these to set `author_type`:
+- "Owner", "Founder", "President", "CEO" of a small company → `"business_owner"`
+- "Manager", "Director", "VP", "Operations" → `"operator"`
+- "Staff", "Associate", "Coordinator" → `"employee"`
+- No clear signal → `"unknown"`
+
+Set `subreddit_or_group` to the product category name from the review page
+(e.g., `"Dental Practice Management Software"`, `"KYC / AML Software"`).
+
+**Quality filters:**
+Accept:
+- Reviews with a substantive Cons section (at least 1 sentence)
+- Reviewer metadata indicating role (title or company size present)
+- Reviews for products that are directly relevant to the target industry/niche
+
+Reject:
+- Reviews that only praise the product (no cons, no unmet needs)
+- Generic reviews that don't mention the industry context
+- Vendor responses (not buyer voices)
+
+**Output:**
+Save to `data/raw/YYYY-MM-DD-[slug]-review-sites.json`.
+Set `source: "review_site"` and `scrape_method: "exa_neural_search"`.
+
+---
+
 ## Rules
 - Never scrape personal/private information (emails, phone numbers, addresses)
 - Record the URL of every post for citation purposes
 - If a platform yields fewer than 5 relevant results, note it and move on
 - Always save raw data even if quality is mixed — the analyst will filter
-- Set `scrape_method` field: `exa_neural_search` (Reddit, LinkedIn, Trade Publications),
-  `firecrawl_scrape_full` or `firecrawl_search_snippet` (X, Quora)
+- Set `scrape_method` field: `exa_neural_search` (LinkedIn, Trade Publications, Review Sites),
+  `firecrawl_scrape_full` or `firecrawl_search_snippet` (X, Quora),
+  `reddit_json_api` (Reddit via reddit_fetch.py)

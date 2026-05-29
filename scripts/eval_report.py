@@ -169,9 +169,9 @@ def _head_url(url: str) -> tuple[bool, int]:
         with urllib.request.urlopen(req, timeout=8) as resp:
             return True, resp.status
     except urllib.error.HTTPError as e:
-        # 403 = URL exists but blocks automated access (Quora, LinkedIn).
-        if e.code == 403:
-            return True, 403
+        # 403 = blocked by platform (Quora, LinkedIn); 405 = HEAD not supported but URL exists.
+        if e.code in (403, 405):
+            return True, e.code
         return False, e.code
     except Exception:
         return False, 0
@@ -366,6 +366,9 @@ def check_ice_scores(analyzed: list[dict], api_key: str) -> CheckResult:
 _MIN_POSTS = 10
 _CRITICAL_POSTS = 5
 _EXPECTED_PLATFORMS = {"reddit", "linkedin", "x", "quora"}
+# Optional platforms: warn if present but thin; no issue if absent entirely.
+_OPTIONAL_MIN_POSTS = 5
+_OPTIONAL_PLATFORMS = {"publications", "review-sites"}
 
 
 def check_platform_coverage(raw_files: list[str]) -> CheckResult:
@@ -379,7 +382,13 @@ def check_platform_coverage(raw_files: list[str]) -> CheckResult:
 
     issues: list[str] = []
     for platform, count in counts.items():
-        if count < _CRITICAL_POSTS:
+        if platform in _OPTIONAL_PLATFORMS:
+            # Optional: only warn if present but critically thin.
+            if count < _OPTIONAL_MIN_POSTS:
+                issues.append(
+                    f"{platform}: {count} records (thin — below {_OPTIONAL_MIN_POSTS}; ensure report notes this)"
+                )
+        elif count < _CRITICAL_POSTS:
             issues.append(f"{platform}: {count} posts (CRITICAL — below {_CRITICAL_POSTS})")
         elif count < _MIN_POSTS:
             issues.append(f"{platform}: {count} posts (thin — below {_MIN_POSTS}; ensure report notes this)")
@@ -532,6 +541,71 @@ def _amend_report(report_path: str, appendix: str) -> bool:
     return True
 
 
+# ── amendment: write clean final report ──────────────────────────────────────
+
+def _write_final_report(
+    report_path: str,
+    analyzed_path: str,
+    date: str,
+    industry: str,
+    base: str,
+) -> str | None:
+    """Write a clean final report with reconciled scores, stripping eval appendices.
+
+    Reads the original report, removes any appended Eval Findings sections, appends
+    a clean Reconciled Priority Rankings table built from the patched analyzed JSON,
+    and saves to reports/YYYY-MM-DD-[industry]-pain-points-final.md.
+
+    Returns the path to the new file, or None if the original report was not found.
+    """
+    if not os.path.exists(report_path):
+        return None
+
+    with open(report_path) as f:
+        content = f.read()
+
+    # Strip any eval appendix — may have been appended on multiple --amend runs.
+    clean_content = re.split(r"\n+---\n+## Eval Findings", content)[0].rstrip()
+
+    # Load patched analyzed data (reconciled scores already written to disk).
+    pain_points, _ = _load_analyzed(analyzed_path)
+    sorted_pps = sorted(
+        pain_points,
+        key=lambda x: x.get("ice_score", {}).get("total", 0),
+        reverse=True,
+    )
+
+    lines: list[str] = [
+        "",
+        "---",
+        "",
+        "## Reconciled Priority Rankings",
+        "",
+        "*Scores updated after independent LLM judge review. "
+        "All ICE dimensions and WTP ratings reflect reconciled values.*",
+        "",
+        "| # | Pain Point | Category | Impact | Confidence | Ease | WTP | Total |",
+        "|---|---|---|---|---|---|---|---|",
+    ]
+    for i, pp in enumerate(sorted_pps, 1):
+        ice = pp.get("ice_score", {})
+        name = pp.get("pain_point", "")
+        short = (name[:60] + "…") if len(name) > 60 else name
+        lines.append(
+            f"| {i} | {short} | {pp.get('category', '')} | "
+            f"{ice.get('impact', 0)} | {ice.get('confidence', 0)} | "
+            f"{ice.get('ease', 0)} | {pp.get('willingness_to_pay', '')} | "
+            f"**{ice.get('total', 0)}** |"
+        )
+    lines.append("")
+
+    final_content = clean_content + "\n" + "\n".join(lines)
+    final_path = os.path.join(base, f"reports/{date}-{industry}-pain-points-final.md")
+    with open(final_path, "w") as f:
+        f.write(final_content)
+    return final_path
+
+
 # ── eval report rendering ─────────────────────────────────────────────────────
 
 def _render_eval_report(results: list[CheckResult], date: str, industry: str) -> str:
@@ -642,6 +716,14 @@ def main() -> None:
             print(f"Report amended → {files['report']}")
         else:
             print(f"Warning: report not found at {files['report']} — appendix not added.")
+
+        final_path = _write_final_report(
+            files["report"], files["analyzed"], args.date, args.industry, args.base
+        )
+        if final_path:
+            print(f"Final report written → {final_path}")
+        else:
+            print(f"Warning: could not write final report — original report not found.")
 
     passed_all = all(r.passed for r in results)
     sys.exit(0 if passed_all else 1)

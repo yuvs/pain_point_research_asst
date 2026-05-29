@@ -56,9 +56,9 @@ ResearchBrief:
     geography: [geography]
     content_types: [content_types]
 
-Focus on: Reddit, LinkedIn, X/Twitter, Quora, and Trade Publications.
-Collect at least 30–50 relevant posts across social platforms plus 10–15
-trade publication articles.
+Focus on: Reddit, LinkedIn, X/Twitter, Quora, Trade Publications, and Review Sites (G2/Capterra).
+Collect at least 30–50 relevant posts across social platforms, 10–15
+trade publication articles, and 10–20 G2/Capterra reviews.
 Use the slug [slug] for all output filenames.
 Save results to data/raw/[date]-[slug]-[platform].json
 ```

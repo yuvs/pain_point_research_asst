@@ -1,0 +1,680 @@
+{
+  "industry": "financial-services-saas",
+  "research_date": "2026-05-27",
+  "pain_points_covered": [
+    "SOC 2 / PCI DSS audit cost and complexity",
+    "Manual KYC/KYB review and audit-trail gaps",
+    "Multi-region regulatory complexity",
+    "Sponsor bank / BaaS partner shortage",
+    "Payment processor dependency and freezes",
+    "Trust collapse in compliance-in-days AI platforms",
+    "Chargeback management"
+  ],
+  "competitors": [
+    {
+      "firm_name": "Vanta",
+      "url": "https://www.vanta.com",
+      "pain_points_addressed": [
+        "SOC 2 / PCI DSS audit cost and complexity",
+        "Vertical SaaS without fit-for-size GRC tooling",
+        "Enterprise procurement security questionnaires"
+      ],
+      "pricing_model": "SaaS subscription; opaque list pricing; $9K-$15K/year base for SOC 2 (per Reddit and SOC2Auditors review); add-ons per framework. Total first-year burn often $25K-$50K including auditor + pen test.",
+      "target_market": "SMB to mid-market SaaS pursuing first SOC 2 / ISO 27001 / HIPAA — especially those chasing enterprise sales.",
+      "strengths": [
+        "Category-default brand recognition with auditors (auditor familiarity reduces friction)",
+        "Largest integration library (cloud, HR, identity, code repos) and 15,000+ customer count as of Jan 2026",
+        "Shipped AI Agent 2.0 in Jan 2026 — strong evidence-collection automation"
+      ],
+      "weaknesses": [
+        "Onboarding assumes a dedicated security team; Reddit founders explicitly say this 'doesn't fit' a 6-person team",
+        "GDPR controls reported as 'surface level' once past the sales demo",
+        "Total cost of ownership often shocks small teams who expect SaaS price to be the full cost — Reddit confirms $28K all-in for first year",
+        "Pricing opaque; renewal increases reported as common pain"
+      ],
+      "differentiation": "The 'safe default' — buyers and auditors recognize the brand, reducing procurement friction. Pay the brand tax to avoid sales-cycle slowdowns.",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://soc2auditors.org/insights/vanta-review/",
+        "https://www.complyjet.com/blog/vanta-reviews",
+        "https://www.sideguysolutions.com/vendors/vanta.html",
+        "https://www.reddit.com/r/SaaS/comments/1ruf7ns/soc_2_cost_us_a_40k_deal_how_are_other_small_saas/"
+      ]
+    },
+    {
+      "firm_name": "Drata",
+      "url": "https://drata.com",
+      "pain_points_addressed": [
+        "SOC 2 / PCI DSS audit cost and complexity",
+        "Vertical SaaS without fit-for-size GRC tooling"
+      ],
+      "pricing_model": "Comparable to Vanta ($10K-$15K/year base). Custom controls engine commands a slight premium.",
+      "target_market": "Mid-market SaaS that want heavier customization of controls.",
+      "strengths": [
+        "Most polished UI according to multiple independent reviews",
+        "Strongest custom controls engine — important for fintech with non-standard policies",
+        "Active customer success during the first audit"
+      ],
+      "weaknesses": [
+        "Slightly less auditor adoption than Vanta (closing gap but still a friction point)",
+        "Heavier learning curve for non-technical compliance teams",
+        "Less depth on niche frameworks vs Thoropass"
+      ],
+      "differentiation": "Better choice for teams with custom controls and engineering-led compliance. Often paired with in-house compliance hire.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://cavanex.com/blog/soc-2-compliance-platforms-compared-2026",
+        "https://www.stackfyi.com/guides/vanta-vs-drata-vs-secureframe-2026"
+      ]
+    },
+    {
+      "firm_name": "Sprinto",
+      "url": "https://sprinto.com",
+      "pain_points_addressed": [
+        "SOC 2 / PCI DSS audit cost and complexity",
+        "Vertical SaaS without fit-for-size GRC tooling"
+      ],
+      "pricing_model": "More affordable than Vanta/Drata; reported usage cluster around $6K-$10K/year for startup tier.",
+      "target_market": "Smaller startups, bootstrapped SaaS, and international (especially India/APAC) companies.",
+      "strengths": [
+        "Lower price point than Vanta and Drata",
+        "Strong fit for international and India-headquartered teams",
+        "Cited positively in Reddit r/SaaS — 'I'm the CTO and I did it myself using Sprinto'"
+      ],
+      "weaknesses": [
+        "Less integration depth than Vanta or Drata",
+        "Smaller auditor network in the US",
+        "Limited public recognition slows enterprise procurement"
+      ],
+      "differentiation": "Budget-friendly alternative for early-stage and international teams; the 'good enough' option that ships SOC 2 without the Vanta tax.",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://cavanex.com/blog/soc-2-compliance-platforms-compared-2026",
+        "https://www.reddit.com/r/SaaS/comments/1ruf7ns/soc_2_cost_us_a_40k_deal_how_are_other_small_saas/"
+      ]
+    },
+    {
+      "firm_name": "Thoropass (formerly Laika)",
+      "url": "https://thoropass.com",
+      "pain_points_addressed": [
+        "SOC 2 / PCI DSS audit cost and complexity",
+        "Trust collapse in compliance-in-days AI platforms"
+      ],
+      "pricing_model": "Bundled platform + in-house audit services. Median contract $30K/year (Vendr data); reported range $20.9K-$53.3K/year.",
+      "target_market": "Fintech and regulated SaaS that want a single vendor handling both compliance tooling and the audit itself.",
+      "strengths": [
+        "Combines platform + auditors in-house — eliminates the Vanta-to-auditor handoff that creates rework",
+        "Targets fintech specifically; deeper familiarity with PCI/SOC 2 intersections",
+        "Single point of accountability — addresses the post-Delve trust deficit"
+      ],
+      "weaknesses": [
+        "2-3x the cost of Vanta/Sprinto",
+        "Less ecosystem depth (fewer 3rd-party integrations) than Vanta",
+        "Lock-in concern: if you switch off Thoropass you also switch auditors"
+      ],
+      "differentiation": "The 'integrated' choice — one vendor instead of platform + separate auditor relationship. Particularly compelling for fintech with overlapping framework needs (SOC 2 + PCI + HIPAA).",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://www.complyjet.com/blog/thoropass-review",
+        "https://www.thoropass.com/solutions/thoropass-it-audit-firms",
+        "https://www.smartsuite.com/blog/thoropass-pricing"
+      ]
+    },
+    {
+      "firm_name": "Delve",
+      "url": "https://delve.co",
+      "pain_points_addressed": [
+        "SOC 2 / PCI DSS audit cost and complexity (claimed)",
+        "(NEGATIVE EXAMPLE — case study in white-space gap)"
+      ],
+      "pricing_model": "Marketed 'AI compliance in days' at significant discount to Vanta — pricing implied $3K-$8K range.",
+      "target_market": "YC and venture-backed startups chasing enterprise deals fast.",
+      "strengths": [
+        "AI-native positioning and pre-populated evidence promised speed",
+        "Strong YC distribution channel"
+      ],
+      "weaknesses": [
+        "Scandal April 2026: 259 SOC 2 Type II reports allegedly generated from copy-paste templates with identical conclusions and typos",
+        "Allegations of using Indian 'certification mills' disguised as US firms; auditor reports allegedly pre-generated before any review",
+        "Y Combinator reportedly asked Delve to leave the program; alleged IP theft from Sim.ai",
+        "Buyers now treat 'compliance in days' as a red flag — collateral damage for legitimate fast-cycle vendors"
+      ],
+      "differentiation": "Cautionary tale and current event reshaping the buyer journey — explicitly cited in Reddit and LinkedIn posts as evidence that the category is 'all scams.'",
+      "reviews_sentiment": "negative",
+      "market_position": "emerging",
+      "evidence_urls": [
+        "https://captaincompliance.com/news/delve-scandal-fake-soc2-audits",
+        "https://axipro.com/blog/delve-compliance-leak-soc2-certification"
+      ]
+    },
+    {
+      "firm_name": "Persona",
+      "url": "https://withpersona.com",
+      "pain_points_addressed": [
+        "Manual KYC/KYB review and audit-trail gaps",
+        "Multi-region regulatory complexity (identity verification)"
+      ],
+      "pricing_model": "Tiered; Essential plan starts at ~$250/month, enterprise custom. Per-verification metered usage for higher volumes.",
+      "target_market": "Mid-market fintechs, marketplaces, and global B2C platforms needing global ID verification.",
+      "strengths": [
+        "FedRAMP-authorized identity verification across 200+ countries",
+        "Strong document checks + biometrics + sanctions screening unified",
+        "Holds SOC 2 Type II, ISO 27001, and FedRAMP — important for selling into regulated buyers"
+      ],
+      "weaknesses": [
+        "More of an identity-verification layer than full decisioning — needs separate rules engine for complex cases",
+        "Reviewer reports note KYB capabilities are less mature than core KYC",
+        "Cost climbs quickly at scale; per-verification model penalizes high-funnel-traffic businesses"
+      ],
+      "differentiation": "Best-in-class identity verification with the broadest geographic coverage and strongest compliance certifications. Less ambition on full decisioning vs Alloy.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://withpersona.com/solutions/know-your-business/",
+        "https://www.majormatters.co/p/persona-vs-alloy-comparison",
+        "https://www.majormatters.co/p/persona-identity-verification-review"
+      ]
+    },
+    {
+      "firm_name": "Alloy",
+      "url": "https://alloy.com",
+      "pain_points_addressed": [
+        "Manual KYC/KYB review and audit-trail gaps",
+        "Multi-region regulatory complexity",
+        "Privacy-first KYC architecture under audit pressure"
+      ],
+      "pricing_model": "Custom enterprise pricing; no published rates. Indicative contracts $50K-$250K+ annually for fintechs and FIs.",
+      "target_market": "Banks and fintechs that need to orchestrate identity, fraud, AML, and credit decisioning across many data sources.",
+      "strengths": [
+        "Orchestrates 250+ data sources through a single rules engine — eliminates managing multiple vendor integrations",
+        "Codeless policy configuration — compliance officers can build/test/deploy without engineering tickets",
+        "Native AI Assistant (Feb 2026) automates sanctions and adverse media review",
+        "Used by 700+ financial institutions — trusted brand for diligence buyers"
+      ],
+      "weaknesses": [
+        "Enterprise-priced — typically out of reach for sub-Series-A SaaS",
+        "Setup complexity 'medium-high' — requires meaningful implementation lift",
+        "Less mature in non-US geographies vs Persona"
+      ],
+      "differentiation": "The 'decisioning orchestrator' positioning — sits at the center of the compliance stack rather than being one verification step in a chain.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://majormatters.co/p/alloy-identity-decisioning-review",
+        "https://www.majormatters.co/p/persona-vs-alloy-comparison"
+      ]
+    },
+    {
+      "firm_name": "Sumsub",
+      "url": "https://sumsub.com",
+      "pain_points_addressed": [
+        "Manual KYC/KYB review",
+        "Multi-region regulatory complexity",
+        "AI compliance agent explainability"
+      ],
+      "pricing_model": "Per-verification metered; ~$1.35-$4 per KYC check at standard volume; enterprise discounts.",
+      "target_market": "Crypto exchanges, neobanks, and globally distributed fintechs needing fast KYC/KYB/AML stack.",
+      "strengths": [
+        "Strong crypto and high-risk vertical coverage; well-known among crypto operators",
+        "Single platform covers KYC, KYB, AML, and transaction monitoring",
+        "Global document support (200+ countries)"
+      ],
+      "weaknesses": [
+        "Reviews flag inconsistent approval rates in edge cases",
+        "Customer support cited as slow in user reviews",
+        "Documentation quality lags Persona and Alloy"
+      ],
+      "differentiation": "Crypto-native and globally aggressive; willing to onboard high-risk merchant categories that Persona may decline.",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://digitalbydefault.ai/blog/sumsub",
+        "https://www.deepidv.com/media/articles/sumsub-vs-onfido-vs-veriff-vs-deepidv-com"
+      ]
+    },
+    {
+      "firm_name": "iDenfy",
+      "url": "https://idenfy.com",
+      "pain_points_addressed": [
+        "Manual KYC review",
+        "Multi-region identity verification"
+      ],
+      "pricing_model": "Per-verification metered, with published tiered pricing — generally cheaper than Persona at low volumes.",
+      "target_market": "SMB fintechs and lending platforms in EU and emerging markets.",
+      "strengths": [
+        "Transparent pricing — rare in this category",
+        "Strong fraud-catching reputation cited in Reddit r/fintech KYC threads",
+        "Lithuania HQ — EU AMLD6 native"
+      ],
+      "weaknesses": [
+        "Narrower data source orchestration than Alloy",
+        "Less brand recognition with US auditors",
+        "Limited public case studies vs leading competitors"
+      ],
+      "differentiation": "Affordable, fraud-focused KYC for European and EM fintechs that don't need Alloy-level orchestration.",
+      "reviews_sentiment": "positive",
+      "market_position": "niche",
+      "evidence_urls": [
+        "https://idenfy.com/blog/best-onfido-entrust-alternative-migration/",
+        "https://www.reddit.com/r/fintech/comments/1qj5nmv/kyc_onboarding_automation_platforms_that_reduces/"
+      ]
+    },
+    {
+      "firm_name": "AiPrise",
+      "url": "https://aiprise.com",
+      "pain_points_addressed": [
+        "Manual KYC review and audit trail",
+        "Multi-region regulatory complexity"
+      ],
+      "pricing_model": "Custom enterprise pricing — case studies cite 'global scale' implementations.",
+      "target_market": "Global lending and payments platforms scaling KYC across 4+ regions.",
+      "strengths": [
+        "Published case study with Grey: 2x higher KYC approvals, scaled globally",
+        "Strong AI/agent positioning",
+        "Multi-region document and database coverage"
+      ],
+      "weaknesses": [
+        "Less established brand than Persona/Alloy",
+        "Public reviews thin; relies heavily on vendor case studies",
+        "Pricing opaque"
+      ],
+      "differentiation": "Emerging AI-first challenger optimized for the messy multi-region case rather than US-only flows.",
+      "reviews_sentiment": "positive",
+      "market_position": "emerging",
+      "evidence_urls": [
+        "https://aiprise.com/case-studies/grey-scales-globally-and-achieves-2x-higher-kyc-approvals-with-aiprise",
+        "https://www.g2.com/products/aiprise/reviews"
+      ]
+    },
+    {
+      "firm_name": "Detected",
+      "url": "https://detected.com",
+      "pain_points_addressed": [
+        "Manual KYB review (specifically business onboarding, nested ownership)",
+        "Multi-region KYB"
+      ],
+      "pricing_model": "Custom; SaaS subscription + per-verification overage.",
+      "target_market": "Payment platforms and lenders onboarding businesses (not consumers) — KYB-first.",
+      "strengths": [
+        "Founded by an operator (Tipalti veteran) who explicitly built it after failing to find adequate KYB tooling",
+        "Handles nested ownership structures, conflicting registries, custom policies that 'don't fit in a dropdown'",
+        "Rule engine designed to handle policy deviations without breaking"
+      ],
+      "weaknesses": [
+        "Pure-play KYB — needs to be paired with a KYC vendor for consumer flows",
+        "Less brand visibility than Persona/Alloy",
+        "Newer entrant — smaller customer roster"
+      ],
+      "differentiation": "KYB-native rather than KYC-rebadged-as-KYB; the operator-built option for teams that need true business diligence.",
+      "reviews_sentiment": "positive",
+      "market_position": "niche",
+      "evidence_urls": [
+        "https://www.linkedin.com/pulse/kyb-vendor-landscape-why-i-left-in-house-build-what-couldnt-upton-voc4e"
+      ]
+    },
+    {
+      "firm_name": "Fraxtional",
+      "url": "https://fraxtional.co",
+      "pain_points_addressed": [
+        "Multi-region regulatory complexity",
+        "Sponsor bank shortage — they offer 'Securing Sponsor Bank Relationship' service",
+        "Compliance team / product team friction (fractional MLRO)"
+      ],
+      "pricing_model": "Retainer-based fractional services. Public service pages list 'Interim MLRO,' 'AML Compliance Consulting,' 'CRO Regulatory Consulting,' 'Securing Sponsor Bank Relationship.' Pricing not public; market rate for fractional MLRO ~$8-$25K/month.",
+      "target_market": "Early- to growth-stage fintechs that need senior compliance expertise but cannot yet justify a full-time MLRO or CCO.",
+      "strengths": [
+        "Productized fractional services with clear scope — Interim MLRO, sponsor bank relationship, AML advisory",
+        "Direct competitor evidence — addresses exactly the pain points our research surfaced",
+        "Bridges the gap between compliance tooling and human strategy"
+      ],
+      "weaknesses": [
+        "Smaller than Big 4 advisory — less brand power for enterprise buyers",
+        "Service quality depends heavily on the individual operator assigned",
+        "Limited tech leverage — billable hours dependent"
+      ],
+      "differentiation": "One of the few firms explicitly productizing 'sponsor bank relationship' brokerage as a service line.",
+      "reviews_sentiment": "positive",
+      "market_position": "niche",
+      "evidence_urls": [
+        "https://fraxtional.co/services",
+        "https://fraxtional.co/services/securing-sponsor-bank-relationship",
+        "https://fraxtional.co/services/aml-compliance-consulting-advisory-services"
+      ]
+    },
+    {
+      "firm_name": "Rennoco Fintech Practice",
+      "url": "https://www.rennoco.com/solutions/fintech-practice/fractional-aml",
+      "pain_points_addressed": [
+        "Multi-region regulatory complexity",
+        "Compliance team friction (fractional AML)"
+      ],
+      "pricing_model": "Fractional retainer; pricing not public.",
+      "target_market": "Fintechs needing fractional AML / BSA staffing.",
+      "strengths": [
+        "Established fintech specialist with named practice",
+        "Comprehensive fintech advisory beyond compliance (capital, ops)"
+      ],
+      "weaknesses": [
+        "Less productized than Fraxtional",
+        "Brand recognition limited to insider networks"
+      ],
+      "differentiation": "Broader fintech advisory firm with a fractional AML offering bolted on; suits growing fintechs that need bundled services.",
+      "reviews_sentiment": "mixed",
+      "market_position": "niche",
+      "evidence_urls": [
+        "https://www.rennoco.com/solutions/fintech-practice/fractional-aml"
+      ]
+    },
+    {
+      "firm_name": "Unit",
+      "url": "https://unit.co",
+      "pain_points_addressed": [
+        "Sponsor bank / BaaS partner shortage",
+        "Payment processor dependency (multi-bank redundancy model)"
+      ],
+      "pricing_model": "Tiered SaaS + per-account / per-transaction fees. Implementation fees common. Real cost varies $50K-$500K+/year.",
+      "target_market": "US fintechs and embedded-finance platforms launching accounts, cards, lending.",
+      "strengths": [
+        "Pivoted to multi-bank redundancy model — explicitly addresses single-sponsor-bank concentration risk that broke Synapse customers",
+        "Strong API ecosystem",
+        "Post-Synapse market leader on US embedded banking"
+      ],
+      "weaknesses": [
+        "Compliance burden still falls heavily on the fintech customer (sponsor bank diligence, BSA program)",
+        "Migration cost between sponsor banks is non-trivial despite multi-bank narrative",
+        "Pricing has crept up since 2024 BaaS consolidation"
+      ],
+      "differentiation": "Multi-bank architecture — the 'flight to quality' winner in post-Synapse US BaaS.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://fynqo.org/baas-platforms-2026-comparing-unit-stripe-treasury-and-solaris",
+        "https://crassula.io/guides/baas-providers/",
+        "https://fintechspecs.com/blog/best-banking-as-a-service-platforms/"
+      ]
+    },
+    {
+      "firm_name": "Synctera",
+      "url": "https://synctera.com",
+      "pain_points_addressed": [
+        "Sponsor bank / BaaS partner shortage"
+      ],
+      "pricing_model": "SaaS + per-transaction. Pricing not fully public; $30K-$250K range cited in third-party guides.",
+      "target_market": "Early-stage fintechs needing fast access to a sponsor bank.",
+      "strengths": [
+        "Built-in sponsor bank network — matches fintechs to banks",
+        "Compliance-as-a-service layer accelerates time-to-market",
+        "Published thought leadership on bank-fintech partnership best practices"
+      ],
+      "weaknesses": [
+        "Smaller bank network than Unit; concentration risk remains",
+        "Has gone through post-2024 restructuring concerns flagged in industry coverage",
+        "Less brand depth with enterprise customers"
+      ],
+      "differentiation": "Sponsor-bank discovery built-in — useful for early-stage fintechs that don't yet have direct bank relationships.",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://www.synctera.com/post/5-steps-to-a-successful-baas-bank-fintech-partnership",
+        "https://crassula.io/guides/baas-providers/"
+      ]
+    },
+    {
+      "firm_name": "Treasury Prime",
+      "url": "https://treasuryprime.com",
+      "pain_points_addressed": [
+        "Sponsor bank / BaaS partner shortage"
+      ],
+      "pricing_model": "Custom enterprise pricing.",
+      "target_market": "Mid-market fintechs that want direct contractual relationships with sponsor banks rather than 'BaaS in the middle.'",
+      "strengths": [
+        "Direct-bank contract model — fintech owns the bank relationship, not the BaaS middleware",
+        "Lower 'BaaS contagion' risk per Tearsheet and American Banker coverage",
+        "Strong reputation among compliance-mature fintechs"
+      ],
+      "weaknesses": [
+        "Direct-relationship model requires fintech to do more compliance lifting",
+        "Longer implementation than Stripe Treasury",
+        "Lost some market share during the 2024 BaaS bloodbath"
+      ],
+      "differentiation": "Anti-middleware positioning — appealing to fintechs scarred by Synapse-style intermediary collapse.",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://startupik.com/treasury-prime-embedded-banking-infrastructure/",
+        "https://fintechspecs.com/blog/best-banking-as-a-service-platforms/"
+      ]
+    },
+    {
+      "firm_name": "Stripe Treasury",
+      "url": "https://stripe.com/treasury",
+      "pain_points_addressed": [
+        "Sponsor bank / BaaS partner shortage (US-only, limited scope)",
+        "Payment processor dependency (single-vendor counter-argument)"
+      ],
+      "pricing_model": "Per-transaction + per-account fees integrated into Stripe billing.",
+      "target_market": "Existing Stripe payments customers wanting to add basic embedded accounts.",
+      "strengths": [
+        "Existing Stripe customers can add accounts with minimal new integration work",
+        "Stripe's compliance brand carries weight with auditors",
+        "Reliable infrastructure at scale"
+      ],
+      "weaknesses": [
+        "Vendor lock-in concern — explicit in Reddit r/SaaS threads ('I hate Stripe so I'm going to build my own processor')",
+        "Limited product breadth vs Unit/Synctera — no lending, narrower card programs",
+        "Account freezes / category drops have generated Reddit pain (r/SaaS payment processor dropped a merchant category)"
+      ],
+      "differentiation": "Lowest-friction add-on for existing Stripe customers; weakest pure-play BaaS choice for fintechs that want optionality.",
+      "reviews_sentiment": "mixed",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://fynqo.org/baas-platforms-2026-comparing-unit-stripe-treasury-and-solaris",
+        "https://www.reddit.com/r/SaaS/comments/1f762xf/i_hate_stripe_so_im_going_to_build_my_own_payment/",
+        "https://www.reddit.com/r/SaaS/comments/1sz3tn2/payment_processor_dropped_a_merchant_category/"
+      ]
+    },
+    {
+      "firm_name": "Primer",
+      "url": "https://primer.io",
+      "pain_points_addressed": [
+        "Payment processor dependency",
+        "Multi-processor integration complexity"
+      ],
+      "pricing_model": "SaaS subscription + per-transaction; enterprise contracts typical $50K-$500K+.",
+      "target_market": "Mid-market and enterprise merchants/fintechs running multiple payment processors who need orchestration.",
+      "strengths": [
+        "No-code workflow builder for payment routing logic",
+        "Strong vendor-agnostic positioning",
+        "Active community + thought leadership in payment orchestration"
+      ],
+      "weaknesses": [
+        "Enterprise pricing — out of reach for early-stage SaaS",
+        "Adds a layer that itself becomes a dependency",
+        "Migration off Primer is non-trivial"
+      ],
+      "differentiation": "Premium payment orchestration with no-code workflow builder; the choice for teams who need multi-processor without engineering rebuild.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://primer.io",
+        "https://paymentbrief.com/articles/spreedly-vs-primer-vs-gr4vy-orchestration/"
+      ]
+    },
+    {
+      "firm_name": "Spreedly",
+      "url": "https://www.spreedly.com",
+      "pain_points_addressed": [
+        "Payment processor dependency",
+        "Multi-processor integration complexity"
+      ],
+      "pricing_model": "Per-transaction; volume-based tiers.",
+      "target_market": "Mid-market merchants and platforms with high transaction volumes.",
+      "strengths": [
+        "Oldest and most established orchestration vendor (founded 2008)",
+        "Tokenization vault separated from processor — eases migrations",
+        "Broad processor support (120+ gateways)"
+      ],
+      "weaknesses": [
+        "Aging UI; product velocity slower than Primer",
+        "Less appealing to no-code/low-code teams",
+        "Pricing opaque for small teams"
+      ],
+      "differentiation": "Established, tokenization-first orchestration. The 'safe' enterprise pick.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://www.spreedly.com",
+        "https://paymentbrief.com/articles/spreedly-vs-primer-vs-gr4vy-orchestration/"
+      ]
+    },
+    {
+      "firm_name": "Gr4vy",
+      "url": "https://gr4vy.com",
+      "pain_points_addressed": [
+        "Payment processor dependency",
+        "Multi-processor integration complexity"
+      ],
+      "pricing_model": "SaaS + per-transaction; positioned cheaper than Primer for similar functionality.",
+      "target_market": "Growing platforms wanting cloud-native orchestration without enterprise pricing.",
+      "strengths": [
+        "Cloud-native architecture; faster onboarding than Spreedly",
+        "Cleaner developer experience than Spreedly",
+        "Pricing more transparent than competitors"
+      ],
+      "weaknesses": [
+        "Smaller processor library than Spreedly",
+        "Newer brand — less reference customer logos for diligence",
+        "Limited fraud and risk integrations vs Primer"
+      ],
+      "differentiation": "Modern, developer-first orchestration aimed at the gap between bare-Stripe and enterprise-Primer.",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://gr4vy.com",
+        "https://fintechreview.net/gr4vy-review-payment-orchestration/"
+      ]
+    },
+    {
+      "firm_name": "Justt",
+      "url": "https://justt.ai",
+      "pain_points_addressed": [
+        "Chargeback management"
+      ],
+      "pricing_model": "Success-fee model — Justt only earns when it wins disputes; no upfront SaaS fee.",
+      "target_market": "SaaS, subscription, and e-commerce merchants with material dispute volumes.",
+      "strengths": [
+        "Pure performance pricing — aligns vendor incentive with merchant outcome",
+        "AI-based dynamic argument generation (vs static templates)",
+        "Dispute Optimization (June 2025 launch) recommends fight-vs-accept on ROI basis",
+        "SaaS-specific evidence playbook (usage data, billing history)"
+      ],
+      "weaknesses": [
+        "Performance fee at scale can exceed flat SaaS pricing alternatives",
+        "Requires deep data integration to surface usage evidence",
+        "Less effective on first-party fraud / fully fraudulent disputes"
+      ],
+      "differentiation": "Performance-based pricing tied to recovered revenue — easy to justify to CFO. Strong subscription/SaaS specialization.",
+      "reviews_sentiment": "positive",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://justt.ai/",
+        "https://justt.ai/industries/saas/",
+        "https://justt.ai/blog/justt-announces-dispute-optimization-to-help-merchants-max"
+      ]
+    },
+    {
+      "firm_name": "Sift",
+      "url": "https://sift.com",
+      "pain_points_addressed": [
+        "Chargeback management (prevention-focused)",
+        "Fraud monitoring"
+      ],
+      "pricing_model": "Custom enterprise; per-event metered.",
+      "target_market": "Mid-market and enterprise merchants needing combined fraud + dispute coverage.",
+      "strengths": [
+        "Industry-standard fraud benchmarking data (Digital Trust Index)",
+        "Strong machine-learning model with broad cross-merchant signal",
+        "Bundles prevention with response — fewer disputes reach the dispute stage"
+      ],
+      "weaknesses": [
+        "Enterprise pricing prohibitive for SMB SaaS",
+        "Implementation lift — full Sift coverage takes months",
+        "Reactive dispute handling weaker than Justt-style specialists"
+      ],
+      "differentiation": "Prevention-first fraud + dispute platform; the broadest-coverage option for enterprises.",
+      "reviews_sentiment": "positive",
+      "market_position": "leader",
+      "evidence_urls": [
+        "https://sift.com/blog/q4-2025-digital-trust-index-disputes"
+      ]
+    },
+    {
+      "firm_name": "Midigator (acquired by Equifax)",
+      "url": "https://www.midigator.com",
+      "pain_points_addressed": [
+        "Chargeback management",
+        "Dispute analytics"
+      ],
+      "pricing_model": "SaaS subscription, mid-market pricing not public.",
+      "target_market": "Mid-market e-commerce and SaaS merchants.",
+      "strengths": [
+        "Strong dispute analytics dashboard",
+        "Acquired by Equifax — increased credibility / data depth",
+        "Established workflow tooling"
+      ],
+      "weaknesses": [
+        "Post-acquisition product roadmap uncertainty per industry chatter",
+        "Less AI/automation depth than Justt",
+        "UI dated compared to newer entrants"
+      ],
+      "differentiation": "Established analytics-led platform with Equifax data backing.",
+      "reviews_sentiment": "mixed",
+      "market_position": "challenger",
+      "evidence_urls": [
+        "https://justt.ai/guides/chargeback-management-tools-strategies/"
+      ]
+    }
+  ],
+  "white_space": [
+    {
+      "gap": "Fit-for-size compliance program for 6-30 person fintechs that integrates Vanta/Drata setup with human strategy and a guaranteed first-enterprise-deal positioning workshop",
+      "related_pain_points": ["SOC 2 / PCI DSS audit cost and complexity", "Vertical SaaS without fit-for-size GRC tooling", "Enterprise procurement"],
+      "why_it_exists": "Vanta/Drata target standalone software purchase; consultants who configure these tools tend to be either expensive Big 4 ($100K+) or unvetted freelancers. Post-Delve, buyers want a real human accountable. No firm has productized the 'Vanta + human strategist + first enterprise deal' bundle at a $20K-$40K price point.",
+      "opportunity_signal": "Reddit threads show consistent $28K-$40K spending on SOC 2 with mixed ROI; founders explicitly ask 'what would you have paid for a tool that just guided you through it.' Delve scandal eroded trust in pure-AI 'compliance in days' — buyers now want human accountability."
+    },
+    {
+      "gap": "Sponsor-bank brokerage / matching service for embedded-finance fintechs, productized rather than relationship-dependent",
+      "related_pain_points": ["Sponsor bank / BaaS partner shortage", "Multi-region regulatory complexity"],
+      "why_it_exists": "American Banker reports there are 'more fintechs that require a sponsor bank than sponsor banks to support them.' Fraxtional offers this as a fractional service, but no firm has built a Pipedrive-style matching marketplace + diligence package. BaaS platforms (Unit, Synctera) only match within their own networks.",
+      "opportunity_signal": "Tearsheet, American Banker, and post-Synapse Medium essays all flag this as 'the hardest problem in fintech right now.' Fintechs report 12+ month onboarding cycles. Willingness to pay is high — a 6-month delay costs more than $250K in burn for most growth-stage fintechs."
+    },
+    {
+      "gap": "KYB-native vendor selection and exception-case operations consulting for fintechs whose KYC tools 'break the moment messy data shows up'",
+      "related_pain_points": ["Manual KYC/KYB review", "Multi-region regulatory complexity"],
+      "why_it_exists": "Per Detected founder's LinkedIn essay, KYB vendors fall into 3 buckets (single-purpose, rule-engine-rigid, KYC-rebadged), and no platform handles the messy 15% of cases. Vendors compete on demo polish; nobody helps the buyer architect the 'exception handling' layer.",
+      "opportunity_signal": "Reddit r/fintech 'KYC onboarding automation' thread has 31 substantive comments. Founders explicitly say 'automation only moves work from analysts to QA isn't a win.' Trade pub case studies report 240+ hours/month manual review costs — a $30K-$60K engagement that cuts this by 60% has obvious ROI."
+    },
+    {
+      "gap": "Payment-stack resilience consulting (multi-processor architecture + merchant-of-record decision framework + processor risk audit) for SaaS approaching $5-25M ARR",
+      "related_pain_points": ["Payment processor dependency and freezes", "Chargeback management"],
+      "why_it_exists": "Primer/Spreedly/Gr4vy sell the orchestration tool but not the strategy. Big-4 firms ignore this segment. Founders learn through painful incidents (Reddit AirWallex freeze, processor merchant-category drop) — there's no proactive advisory option below $50K.",
+      "opportunity_signal": "Multiple Reddit threads with 100+ upvotes on payment processor pain. r/SaaS 'I hate Stripe' has 276 upvotes / 431 comments. Quantifiable downside: a single processor freeze can lock $250K+ for 180 days."
+    },
+    {
+      "gap": "Independent compliance-vendor due diligence and auditor matchmaking service — post-Delve buyers cannot evaluate vendors safely",
+      "related_pain_points": ["Trust collapse in compliance-in-days platforms", "SOC 2 audit cost"],
+      "why_it_exists": "G2/Capterra reviews game-able. Comparison blog posts are often affiliate-driven. Buyers want a named, accountable human to validate vendor claims before signing. No neutral firm has occupied this 'compliance buyer's broker' role.",
+      "opportunity_signal": "Delve scandal April 2026; Captain Compliance reporting; Reddit threads explicitly calling all compliance startups 'scams.' Fertile moment for a trusted advisor positioning."
+    },
+    {
+      "gap": "AI compliance governance / model-risk-management consulting bridging AMLD6 personal liability and AI vendor claims",
+      "related_pain_points": ["AI compliance agents lack explainability", "Multi-region regulatory complexity"],
+      "why_it_exists": "AMLD6 made compliance officers personally criminally liable; meanwhile AI vendors pitch black-box decisioning. Buyers (MLROs) need a framework for adopting AI without taking on undefined personal risk. No consulting firm has packaged this as a productized engagement.",
+      "opportunity_signal": "Innokenty Bodrov's LinkedIn essay surfaced significant engagement; multiple Reddit r/fintech threads on 'AI compliance receipts' and 'LLM audit logs.' Specifically asked-for: 'How do I get auditable explanations from AI compliance vendors.'"
+    }
+  ]
+}

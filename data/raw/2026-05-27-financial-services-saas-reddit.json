@@ -1,0 +1,463 @@
+[
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1tfuibv/do_fintech_companies_actually_care_about_ai/",
+    "author_type": "unknown",
+    "content": "Do fintech companies actually care about AI governance receipts before regulators force them to?\n\nHey everyone this is my first time posting so please bear with me. This is not a self-promotion rather needed some advice.\n\nI\u2019m working with a pre-seed startup. We\u2019re building a governance layer for fintech companies deploying AI models and agents in regulated workflows.\n\nThe product combines:\n\n\\- A runtime governance layer that sits around AI models and agents, checking inputs, outputs, tool use, and actions against policy/risk criteria.  \n\\- A lightweight receipt layer that creates audit records for important AI decisions, escalations, and workflow events.  \n\\- A lifecycle governance layer that connects those records across training, evaluation, deployment, and runtime operations.\n\nThe idea is to make AI workflows auditable by default. For example, if an AI agent is involved in lending, credit risk, fraud review, AML/KYC, servicing, collections, or customer support, it should be possible to answer:\n\n\\- What did the model/agent do?\n\n\\- What data or context did it use?\n\n\\- What policy was applied?\n\n\\- Was the action low-risk, high-risk, or escalation-worthy?\n\n\\- Was human review required?\n\n\\- Can this be shown later to an internal compliance team, external auditor, or regulator?\n\nWe\u2019re trying to create tamper-evident governance records across the lifecycle of AI systems, not just post-hoc documentation. Our current wedge is fintech, especially AI-based lending platforms, AI-native financial tools, and mid-sized regulated companies adopting AI.\n\nThe challenge: I\u2019ve been doing LinkedIn cold outreach to potential fintech design partners, but haven\u2019t heard back much yet. So I\u2019m trying to figure out whether the problem is the idea, the positioning, the buyer, or the outreach channel.\n\nWould love honest feedback:    \n1. Is this a real pain point for fintech teams right now?\n\n2. Who is the right buyer/persona: CTO, compliance, risk, model governance, product, or audit?\n\n3. Is ",
+    "title": "Do fintech companies actually care about AI governance receipts before regulators force them to?",
+    "engagement": {
+      "upvotes": 1,
+      "comments": 12,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:33.839982+00:00",
+    "pain_point_signals": [
+      "Is this a real pain point for fintech teams right now?  2"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1o0ksky/is_there_a_way_to_simplify_compliance_for/",
+    "author_type": "operator",
+    "content": "Is there a way to simplify compliance for multi-region fintech apps?\n\nOur team\u2019s expanding into LATAM and the regulatory differences are giving us a headache. We can\u2019t afford a full-time compliance officer yet, but we also can\u2019t risk missing something important. Anyone found tools or frameworks that make compliance management less painful?\n\nTop comments:\nYou could look at what Dreamers is doing, they\u2019re helping startups navigate that kind of stuff without huge overhead.\n---\nI was in a similar spot last year, expanding into new markets and juggling different regulations. It's a huge headache without a dedicated compliance team.\n\nOne tip that helped us was focusing on automated verification to handle the initial KYC load. We\u2019re actively solving this in something we're building, Axory, to help with deepfake detection for KYC. Happy to share more on what we learned.\n---\nHi, you are absolutely right that regulation is a big challenge. Each region has its own rules, and they often depend on your product\u2019s fund flow, for example whether your platform holds customer funds or not.\n\nOur team holds Money Transmitter Licenses in more than 35 US states, and we are currently discussing several partnerships in Latin America. Maybe we can have a chat to see if there is a fit.\n\nHappy to share our experience if it helps.",
+    "title": "Is there a way to simplify compliance for multi-region fintech apps?",
+    "engagement": {
+      "upvotes": 16,
+      "comments": 15,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:34.996341+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1p6j9g6/why_are_fintechs_adopting_ai_compliance_agents/",
+    "author_type": "operator",
+    "content": "Why are fintechs adopting AI compliance agents for KYC/AML in 2025 and beyond ??\n\nhey everyone, hope your week is going ok. i'm digging into a question that\u2019s been cropping up a lot on my team: what\u2019s really driving fintechs to adopt agent\u2011based AI solutions for compliance (KYC, AML) in 2025 and beyond, not just the usual rule engines or dashboards?\n\nhere\u2019s the pain we feel:\n\n* Onboarding volumes explode, alerts multiply + docs pile up, yet risk and regulation and audit pressure keep growing. According to a recent report, 70% of firms lost clients due to slow onboarding in 2025.\n* Traditional compliance tools ( rule engines, static workflows ) struggle to keep up with dynamic risk vectors like synthetic IDs, generative fraud, sanctions evasion.\n* Fintechs can\u2019t hire analysts fast enough. cost, retention, training all tax operations.\n* Regulatory expectations are shifting: they want real-time, data\u2011driven, auditable compliance, not checklists.\n\nSo the main hypothesis is: fintechs are turning to AI compliance agents because these systems promise to execute workflows end\u2011to\u2011end, not just flag issues. They can integrate doc review, decision\u2011making, case orchestration, and audit trails in one chain.\n\nif you\u2019ve gone down this path ( or even evaluated it ), i would love to hear:\n\n* What was the trigger for your team? ( volume, cost, risk ? )\n* Where did you apply agents first? Onboarding? Alerts? SARs ?\n* What measurable difference did you actually see ( speed, false positives, headcount) ?\n\nlooking forward to a productive exchange with all of you!!\n\nTop comments:\nwe hit that same inflection point mid this year, in our case onboarding was taking weeks, analysts were cycling through repetitive alerts, and compliance review queues kept stacking. headcount wasn\u2019t the answer anymore and we\u2019d already burned out half the junior team ( bad leadership decisions ). what actually pushed us to try AI agents was less about \u201cgoing cutting edge\u201d and more about survival. we weren\u2019t looki",
+    "title": "Why are fintechs adopting AI compliance agents for KYC/AML in 2025 and beyond ??",
+    "engagement": {
+      "upvotes": 22,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:36.197698+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1phb4ai/compliance_aml_experts_whats_actually_broken_in/",
+    "author_type": "unknown",
+    "content": "Compliance &amp; AML experts \u2014 what\u2019s actually broken in your day-to-day workflows? Need advice on where AI can realistically help\n\nHey everyone,\n\nI\u2019m an AI engineer trying to get a real understanding of what\u2019s actually broken in Compliance and AML. I\u2019ve been digging into the space for a few weeks now, but it\u2019s huge and honestly hard to know where to focus.\n\nA few pain points I keep coming across are:\n\n* Constant regulatory updates\n* Frontline teams not knowing what to do \u2192 onboarding delays\n* Data scattered everywhere \u2192 tons of manual work\n* High AML false positives\n* Never-ending documentation\n\nIf you work in compliance, AML, onboarding, or risk, I\u2019d love to hear from you:\n\n**What part of your workflow is the most frustrating or slow?**  \n**What do you wish someone would fix?**\n\nEven a quick comment helps a lot. Thanks in advance \ud83d\ude4f\n\nTop comments:\nAging demographics.  You have an entire financial industry with People who\u2019ve been in roles for 15+ years and are working tirelessly to show that technology is and only will ever be at best a tool to assist them and their staff to do true AML and KYC.  This is your biggest challenge.\n---\nFormer compliance lead at a regulated payments company. The most broken part wasn't the tools - it was communication and alignment across teams.\n\nFlip side: the fast pace in fintech is actually your edge. Banks don't move this fast.\n\nWhere AI helped us: rehearsing for regulatory inspections with public data. Where it fell short: privacy concerns meant we couldn't use customer data.\n\nMy advice: focus on reducing manual workflows, not adding new ones. That's what compliance teams actually need.\n---\nFrom my experience, the biggest bottleneck isn\u2019t a specific task, but trust.\nMost compliance and AML teams don\u2019t struggle because they lack automation; they struggle because they can\u2019t prove that an automated system behaves reliably, consistently, and in line with regulatory expectations over time.\nThat\u2019s why false positives, manual reviews and h",
+    "title": "Compliance &amp; AML experts \u2014 what\u2019s actually broken in your day-to-day workflows? Need advice on where AI can realistically help",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 10,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:37.377791+00:00",
+    "pain_point_signals": [
+      "This is your biggest challenge",
+      "A few pain points I keep coming across are:  * Constant regulatory updates * Frontline teams not knowing what to do \u2192 onboarding delays * Data scattered everywhere \u2192 tons of manual work * High AML fal",
+      "I\u2019ve been digging into the space for a few weeks now, but it\u2019s huge and honestly hard to know where to focus",
+      "Compliance &amp; AML experts \u2014 what\u2019s actually broken in your day-to-day workflows? Need advice on where AI can realistically help  Hey everyone,  I\u2019m an AI engineer trying to get a real understanding"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1qj5nmv/kyc_onboarding_automation_platforms_that_reduces/",
+    "author_type": "unknown",
+    "content": "KYC onboarding automation platforms that reduces manual review\n\ncurrently evaluating different solutions out there to speed up onboarding and reduce manual KYC workload, and i keep running into the same issue: a lot of products look great until you ask what happens when inputs are messy and compliance needs a defensible trail.\n\nthe biggest blocker for us at the moment are chasing missing docs, checking completeness, pulling supporting evidence, packaging the case, and making sure the decision is explainable later. i mean if automation only moves the work from analysts to QA it\u2019s not really a win. right now i\u2019m seeing teams split the stack into layers. case management lives in old tools, and then there\u2019s an agent layer that's supposed to handle first-pass prep and evidence gathering. i've seen a lot of tools lately saying could automate KYC/KYC... not assuming any of them work, just want to run a pilot that proves whether they can actually follow SOP intent and produce audit-grade artifacts.\n\nif you\u2019ve experimented with tools in this category please do share with me your thoughts. i don't need name drops, i already have few vendors in mind, i need practical feedback. appreciate all\n\nTop comments:\nThe real test is not whether a tool can auto approve clean cases. It is how it handles messy ones. Missing docs, mismatched data, edge cases. If automation just shifts the cleanup work to QA, you gained nothing.\n\nIn our pilots, we forced exception scenarios and checked whether the system produced a defensible audit trail without manual patching. In higher-risk flows, adding an identity layer like iDenfy helped us catch fake accounts earlier instead of relying only on downstream checks.\n\nIf it ca\n---\nKYC is burning topic in entire lending industry. Current Aadhar OTP based KYC is not sufficient and banks now want video KYC. \n\nRBI is going hard on KYC and making rules stringent.\n---\nI work in this space for a UK broker with licenses in UAE and Germany. Not sure if you also nee",
+    "title": "KYC onboarding automation platforms that reduces manual review",
+    "engagement": {
+      "upvotes": 43,
+      "comments": 31,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:38.629410+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/fintech",
+    "url": "https://www.reddit.com/r/fintech/comments/1m66s7y/ease_of_cross_border_payments/",
+    "author_type": "unknown",
+    "content": "Ease of Cross Border Payments\n\nWith companies shifting to offshore consultants and employees, how does this affect international invoicing? I imagine using the traditional banking systems could be a pain-point in Lat-Am and Africa. Are these businesses using Crypto for cross border payments? If so, what are some good products? Would a crypto B2B powered platform be helpful here?\n\nTop comments:\nCross-border B2B is still a mess, especially in Lat-Am and Africa where wires are slow, expensive, or unreliable. Some companies do use stablecoins (like USDC) with local off-ramps, but it\u2019s manual and risky if compliance isn\u2019t tight.\n\nA crypto-powered B2B payments layer could work, but only if it hides the crypto complexity, handles KYC/AML, and plugs into existing invoicing/accounting tools. Most teams today are piecing it together with Deel, Wise, and wallets. There\u2019s room for something bette\n---\nWe are definitely seeing this shift. Traditional banking does pose a real challenge for cross-border payouts in regions like LatAm and Africa.\n\nIn fact, several businesses have reached out to us to integrate our USDC on and off ramp API directly into their platforms. This not only helps them manage payouts more efficiently but also opens the door to offering USDC payments directly to their end users.\n\nA crypto-powered B2B payment layer can be very helpful in solving some of these issues, especia\n---\nYou're spot on about traditional banking being a nightmare for cross-border stuff, especially in LatAm and Africa. I've seen businesses wait 2-3 weeks just to get paid through regular wire transfers, and the fees are brutal.\n\nCrypto is definitely picking up for B2B payments but it's still pretty niche. Most companies are hesitant because of volatility concerns, even though stablecoins solve that problem. The bigger issue is usually just getting comfortable with the workflow.\n\nAt Acctual we're se",
+    "title": "Ease of Cross Border Payments",
+    "engagement": {
+      "upvotes": 8,
+      "comments": 23,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:39.822386+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/PaymentProcessing",
+    "url": "https://www.reddit.com/r/PaymentProcessing/comments/1oedu0l/traditional_merchant_account_vs_allinone/",
+    "author_type": "unknown",
+    "content": "Traditional Merchant Account vs. All-in-One Platforms (Stripe/Square/Fiserv Solutions)\n\nWhen choosing a payment processor, businesses generally fall into one of two camps: the traditional Merchant Account Provider (MAP) or an All-in-One Payment Platform like Stripe or Square (often referred to as Payment Facilitators or PayFacs).\nHere's a breakdown comparing the two across key areas:\n1. Rates &amp; Pricing Model\n| Feature | Traditional Merchant Account Provider (MAP) | All-in-One Platform (Stripe, Square, etc.) \n\n| Pricing Model | Primarily Interchange-Plus or Tiered. | Primarily Flat-Rate (Pay-As-You-Go). |\n| Typical Cost | Lower transactional rates for high-volume businesses. Fees are highly negotiated. | Simple, predictable rates, but often higher than Interchange-Plus for larger volumes. |\n| Fees | May include Monthly Fees, PCI Compliance Fees, Gateway Fees, Annual Fees, and sometimes Early Termination Fees (ETFs). | Typically No Monthly Fees or setup fees for basic service. Add-ons (Invoicing, advanced fraud tools) may have extra costs. |\n| Negotiation | Rates are highly negotiable, especially for businesses processing over $$10k-$20k/month. | Rates are generally non-negotiable until you hit very high processing volume (e.g., $80k+/month), at which point custom pricing may be offered. |\n * The takeaway: MAPs are often cheaper for established, high-volume businesses that can handle the extra fees and complexity. Stripe/Square are simpler and cheaper for small, new, or low-volume/seasonal businesses.\n2. Contracts &amp; Account Structure\n| Feature | Traditional Merchant Account Provider (MAP) | All-in-One Platform (Stripe, Square, etc.) \n| Contract Term | \n\nTypically 3-year contracts with an auto-renewal clause. ETFs are common. | No contract commitment. Pay-as-you-go model. You can stop using them anytime. |\n| Account Type | Dedicated Merchant Account. Your business gets its own unique ID (MID) and a direct banking relationship. | Aggregated Merchant Account (You",
+    "title": "Traditional Merchant Account vs. All-in-One Platforms (Stripe/Square/Fiserv Solutions)",
+    "engagement": {
+      "upvotes": 1,
+      "comments": 11,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:41.014317+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/PaymentProcessing",
+    "url": "https://www.reddit.com/r/PaymentProcessing/comments/1t02r7f/airwallex_has_blocked_my_account_and_frozen_my/",
+    "author_type": "unknown",
+    "content": "AirWallex has blocked my account and frozen my funds\n\nThree days ago, AirWallex blocked my account without any explanation and said I would receive my funds in 180 days. However, I\u2019d like to know if anyone else has had their account blocked by them and if they actually received their funds, because I\u2019m worried I won\u2019t get them at the end of those 180 days.\n\nTop comments:\nHi, there is always a reason. Concerning your funds do not worry airwallex is keeping them to avoid chargebacks. They will release the money. Do you have any id\u00e9al why they Block you ?\n---\nMight be the high risk volume transaction\n---\nI totally understand the frustration. It would be always best to run your payments through a secondary processor or just switch to something optimised for higher-risk. You'll get rolling reserve, but getting the whole account locked is something you'd avoid. As a scaling up businesses having your funds frozen can be an operational nightmare. \n\nWhich country you're running from and what's your business?",
+    "title": "AirWallex has blocked my account and frozen my funds",
+    "engagement": {
+      "upvotes": 3,
+      "comments": 12,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:42.192356+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/19495jz/how_much_did_it_cost_to_get_your_saas_soc_2/",
+    "author_type": "business_owner",
+    "content": "How much did it cost to get your SaaS SOC 2 compliant ?\n\nWanted to understand how much time, effort &amp; costs were involved in getting SOC2 compliance report.\n\nAlso, was getting SOC 2 compliant (or related ones like GDPR, HIPPA etc.) worth it for you ? \n\nSpecifically did it help you close any new deals that were hard to crack without these compliances in place.\n\nTop comments:\nI assume you're specifically asking about the hard cost of completing a SOC 2 *audit*? Because there would obviously be other resource costs in terms of all the underlying work you have to do to actually meet and maintain compliance, and all the internal work needed to prepare and go through the audit itself.\n\nAudits are pretty affordable now, at least compared to where they were 5+ years ago. Maybe $10-15k at the bottom end if literally all you need is an audit.\n\nNote though that this is an ann\n---\nI\u2019m interested in this as well. A lot of enterprise b2b companies want this to ensure data security. It can also be a selling, marketing point.\n---\nI went through SOC 2 Type II as a bootstrapped SaaS company working in the government/municipal space. \n\nA lot of the process is around setting up policies &amp; standards within your business. The rest of it surrounds the tech side. If you elect to go through with it, I would suggest a software vendor that not only helps track the standards but will provide templates &amp; steps on how to remediate it. I used Vanta. \n\nThat being said - unless you have a specific client or market that absolutely",
+    "title": "How much did it cost to get your SaaS SOC 2 compliant ?",
+    "engagement": {
+      "upvotes": 32,
+      "comments": 36,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:43.444610+00:00",
+    "pain_point_signals": [
+      "Also, was getting SOC 2 compliant (or related ones like GDPR, HIPPA etc.) worth it for you ?   Specifically did it help you close any new deals that were hard to crack without these compliances in pla"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1dgtma0/achieving_soc2/",
+    "author_type": "unknown",
+    "content": "Achieving SOC2\n\nWhat has been your experience? Have you done it, how much did it cost and did you see an increase in trust/interest after sales calls?\n\nTop comments:\nHopping on this as well with a question: those we have done it, how much did it cost in total approximately?\n\nWe\u2019re looking to do it soon too but I haven\u2019t been able to find an accurate figure of cost (every website I\u2019ve found listed a wide range of 5-30k). \n\nThanks!\n---\nNot providing link as not looking to self promote. We charge a $10K flat fee to get SOC2 ready in 28 days, including doing any engineering work. \n\nThere are platforms like Vanta ($20k/year), Drata ($8k/year), and Sprinto ($5k/year) which are decent at automated evidence collection and providing a single pane of glass to the auditors. However, these require you to sign a 3-year contract, and don't do do any actual remediation engineering work (primary auditor focus areas are: access management, c\n---\nSOC2 a costly necessary evil. Worth it for enterprise deals, though.",
+    "title": "Achieving SOC2",
+    "engagement": {
+      "upvotes": 1,
+      "comments": 11,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:44.599405+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1f762xf/i_hate_stripe_so_im_going_to_build_my_own_payment/",
+    "author_type": "unknown",
+    "content": "I hate Stripe, so I'm going to build my own payment processor.\n\nWhat do you expect from a processor and what problems you're currently facing? That's what I want to know.\n\nSo, we are going to launch next year and are currently working with Wells Fargo and Deutsche Bank.\n\nEdit : Good Advice [https://www.reddit.com/r/SaaS/comments/1f762xf/comment/ll5cit4/?utm\\_source=share&amp;utm\\_medium=web3x&amp;utm\\_name=web3xcss&amp;utm\\_term=1&amp;utm\\_content=share\\_button](https://www.reddit.com/r/SaaS/comments/1f762xf/comment/ll5cit4/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button)\n\nPayment processing is just part of what I forgot to mention; we are also issuing credit cards and bank accounts.(Basically fintech company)\n\nEdit: I don't know why I get opposite answers. I think some people don't know how to give the correct answer to the question.\n\nTop comments:\nJfc. You have no idea of what you are getting into. The real problem with payment processing, as a company, is going to be legal, governmental, finance, and organizational.\n\n\nIf you think payment processing is a technical problem, boy do I have news for you.",
+    "title": "I hate Stripe, so I'm going to build my own payment processor.",
+    "engagement": {
+      "upvotes": 276,
+      "comments": 431,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:46.399264+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1ikyqfq/best_saas_payment_processors_that_handle_vat/",
+    "author_type": "unknown",
+    "content": "Best SaaS payment processors that handle VAT / Sales Tax obligations for you? (Registering to pay these taxes in every state/country that requires them is an absolute administrative nightmare!)\n\nOne of my newly-started SaaS businesses uses Stripe for payment processing. Now that it's making money, I'm confronted with the crushing, awful, brutal, beauracratic nightmare of needing to register to pay Sales Tax / VAT in every state/country that requires it. (This is especially horrible because there's very little learning curve to this process, since each country or state's tax authority will have an entirely different website and registration process.)\n\nThe bottom line is, while I know this is technically a business requirement, I just don't want to spend my time doing this grueling and boring work, nor do I want to pay somebody to do this for me. So I'm strongly considering switching to a different payment provider that will just do all of this boring administrative stuff for me, so I can just focus on building/improving/marketing the product.\n\nWhat are my best options that you would recommend? Thanks!\n\nTop comments:\nIn this case, what you're looking for are so called merchants of records. These handle taxes for you automatically, but have higher provisions on sales. Examples of such services are Lemon Squeezy (recently acquired by Stripe), Paddle, Polar. Can't give my recommendation though as I haven't used any of them. I see a lot of people praising Polar.\n---\nTry 1D3 Digitech, should be the most cost-effective afaik",
+    "title": "Best SaaS payment processors that handle VAT / Sales Tax obligations for you? (Registering to pay these taxes in every state/country that requires them is an absolute administrative nightmare!)",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 7,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:47.538679+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1lrgpwk/fellow_saas_founders_im_honestly_at_my_wits_end/",
+    "author_type": "unknown",
+    "content": "Fellow SaaS founders, I'm honestly at my wit's end with payment processors and could really use your advice\n\nSo I've been building this SaaS called [Eternal Vault](https://eternalvault.app) for months now, it's basically a secure place where people can store important documents with end-to-end encryption, set up heartbeat monitoring, and have emergency contacts who get notified if something happens to them. I'm finally ready to launch but I'm completely stuck on payment processing and it's driving me crazy.\n\nHere's what's been happening:\n\nI applied to Paddle months ago and it seemed like it was going well until I hit the point where they keep asking for \"previous transaction history records of upto 3 months\". But this is literally my first SaaS! I don't have any previous records because I've never run a business before. It feels like such a catch-22 - how am I supposed to get business records if no one will let me start the business in the first place?\n\nThen I thought I found a solution with DodoPayments. They actually approved everything, I got fully verified, spent weeks integrating their API, tested everything perfectly. I was so relieved. Then out of nowhere they send me an email saying \"We currently do not support certain businesses as per our internal risk policies\" and just... put my account on hold. No explanation, no appeal process. I jumped into their Discord and it's just full of other founders with the exact same story - people getting randomly banned after full integration (some even stuck with live payments which are also put on hold) with zero explanation from their support team.\n\nRight now I'm trying Razorpay since I'm based in India, and I've applied for their international payments feature. But honestly, I'm starting to lose faith in this whole process. \n\nMy pricing is pretty straightforward - I want to do quarterly, yearly, and 3-year subscriptions. I need something that works internationally since I'm planning to serve customers globally, but I a",
+    "title": "Fellow SaaS founders, I'm honestly at my wit's end with payment processors and could really use your advice",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 19,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:48.731304+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1oqogbu/every_saas_needs_payments_but_integrating/",
+    "author_type": "business_owner",
+    "content": "Every SaaS needs payments. But integrating multiple gateways is a nightmare.\n\nAs a backend developer, I\u2019ve implemented payment gateways more times than I\u2019d like to admit.  \nEach one feels the same: new docs, new quirks, different webhook payloads, and endless testing.\n\nI started thinking \u2014 what if payments were just **standardized**?\n\nThat\u2019s what I\u2019m building:  \nA **unified payment API** that lets you integrate once, then choose Stripe, Razorpay, PayPal, or others through a dashboard \u2014 no code changes, just configuration.\n\nIt automatically normalizes events, webhooks, and responses into one common format.\n\nIt\u2019s like \u201cthe abstraction layer Stripe never built.\u201d\n\nWould your SaaS use this instead of writing custom integrations for each provider?\n\nTop comments:\nYay more AI slop advertising woo\n---\nPerhaps juspay does it already?\n\nhttps://juspay.io/us\n---\nThe abstraction layer approach sounds solid in theory, but there's a fundamental business risk you need to consider: payment providers intentionally make switching costly because they profit from lock-in, and an abstraction layer only works if the underlying APIs remain stable enough to justify the maintenance burden. I've worked with various payment integrations across different products, and the real complexity isn't just webhook normalization, it's handling provider-specific edge cases like 3",
+    "title": "Every SaaS needs payments. But integrating multiple gateways is a nightmare.",
+    "engagement": {
+      "upvotes": 11,
+      "comments": 29,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:49.947972+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1pcnntc/got_soc_2_certified_cost_28k_won_exactly_one_deal/",
+    "author_type": "unknown",
+    "content": "Got SOC 2 certified. Cost $28K. Won exactly one deal because of it.\n\nEnterprise prospects kept asking \"Are you SOC 2 compliant?\" Kept losing deals because the answer was no.\nDecided to get certified. Here's what it actually costs:\nCompliance platform (Vanta): $9K/year\nAuditor fees: $12K\nPenetration test: $4K\nLegal review: $3K\nMy time: roughly 80 hours over 4 months\nTotal first year: $28K plus 80 hours.\nResults after 12 months:\nOne enterprise deal that specifically required SOC 2. $18K ARR.\nLost money year one. Maybe break even year two.\nBut here's what else happened:\nSecurity questionnaires got way easier. Used to take 8 hours each. Now I send the SOC 2 report and they're done.\nFewer prospects ask questions. The badge answers before they ask.\nSales cycle shortened for security-conscious buyers.\nWas it worth $28K? Probably not based on direct ROI.\nBut the indirect benefits compound. I'm now in the consideration set for deals I'd have been eliminated from before.\nThe real lesson: SOC 2 is a tax on selling to enterprises. You either pay it or you don't play in that market.\nFor SMB-focused SaaS? Skip it.\nFor enterprise ambitions? Budget for it earlier than you think.\nHave you done SOC 2? Worth it?\n\nTop comments:\nSounds like you work for vanta\n---\nHey is this an ad for Vanta?\n---\nFYI you overpaid, you can get Vanta/Drata for $6k, a pen test for $4k, and an auditor for $5k, no need to pay legal fees.\n\nYour time is the biggest cost though, it's a lot of process.\n\nIf you're b2b it makes a lot of sense, it's always worth it.",
+    "title": "Got SOC 2 certified. Cost $28K. Won exactly one deal because of it.",
+    "engagement": {
+      "upvotes": 113,
+      "comments": 91,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:51.375048+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1qwltub/choosing_paddle_over_stripe_for_my_nextjs_saas_am/",
+    "author_type": "business_owner",
+    "content": "Choosing Paddle over Stripe for my Next.js SaaS. Am I making a massive mistake or a smart move?\n\nI\u2019m about to pull the trigger on integrating Paddle as my payment gateway for a Next.js web app I\u2019m building, but I\u2019m second-guessing myself hard.\n\nThe context:\n\n\t\u2219\tSolo founder, first paid product\n\n\t\u2219\tNext.js 14 app (planning to launch in \\~3 weeks)\n\n\t\u2219\tTargeting global audience (US, EU, India, Southeast Asia)\n\n\t\u2219\tSimple pricing: $19/month\n\n\t\u2219\tNo complex usage-based billing (for now)\n\nWhy I\u2019m leaning toward Paddle:\n\n\t1.\tMerchant of record - they handle VAT, sales tax, all that compliance nightmare stuff\n\n\t2.\tOne integration, global payments - don\u2019t want to cobble together Stripe + tax solutions\n\n\t3.\tClean developer experience - their docs look solid for Next.js\n\n\t4.\tEmail receipts, invoicing handled - less backend work for me\n\nWhat\u2019s making me hesitate:\n\n\t\u2219\tFees are higher (5% + payment fees vs Stripe\u2019s 2.9%)\n\n\t\u2219\tLess flexibility if I want to get fancy later\n\n\t\u2219\tSmaller ecosystem - fewer tutorials, integrations, community support\n\n\t\u2219\tIs it overkill for an MVP? Should I just start with Stripe and deal with tax later?\n\nMy situation:\n\nI\u2019m technical enough to integrate either, but I\u2019m optimizing for speed and not having to become a tax expert. I\u2019d rather pay extra fees than spend 2 weeks building tax logic.\n\nBut that 5% vs 2.9% keeps nagging at me. At $10k MRR, that\u2019s $210/month extra. At $50k MRR, it\u2019s $1,050/month.\n\nQuestions for anyone who\u2019s been here:\n\n\t1.\tHave you used Paddle with Next.js? How was the integration? Any gotchas?\n\n\t2.\tDid the merchant-of-record thing actually save you headaches? Or is it overhyped?\n\n\t3.\tAt what point did you outgrow Paddle (if you did)?\n\n\t4.\tFor solo founders - worth it to just start simple with Stripe? Or is future tax pain real enough to justify Paddle now?\n\n\t5.\tAny horror stories? Paddle support issues, webhook reliability, anything I should know?\n\nI know the standard advice is \u201cStripe is the default,\u201d but I\u2019m genuinely wondering if Pa",
+    "title": "Choosing Paddle over Stripe for my Next.js SaaS. Am I making a massive mistake or a smart move?",
+    "engagement": {
+      "upvotes": 1,
+      "comments": 8,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:52.598275+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1ruf7ns/soc_2_cost_us_a_40k_deal_how_are_other_small_saas/",
+    "author_type": "operator",
+    "content": "SOC 2 cost us a $40k deal. How are other small SaaS founders handling this?\n\nSOC 2 killed one of our biggest deals. How common is this?\n\nLast quarter a 400-person fintech wanted to use our product. Three weeks into procurement they asked for our SOC 2 Type II report. We didn't have one.\n\nWe lost the deal.\n\nStarted looking into getting certified. Consultants quoted us $35,000 and 8 months. Vanta wanted $12,000/year  and their onboarding assumed we had a dedicated security team. We're 6 people.\n\nEnded up spending 3 months cobbling together policies from Google, collecting screenshots in a shared Drive, and running the audit over 200-email threads with our CPA. It was a nightmare.\n\nCurious how many of you have hit this:\n\n\\- Have you ever lost a deal specifically because you didn't have SOC 2?\n\n\\- How did you handle getting certified  consultants, Vanta/Drata, DIY?\n\n\\- If you DIY'd it, what was the most painful part?\n\n\\- What would you have paid for a tool that just... guided you through it step by step at a fraction of the cost?\n\nNot selling anything, genuinely trying to understand how widespread this is before I consider building something. Would love honest answers including \"it wasn't that bad\" if that's your experience.\n\nTop comments:\nNot having a full SOC 2 didn\u2019t cost us hundreds of thousands in potential lost deals.\n\nWe kicked off with SOC 2 Type I (much quicker and easier, just a point-in-time design check) to get something on paper fast. Then, once revenue picked up and we could justify the bigger lift, we went for Type II about 8\u201310 months later which is way more expensive and effort-intensive since it proves controls actually work over time.\n\nIn the meantime, we handled security concerns by offering to hop on calls and\n---\nOur CEO did it himself. There is nothing extraordinary about that process.\n---\nI'm the CTO and I did it myself using sprinto (cheaper equivalent to vanta).\n\nThey guide you through the process and recommend auditors that are used to their p",
+    "title": "SOC 2 cost us a $40k deal. How are other small SaaS founders handling this?",
+    "engagement": {
+      "upvotes": 50,
+      "comments": 120,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:54.134584+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1ruuurt/how_do_you_position_a_saas_when_the_entire/",
+    "author_type": "business_owner",
+    "content": "How do you position a SaaS when the entire category is being flooded with AI competitors?\n\nGenuine question for other founders building in AI-adjacent spaces.\n\nI'm in the voice AI space. When I started about 18 months ago, there were maybe 2 or 3 serious players. Now there are dozens. New ones launching every week. Most of them are demo-ware with a landing page and a waitlist, but some are legit.\n\nThe core tech is increasingly commoditized. The models get cheaper and faster every few months. Anyone can spin up a basic voice agent with an API key and a weekend.\n\nWhat I've found actually differentiates in practice:\n\n* Serving a specific buyer (in my case, agencies who resell to their own clients) rather than trying to be a general-purpose platform\n* Depth of integration with the workflows that buyer already uses\n* Reliability at scale, which is boring but hard to fake\n\nBut I'm still figuring this out honestly. The \"build for everyone\" temptation is real, especially when you see competitors going broad.\n\nFor those of you in crowded or commoditizing categories: how did you find and defend your positioning? Did you go narrow from day one or did you start broad and narrow down?\n\nTop comments:\nYou've already named some of the most important ones.  Take a closer look at your ICP (Ideal Customer Profile).  Narrow down to a specific niche.  Get really focused.  Who is your customer?  What pain are you solving for them?  How can you do this better than general solutions that solve for the wider market?  Adjust your messaging to focus specifically on that.\n\nIntegration can be a great differentiator.  Reliability is important, but generally table stakes.  If your competitors are not reliabl\n---\nI\u2019ve said this time and time again. The only moats in 2026 are brand, marketing, and any sort of compliance and regulation. Just out market, and out content them. \n\nWhen someone things of your space you need to be in the realm of thought. \n\nIf I type in best _________ (whatever your space",
+    "title": "How do you position a SaaS when the entire category is being flooded with AI competitors?",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 12,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:55.303555+00:00",
+    "pain_point_signals": [
+      "What I've found actually differentiates in practice:  * Serving a specific buyer (in my case, agencies who resell to their own clients) rather than trying to be a general-purpose platform * Depth of i"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1rvhs5u/we_broke_down_what_startups_actually_pay_for/",
+    "author_type": "unknown",
+    "content": "We broke down what startups actually pay for penetration testing and SOC 2. The numbers are worse than you think, AI won\u2019t save you (yet), and you have more leverage than vendors want you to know\n\nThis is our organization's first reddit post. Feedback is super welcome!\n\nWe spent the last few months digging into what companies actually spend on penetration testing, SOC 2 compliance, and the documentation grind that comes with it. Not the marketing numbers vendors put on their websites the real all-in costs including internal time, tooling, and the stuff that never shows up in a vendor quote.\n\nSharing because we think most founders and finance leaders are overpaying, and the \u201cjust use AI\u201d narrative is more nuanced than people realize.\n\n|**$15K\u2013$42K**\u00a0Avg. pentest cost (startup)|**$20K\u2013$80K**\u00a0SOC 2 Type II (year 1 all-in)|**$10K\u2013$40K**\u00a0Annual maintenance|\n|:-|:-|:-|\n||\n\n\u00a0\n\n[](https://preview.redd.it/we-broke-down-what-startups-actually-pay-for-penetration-v0-wbf1eieygfpg1.gif?width=750&amp;auto=webp&amp;s=b8bdb0cffeb4bcf391ff7cc7d8aafb68dafb9cf1)\n\n# The real numbers on penetration testing\n\nPenetration testing in 2026 ranges from $5K for a basic external scan to $150K+ for enterprise-grade, continuous testing platforms ([source: Software Secured](https://www.softwaresecured.com/post/penetration-testing-cost)). But here\u2019s where it gets interesting for startups specifically:\n\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0**Seed / Pre-Series A:**\u00a0Most startups are paying $6K\u2013$25K per engagement. If you\u2019re told you need quarterly testing, that\u2019s $24K\u2013$100K/year before you\u2019ve even closed your A round ([source: SecureLeap](https://www.secureleap.tech/blog/penetration-testing-cost-startup-pricing)).\n\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0**Series A stage:**\u00a0The typical range jumps to $15K\u2013$50K per engagement because scope expands \u2014 web apps, APIs, cloud infrastructure, internal networks. An Acme FinTech case study showed a combined web + network pentest costing $42K in a three-week window ([source: Software Secured](https://www.softwaresecur",
+    "title": "We broke down what startups actually pay for penetration testing and SOC 2. The numbers are worse than you think, AI won\u2019t save you (yet), and you have more leverage than vendors want you to know",
+    "engagement": {
+      "upvotes": 1,
+      "comments": 6,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:56.486096+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1sz3tn2/payment_processor_dropped_a_merchant_category/",
+    "author_type": "business_owner",
+    "content": "Payment processor dropped a merchant category last month with no warning: how are you handling processor dependency as you scale payments?\n\nWe're a vertical SaaS with embedded payments. Our payment processor just reviewed their underwriting boundaries and dropped one of our merchant categories (5% of our logos). No advanced notice.\u00a0\n\nWe're considering adding a second processor to retain these customers, but it feels complex to manage another integration, dispute and settlement timelines, etc.\u00a0\n\nAny one else face issue like this? Was building redundancy worth it?\u00a0\n\nLong-term could be an advantage if we can be smart about routing between processors for better rates / settlement timelines, but it just feels daunting. We already werent happy about rates, but rip/replace is expensive and hasnt been a priority.\n\nTop comments:\nYeah this is the real risk with single processor setups. Most teams add a second one only after getting burned like this. Routing adds complexity but gives you leverage on rates and coverage. Leadline would probably surface more cases like this where people got dropped mid scale, useful for sanity checking how others handled it.\n---\nHi u/siege15jae this is something my company can help with. We currently work with multiple SAAS companies and we specialize in restricted industries/challenging situations. \n\nWe work with 15 banks and I can say I'm 99% sure we will beat your current rate and we can even send you a monthly rebate which could be quite substantial depending on how much you process. \n\nAlso, replacing your current processor, should not be expensive or even costly at all.\n\nI definitely think it's worth a conversation",
+    "title": "Payment processor dropped a merchant category last month with no warning: how are you handling processor dependency as you scale payments?",
+    "engagement": {
+      "upvotes": 5,
+      "comments": 19,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:57.685830+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1toa1u7/wish_i_saw_this_before_chasing_enterprise_leads/",
+    "author_type": "unknown",
+    "content": "Wish I saw this BEFORE chasing enterprise leads for 12 months\n\nRaise your price they said, chase bigger deals they said, it'll be fine they said.\n\nQ2 starts thought to myself yeap ready to go \"enterprise\". soc2 is literally least of my worries (also fk these these new bullsh\\*t compliance startups they're alls cams).\n\nreal problem is getting lawyers taking TWO WEEKS OFF for memorial day. i'm paying $1000/hr  so they can go play golf. i'm just waiting to hear my enterprise champion goes on sabbatical next.\n\nanyway rant over thanks for reading.\n\nTop comments:\nThe \"just move upmarket\" advice always conveniently leaves out the agonizing legal delays and vanishing champions. Hang in there man, it's a completely different game of patience.\n---\nThat's only available at the $1m/y level.\n---\nSOC 2 is theatre. There, I said it.",
+    "title": "Wish I saw this BEFORE chasing enterprise leads for 12 months",
+    "engagement": {
+      "upvotes": 240,
+      "comments": 48,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:41:59.042700+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1qamel1/built_a_fintech_solution_after_10_years_in_the/",
+    "author_type": "unknown",
+    "content": "Built a fintech solution after 10+ years in the industry, product works, but client acquisition is the hardest part. Anyone else?\n\nI've spent over a decade working in fintech, payments, compliance, data, and financial infrastructure. After seeing the same inefficiencies over and over again, I finally built a solution to address one of them.\n\nThe product works. Early users validates the problem. The tech is solid. The value proposition is clear once someone actually understands it.\n\nBut here's the reality check:  \nBuilding the product was easier than getting in front of the right clients.\n\nIn fintech especially, decision-markers are:\n\n* Risk-averse\n* Overloaded with vendors\n* Slow-moving due to compliance and procurement\n* Often not actively \u201cshopping\u201d for solutions, even when they need them\n\nCold outreach feels noisy. Partnerships take forever. Content educates but converts slowly. And selling into regulated environments means trust matters more than features.\n\nI\u2019m curious how other founders especially in B2B, fintech, SaaS, or regulated industries cracked this phase:\n\n* Did you niche down harder?\n* Lead with education instead of sales?\n* Rely on partnerships or channel sales?\n* Or was it simply patience and consistency over time?\n\nWould love to hear what actually moved the needle for you, not theory. This feels like the stage where many solid products stall and I\u2019m sure I\u2019m not the only one navigating it.\n\nTop comments:\nWelcome to /r/Entrepreneur and thank you for the post, /u/Sea-Environment-5938! Please make sure you read our [community rules](https://www.reddit.com/r/Entrepreneur/about/rules/) before participating here. As a quick refresher:  \n\n* Promotion of products and services is not allowed here. This includes dropping URLs, asking users to DM you, check your profile, job-seeking, and investor-seeking. *Unsanctioned promotion of any kind will lead to a permanent ban for all of your accounts.* \n* AI and \n---\nVery Informative article.\n---\nIn regulated B2B, tr",
+    "title": "Built a fintech solution after 10+ years in the industry, product works, but client acquisition is the hardest part. Anyone else?",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 18,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:00.260827+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/Entrepreneur",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1bp1rzl/i_studied_how_brex_went_from_zero_to_a_123/",
+    "author_type": "unknown",
+    "content": "I studied how Brex went from zero to a $12.3 billion company in 6 years. Here is what I found:\n\n*Brex has become the default financial services partner for startups coming out of Silicon Valley. In just 6 years, 80% of Y Combinator companies use Brex, while 33% of the top 50 venture firms ' portfolios &amp; 25% of all US startups use Brex. It has raised $1B+ in equity, serves 20,000+ clients and has done $40B + in overall transaction volume since its launch in 2018. Here is how Brex became a $12.3B company in just 6 years.*\u00a0\n\n## The problem\n\nBrex was founded by two Brazilians from Rio - Henrique Dubugras and Pedro Franceschi. Together, in their teens, they launched and sold a fintech company called Pagar. They then moved to SF and applied to YC with their idea Veyond - a VR product.\n\nBut as they got deep in the weed, they figured they didn't have what it takes to be a successful VR company. At YC, Michael Siebel asked the founders - if you could build anything, what would you build? The founders replied - A business bank.\n\nThe problem was something they faced first hand. Despite receiving investment, startups struggled to get a corporate credit card. Traditional banks were slow, manual, with archaic digital interfaces. Worst of all, they didn\u2019t know how to underwrite early-stage businesses with no credit history.\n\n## MVP &amp; Early Traction\n\nThe founders scoped out their MVP - Build a corporate credit card for startups. They chose to build the full credit card processing stack from scratch instead of relying on third party processors. This gave them flexibility &amp; prepared them for scale from day one. For the MVP, they focused on just a few features like fast sign up, higher limits without personal guarantees, and automated receipt capture.\n\nFranceschi constructed Brex\u2019s backend from scratch, coding the core card processor, KYC functionality, underwriting engine, and connective tissue to Visa and Mastercard.\n\nThe founders focused on friends and family that were ",
+    "title": "I studied how Brex went from zero to a $12.3 billion company in 6 years. Here is what I found:",
+    "engagement": {
+      "upvotes": 186,
+      "comments": 59,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:01.598279+00:00",
+    "pain_point_signals": [
+      "The founders engaged directly with these pilot customers &amp; interviewed them about their biggest pain points to refine the features"
+    ],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/sysadmin",
+    "url": "https://www.reddit.com/r/sysadmin/comments/1rvyrr1/we_need_a_cloud_compliance_tool_that_handles_gdpr/",
+    "author_type": "unknown",
+    "content": "We need a cloud compliance tool that handles GDPR, HIPAA and SOC 2 simultaneously. What are people actually running?\n\nFor context, we're a healthcare adjacent company with customers in the US and EU. GDPR, HIPAA and SOC 2 are all live obligations at the same time, not sequentially. Right now we're running on manual evidence collection, a shared doc nobody fully trusts, and a compliance person held together by caffeine and spreadsheets.\n\nWe need something that treats all three frameworks as first class citizens, not a tool that does one well and bolts the others on as an afterthought. Continuous monitoring matters more than point in time snapshots because our environment changes fast enough that monthly reviews miss things.\n\nBeen looking at a few options. Orca has the most complete multi-framework story out of everything we've seen so far, broad out of the box coverage across all three with reporting that actually looks like something you can hand to an auditor rather than a CSV dump. Vanta comes up constantly for SOC 2 but the GDPR controls feel surface level once you get past the sales demo. Wiz reporting keeps coming up as limited. Scrut looks promising for continuous monitoring but HIPAA depth is unclear in practice.\n\nEdit: Good callouts. I\u2019m going to stop treating the compliance doc as the source of truth. The source of truth has to be the actual cloud state, mapped cleanly to GDPR, HIPAA, and SOC 2 controls. I\u2019m going to have compliance review Orca\u2019s reporting directly so we can see whether the evidence is usable without turning every audit into a manual translation exercise.\n\nTop comments:\nthe core mistake is expecting one tool to be both your GRC system and your cloud security signal source. most tools split it:\n\n- GRC layer (like Vanta or Scrut) for audit workflows + evidence\n- Security layer for continuous cloud posture + real-time signals\n\n\nthe rare exception is when a security platform has deep enough compliance framework coverage to feed both layers with",
+    "title": "We need a cloud compliance tool that handles GDPR, HIPAA and SOC 2 simultaneously. What are people actually running?",
+    "engagement": {
+      "upvotes": 11,
+      "comments": 17,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:02.797457+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/devops",
+    "url": "https://www.reddit.com/r/devops/comments/1knek8y/how_are_you_preparing_llm_audit_logs_for/",
+    "author_type": "business_owner",
+    "content": "How are you preparing LLM audit logs for compliance?\n\nI\u2019m mapping the moving parts around **audit-proof logging** for GPT / Claude / Bedrock traffic. A few regs now call it out explicitly:\n\n- **FINRA Notice 24-09** \u2013 brokers must keep *immutable* AI interaction records.  \n- **HIPAA \u00a7164.312(b)** \u2013 audit controls still apply if a prompt touches ePHI.  \n- **EU AI Act (Art. 13)** \u2013 mandates traceability &amp; technical documentation for \u201chigh-risk\u201d AI.\n\n**What I\u2019d love to learn:**\n\n1. How are you storing prompts / responses today?  \n   *Plain JSON, Splunk, something custom?*  \n2. Biggest headache so far:  \n   **latency**, **cost**, **PII redaction**, **getting auditors to sign off**, or something else?  \n3. If you had a magic wand, what would \u201ccompliance-ready logging\u201d look like in your stack?\n\nI'd appreciate any feedback on this!\n\n*Mods: zero promo, purely research.  \ud83d\ude47\u200d\u2642\ufe0f*\n\nTop comments:\nWe're logging prompts/responses as JSON into S3 with WORM + versioning. Redaction happens pre-log via regex + entity detection. Biggest pain is latency from redaction and managing cost vs. retention. An idea setup would be built-in LLM logging with redaction and version tracking out of the box.\n---\nWe don't let that go into an LLM. We build a model that logs, detects and stops the process. It is logged before it goes into a LLM. It is basically a gated front-door.\n\nSince I built this service, there is a lot of interests in it. Do things slip through the cracks? Sure, that is why there is additional logging for each submissions to catch them for compliance reason.\n---\nI've been working on this problem with\u00a0[KitOps](http://kitops.org/)\u00a0(open source, part of the CNCF) and\u00a0[Jozu Hub](http://jozu.com/)\u00a0(our enterprise registry and model governance platform). \n\n**K**itOps packages the entire ML project (model + data + code + config + prompt + anything else you want to reference) as an OCI artifacts. This gives you:\n\n* Immutable, versioned packages that Kubernetes understands\n* Cryptographic",
+    "title": "How are you preparing LLM audit logs for compliance?",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 6,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:03.925012+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/11jyql0/suggestionsrecommendations_for_a_merchant_of/",
+    "author_type": "unknown",
+    "content": "Suggestions/Recommendations for a merchant of record?\n\nHi everyone,\n\nWe're a game server company looking for a merchant of record that handles all (!) sales tax related issues globally for our website. Can anyone share experiences or recommend one? We're currently thinking about Lemon Squeezy. Paddle isn't an option since they won't work with webhosting/server companies.  \nI would really appreciate any comment. Thank you and have an awesome day :-)\n\nCheers,  \nTheresa\n\nTop comments:\nHere are some other \"merchant of record\" payment processors:\n\nNote: They all charge their fee PLUS the PayPal, credit card, etc fees.\n\nGumroad.com (10%)\n\n2Checkout (6% [\\+ 2% foreign country fee](https://app.skiff.com/drive/file/d8fca2aa-31da-4d0e-a2ac-2b6c957e18f7?paymentSuccess=0))\n\nFastSpring (5.5%)\n\nLemon Squeezy (5%)\n\nPaddle.com (5%)\n\n[Square Online Payments](https://squareup.com/us/en/payments/online-payments) (2.9%)\n\n[Reach](https://www.withreach.com/solution/pricing) (2.75%)\n\n[Go Global]\n---\nWhat I find \"very annoying\" about 90% of MOR's - with the exception of Paddle insist on using the \"contact sales for more information / shedule a chat / shedule a demo\" No thanks! I want to know if it's worth investigating further (ie a PRICE !!) before I proceed. Surely it saves both our times. If they shedule a call, and say \"... from $250 a month\" it's wasted the reps time and mine!\n\nOh, lets not forget that \"good ol'\" ClickBank is also a MOR\n\nOne to add to the list is \"Taxamo\" - which now ap\n---\nAnything you do, **DO NOT** use the service called **Avalara**. They've been the worst nightmare of a company I've ever dealt with. Incredible amounts of paperwork you personally have to do each month because they don't want to move a finger (meaning, you have to prep your own tax work), and their customer serivce is non-existent. Their website crashes all the time and you're left without any assistance. On top of this, they will continue billing you even though nobody answers e-mails. And when ",
+    "title": "Suggestions/Recommendations for a merchant of record?",
+    "engagement": {
+      "upvotes": 17,
+      "comments": 62,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:05.244496+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/12ef0ic/what_payment_processor_do_you_use_looking_for_as/",
+    "author_type": "unknown",
+    "content": "What payment processor do you use? Looking for as many replies as possible!\n\n[deleted]\n\nTop comments:\nMaybe have a look at Chargebee, then you are not tied to any individual payment processor and get a ton of extra functionality that they don't provide you (invoicing, emails, subscription management, etc.) Adyen and Stripe are both very big with plenty of local payment methods supported and you could use both via Chargebee.",
+    "title": "What payment processor do you use? Looking for as many replies as possible!",
+    "engagement": {
+      "upvotes": 24,
+      "comments": 67,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:06.579830+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  },
+  {
+    "source": "reddit",
+    "subreddit_or_group": "r/SaaS",
+    "url": "https://www.reddit.com/r/SaaS/comments/1b6al4h/would_you_consider_outsourcing_your_security/",
+    "author_type": "unknown",
+    "content": "Would you consider outsourcing your security &amp; compliance initiatives?\n\nI\u2019ve been hearing from a lot of SaaS founders that it becomes inevitable to get compliance certifications after a point of time. It helps you build trust if you\u2019re selling to mid market and it\u2019s almost compulsory if you\u2019re selling to enterprises.\n\nI\u2019ve seen a lot of these people use compliance automation software like Vanta, Drata etc. to help them get these certifications. All these tools do is to pull data automatically and show you what\u2019s missing based on these frameworks. There is still a lot of manual work that is expected to be done by developers in the company.\n\nYet most of the founders believe that it is not their core offering and feel that these tasks (getting compliance certifications, filling long security questionnaires etc) take a lot of their crucial developers\u2019 time. They would rather outsource all of it.\n\nWanted to know from folks here - How would you approach this ? Would you outsource this &amp; focus on your core offering ?\n\nTop comments:\nIts expensive, for SOC 2, ISO 27K, ISO9k, engage agency who can provide templates and team can do it over some time. 100% outsourcing of implementation will not work as all these needs to owned by company employees as it will be audited by external certifications agency personally talking to employees. \nWe engaged Vanta but didnt see value for the $$.\n---\nHave run compliance and devops for a SOC-2  and PCI-DSS compliant startup. \n\nYou can\u2019t outsource it. You have to make significant changes across the entire application and devops process to accommodate becoming compliant. You have to document every change in some sort of log or project management software, what was changed to make it compliant, who did it, and senior management has to attest to who is responsible for them. You have to provide this proof for each issue in a data room. You\u2019ll like",
+    "title": "Would you consider outsourcing your security &amp; compliance initiatives?",
+    "engagement": {
+      "upvotes": 2,
+      "comments": 18,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:42:07.759067+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "reddit_json_api"
+  }
+]

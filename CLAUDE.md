@@ -41,7 +41,7 @@ researcher agent. Free-form prompts are converted to a minimal brief by the rese
 ### Raw Scrape Record (data/raw/)
 ```json
 {
-  "source": "reddit|linkedin|x|quora|trade_publication",
+  "source": "reddit|linkedin|x|quora|trade_publication|review_site",
   "subreddit_or_group": "string",
   "url": "string",
   "author_type": "business_owner|operator|employee|consultant|unknown",
@@ -81,9 +81,19 @@ researcher agent. Free-form prompts are converted to a minimal brief by the rese
   "weaknesses": ["string"],
   "differentiation": "string",
   "reviews_sentiment": "positive|mixed|negative",
-  "market_position": "leader|challenger|niche|emerging"
+  "market_position": "leader|challenger|niche|emerging",
+  "g2_rating": null,
+  "g2_review_count": null,
+  "capterra_rating": null,
+  "capterra_review_count": null,
+  "verified_review_themes": {
+    "pros": ["string"],
+    "cons": ["string"]
+  }
 }
 ```
+
+The `g2_*` / `capterra_*` / `verified_review_themes` fields are optional. Set to `null` when no listing was found. `verified_review_themes.pros` and `.cons` are the top 2–3 recurring themes across G2/Capterra reviews for that provider.
 
 ## Search Query Templates
 When scraping, use these query patterns per platform. Enrich all queries with
@@ -93,7 +103,8 @@ When scraping, use these query patterns per platform. Enrich all queries with
 - **LinkedIn**: `site:linkedin.com/posts "[industry]" "[niche]" ("challenge" OR "lesson learned" OR "mistake" OR "struggling")`
 - **X/Twitter**: `site:x.com "[industry]" "[niche]" ("anyone else" OR "so frustrated" OR "biggest problem" OR "wish there was")`
 - **Quora**: `site:quora.com "[industry]" "[niche]" ("biggest challenge" OR "hardest part" OR "how do you handle")`
-- **Trade Publications**: Exa neural search, NO `includeDomains`. Always `excludeDomains: ["reddit.com", "linkedin.com", "x.com", "twitter.com", "quora.com"]`. Write queries as article topics, not social complaints. Use `type: "neural"` and `contents: {text: true, maxCharacters: 3000}`. Example: `"[niche] [industry] owner challenges [size_context] 2024 OR 2025 [geography]"`
+- **Trade Publications**: Exa neural search, NO `includeDomains`. Always `excludeDomains: ["reddit.com", "linkedin.com", "x.com", "twitter.com", "quora.com", "g2.com", "capterra.com"]`. Write queries as article topics, not social complaints. Use `type: "neural"` and `contents: {text: true, maxCharacters: 3000}`. Example: `"[niche] [industry] owner challenges [size_context] 2024 OR 2025 [geography]"`
+- **Review Sites (G2 / Capterra)**: Exa neural search with `includeDomains: ["g2.com", "capterra.com"]`. Queries describe the pain: `"[industry] [niche] software cons limitations missing [size_context]"`. Focus on "Cons" sections of reviews. Reviewer's stated job title → `author_type`. `subreddit_or_group` = product category name (e.g., `"Dental Practice Management Software"`). `source: "review_site"`, `scrape_method: "exa_neural_search"`. Save to `data/raw/YYYY-MM-DD-[slug]-review-sites.json`.
 
 ## Prioritization Framework: ICE + WTP
 We use a modified ICE framework with Willingness-to-Pay overlay:
@@ -110,7 +121,7 @@ We use a modified ICE framework with Willingness-to-Pay overlay:
 ## Agent Workflow
 1. `/research-brief` skill (optional) — collects structured ResearchBrief via intake form
 2. `@researcher` (orchestrator) — accepts a ResearchBrief or free-form prompt, sequences subagents
-3. `@scraper` — collects raw data from Reddit, LinkedIn, X/Twitter, Quora, and Trade Publications
+3. `@scraper` — collects raw data from Reddit, LinkedIn, X/Twitter, Quora, Trade Publications, and Review Sites (G2/Capterra)
 4. `@analyst` — deduplicates, categorizes, and ICE+WTP scores the findings
 5. `@competitive-intel` — profiles solution providers for the top pain points
 
@@ -155,3 +166,5 @@ Four checks:
 4. **Platform coverage gate** — flags platforms with <10 posts (warn) or <5 (critical)
 
 Saves eval report to `reports/YYYY-MM-DD-[industry]-eval.md`. Exits 0 if all checks pass, 1 otherwise.
+
+With `--amend`: patches `data/analyzed/` with reconciled scores, appends an Eval Findings section to `reports/YYYY-MM-DD-[industry]-pain-points.md`, and writes a clean final version to `reports/YYYY-MM-DD-[industry]-pain-points-final.md` (full narrative + Reconciled Priority Rankings table, no eval appendix).

@@ -8,7 +8,7 @@ Running a consulting business means finding problems worth solving — but manua
 
 Point it at any industry or role (e.g. "e-commerce operators", "restaurant owners", "HR managers at mid-size companies") and it will:
 
-1. **Scrape four platforms** — Reddit, LinkedIn, X/Twitter, and Quora — for posts where business owners express genuine frustrations, challenges, or unmet needs.
+1. **Scrape six platforms** — Reddit, LinkedIn, X/Twitter, Quora, industry trade publications, and G2/Capterra reviews — for posts and reviews where business owners express genuine frustrations, challenges, or unmet needs. G2/Capterra reviewers are verified software buyers whose "Cons" sections carry strong willingness-to-pay signal.
 2. **Deduplicate and categorize** findings across operations, finance, hiring, technology, compliance, marketing, and more.
 3. **Prioritize using ICE + WTP** — each pain point is scored on Impact, Confidence, and Ease of addressing, then weighted by how explicitly people mention budget or willingness to spend. This surfaces the problems most worth building a consulting offering around.
 4. **Map the competitive landscape** — for the top-ranked pain points, it finds existing solution providers, profiles their pricing and positioning, and identifies gaps you can move into.
@@ -92,26 +92,37 @@ The researcher orchestrator sequences the scraper, analyst, and competitive-inte
 │   @scraper    │    @analyst      │   @competitive-intel      │
 │   Subagent    │    Subagent      │   Subagent                │
 │               │                  │                           │
-│  Reddit:      │  Deduplicates &  │  Firecrawl MCP searches  │
-│  Firecrawl    │  categorizes     │  for solution providers,  │
-│  (URL disco.) │  findings, then  │  profiles pricing and     │
-│  + reddit_    │  scores with     │  positioning              │
+│  Reddit:      │  Deduplicates &  │  Firecrawl + Exa MCP     │
+│  Firecrawl    │  categorizes     │  searches for solution    │
+│  (URL disco.) │  findings, then  │  providers, profiles      │
+│  + reddit_    │  scores with     │  pricing and positioning  │
 │  fetch.py     │  ICE + WTP       │                           │
-│  (content)    │                  │                           │
-│               │                  │                           │
-│  LinkedIn:    │                  │                           │
-│  Exa MCP      │                  │                           │
+│  (content)    │                  │  G2 / Capterra lookup     │
+│               │                  │  per competitor: ratings, │
+│  LinkedIn:    │                  │  review counts, pros/cons │
+│  Exa MCP      │                  │  themes saved in profile  │
 │  neural search│                  │                           │
 │               │                  │                           │
 │  X/Twitter    │                  │                           │
 │  & Quora:     │                  │                           │
 │  Firecrawl    │                  │                           │
 │  MCP          │                  │                           │
+│               │                  │                           │
+│  Trade Pubs:  │                  │                           │
+│  Exa MCP      │                  │                           │
+│  neural search│                  │                           │
+│               │                  │                           │
+│  G2/Capterra  │                  │                           │
+│  reviews:     │                  │                           │
+│  Exa MCP      │                  │                           │
+│  neural search│                  │                           │
 └───────────────┴──────────────────┴──────────────────────────┘
         │                │                     │
         ▼                ▼                     ▼
    data/raw/      data/analyzed/       data/competitors/
-                        │
+                        │              (includes g2_rating,
+                        │               capterra_rating,
+                        │               verified_review_themes)
                         ▼
             reports/YYYY-MM-DD-[topic].md
 ```
@@ -171,8 +182,11 @@ When `--amend` is passed, the script also:
    - Unverified quotes that should be manually replaced with verbatim source text
    - A reconciled scores table showing what changed and the delta in total ICE score
    - An adjusted priority rankings table with rank shifts (▲/▼) and `*` markers on amended items
+3. **Writes `reports/YYYY-MM-DD-[industry]-pain-points-final.md`** — a clean, shareable version of the report with:
+   - The full original report narrative (no eval appendix)
+   - A **Reconciled Priority Rankings** table at the end showing all pain points re-ranked by their updated ICE+WTP scores
 
-The amendment is additive — the original report content is never overwritten. Running `--amend` multiple times appends a new timestamped section each time.
+The amendment is additive — the original report content is never overwritten. Running `--amend` multiple times appends a new timestamped section each time but always regenerates a fresh `-final.md`.
 
 ## Directory Structure
 

@@ -1,0 +1,729 @@
+[
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/philip-pages-a881b5139_theyre-gaming-my-trial-the-ceo-told-me-activity-7439370707798704128-7tE_",
+    "author_type": "unknown",
+    "content": "Failed Trials: Timing is Everything for Stripe Payments | Philip Pages posted on the topic | LinkedIn \n\n \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n` `` `` `` `` `` `` ` \n\n \n\n# Failed Trials: Timing is Everything for Stripe Payments\n\nThis title was summarized by AI from the post below.\n\n \n\n \n\n \n\nPhilip Pages \n\n 2w Edited \n\n \n\n- Report this post \n- \n\n \n\n\"They're gaming my trial,\" the CEO told me. 51,000 ratings. $22M ARR. He was wrong. He was beyond frustrated, convinced he had a \"freeloader\" problem. I've audited over 100+ Stripe accounts and have seen this pattern before. So I pulled his Stripe data and picked one failed trial at random. The data told a different story: 1/ User signs up and uses the app for 7 straight days. 2/ Day 8: Stripe attempts to charge $14.99. 3/ Result: Declined for insufficient funds. Stripe retried on Tuesday. It failed. Stripe retried on Thursday. It failed again. After four attempts, the subscription was canceled. \"This user was active every single day of their trial,\" I said. \"Does that look like someone trying to game the system?\" He went quiet. That card would have cleared on Friday. Why? Because Friday was payday. The customer had the money 72 hours later, but Stripe had already cancelled the subscription. We started retrying at better times. Fridays. The first of the month. 9:00 AM local time when paychecks hit. The result was +$79k in new MRR within a month from users they had already given up on. TAKEAWAY The difference between a \"failed trial\" and $79k in new MRR is often just 72 hours. Stop treating your fans like bad debt. If you are retrying on a Tuesday, you are leaving your best revenue on the table. Fix your timing. The money is already there.\n\n \n\n ` `` `\n\n` ` ` `` ` ` `` `` `` ` 11 Comments \n\nLike Comment` `` `\n\n \n\n \n\nGordon P. 2w\n\n- Report this comment \n- \n\n \n\nWhat does your data look like for success on the 1st of the month vs 2nd or 3rd? Do most people have their paycheck in the account on the 1st, or it's processed on the 1st and hits a couple of days later?\n\n \n\n \n\nLike\n\nReply 1 Reaction\n\n \n\nTo view or add a comment, sign in\n\n` `\n\n \n\n \n\n \n\nYurii Postevka \n\n 3w \n\n \n\n- Report this post \n- \n\n \n\nStory time. One of the creators on Placely made their first sale this week. Here's the thing - she was not supposed to. We added Stripe Connect support to Placely for direct payouts (bye bye paypal...) and set a deadline: c",
+    "title": "Failed Trials: Timing is Everything for Stripe Payments | Philip Pages posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.318643+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/bee-techy-llc_beetechy-softwarearchitecture-stripe-activity-7461113767506984961-Pq6z",
+    "author_type": "unknown",
+    "content": "Stripe Payment Success vs App Acknowledgement Failure | Bee Techy, LLC. posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Stripe Payment Success vs App Acknowledgement Failure\n\nThis title was summarized by AI from the post below.\n\n1,618 followers\n\n1w\n\nStripe says the payment succeeded. Your app says it didn\u2019t. That gap is where a lot of SaaS products quietly lose revenue. Most webhook systems work fine early on until scale introduces timeouts, duplicate events, and failed upgrades. The fix usually isn\u2019t Stripe. It\u2019s architecture. Fast acknowledgements. Async queues. Idempotency. The backend patterns separating stable SaaS products from fragile ones are changing fast. \ud83d\udc1d#BeeTechy#SoftwareArchitecture#Stripe#SaaS#BackendDevelopment#CloudEngineering\n\nBee Techy, LLC. 1w\n\nWebhook failures usually don\u2019t crash loudly. They quietly create refunds, support tickets, failed upgrades, and revenue leakage.\n\nReply 1 Reaction 2 Reactions\n\nTo view or add a comment, sign in\n\n1w\n\nThree Stripe webhook failures I keep seeing in production: 1. Treating the webhook handler as the source of truth for fulfilment, with no idempotency check. First retry creates a duplicate order. Second retry creates another. Customer sees one charge, three orders. 2. Returning a 200 before the database write completes. Webhook says delivered, your DB says nothing happened. The reconciliation job at 3am tells you the bad news. 3. No signature verification. Anyone who finds the endpoint can fire fake events and you'll process them. None of these are clever bugs. They're shortcuts that production exposes the second traffic gets real. Stripe's docs cover all three. People skip them because the happy path works in dev. What's the worst webhook bug you've shipped? (No judgement, we've all done it.)#StripePayments#WebDevelopment#NextJS#SaaS#FullStackDevelopment\n\nTo view or add a comment, sign in\n\n14 followers\n\n1w\n\nYour first Stripe webhook will break\u2014here\u2019s how to catch it in under 1 hour. We see the same launch failures: duplicate deliveries, and events landing out of order. Example: ` invoice.paid` can show up before `customer.subscription.created`\u2014and if your code assumes \u201corder,\u201d you\u2019ll double-provision access. \ud83d\ude2c Catch the edge cases fast: - Duplicate webhook deliveries \u2192 make provisioning idempotent - Out-of-order events (e.g., ` invoice.paid` before `customer.subscription.cre",
+    "title": "Stripe Payment Success vs App Acknowledgement Failure | Bee Techy, LLC. posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.319260+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/olurabian_multi-processor-support-doesnt-mean-abstracting-activity-7458530844769501185-byI0",
+    "author_type": "unknown",
+    "content": "Reconciling Multi-Processor Payment Reliability Models | Oluwasegun Araba posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Reconciling Multi-Processor Payment Reliability Models\n\nFounding Engineer \u00b7 AI / B2B SaaS \u00b7 Ships in days \u00b7 Live: invobi.app \u00b7 arabastack.com \u00b7 5daysites.co.uk \u00b7 MSc Hertfordshire\n\n2w\n\nMulti-processor support doesn't mean abstracting API calls. It means reconciling three different reliability models pretending to be payment systems. Stripe retries failed webhooks 3 times over a few hours. Paystack retries up to 72 hours. Flutterwave sits between them. Each one has its own signature scheme, replay window, and idempotency contract. When you build a multi-processor payment layer, the integrations are the easy part. What's actually hard is getting those three reliability models to compose \u2014 so downstream side-effects (mark invoice paid, send receipt, fire analytics, update revenue) don't fire twice on duplicate webhooks. Most multi-processor bugs hide a layer above the webhook handler. They live in the assumption that \"event acknowledged\" and \"side-effects safely completed\" are the same thing. They're not. Once retries and ordering enter, you're looking at two different guarantees. ARABA Stack ships with that reconciliation already wired: \u2022 Idempotency keys on the side-effect tier, not just on database writes \u2022 `email_sent_at` guards on transactional sends \u2022 Per-processor retry semantics built into the router \u2022 Stateless edge functions for the webhook handlers themselves Every other boilerplate's README skips this part. Founder seats: $297, one-time, unlimited activations. Ships Fri 2026-05-29. arabastack.com\n\nTo view or add a comment, sign in\n\nJava | Spring Boot | Blockchain | AI Tools |6+ Years Exp | System Design | Avaloq Wealth Platform | Open To Remote/Hybrid\n\n2w\n\nThe first time my code charged a customer twice, I learned what idempotency really means. A user clicked \"Pay\" \u2192 the request timed out \u2192 the client retried. The transaction went through twice. Customer support flooded. Finance reconciled for hours. I had thought I understood idempotency \u2014 turns out I didn't. What I thought it was: - Using PUT instead of POST - Trusting the client to send the same payload - Catching the duplicate at the database What it actually is: designing the API so the same request always returns the same result, no matter how many",
+    "title": "Reconciling Multi-Processor Payment Reliability Models | Oluwasegun Araba posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.319480+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/harper-ubiaga-bb1990315_stripe-merchantprotection-ethoca-activity-7322649722748375040-nVqO",
+    "author_type": "unknown",
+    "content": "Stripe's chargeback alerts are a trap for merchants | Harper Ubiaga posted on the topic | LinkedIn\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````[Skip to main content](#main-content)\n# Harper Ubiaga\u2019s Post\n[![View profile for Harper Ubiaga]()](https://www.linkedin.com/in/harper-ubiaga-bb1990315?trk=public_post_feed-actor-image)\n[Harper Ubiaga](https://www.linkedin.com/in/harper-ubiaga-bb1990315?trk=public_post_feed-actor-name)\nArbor Holdings - Opinions are my own\n1mo\n* [Report this post](https://www.linkedin.com/uas/login?session_redirect=https://www.linkedin.com/posts/harper-ubiaga-bb1990315_stripe-merchantprotection-ethoca-activity-7322649722748375040-nVqO&amp;trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)\n\ud83d\udea8\u00a0Stripe\u2019s Chargeback Alerts Aren\u2019t Protection - They\u2019re Ammunition Against You \ud83d\udea8If you think Stripe\u2019s new chargeback alerts are helping you, think again.\nYou\u2019re not being protected - you\u2019re being set up. \ud83d\udca3Here\u2019s the real story nobody\u2019s telling you:\n\u2705Pre-dispute alerts (Ethoca, Verifi) were originally built to give merchants a chance to fix issues before a chargeback ever hit.\n\u274cNow, Stripe has hijacked the system - buying these alerts and using them to preemptively punish you.\nPayPal already does this.\nThey grab your Ethoca and Verifi data the second it fires.\nThey treat it like a chargeback immediately.\nThey raise reserves, label you risky, slow your payouts - or worse - offboard you completely. Stripe is next - and it\u2019s even uglier.\nBecause now, Ethoca and Verifi have betrayed the merchants they were supposed to protect.\nThey\u2019re not your allies anymore.\nThey sold your risk signals to the highest bidder - processors like Stripe, PayPal, and whoever else waves a fat check. \ud83d\udecc\ud83d\udc0dThey didn\u2019t just \"pivot\" - they got in bed with the enemy.\n\u26a0\ufe0fThe Consequences You\u2019re About to Feel:\nMerchants lose visibility into disputes.\nProcessors weaponize alerts against you.\nRisk teams get rich, real-time data to justify bigger reserves, slower payouts, account shutdowns.\nEthoca and Verifi cash checks while merchants get crushed.\nAnd you?\nYou g",
+    "title": "Harper Ubiaga\u2019s Post",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.319665+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/customer-centricity-turning-chargeback-management-melissa-hendrick-kiyne",
+    "author_type": "unknown",
+    "content": "Customer Centricity: Turning Chargeback Management into a Competitive Advantage\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nCustomer centricity is often described as a mindset, but in practice it is a system. It is the structure behind how a business listens, responds, and improves. This structure is tested most clearly in moments where expectations break. Chargebacks are one of those moments. They begin as customer frustration, long before a dispute is filed. Most of that frustration shows up in small signals that often go unnoticed because they live in different systems, different teams, or different parts of the customer journey. By the time the dispute reaches the merchant, revenue is already at risk and the customer relationship has weakened.\n\nTreating chargebacks only as a financial event misses their strategic value. Every dispute contains insight into how a customer interpreted an experience. When merchants learn to read those signals early, they begin to create a more predictable, transparent, and trustworthy journeys. This shift requires more than traditional case-by-case management. It calls for a more integrated, intelligence-led and customer-centric approach.\n\nWhy a More Intelligent Approach is Now Essential\n\nThe volume and complexity of disputes have changed significantly. Subscription renewals, on-demand services, and travel disruptions create environments where confusion and timing issues are common. Friendly fraud continues to rise as customers treat chargebacks as a convenient resolution path, and recent findings from LexisNexis Risk Solutions indicate that first-party misuse now accounts for 36 percent of all reported fraud, a sharp increase compared to previous years. Regulations continue to evolve, and issuers rely more heavily on automated decision systems. These shifts make it critical for merchants to detect patterns early and take informed action before customer issues escalate.\n\nMany teams attempt this manually, but manual monitoring cannot keep pace with the scale or nuance of modern dispute behavior. Insights become reactive rather than proactive. Decisions rely on limited context. Opportunities to prevent disputes are missed.\n\nThis is where the right chargeback solutions partner can make a meaningful difference. At Chargeback Gurus (CBG), we have seen how much clarity merchants gain when disputes are no longer viewed as isolated eve",
+    "title": "Customer Centricity: Turning Chargeback Management into a Competitive Advantage",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.319844+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/keiboarder_prepaid-users-waited-over-a-year-for-a-platform-activity-7413703115255861248-0m8Z",
+    "author_type": "unknown",
+    "content": "Founder-owned risk, technical debt, and the cost of delayed launches | Keiboarder posted on the topic | LinkedIn\n\n# Founder-owned risk, technical debt, and the cost of delayed launches\n\nThis title was summarized by AI from the post below.\n\nKeiboarder\n\n647 followers\n\n1mo\n\nPrepaid users waited over a year for a platform that couldn\u2019t keep its promises. In this project, the founder owned the customer risk, but the absence of technical leadership left the team exposed to launch delays, unstable calculations, and a revolving door of engineering firms. If you try to patch over missing technical leadership with more contractors, you just multiply the handoffs and the headaches. Every missed release compounds user frustration and erodes trust. We have seen this before. When the product space is drapery workroom pricing and project management, and the blocker is launch delays with no test coverage, the business risk is simple: users leave before you ever get a chance to serve them. We do not wait for the next outage to act. Technical debt is not a rounding error. Ownership is not optional, even if your background is textiles, not tech. The longer you wait to stabilize the platform, the more expensive every fix becomes. Investors notice. So do your customers. If you want to see what changed when we stepped in, the link is in the comments.\n\n1 Comment\n\nLike Comment\n\nKeiboarder 1mo\n\nhttps://keiboarder.com/case-study/fractional-cto-drives-turnaround-and-growth-for-b2b-saas-platform?utm_source=linkedin&utm_medium=social&utm_campaign=keiboarder\n\nLike\n\nReply\n\nTo view or add a comment, sign in\n\nNicholas Thomson\n\n3w\n\nBilling platforms don\u2019t lose customers because their invoices are wrong, they lose them because they can\u2019t control value in real time. If your billing stack requires customers to build their own wallet infrastructure, you\u2019re passing the hardest part of monetization on to them.\n\nLike Comment\n\nTo view or add a comment, sign in\n\nNicholas Thomson\n\n4w\n\nThe billing conversation is changing. Quietly, but permanently. For years, \u201cmonetization\u201d meant invoices, plans, and subscriptions. That world assumed pricing was static, slow, and human-operated. That assumption is breaking. We\u2019re now seeing platforms ask for things traditional billing systems were never designed to handle natively: \u2022 Real-time usage and consumption \u2022 Wallets and stored value alongside invoices \u2022 Credits, rewards, and non-cash value flows \u2022 AI-driven products that price and adapt continuously \u2022 Multip",
+    "title": "Founder-owned risk, technical debt, and the cost of delayed launches | Keiboarder posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.320016+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/mattedmundson_what-to-do-when-chargebacks-are-eating-your-activity-7429676783806959617-mzbR",
+    "author_type": "unknown",
+    "content": "Preventing Chargebacks Boosts Profit Margins | Matt Edmundson posted on the topic | LinkedIn \n\n \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n` `` `` `` `` `` `` ` \n\n \n\n# Preventing Chargebacks Boosts Profit Margins\n\nThis title was summarized by AI from the post below.\n\n \n\n \n\n \n\nMatt Edmundson \n\n 1mo \n\n \n\n- Report this post \n- \n\n \n\nWhat to do when chargebacks are eating your profit margins: Stop fighting. Start preventing. Ex: - Make refunds frictionless when customers complain - Overcommunicate shipping status when orders are in transit - Follow up after delivery when you want to catch problems early - Speed up refund processing when customers are frustrated - Budget for disputes when planning your year The thing about chargebacks is they're gonna happen regardless. A $250k dispute budget becomes $1M when you fight every one. Don't be scrambling when Visa flags your account. Be the merchant who already made refunds easier than calling the bank.\n\n \n\n ` `` `\n\n` ` ` `` ` ` `` `` `` ` 2 Comments \n\nLike Comment` `` `\n\n \n\n \n\nICE-PAY 1mo\n\n- Report this comment \n- \n\n \n\nGreat insights, Matt! Preventive measures are indeed key in managing chargebacks effectively. Overcommunicating shipping status and speeding up refund processing are crucial steps. How have you seen these strategies impact customer satisfaction in your experience?\n\n \n\n \n\nLike\n\nReply 1 Reaction 2 Reactions\n\n \n\nTo view or add a comment, sign in\n\n` `\n\n \n\n \n\n \n\nAlec Armbrecht \n\n 2w \n\n \n\n- Report this post \n- \n\n \n\nSee below. This is a huge issue in the merchant services industry. Let's be sure your business is not overpaying.\n\n \n\n \n\nMerchant Advocate \n\n 1,149 followers\n\n3w \n\n \n\nMany businesses that accept corporate, purchasing, or commercial cards may be overpaying due to incorrect setup following Visa\u2019s CEDP changes\u2014we\u2019ve uncovered overcharges of $700,000 for one client! Merchant Advocate helps businesses ensure they\u2019re set up correctly, recover missed savings, and prevent costly errors moving forward. If you\u2019re unsure whether your processing is optimized, it may be time to take a closer look. merchantadvocate.com\n\n \n\n- \n\n \n\n` `` ` \n\nLike Comment` `` `\n\n \n\n \n\nTo view or add a comment, sign in\n\n \n\n \n\n \n\nLiberty Bancard \n\n 10 followers\n\n3w \n\n \n\n- Report this post \n- \n\n \n\nMost small businesses don't realize how easily they can slip into compliance trouble with surcharge and cash discount programs. Surcharging l",
+    "title": "Preventing Chargebacks Boosts Profit Margins | Matt Edmundson posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.320189+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/stripe-killed-my-business-you-your-poor-planning-did-viktoria-soltesz-imxef",
+    "author_type": "business_owner",
+    "content": "\u201cStripe Killed My Business?\u201d No, It Was You, with Your Poor Planning That Did It\nLinkedIn and 3rd parties use essential and non-essential cookies to provide, secure, analyze and improve our Services, and to show you relevant ads (including**professional and job ads**) on and off LinkedIn. Learn more in our[Cookie Policy](https://www.linkedin.com/legal/cookie-policy).\nSelect Accept to consent or Reject to decline non-essential cookies for this use. You can update your choices at any time in your[settings](https://www.linkedin.com/mypreferences/g/guest-cookies).\nAcceptReject\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/stripe-killed-my-business-you-your-poor-planning-did-viktoria-soltesz-imxef&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/stripe-killed-my-business-you-your-poor-planning-did-viktoria-soltesz-imxef&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www",
+    "title": "\u201cStripe Killed My Business?\u201d No, It Was You, with Your Poor Planning That Did It",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.320283+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/i-didnt-order-anything-how-combat-chargebacks-fraud-vadim-sazanovich-b8wmf",
+    "author_type": "unknown",
+    "content": "\"I Didn\u2019t Order Anything!: How to Combat Chargebacks and Fraud in E-Commerce\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/i-didnt-order-anything-how-combat-chargebacks-fraud-vadim-sazanovich-b8wmf&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/i-didnt-order-anything-how-combat-chargebacks-fraud-vadim-sazanovich-b8wmf&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\nLinkedIn\nLinkedIn is better on the app\nDon\u2019t have the app? Get it in the Microsoft Store.\n[Open the app](ms-windows-store://pdp/?ProductId=9WZDNCRFJ4Q7&amp;mode=mini&cid=guest_desktop_upsell)\n``````````````[Skip to main content](#main-content)\n````````\n![\"I Didn\u2019t Order Anything!: How to Combat Chargebacks and Fraud",
+    "title": "\"I Didn\u2019t Order Anything!: How to Combat Chargebacks and Fraud in E-Commerce",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.320450+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/what-most-common-mistakes-startups-make-when-setting-up-payments-jnoge",
+    "author_type": "unknown",
+    "content": "Common startup payment mistakes\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/what-most-common-mistakes-startups-make-when-setting-up-payments-jnoge&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/what-most-common-mistakes-startups-make-when-setting-up-payments-jnoge&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\nLinkedIn\nLinkedIn is better on the app\nDon\u2019t have the app? Get it in the Microsoft Store.\n[Open the app](ms-windows-store://pdp/?ProductId=9WZDNCRFJ4Q7&amp;mode=mini&cid=guest_desktop_upsell)\n``````````````[Skip to main content](#main-content)\n````````\n![What are the most common mistakes startups make when setting up their payments?](https://media.licdn.com/dms/image/",
+    "title": "What are the most common mistakes startups make when setting up their payments?",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.320614+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/how-startups-fintechs-can-ace-pci-dss-audit-bruno-cissp-ccsp-klsgf",
+    "author_type": "unknown",
+    "content": "How Startups and Fintechs Can Ace the PCI DSS Audit\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/how-startups-fintechs-can-ace-pci-dss-audit-bruno-cissp-ccsp-klsgf&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/how-startups-fintechs-can-ace-pci-dss-audit-bruno-cissp-ccsp-klsgf&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n``````````````[Skip to main content](#main-content)\n````````\n![How Startups and Fintechs Can Ace the PCI DSS Audit](https://media.licdn.com/dms/image/v2/D4D12AQF72pX-d7M92Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1735173156671?e=2147483647&amp;v=beta&t=k6Iffao-zX1PITxSWTOVbdlSY9Wcfhar6el7Ta7pxZY)\n# How Startups and Fintech",
+    "title": "How Startups and Fintechs Can Ace the PCI DSS Audit",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.321145+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/pci-dss-gap-assessment-process-essential-first-step-toward-uday-kumar-mcuac",
+    "author_type": "unknown",
+    "content": "PCI DSS Gap Assessment Process\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/pci-dss-gap-assessment-process-essential-first-step-toward-uday-kumar-mcuac&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/pci-dss-gap-assessment-process-essential-first-step-toward-uday-kumar-mcuac&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n``````````````[Skip to main content](#main-content)\n````````\n![PCI DSS Gap Assessment Process The Essential First Step Toward Compliance](https://media.licdn.com/dms/image/v2/D5612AQEsUwskT0h9XQ/article-cover_image-shrink_720_1280/B56ZYPdm6OGcAM-/0/1744016142703?e=2147483647&amp;v=beta&t=BEqbZPgziAnNUJ0qT7jEByDConYWYGlOfytFC7hr9Xo)\nPCI DSS Gap Assessment\n# PC",
+    "title": "PCI DSS Gap Assessment Process The Essential First Step Toward Compliance",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.321307+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/moving-beyond-saq-using-realworld-threat-vectors-select-jim-seaman-o6mue",
+    "author_type": "unknown",
+    "content": "Moving Beyond SAQ A: Using Real\u2011World Threat Vectors to Select Meaningful PCI DSS Requirements for iFrame\u2011based eCommerce Service Providers\n\nHosted iFrame TPSP\n\n## Introduction\n\nA lot of security impacting service providers are stuck in an awkward gap.\n\nThey are not merchants, so they cannot claim SAQ A eligibility, but they also never see a primary account number in the clear. When PCI DSS 4.0 and the new web skimming controls arrive, those providers suddenly find themselves asked to \u201cshow applicability\u201d for a standard that was clearly written with merchants in mind.\n\nIf you are providing iFrame based eCommerce services, this probably sounds familiar.\n\nThis article offers a practical way out of that gap. It combines the MITRE ATT&CK matrix with the PCI SSC\u2019s own FAQ guidance to justify a defensible, risk based selection of PCI DSS requirements for your Report on Compliance.\n\n---\n\n## Why SAQ A is the wrong tool for your job?\n\nPCI SSC\u2019s FAQ on SAQ eligibility is very clear. The criteria for each Self Assessment Questionnaire exist to make sure that only very specific environments use that cut\u2011down requirement set.\n\nThe FAQ also explains that SAQ eligibility cannot be used as a shortcut to decide applicability of PCI DSS requirements for a full ROC. In other words:\n\n- If you are a service provider, SAQ A does not apply to you at all. Your default is SAQ D for service providers or a full ROC.\n- If you are a merchant and your compliance accepting entity tells you to complete a ROC, the SAQ A requirement list is not a master checklist for \u201cwhat applies\u201d\n\nThat makes sense once you remember why SAQ A exists. It assumes a pure redirect or iFrame model where the merchant\u2019s own website has no ability to affect the security of the payment page. In reality, most hosted payment solutions, tag managers and platform integrations are much messier.\n\nIf you are the one building and operating those iFrames and supporting JavaScript, you are already outside the SAQ A world. You are a security impacting service provider.\n\n---\n\n## What PCI SSC expects from security impacting service providers?\n\nFAQ 1580 answers the key question for you. It says PCI DSS is intended not only for entities that store, process or transmit cardholder data, but also for service providers that could impact the security of payment account data.\n\nIt gives three examples of how that can happen:\n\n- Providing services that directly or indirectly facilitate the storage, processing or transmission of payment ",
+    "title": "Moving Beyond SAQ A: Using Real\u2011World Threat Vectors to Select Meaningful PCI DSS Requirements for iFrame\u2011based eCommerce Service Providers",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.321477+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/navigating-pci-dss-compliance-fintech-step-by-step-guide-dontae-tyler-sjtre",
+    "author_type": "unknown",
+    "content": "Navigating PCI DSS Compliance for Fintech: A Step-by-Step Guide\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nAs fintech companies handle sensitive payment information and financial transactions, adhering to PCI DSS (Payment Card Industry Data Security Standard) compliance is crucial. This guide outlines the steps fintech firms should take to ensure secure payment processing while maintaining strong cyber hygiene practices.\n\n### What is PCI DSS, and Why Does it Matter?\n\nPCI DSS is a set of security standards designed to ensure that all entities accepting, processing, storing, or transmitting credit card data maintain secure environments. Beyond regulatory requirements, PCI DSS compliance demonstrates a commitment to protecting sensitive payment data, reducing the risk of breaches, and ensuring customer confidence.\n\n### Steps to Achieve PCI DSS Compliance\n\n### 1. Determine Your Level of Compliance\n\n- Identify which level of PCI DSS applies to your business based on transaction volume. This determines the specific requirements your firm must meet.\n\n### 2. Conduct a Self-Assessment Questionnaire (SAQ)\n\n- Use OQPS relevant SAQ (https://forms.gle/FpE7THETm5P4LdYL8) to evaluate your current payment processing systems. This process identifies gaps in security measures and uncovers areas that need improvement.\n\n### 3. Implement Security Controls with Cyber Hygiene in Mind\n\nMaintaining strong cyber hygiene is critical for PCI DSS compliance. Key measures include:\n\n- Compliance Automation Tools: Leverage solutions like Drata to continuously monitor compliance posture and ensure all controls are in place.\n- Remote Access Protection: Use VPN services to secure connections when accessing systems remotely.\n- Data Encryption: Ensure that sensitive payment data is encrypted during transmission and storage.\n- Network Security: Use firewalls to secure payment processing environments.\n\n## Recommended by LinkedIn\n\nIssue #47: The Bitter Truth: Compliance vs. Security -\u2026 Dr. Umang Mehta 1 year ago\n\nHardware Security Modules Market Size To 2028 Prash Virkheo 2 years ago\n\nPCI DSS and NIS2: Two parallel roads to security, but\u2026 Dario Colarieti 7 months ago\n\n### 4. Train Employees on PCI DSS and Cyber Hygiene\n\nEducate employees about PCI DSS requirements and instill best practices for cyber hygiene. Regular training reduces the risk of human errors leading to breaches.\n\n### 5. Monitor Tran",
+    "title": "Navigating PCI DSS Compliance for Fintech: A Step-by-Step Guide",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.321646+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/pci-audit-checklist-developers-build-secure-pass-uday-kumar-ljqfc",
+    "author_type": "unknown",
+    "content": "PCI DSS Audit Checklist for Developers\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nPCI Audit Checklist\n\nWhen it comes to PCI DSS audits, developers aren\u2019t just part of the process\u2014they\u2019re at the heart of it. From code to infrastructure, everything you build shapes your company\u2019s ability to pass a PCI audit. Whether you're in a SaaS startup, a payment gateway, or an eCommerce platform, your dev decisions directly impact compliance.\n\nThis guide lays out a developer-specific PCI DSS audit checklist to help you ship secure code, harden your stack, and get audit-ready\u2014fast.\n\n\ud83d\udd0d Why Developers Matter in PCI DSS\n\nPCI DSS (Payment Card Industry Data Security Standard) isn\u2019t just for compliance officers or QSAs. Developers are responsible for:\n\n- Building and maintaining secure systems that store, process, or transmit cardholder data\n- Ensuring secure coding practices are followed across the SDLC\n- Configuring access, logging, encryption, and segmentation\n- Automating scans, updates, and secure deployments\n\nSo when the audit comes knocking, your preparedness determines the outcome.\n\n\u2705 PCI DSS Developer Audit Checklist\n\n1. \ud83d\udd10 Know Your Scope\n\nKey Actions:\n\n- Identify all components that handle cardholder data (CHD) and sensitive authentication data (SAD)\n- Document APIs, databases, microservices, and third-party integrations\n- Classify zones: cardholder data environment (CDE) vs non-CDE\n\nPro Tip: Reduce scope early by segmenting systems and avoiding CHD storage where not necessary.\n\n2. \ud83e\uddf1 Secure Coding Practices (Req. 6.5)\n\nKey Actions:\n\n- Follow OWASP Top 10 guidelines\n- Use input validation, output encoding, and error handling\n- Avoid hardcoded credentials or secrets in code\n- Use dependency scanning tools (like Snyk, OWASP Dependency-Check)\n\nBonus Tip: Implement code review checklists with security as a mandatory step.\n\n3. \ud83d\udd12 Authentication & Access Controls (Req. 7 & 8)\n\nKey Actions:\n\n- Enforce MFA for all admin and dev access\n- Use role-based access control (RBAC)\n- Ensure no shared accounts or default passwords\n- Automate session timeout and lockout policies\n\n4. \ud83d\udcdc Logging & Monitoring (Req. 10)\n\nKey Actions:\n\n- Log access, changes, and authentication attempts for all systems handling CHD\n- Store logs centrally (e.g., SIEM, ELK)\n- Keep logs tamper-proof and retain for at least 1 year\n\nDeveloper Task: Ensure apps and APIs are logging securely without storing CHD.\n\n5",
+    "title": "PCI DSS Audit Checklist for Developers",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.321815+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/fake-compliance-revenue-problem-security-amit-prakash-gupta-vy6pc",
+    "author_type": "unknown",
+    "content": "Fake Compliance Is a Revenue Problem, Not a Security Problem\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nhttps://deepdelver.substack.com/p/delve-fake-compliance-as-a-service\n\nAnd this week proved it. read more here - https://deepdelver.substack.com/p/delve-fake-compliance-as-a-service\n\n---\n\nA forensic expos\u00e9 went viral this week. A well-funded, YC-backed compliance platform was caught generating identical audit reports for hundreds of clients. Same auditor conclusions. Same test procedures. Same typos \u2014 across 259 SOC 2 Type II reports. Pre-written verdicts before any auditor reviewed a single piece of evidence. Fabricated board meeting minutes. Trust pages that declared security measures that were never implemented.\n\nThe auditors? Indian certification mills operating through empty US shell entities, rubber-stamping reports they didn't write.\n\nThe clients? Hundreds of companies \u2014 including firms handling PHI for millions of US citizens \u2014 walking around with compliance certificates that won't survive their next enterprise security review.\n\nIf you work in security or compliance, you probably already know which company I'm talking about. But this article isn't about them. It's about the model they represent \u2014 and why it was always going to end here.\n\n---\n\n### The \"Compliant in Days\" Lie\n\nThe pitch is seductive: AI-native compliance. Get your SOC 2 in days, not months. Agentic automation that eliminates the busywork.\n\nHere's what that actually means in practice: pre-populated templates you click \"accept\" on. Policies that claim you have an MDM when your process is a screenshot of Mac firewall settings. Risk assessments that are identical across every customer. Evidence that exists before you've done any work.\n\nThe speed isn't coming from better technology. It's coming from skipping the work.\n\nAnd for a while, it doesn't matter. Many enterprises tick a box when they see a SOC 2 report and move on. The certificate opens doors. Revenue comes in. Everyone's happy.\n\nUntil someone actually reads the report.\n\n---\n\n### Where It Breaks\n\nThe real cost of compliance theatre doesn't show up as a line item. It shows up as:\n\nStalled enterprise deals. A serious buyer sends a security questionnaire. Your AI-generated answers claim you run backup restoration simulations you've never performed. They ask for the penetration test report referenced in your policies \u2014 but you only ran a",
+    "title": "Fake Compliance Is a Revenue Problem, Not a Security Problem",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.321990+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/robert-woodcock_soc2-compliance-security-activity-7436749131362217985-BwBG",
+    "author_type": "unknown",
+    "content": "Is SOC 2 Overkill for Startups? Cutting Compliance Costs Without Sacrificing Security | Robert W. Woodcock posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Is SOC 2 Overkill for Startups? Cutting Compliance Costs Without Sacrificing Security\n\nThis title was summarized by AI from the post below.\n\nRobert W. Woodcock\n\nThe Process Mechanic\u2122\u20222K followers\n\n1w Edited\n\n- Report this post\n\nThe $200K SOC 2 Mistake Every Startup Makes (And Why Your Auditor Won't Tell You) \"We need SOC 2 for enterprise deals!\" Cool. Which enterprise actually asked for it? Or did a competitor's website convince you? \ud835\udddb\ud835\uddf2\ud835\uddff\ud835\uddf2'\ud835\ude00 \ud835\ude04\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\ude06\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\uddf0\ud835\uddfc\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf6\ud835\uddee\ud835\uddfb\ud835\uddf0\ud835\uddf2 \ud835\uddf0\ud835\uddfc\ud835\uddfb\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\ude01 \ud835\ude04\ud835\uddfc\ud835\uddfb'\ud835\ude01 \ud835\ude00\ud835\uddee\ud835\ude06: That 6-12 month audit period everyone recommends? It's overkill. Smart companies run 3-month Type IIs. Same checkbox, 75% less suffering. \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddfa\ud835\uddee\ud835\ude01\ud835\uddf5 \ud835\uddfb\ud835\uddfc\ud835\uddef\ud835\uddfc\ud835\uddf1\ud835\ude06 \ud835\ude00\ud835\uddf5\ud835\uddee\ud835\uddff\ud835\uddf2\ud835\ude00: \u2022 First Type II: $40-80K + 500 engineering hours \u2022 Maintaining it: $30K/year + eternal spreadsheet slavery \u2022 Actual security improvement: Marginal \u2022 Sales deals it actually unblocked: \"We'll get back to you\" \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddf1\ud835\uddf6\ud835\uddff\ud835\ude01\ud835\ude06 \ud835\ude00\ud835\uddf2\ud835\uddf0\ud835\uddff\ud835\uddf2\ud835\ude01: Enterprise buyers demand SOC 2 like they demand \"5-years\u2019 experience.\" It's resume-scanning, not risk management. They spend 4 minutes skimming your 200-page report for the opinion letter. \ud835\uddea\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\ude01\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf5\ud835\uddee\ud835\uddfd\ud835\uddfd\ud835\uddf2\ud835\uddfb\ud835\ude00: Month 1-3: Panic-building 67 policies nobody will read Month 4-6: Teaching developers to screenshot everything Month 7: Auditor finds your intern had admin access Month 8: Arguing about whether that's an \"exception\" or \"deficiency\" Month 9: Report delivered. Sales team never opens it. \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddff\ud835\uddf2\ud835\uddee\ud835\uddf9 \ud835\udde6\ud835\udde2\ud835\uddd6 \ud835\udfee \ud835\uddfd\ud835\uddf9\ud835\uddee\ud835\ude06\ud835\uddef\ud835\uddfc\ud835\uddfc\ud835\uddf8: 1. Start with a 3-month Type I. Total cost: $15K 2. If enterprise deals actually close, upgrade 3. If they don't, you saved $185K \ud835\udde3\ud835\uddf9\ud835\uddfc\ud835\ude01 \ud835\ude01\ud835\ude04\ud835\uddf6\ud835\ude00\ud835\ude01: Your SOC 2 is checkbox compliance. Your actual security comes from engineers who care, not evidence binders. But sure, spend $200K because someone on LinkedIn said it's \"table stakes.\" Your competitor with no compliance just closed your dream customer. They promised SOC 2 \"next year\" for three years running. - - - - - - - - - - - - - - - - - \ud83d\udcb8 What compliance requirement killed your budget? \ud83c\udfaf Best SOC 2 story?#SOC2#Compliance#Security#Startups#InfoSec#B2BSaaS#CISO#CIO#CTO#CEO [Post 1 of 6 in my Compliance Reality Check series] Product leader who thin",
+    "title": "Is SOC 2 Overkill for Startups? Cutting Compliance Costs Without Sacrificing Security | Robert W. Woodcock posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.322174+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/complete-guide-pci-dss-compliance-certification-2025-feroot-capge",
+    "author_type": "unknown",
+    "content": "The Complete Guide to PCI DSS Compliance Certification in 2025\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n### TL;DR\n\n- PCI DSS 4.0.1 raises the certification bar with requirement 6.4.3 for script inventory and 11.6.1 for real-time change detection, making continuous client-side monitoring a must.\n- The stakes are high for certification readiness: The average breach cost reached $4.88M in 2024 and 43% of attacks hit small businesses, so fines, remediation, and lost trust add up fast.\n- A clear certification path works best: Scope your environment, map cardholder data flows, run a gap analysis, implement controls, complete SAQ or QSA assessments, and maintain continuous monitoring.\n- Feroot\u2019s PCI compliance platform strengthens certification outcomes by automatically monitoring scripts, detecting unauthorized changes in real time, and producing audit-ready evidence that speeds PCI DSS 4.0.1 approval.\n\nThe stakes for protecting payment data have never been higher. In 2024, the global average cost of a data breach reached $4.88 million, a 10% increase over the previous year (IBM).\n\nFor any business handling credit card transactions, PCI DSS compliance certification is essential to safeguard customer trust, meet regulatory obligations, and prevent costly breaches.\n\nWith the release of PCI DSS 4.0.1, organizations face new challenges, especially with requirement 6.4.3 (script inventory and management) and requirement 11.6.1 (change detection on payment pages). These updates demand more visibility into client-side risks and stronger monitoring capabilities.\n\nThis guide provides a step-by-step roadmap for achieving certification, analyzing costs, and adopting automated solutions that simplify compliance while reducing risk.\n\n### What is PCI DSS Compliance Certification?\n\nPCI DSS certification verifies that an organization meets the security requirements defined by the Payment Card Industry Security Standards Council(PCI SSC). This global framework, developed in collaboration with major card brands (Visa, Mastercard, American Express, Discover, JCB), sets strict standards to protect cardholder data.\n\n### Certification applies to:\n\n- Merchants of all sizes that accept credit card payments\n- Service providers processing or storing cardholder data\n- Organizations managing payment infrastructure\n\n### Your compliance level depends on transaction volume:\n\n- Level 1: Over 6 m",
+    "title": "The Complete Guide to PCI DSS Compliance Certification in 2025",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.322345+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/pci-dss-saas-startups-2025-guide-smart-compliance-secure-uday-kumar-mahff",
+    "author_type": "business_owner",
+    "content": "PCI DSS compliance \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n` `` `` `` `` `` `` `\n\n \n\n \n\n \n\n` `` `` `` `` `` `` ` \n\n \n\n ` `` `` `` `\n\n \n\n \n\n \n\n \n\nAs a SaaS startup, your mission is to ship fast, scale fast, and deliver game-changing solutions. But if you\u2019re touching, processing, or storing payment card data, there\u2019s one rulebook you can\u2019t ignore\u2014PCI DSS. \n\n \n\nWhether you're offering embedded billing, subscription models, or third-party integrations with payment processors\u2014PCI DSS compliance isn't just a box to tick. It's your startup\u2019s backbone for trust, security, and growth. \n\n \n\nLet\u2019s explore how PCI DSS applies to SaaS startups in 2025, why it matters more than ever, and how you can become compliant without breaking your sprint velocity or your budget. \n\n \n\n\ud83c\udfaf What Is PCI DSS and Why Should SaaS Startups Care? \n\n \n\nPCI DSS (Payment Card Industry Data Security Standard) is a global framework of security practices created by card networks like Visa, Mastercard, and Amex. It applies to any business handling cardholder data, including: \n\n \n\n- Subscriptions (recurring payments) \n- Customer billing dashboards \n- In-app payments \n- Embedded payment APIs \n- Third-party merchant services \n\n \n\n \n\nSaaS startups often fall into one of three categories: \n\n \n\n \n\n \n\n\ud83e\udde9 Key PCI DSS Requirements SaaS Startups Must Know \n\n \n\nEven if you outsource billing, PCI still applies. \n\n \n\nHere\u2019s what startups must do: \n\n \n\n1. Secure cardholder data storage \n2. Encrypt transmission over public networks \n3. Maintain vulnerability management (patches, anti-malware) \n4. Restrict access to card data \n5. Monitor access logs and security events \n6. Conduct annual assessments (via SAQ or ROC) \n\n \n\n \n\n\ud83d\udd12 Pro tip: If you use tokenization via Stripe, Razorpay, or Adyen, you can avoid storing sensitive data and simplify PCI scope. \n\n \n\n\u2699\ufe0f PCI DSS in SaaS Workflows: Where It Fits \n\n \n\nYour SaaS might interact with card data at: \n\n \n\n- Signup flows (custom billing pages) \n- Admin dashboards (card update functionality) \n- Embedded components (Stripe Elements, hosted forms) \n- APIs (if you support marketplaces or vendors) \n\n \n\n \n\nEvery touchpoint increases your PCI scope\u2014and determines your SAQ type. \n\n \n\n \n\n \n\n\ud83d\ude80 Why PCI DSS is a Game-Changer for SaaS Startups \n\n \n\n1. Win More B2B Contracts \n\n \n\nEnterprise customers want to work with vendors who: \n\n## Recommended by LinkedIn\n\nFrom SaaS to SaaS\u207f:",
+    "title": "PCI DSS compliance",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.322466+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/pci-dss-certification_pcidss-fintech-paymentsecurity-activity-7437730103721185280-FByA",
+    "author_type": "unknown",
+    "content": "Fintech Startups: Achieving PCI DSS Compliance for Faster Payment Security | PCI DSS CERTIFICATION posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Fintech Startups: Achieving PCI DSS Compliance for Faster Payment Security\n\nThis title was summarized by AI from the post below.\n\nPCI DSS CERTIFICATION\n\n1,044 followers\n\n1w\n\n- Report this post\n\nHow Fintech Startups Can Become PCI DSS Compliant Faster For fintech startups building payment products, PCI DSS compliance is essential when handling cardholder data. Many startups believe compliance slows development, but integrating it early can actually accelerate product launches, strengthen security, and build trust with payment partners. A key first step is defining the PCI DSS scope. The standard only applies to systems that store, process, or transmit card data. Mapping where card data enters, moves, and is stored helps reduce unnecessary compliance complexity. Choosing the right payment architecture can also speed up compliance. Using payment gateway integrations, tokenization, or hosted checkout pages reduces direct exposure to cardholder data and minimizes PCI scope. Startups should also implement core security controls from the beginning, including encryption, secure network architecture, role based access control, and continuous monitoring of payment systems. Working with PCI compliant infrastructure providers and conducting regular vulnerability scans and security testing further accelerates the process. When approached strategically, PCI DSS compliance becomes a growth enabler, helping fintech startups build trusted and scalable payment platforms.#PCIDSS#Fintech#PaymentSecurity#PaymentGateway#CyberSecurity#DigitalPayments#Compliance#FintechStartups#PaymentInfrastructure#FintechInnovation\n\nLike Comment\n\nTo view or add a comment, sign in\n\nPCI DSS CERTIFICATION\n\n1,044 followers\n\n3w\n\n- Report this post\n\nFrom Startup to Enterprise: How PCI Maturity Impacts Growth In fintech, growth is not just about transactions. It is about trust. Early-stage startups often treat PCI DSS as a checkbox. Compliance is reactive, documentation is thin, and security is layered on after launch. This works temporarily, but as volume increases, scope expands, audits become painful, and enterprise clients hesitate. At the scaling stage, PCI becomes risk management. Clear cardholder data environments, segmentatio",
+    "title": "Fintech Startups: Achieving PCI DSS Compliance for Faster Payment Security | PCI DSS CERTIFICATION posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.322647+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/i-spent-12-years-building-rural-fintech-heres-what-actually-otim-hvyjf",
+    "author_type": "unknown",
+    "content": "I Spent 12 Years Building Rural Fintech. Here\u2019s What Actually Matters.\n\n### Why technology alone failed - and what finally worked in community finance\n\nPart 1 of a LinkedIn Series on Community Finance\n\nFour years ago, on a sunny afternoon, seated at my desk at our Kiwatule office in Kampala, I spent nearly 6 hours doing almost nothing - just staring into space.\n\nThis routine repeated itself for three consecutive weeks.\n\nIt wasn\u2019t burnout. It wasn\u2019t laziness.\n\nI was exhausted from simply building - hoping that if we kept iterating long enough, we would eventually crack the puzzle of how to create a product customers truly loved and were willing to pay for.\n\nEventually, I was forced to confront a question I could no longer avoid:\n\nWas Ensibuuko truly changing lives - or were we just building something that was merely good to have?\n\n### When Infrastructure Isn\u2019t Enough\n\nFor nearly eight years, we had been building a SaaS banking platform to automate the operations of community banking schemes like SACCOs and savings groups. Like many fintech founders, we believed - deeply - that fixing banking infrastructure would fix access to finance in rural communities.\n\nDigitize records. Automate processes. Replace paper with software.\n\nIt sounded logical. It felt inevitable.\n\nBut we were wrong.\n\nThose years were long. Frustrating. Painful.\n\nBecause while infrastructure matters, infrastructure alone does not unlock rural finance.\n\n### The Hard Truth About Financial Inclusion\n\nYes, paper-based records and cash-heavy operations keep formal financial services out of rural communities. Anyone who has worked closely with SACCOs and savings groups understands this reality.\n\nBut here is the uncomfortable truth:\n\nWhat is infrastructure without capital?\n\nAccess to finance, in rural, fails not just because systems are broken, but because both sides of the credit equation are broken.\n\nOn the supply side, financial institutions struggle with risk, cost, data gaps, and trust. On the demand side, rural communities operate in volatile, informal environments that mainstream finance was never designed for.\n\nRural finance is far more complicated than the popular metaphor of \u201cbuild the road.\u201d\n\nYou must also bring the cars. And fuel the cars. And make sure the drivers know where they are going.\n\n### The Decision That Changed Everything\n\nIn 2022, we made a hard decision - one that fundamentally reshaped our company.\n\nWe would stop building just technology.\n\nWe would fix the tech and distribu",
+    "title": "I Spent 12 Years Building Rural Fintech. Here\u2019s What Actually Matters.",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.323139+00:00",
+    "pain_point_signals": [
+      "But here is the uncomfortable truth:  What is infrastructure without capital?  Access to finance, in rural, fails not just because systems are broken, but because both sides of the credit equation are"
+    ],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/bam-azizi-ceo-mesh-connect-from-credit-card-debt-raising-armaza-ynqee",
+    "author_type": "unknown",
+    "content": "Bam Azizi, CEO of Mesh Connect - From Credit Card Debt to Raising $130M, Building the Rails for a $37T Market, Executing a Wild Pivot\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nThis article is part of Fintech Leaders, a newsletter with 75,000+ builders, entrepreneurs, investors, regulators, and students of financial services. I invite you to share and sign up. If you enjoy this conversation, please consider leaving a review on Apple, Spotify, or Youtube.\n\n---\n\nIn this episode, I interview Bam Azizi, Co-Founder and CEO of Mesh Connect, a fintech infrastructure company that has transformed from a consumer-focus to a fast-growing B2B platform serving hundreds of corporate clients including Revolut, and Coinbase. After raising nearly $130 million, including a Series B closed in just one month, Mesh is now focusing on serving the stablecoin ecosystem.\n\n## In this episode, we discuss:\n\n### The rollercoaster journey from B2C to B2B and the painful but necessary pivot decisions\n\n> \"It was one of the saddest days for me that we had to let half of the team go... but at some point, you have to make sure that the ship doesn't sink, right?\"\n\nBuilding for the wrong customer forced a painful but necessary pivot. Bam Azizi's story with Mesh follows a familiar but painful pattern of several tech and fintech companies. Starting with consumer ambitions only to discover the real opportunity was in B2B infrastructure. Initially called \"Front App,\" Mesh began as a consumer platform allowing users to connect various financial accounts like Robinhood and Coinbase in one place.\n\nDespite attracting billions of dollars in connected assets, monetization proved elusive and the company found itself desperately seeking for revenue. It was at this point that they made the difficult decision to productize their infrastructure and eventually let go of nearly half the team\u2014primarily those from B2C backgrounds who couldn't transition to B2B skills.\n\nThey launched their connectivity API on Product Hunt to see if anyone would bite and the response was immediate: FIVE enterprise customers on day one. Three months later, they sunset the consumer app entirely, focusing exclusively on B2B. The pivot was both brutal and brilliant\u2014a textbook example of recognizing when you're \"barking up the wrong tree\" and making the hard decisions for survival.\n\n### Why stablecoins represent a $37 trillion opportunity",
+    "title": "Bam Azizi, CEO of Mesh Connect - From Credit Card Debt to Raising $130M, Building the Rails for a $37T Market, Executing a Wild Pivot",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.323325+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/podcast-what-really-happened-synapse-according-founder-lex-sokolin-7ylie",
+    "author_type": "business_owner",
+    "content": "Podcast: What really happened at Synapse according to Founder Sankaet Pathak?\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nWe have a very special, insightful podcast episode for you today.\n\nLex interviews Sankaet Pathak, the former CEO and founder of Synapse, and CEO and current founder of Foundation. We discuss what happened at Synapse, the issues around its bank partner Evolve and others, and the overall lessons from the BaaS space.\n\nWe recommend you read the fill transcript below as it will be a learning opportunity for the entire industry. We welcome feedback and comments on what is likely to be an eye-opening conversation. Our goal was to highlight the relevant issues for all to see and avoid similar contagion in the future. We appreciate Sankaet\u2019s willingness to share his perspective.\n\nFor those that want to subscribe to the podcast in your app of choice, you can now find us at Apple, Spotify, or on RSS.\n\n### What really happened at Synapse?:\n\nLex Sokolin: Hi everybody, and welcome to today's conversation. We have with us Sankaet Pathak, who is the CEO and founder of Foundation as well as the former CEO and founder of Synapse. And we are going to explore what happened with Synapse, with the banking as a service industry as a whole and try to learn from everyone's experience. Sankaet, thank you so much for having this conversation with me.\n\nSankaet Pathak: Yeah. Thanks for having me.\n\nLex Sokolin: So things are going to get super complicated, I expect so let's just start with the foundation. What was Synapse?\n\nSankaet Pathak: I started Synapse before the whole banking as a service, as the term or phrase even existed. To me, Synapse was building out the infrastructure for financial services because at the core of it, my personal experience was the financial services was not accessible to a huge majority of people, especially if you were credit-invisible financial services just weren't working for you. And initially my goal was to build something similar to what Revolut is now, but I quickly realized that the underlying technology just didn't exist. So started spending a lot of my time building out the core foundations of onboarding, so computer vision, government ID verification, then payment processing, then mentoring. And then what most people what most people know Synapse of which was like 2017, 2018 post was this API layer for banking. So, at the core of",
+    "title": "Podcast: What really happened at Synapse according to Founder Sankaet Pathak?",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.323423+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/how-baas-company-grew-5x-face-fintech-freeze-tanya-kabuya-1mhlf",
+    "author_type": "unknown",
+    "content": "How to Scale a BaaS Business: Proven Strategies for Growth\nLinkedIn and 3rd parties use essential and non-essential cookies to provide, secure, analyze and improve our Services, and to show you relevant ads (including**professional and job ads**) on and off LinkedIn. Learn more in our[Cookie Policy](https://www.linkedin.com/legal/cookie-policy).\nSelect Accept to consent or Reject to decline non-essential cookies for this use. You can update your choices at any time in your[settings](https://www.linkedin.com/mypreferences/g/guest-cookies).\nAcceptReject\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/how-baas-company-grew-5x-face-fintech-freeze-tanya-kabuya-1mhlf&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/how-baas-company-grew-5x-face-fintech-freeze-tanya-kabuya-1mhlf&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedi",
+    "title": "How a BaaS Company Grew 5x in the Face of a Fintech Freeze",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.323584+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/i-built-right-product-still-shut-down-winding-fimio-inc-omoju-miller-xzjoc",
+    "author_type": "business_owner",
+    "content": "I Built the Right Product and Still Shut It Down: Winding Down Fimio, Inc\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nAfter 4 years of building, I've made the decision to wind down Fimio, Inc., the AI infrastructure company I founded in 2022.\n\nFirst, I want to thank my investors for believing in me and backing this journey. I'm grateful for your trust, and I'm proud that we were able to return remaining capital rather than burn through it.\n\nWhen I left GitHub, I wasn't sure what was next. In the language of Jim Collins in \"What to Make of a Life,\" I was facing a cliff. I had been pushing hard for 16 years straight, driven by an inner fire to survive and build something of myself. Instead of sitting in the fog, I plowed headlong into what I thought was next: founding a venture-backed startup.\n\nI love building. And through building Fimio, I learned a few things about myself that I hadn't fully recognized before:\n\n1. I really REALLY believe in permissionless systems.\n2. I believe die-hard in open source.\n3. I love builders.\n\nI started Fimio to focus on web3 security, then took my infrastructure learnings and pivoted post-SBF into AI infrastructure (sandboxed inference deployments). What I was building turned out to be exactly what the world needs now.\n\nSo I should have been thrilled. But I wasn't.\n\nThe building and shipping part lit me up. The selling did not. I had designed something beautifully suited for enterprises, which meant founder-led enterprise sales. And that work (spending most of my time with the buyer not the user, the long cycles, the focus on closing a deal instead of shipping a product) ran against everything that energizes me. I fell into the classic trap of the highly technical founder: build something great, then discover the go-to-market motion requires becoming someone you're not.\n\nInstead of forcing it, I chose to be honest with myself. I shut it down, returned cash to my investors, and stepped back to learn more about who I am and how I'm wired; so that next time, I can build something where the entire journey, not just the product, aligns with my strengths.\n\nTo every founder wrestling with a similar tension: it's not failure to recognize misalignment. It's clarity. And clarity is the most valuable thing you can carry into whatever comes next.\n\nOnward.\n\nTo view or add a comment, sign in\n\n## More articles by Omoju Miller\n\nMay 8, 2025\n\n### In",
+    "title": "I Built the Right Product and Still Shut It Down: Winding Down Fimio, Inc",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.323679+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/plaids-zach-perret-developing-infrastructure-fintech-ecosystem-cohen-q1sxe",
+    "author_type": "unknown",
+    "content": "Plaid\u2019s Zach Perret on developing fintech infrastructure \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n` `` `` `` `` `` `` `\n\n \n\n \n\n \n\n` `` `` `` `` `` `` ` \n\n \n\n ` `` `` `` `\n\n \n\n \n\n \n\n \n\n \n\n> \u201cEventually, we realized that we were really on a losing path on the consumer side. So [we] made the pivot to building this B2B product. that for me was the kernel of insight of \u201cyou gotta listen to your users.\u201d You gotta listen to your customers \u2013 because it was our early customer that caused us to do this pivot that landed on the right business model.\u201d \n\n \n\nToday, it\u2019s easy to take for granted the ease with which we can perform all kinds of financial transactions on our smartphones. Several years ago, this was not the case. Plaid played a key role in shaping this digital financial transformation. \n\n \n\nIn this episode of Building One, we explore Plaid with Zachary Perret , its CEO and co-founder. Zach started building fintech as a personal passion. In the decade since its founding, Plaid has tremendously worked to modernize the financial industry and reduce the friction within it. \n\n \n\nGiven how transformational Plaid has been as a B2B product, it\u2019s amazing that the company started with a totally different B2C model that failed. Zach is very candid about early missteps and crucial lessons he\u2019s still learning amid Plaid\u2019s great success. One of the things I was most struck by in our conversation is how Zach\u2019s inquisitive nature naturally dovetails with a learning mindset. \n\n \n\n \n\nHere are some of my favorite takeaways from our conversation: \n\n \n\n### Knowing where to find empathy \n\n \n\n> \u201cThe reason that we failed on the consumer side is because we didn't have the right level of customer empathy, and the reason that we were able to be successful at the beginning with Plaid is because we had a high degree of empathy with our B2B customers, with our developer customers.\u201d \n\n \n\nThe best source of empathy in building products is self-empathy. Empathy can be a bit of an overused term, but it all comes down to knowing and even feeling the experience of others\u2026or yourself. At first, Zach and his cofounder struggled to build consumer-oriented finance apps\u2026apps that, it turned out, consumers didn\u2019t want. But when they switched to catering to businesses instead, that flipped. Zach and his co-founder deeply understood the pain points of the fintech business community, because - they too",
+    "title": "Plaid\u2019s Zach Perret on developing fintech infrastructure",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.323853+00:00",
+    "pain_point_signals": [
+      "Zach and his co-founder deeply understood the pain points of the fintech business community, because - they too"
+    ],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/lesaka-building-africas-leading-fintech-publicly-traded-armaza-tfrae",
+    "author_type": "unknown",
+    "content": "Lesaka - Building Africa's Leading Fintech as a Publicly Traded Company, with Ali Mazanderani\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nThis article is part of Fintech Leaders, a newsletter with 90,000+ builders, entrepreneurs, investors, regulators, and students of financial services. I invite you to share and sign up. If you enjoy this conversation, please consider leaving a review on Apple, Spotify, or Youtube.\n\n---\n\nI sat down with Ali Mazanderani, Chairman of Lesaka, a nasdaq traded, leading fintech in Southern Africa with over $400 million in revenue and 2 million active customers. Ali is a fintech veteran investor and builder, who\u2019s been closely involved with several multi-billion dollar fintechs in emerging markets, including Stone, Pine Labs, Kushki, Thunes and is also a co-founder of Teya.\n\nWe discussed why Southern Africa is one of the most exciting fintech opportunities in the world, how Lesaka is turning 120,000 merchants from cash-only to digital, the strategy behind acquiring Bank Zero, and why being a publicly traded company is a feature, not a bug.\n\n## Why Africa\u2019s Biggest Fintech Opportunity Is Just Getting Started\n\nAli Mazanderani has spent two decades investing in fintech revolutions across emerging markets, from Brazil to India to the Middle East. He backed StoneCo before it was a household name, sat on the board of Network International, and led an investment into Pine Labs. When he decided to stop investing and start building, he chose Southern Africa, a market most global investors have largely ignored.\n\nThe conventional assumption is that South Africa, as the continent's most industrialized economy, would be its fintech leader. It\u2019s actually the opposite. To give you an idea, in Brazil and Egypt, the market cap of the four largest fintechs has reached roughly 30% of the market cap of the four largest banks. In South Africa, that figure is just 5%. South African electronic payments have gone from representing essentially zero of all merchant transactions to only about 10%, meaning 90% of South African merchants still do not accept a single digital payment. These figures define Lesaka\u2019s bullish thesis.\n\nAccording to Ali, three factors explain the lag of fintech adoption in South Africa:\n\n1. Regulators historically prioritized financial stability over innovation, though they have begun to change course after watching what happened in Bra",
+    "title": "Lesaka - Building Africa's Leading Fintech as a Publicly Traded Company, with Ali Mazanderani",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.324040+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/building-500k-neobank-immigrants-startup-post-mortem-dmitry-prostov-hp3lf",
+    "author_type": "unknown",
+    "content": "Building a \u20ac500K Neobank for Immigrants: A Startup Post-Mortem\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/building-500k-neobank-immigrants-startup-post-mortem-dmitry-prostov-hp3lf&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/building-500k-neobank-immigrants-startup-post-mortem-dmitry-prostov-hp3lf&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\nLinkedIn\nLinkedIn is better on the app\nDon\u2019t have the app? Get it in the Microsoft Store.\n[Open the app](ms-windows-store://pdp/?ProductId=9WZDNCRFJ4Q7&amp;mode=mini&cid=guest_desktop_upsell)\n``````````````[Skip to main content](#main-content)\n````````\n![Building a \u20ac500K Neobank for Immigrants: A Startup Post-Mortem](https://media.",
+    "title": "Building a \u20ac500K Neobank for Immigrants: A Startup Post-Mortem",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.324206+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/yselik_i-knew-my-brand-was-dead-three-months-before-activity-7440210469975666689-SGm1",
+    "author_type": "unknown",
+    "content": "CPG founder's honest failure: ignoring the numbers | Yuval Selik posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# CPG founder's honest failure: ignoring the numbers\n\nThis title was summarized by AI from the post below.\n\n1mo\n\nI knew my brand was dead three months before I admitted it. The spreadsheet said it. I just didn't want to read it. Every week I'd open the cash flow model. Every week I'd find a reason to believe next month would be different. \"We just need that reorder from Whole Foods.\" \"The new buyer will get it.\" \"Once we hit velocity targets, the math works.\" The math never worked. Here's what I was actually doing: Paying for inventory I couldn't move. Running promos that bled margin to hit velocity I couldn't sustain. Telling my co-founder \"we're close\" while watching the runway shrink. The product was good. People who used it LOVED it. But love doesn't pay invoices. What killed my CPG brand L'uvalla wasn't competition. It wasn't the product. It wasn't even bad retail partners. It was me refusing to look at the numbers and make a decision. I kept optimizing a business model that was already broken. The hardest part? I still believed in what we were building. Helping people get healthier skin felt meaningful. It was the most fulfilling work I'd ever done. But fulfillment doesn't fix negative gross margin. If I could go back: \ud835\udfed. \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddfb\ud835\ude02\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddff\ud835\uddf2\ud835\uddfb'\ud835\ude01 \ud835\uddf9\ud835\ude06\ud835\uddf6\ud835\uddfb\ud835\uddf4. \ud835\uddec\ud835\uddfc\ud835\ude02 \ud835\uddee\ud835\uddff\ud835\uddf2. If you have to squint at the spreadsheet to make it work, it doesn't work. \ud835\udfee. \ud835\uddec\ud835\uddfc\ud835\ude02 \ud835\uddf0\ud835\uddee\ud835\uddfb \ud835\uddf9\ud835\uddfc\ud835\ude03\ud835\uddf2 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddfa\ud835\uddf6\ud835\ude00\ud835\ude00\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\ude00\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf9 \ud835\uddf8\ud835\uddf6\ud835\uddf9\ud835\uddf9 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddef\ud835\ude02\ud835\ude00\ud835\uddf6\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\ude00. Passion without margin is an expensive hobby. \ud835\udfef. \ud835\udde6\ud835\uddf2\ud835\ude01 \ud835\uddee \ud835\uddf8\ud835\uddf6\ud835\uddf9\ud835\uddf9 \ud835\uddf1\ud835\uddee\ud835\ude01\ud835\uddf2 \ud835\uddef\ud835\uddf2\ud835\uddf3\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\ude06\ud835\uddfc\ud835\ude02 \ud835\uddfb\ud835\uddf2\ud835\uddf2\ud835\uddf1 \ud835\uddfc\ud835\uddfb\ud835\uddf2. Decide in advance: \"If X doesn't happen by Y, I'm out.\" The clarity saves you from yourself. That failure taught me more about CPG than any success ever could. Now at Promomash, I see founders in the same fog I was in. Good products. Bad math. Hope as a strategy. The ones who survive aren't the ones with the best product. They're the ones who read the spreadsheet and make the hard call before the spreadsheet makes it for them. What's the decision you're avoiding right now? \u2795 Follow Yuval Selik for CPG truth most founders learn too late.\n\nDaniel Lohman, CPSA 1mo\n\nGreat post Yuval Selik I am a firm believer that starting with spreadsheets is the key to suc",
+    "title": "CPG founder's honest failure: ignoring the numbers | Yuval Selik posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.324372+00:00",
+    "pain_point_signals": [
+      "If you have to squint at the spreadsheet to make it work, it doesn't work",
+      "I kept optimizing a business model that was already broken"
+    ],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/unicorns-awesome-unless-you-pick-wrong-one-joel-wright",
+    "author_type": "unknown",
+    "content": "Unicorns Are Awesome, Unless You Pick the Wrong One!\nLinkedIn and 3rd parties use essential and non-essential cookies to provide, secure, analyze and improve our Services, and to show you relevant ads (including**professional and job ads**) on and off LinkedIn. Learn more in our[Cookie Policy](https://www.linkedin.com/legal/cookie-policy).\nSelect Accept to consent or Reject to decline non-essential cookies for this use. You can update your choices at any time in your[settings](https://www.linkedin.com/mypreferences/g/guest-cookies).\nAcceptReject\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/unicorns-awesome-unless-you-pick-wrong-one-joel-wright&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/unicorns-awesome-unless-you-pick-wrong-one-joel-wright&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy",
+    "title": "Unicorns Are Awesome, Unless You Pick the Wrong One!",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.324558+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/kyb-vendor-landscape-why-i-left-in-house-build-what-couldnt-upton-voc4e",
+    "author_type": "operator",
+    "content": "The KYB Vendor Landscape: Why I Left In-House to Build What I Couldn\u2019t Buy\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nAn example of how manual processes quickly spiral out of control\n\nIn my last article, I shared how I moved from client support to leading global compliance in payments businesses and eventually into tech. Not because I wanted a new job title, but because I kept hitting the same wall\u2026 over and over. I knew what good KYB should look like, but I could never find a solution that actually delivered it.\n\nThis article is about that wall: the KYB vendor landscape. The promises, the gaps, the headaches and why I joined Detected to build what I had been looking for and never found.\n\n---\n\nThe Landscape Today: More Logos Than Solutions\n\nThe KYB vendor space is crowded. On the surface, it looks like you have got plenty of options with established names, shiny start-ups, tools for every acronym but scratch the surface, and most platforms fall into one of three buckets:\n\n- Single purpose tools that are great at one thing but leave your team managing five systems and praying your colour coded spreadsheet is up to date\n- Well known platforms that haven\u2019t kept up with rule engines that break as soon as your policy strays from their default\n- Fancy KYC tools rebadged as KYB, where business onboarding is treated like a solo account with extra steps\n\nWhile they might demo beautifully, they will also break down quickly when the real world shows up with nested structures, conflicting registries, or policies that don\u2019t fit in a dropdown.\n\n---\n\nThe Moment You Realise the Tools Won\u2019t Save You\n\nLet me set the scene: I was at Tipalti, running global onboarding and compliance ops. We were growing and growing fast. The kind of fast that makes your team Slack channel a mix of celebration and low-grade panic.\n\nWe needed a KYB solution that could scale with us and help us onboard multi-entity businesses across multiple jurisdictions ideally without doubling the size of the team every quarter.\n\nSo, I sat through demo after demo. Every vendor had jazzy decks, punchy taglines, and impressive logos but the minute I asked a real-world question like \u201cCan I see how this handles a corporate structure with three layers in the UAE?\u201d or \u201cCan I automate triggers based on business changes?\u201d, I\u2019d get one of two things:\n\n1. A blank stare followed by \u201cwe will add that to our roadmap\u201d\n2. A wor",
+    "title": "The KYB Vendor Landscape: Why I Left In-House to Build What I Couldn\u2019t Buy",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.324937+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/innokentyb_aml-amld6-aigovernance-activity-7447583162584584192-dwvx",
+    "author_type": "operator",
+    "content": "#aml #amld6 #aigovernance #regtech #compliance | Innokenty Bodrov\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Innokenty Bodrov\u2019s Post\n\nProduct Leader | Fintech & EdTech | AI & Data-Driven Solutions | Platform & CX Expert | 17+ yrs in Tech\n\n1mo\n\nAMLD6 made compliance officers personally criminally liable for AML failures. Then the industry handed the decisions to AI. Nobody has fully worked out what happens next. AMLD6 extended criminal liability to the individuals running compliance \u2014 the MLRO, the CCO, the Head of AML. If the program fails badly enough, it's not a fine for the institution. It's a criminal case with a name on it. At the same time, the industry has spent five years automating exactly those decisions. Alert triage. Transaction monitoring. Risk scoring. Document verification. The AI runs the first pass. Humans review what it flags \u2014 or don't, if the volume is high enough. If an AI system misses a suspicious activity report \u2014 who is criminally liable? The compliance officer who approved the threshold configuration? The vendor who built the model? The risk team that set the parameters? Right now, the answer is legally untested and everyone assumes it's someone else's problem. The counterargument is familiar: humans miss SARs too, and we don't prosecute every failure. True. But a human error is individual. An AI error is systematic \u2014 one miscalibrated threshold misses every case that pattern applies to, for as long as it runs. Regulators haven't fully adapted their accountability frameworks to this. What makes it harder is the explainability trade-off. The AI that performs best is often a black box. The AI regulators are comfortable with \u2014 auditable, explainable, defensible in a proceeding \u2014 tends to be less accurate. Performance or explainability. Most current systems make you choose. At Sumsub, we're working on both simultaneously \u2014 and that's not a comfortable position to describe, but it's the honest one. Speed and conversion: checks that take seconds, flows that don't make users feel like suspects. And auditability: every AI-assisted decision needs a paper trail the compliance officer can defend by name. Those goals are genuinely in tension. The product challenge is to move both numbers in the right direction at once \u2014 not pick one and optimise for it. The industry hasn't solved this. Regulators haven't caught up. That conversation needs to ha",
+    "title": "#aml #amld6 #aigovernance #regtech #compliance | Innokenty Bodrov",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325067+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/dont-worry-compliance-stack-looks-like-built-c-arik-oslerne-jeuxe",
+    "author_type": "business_owner",
+    "content": "\"Don't worry, their Compliance stack looks like it was built in C++\"\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nI started my career in Financial Services with a realist view of the financial world - the goal is to make money. After the Global Financial Crisis (GFC), things changed A LOT - the pendulum swung towards regulatory controls and stricter financial scrutiny, which left people confused if the goal was to make money or to protect consumers and markets. Many financial professionals lost hope, quit the trading floor and saw compliance as a more lucrative career. More on that below.\n\nIn practice, the regulatory burden has been spiralling for a while, and Europe has been leading the pack. Since 1991, Europe has introduced six, yes 6, Anti Money Laundering Directives that aim to combat the changing game of financial crime.\n\nRegulations have also been a money spinner for Regulators, with fines globally hitting over$55bn since the GFC, with the US being the biggest benefactor with $37bn of fines distributed, and European at $11bn. Maybe a lesson for Europe - it isn\u2019t the number of Directives that counts.\n\n### How do you spend $213M on Compliance\n\nThe result of this has meant firms have had to bulk up their compliance costs, particularly in KYC/AML. After Binance was recently fined $4bn in the US for AML breaches, they quickly introduced further controls taking their annual compliance costs to $213M.\n\nHow on earth you reach $213M in compliance costs may sound mind-boggling, but I\u2019ll try to break down the two big components of this:\n\n- People\n\nA lot of people. So many people you forget why you bothered calling yourself a FinTech. People reviewing documents, remediating, analysing cases, writing reports\u2026There is a concept in Compliance called 4-eyes review, this means two sets of eyes need to look at every onboarding. This broadly translates to what ever you are paying, double the cost.\n\n- AML Compliance Software\n\nToday the amount of data you need to analyse is unsurmountable. In the past regulators would give compliance teams a waiver for what they call a \u201cRisk-Based\u201d approach. This means focus your energies on higher risks and let the lower level risks solve themselves.\n\nHowever, this mindset has since shifted to \u201cIf you don\u2019t have manpower, then get software to help you.\u201d This isn\u2019t an ask, it is an absolute. Regulators will scrutinise your compliance software",
+    "title": "\"Don't worry, their Compliance stack looks like it was built in C++\"",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325167+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/compliance-team-isnt-slowing-you-down-your-process-naehas-ibw0e",
+    "author_type": "unknown",
+    "content": "The Compliance Team Isn't Slowing You Down. Your Process Is. \n\n \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n` `` `` `` `` `` `` `\n\n \n\n \n\n \n\n \n\n` `` `` `` `` `` `` ` \n\n \n\n ` `` `` `` `\n\n \n\n \n\n \n\n \n\n---\n\n \n\nCompliance and marketing have never operated on the same timeline inside a financial institution. In a stable rate environment, that friction was manageable. In the environment banks are navigating now, it is not. This edition of Naehas Navigator is about what the institutions that resolved it did first. \n\n \n\n### $175 Billion in Rate Cuts \n\n \n\nThe Federal Reserve cut rates by a combined 175 basis points across 2024 and 2025. Banks entered 2026 facing headwinds in net interest income while competition for deposits remains intense, particularly among regional institutions. Consumers are more attentive to rate than they have been in years. The window to act is real, and it is compressed. \n\n \n\nMost institutions have the strategy. Few have the infrastructure to execute it at the speed the market now requires. Product launches still move through manual review cycles. Disclosures still require weeks of coordination. A decision gets made in a boardroom and stalls somewhere between legal, marketing, and product before it ever reaches a customer. \n\n \n\nThe institutions differentiating themselves right now are not doing so on rate alone. They are the ones where a product decision made on Monday reaches a customer on Thursday. \n\n \n\n---\n\n \n\n### A $215 Billion Bank Evaluated Every Major Vendor \n\n \n\nA $215 billion institution evaluated every major platform in this space before making a selection. The criteria reflected something most RFPs fail to surface: whether a platform could support the actual workflow at scale, without making engineering a dependency for routine changes. \n\n \n\nThe institution had been repeatedly rebuilding the same base products. Every pricing modification and disclosure update required a separate development project. The business had a strategy. The infrastructure could not keep pace with it. \n\n \n\nFour things determined the outcome: integrated product, pricing, and disclosure management in a single environment; customization demonstrated live rather than promised on a roadmap; governance controls that preserved compliance without adding friction; and an API-first architecture aligned with how modern institutions operate. \n\n \n\nNaehas was selected. With ",
+    "title": "The Compliance Team Isn't Slowing You Down. Your Process Is.",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325341+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/anatomy-risk-fintech-adapting-speed-complexity-allan-lloyds-67bdf",
+    "author_type": "unknown",
+    "content": "The Anatomy of Risk in FinTech: Adapting to Speed and Complexity\nAgree & Join LinkedIn\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n````````````\n![]()## Sign in to view more content\nCreate your free account or sign in to continue your search\nSign in\n## Welcome back\n````````````````````\nEmail or phone\nPassword\nShow\n[Forgot password?](https://www.linkedin.com/uas/request-password-reset?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_forgot_password)Sign in\nor\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=pulse-article_contextual-sign-in-modal_sign-in-modal_auth-button_cookie-policy).\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/anatomy-risk-fintech-adapting-speed-complexity-allan-lloyds-67bdf&trk=pulse-article_contextual-sign-in-modal_sign-in-modal_join-link)\nor\nNew to LinkedIn?[Join now](https://www.linkedin.com/signup/cold-join?session_redirect=/pulse/anatomy-risk-fintech-adapting-speed-complexity-allan-lloyds-67bdf&trk=pulse-article_contextual-sign-in-modal_join-link)\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s[User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement),[Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and[Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\nLinkedIn\nLinkedIn is better on the app\nDon\u2019t have the app? Get it in the Microsoft Store.\n[Open the app](ms-windows-store://pdp/?ProductId=9WZDNCRFJ4Q7&amp;mode=mini&cid=guest_desktop_upsell)\n``````````````[Skip to main content](#main-content)\n````````\n![The Anatomy of Risk in FinTech: Adapting to Speed and Complexity](https://media.licdn.com/dm",
+    "title": "The Anatomy of Risk in FinTech: Adapting to Speed and Complexity",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325506+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/md-shoaib-7baa491aa_when-your-kyc-risk-categorization-api-fails-activity-7437271160502915072-fVxU",
+    "author_type": "unknown",
+    "content": "KYC Risk API Failure: Silent Compliance Gaps | Md Shoaib posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# KYC Risk API Failure: Silent Compliance Gaps\n\nfounder & CEO\n\n2mo\n\nWhen Your KYC Risk Categorization API Fails During High-Risk Monitoring **KYC Risk API Failure: The Silent Compliance Gap** Your KYC API flags high-risk accounts, but the monitoring layer fails to escalate. This creates 72-hour audit gaps where no enhanced due diligence occurs - a regulatory nightmare. **What Failure Means** System decoupling: API correctly categorizes \"high-risk,\" but workflows for manual review, screening, and source-of-funds checks don't trigger. Cases drop silently into default queues. **Under Audit & Volume Pressure** Categorization latency spikes cause monitoring to evaluate stale/null risk scores. Manual \"batch re-runs\" create un-auditable parallel processes with new compliance gaps. **Breaking Assumptions** Assuming API output is complete risk signal ignores real-time data feed dependencies (PEP lists, sanctions, adverse media). Downtime creates verification drift only discovered during audits. **Solutions** Internal fixes work only for integration issues. For monitoring logic failures (jurisdiction-specific rules), redesign decisioning layers. Multi-source verification platforms become requirements, not enhancements. **Key Issues** - API latency from synchronous external calls - Silent failures in asynchronous webhooks - Audit timestamp correlation reveals gaps - Jurisdiction-specific rule application failures **Critical Takeaway**: When categorization works but monitoring fails, you face procedural compliance failures regardless of technical causes.\n\nTo view or add a comment, sign in\n\nFraud Prevention & FinCrime Compliance | Product Marketing and Strategy Leader | AI-First Platform Advocate |Thought Leadership\n\n1mo\n\nKYC remediation backlogs are one of the most common recurring themes in regulatory enforcement actions. Not novel risk typologies. Not sophisticated evasion techniques. Outdated customer data. The FCA, FinCEN, and regulators globally have made this pattern explicit: remediation programs that stall, slip, or never operationalise at scale are treated as control failures. And control failures invite consent orders, MRAs, and the board-level scrutiny that follows. The gap between policy and execution is where most programs break d",
+    "title": "KYC Risk API Failure: Silent Compliance Gaps | Md Shoaib posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325672+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/yanaafanasieva_your-compliance-tools-are-working-against-activity-7450815564710760448-waY5",
+    "author_type": "business_owner",
+    "content": "Fintech Compliance Tools: Choosing the Right Ones | Yana Afanasieva posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Fintech Compliance Tools: Choosing the Right Ones\n\nThis title was summarized by AI from the post below.\n\n2w\n\nYour compliance tools are working against you, and you might not even know it. I've watched fintech teams waste thousands of dollars and thousands of hours on tools that are supposed to make them faster. Instead, they make them slower. More frustrated. Less effective. Here's what's actually happening: 1\ufe0f\u20e3 Around 50% of new customers will never or barely transact. Yet if your team reviews every new account in the order they sign up, you're burning up to half of your compliance capacity on customers who don't matter. Imagine what you could do with that capacity back. 2\ufe0f\u20e3 80-90% of monitoring alerts are duplicates or false positives. Your team spends hours reviewing and dismissing them. You're paying vendors for noise and paying your team to clean it up. That's a choice. It doesn't have to be. 3\ufe0f\u20e3 How often do you already know a customer isn't viable, but still send follow-up questions and review predictable, low-quality responses? You're creating work that doesn't exist. What if you knew exactly when to follow up and when to offboard immediately? This is what smart, risk-based tools look like. Not tools that create work. Tools that eliminate it. I created a FREE Compliance Tools Selection Guide that shows you exactly how to choose and fine-tune tools that actually work for your team, not against them. It doesn't promote any specific vendor. It's a step-by-step manual for any fintech, startup to scale-up, to build a compliance tech stack that's smarter, cheaper, and actually risk-based. Download it here and stop burning resources on the wrong reviews: https://lnkd.in/dhJuGmu Your team deserves tools that help them do their best work. This guide will show you how to find them.\n\nTo view or add a comment, sign in\n\n3w\n\nFor most of my career, compliance was the guardrail. The necessary constraint. The thing you built around, not for. That changed when I joined PerformLine. I've spent 25+ years in FinTech and financial services \u2014 trading platforms, wealth management, treasury and payments businesses. I thought I had a reasonably clear picture of what compliance meant for the institutions I worked with and competed alongs",
+    "title": "Fintech Compliance Tools: Choosing the Right Ones | Yana Afanasieva posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325792+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/addressing-key-compliance-challenges-cross-border-payments-treasury-epvbc",
+    "author_type": "unknown",
+    "content": "Addressing Key Compliance Challenges in Cross-Border Payments & Treasury Management with 3S Approach - Speed, Security, and Scalability: \n\n \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n` `` `` `` `` `` `` `\n\n \n\n \n\n \n\n` `` `` `` `` `` `` ` \n\n \n\n ` `` `` `` `\n\n \n\n \n\n \n\n \n\nBy Anthony Yeoh, CAMS, CCI , Chief Compliance Officer of Finmo \n\n \n\nThe fintech and payments industry thrives on speed, from instant payments to real-time fraud detection. Yet, with increasing regulatory scrutiny and evolving financial crimes, emerging companies must also prioritize security and scalability to sustain growth. How can compliance teams ensure that effective risk management keeps pace with innovation without becoming a bottleneck? \n\n \n\nAs compliance leaders, we are not just gatekeepers \u2014 We enable sustainable, secure, and scalable growth of the firms we are in. Let\u2019s take a look to see how we can strike this delicate balance: \n\n \n\n### 1. Speed: The Competitive Edge That Compliance Must Support \n\n \n\n### The Challenge \n\n \n\nFintechs and payment companies differentiate themselves through speed. Seamless onboarding, rapid transactions, and instant cross-border settlements are some of the key offerings that differ from what clients are used to from large financial institutions. However, compliance requirements are often seen as a barrier, with lengthy due diligence and regulatory checks, leading to delays in go-to-market strategies. \n\n \n\n### The Solution \n\n \n\nSmart automation and risk-based decisions can help compliance teams match the need for speed without compromising integrity. At Finmo , we are supporting speedy client onboarding and critical merchant activities with the following elements: \n\n \n\n- AI-Driven KYC & KYB: Implementing AI-enhanced identity verification can reduce onboarding time from days to hours, if not minutes, vastly improving customer experience while meeting regulatory standards. \n- Real-Time Transaction Monitoring: Versatile and highly configurable rules, coupled with Machine Learning (ML) models can identify suspicious activities in real-time, eliminating batch-based reviews that slow down transactions. \n- Product-Compliance Integrations: Embedding compliance controls directly into the payment workflows enables compliance at the speed of business, rather than as a roadblock. \n\n \n\n \n\nKey Takeaway: Compliance must evolve from static, manual checks to real-time, ris",
+    "title": "Addressing Key Compliance Challenges in Cross-Border Payments & Treasury Management with 3S Approach - Speed, Security, and Scalability:",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.325969+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/bhavin-shah-truenorth_compliance-regulatoryintelligence-financialservices-activity-7462419308309032961-o9Bs",
+    "author_type": "business_owner",
+    "content": "Compliance Failures: A Gap in Regulatory Knowledge | Bhavin Shah posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Compliance Failures: A Gap in Regulatory Knowledge\n\nFounder & CEO, Sherlocq - AI Regulatory Intelligence Platform | INED & Board Member, Regulated Financial Institutions | WEF Young Global Leader\n\n5d Edited\n\nI have sat in rooms where careers ended because of a compliance failure. Not fraud. Not misconduct. A gap in regulatory knowledge that nobody caught in time. A sanctions check that missed a designation. A policy that had not been updated to reflect a regulatory change that happened six months earlier. The fine was not the worst part. The worst part was watching someone who had spent 25 years building a reputation, a genuinely good professional, carry the weight of something that better information would have prevented. This is what people do not say loudly enough about compliance failures: they are rarely the result of bad intent. They are almost always the result of impossible workloads, fragmented information, and research processes that have not changed in a decade. A compliance team at a mid-sized bank is expected to monitor regulatory developments across multiple jurisdictions, maintain policy frameworks, manage audits, support the business, and stay current on enforcement trends simultaneously with lean resources. The information exists. It is just scattered across regulator websites, consultation papers, guidance notes, and legal databases that nobody has time to read in full. That gap, between the information that exists and the information that reaches the right person at the right time, is where careers end. Where fines land. Where reputations collapse. I spent 20 years watching it happen. And I became convinced that the problem was never the people. It was the tools they were given to do an impossible job. That is the problem I built Sherlocq to solve. If you are navigating this environment, Sherlocq exists to change that. Try it free: https://www.sherlocq.ai/#Compliance#RegulatoryIntelligence#FinancialServices#AI\n\nSenior Compliance Executive | Global AML/CFT, Risk & Governance Leader | Advising Boards & CEOs on Enterprise Regulatory Strategy\n\n5d\n\nBook marking sherlockq.ai to try. Only recently during an audit, a requirement was raised that required a filing with the FIU which I was not previously aware had",
+    "title": "Compliance Failures: A Gap in Regulatory Knowledge | Bhavin Shah posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.326073+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/andrearegister_after-13-years-in-payments-analytics-with-activity-7444776169528291329-p1kV",
+    "author_type": "unknown",
+    "content": "Payments Revenue Operating System Built with Claude AI | Andrea Register posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Payments Revenue Operating System Built with Claude AI\n\nThis title was summarized by AI from the post below.\n\n1mo\n\nAfter 13 years in payments analytics with the last four as Director at Boku, I spent the past several weeks building something I've wanted to exist for a while. A payments revenue operating system. Built entirely with Claude as a coding partner. No engineering team. No agency. Just a clear problem, a lot of iteration, and an AI that could write HTML, JavaScript, and CSS faster than I could review it. The result is a full portfolio site with seven interactive tools built from the analytical framework I used to recover $100M+ in revenue and 50,000+ subscribers from passive churn across 60+ markets. The tools aren't demos. They're working decision systems: \u2014 Payments Stack Audit: 7-module diagnostic that scores your payment stack and generates a ranked capital allocation plan \u2014 Billthrough Simulator: models revenue impact net of retry fees, with full P&L and EBITDA output \u2014 Decline Classifier: categorizes failures as retryable, actionable, or terminal before you build retry logic \u2014 Issuer Performance Scorecard: surfaces which issuers are driving authorization changes and why \u2014 Anomaly Detector, Payments Q&A, Cohort Revenue Modeler I also wrote two articles on the payments problems most teams are measuring incorrectly. The core argument: billthrough is the metric. Authorization rate is an input. The delta between them is where material revenue is lost and most businesses can't see it because it's uncategorized. I'm actively exploring my next role leading payments analytics or revenue systems at a subscription business. If that's a conversation worth having, I'd love to connect. Link in comments.\n\nAwesome. Love seeing AI being used as an accelerator for both diagnosis and problem-solving. Nice work!\n\nReply 1 Reaction 2 Reactions\n\nTo view or add a comment, sign in\n\n1mo\n\nOver the past few weeks, I\u2019ve been building wittycocker.com in my free time\u2014a project focused on modeling real (inflation-adjusted) returns and helping users make more grounded financial decisions. From a technical perspective, this was an opportunity to step outside my usual stack and experiment with other tools (especially AI tools) Swipe ",
+    "title": "Payments Revenue Operating System Built with Claude AI | Andrea Register posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.326244+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/md-shoaib-7baa491aa_privacy-first-kyc-architecture-failing-under-activity-7435927338049073153-gBM-",
+    "author_type": "unknown",
+    "content": "Privacy-First KYC Architecture Failing Under Global Compliance Audits | Md Shoaib posted on the topic | LinkedIn\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Privacy-First KYC Architecture Failing Under Global Compliance Audits\n\nThis title was summarized by AI from the post below.\n\n2mo\n\nPrivacy-First KYC Architecture Failing Under Global Compliance Audits # Privacy-First KYC Architecture Failing Under Global Compliance Audits Privacy-first KYC systems can fail during regulatory audits, turning compliance architecture into risk sources. Verification failures cause complete workflow halts, creating backlogs that auditors flag as control gaps. ## Audit Pressure & System Failure Under pressure, teams bypass privacy layers, exposing raw PII in logs and tickets - violating principles and creating evidence trails of non-compliance. The core mistake: assuming tokenization removes dependencies. When primary government ID databases fail, privacy-first pipelines fail silently, approving nothing. ## Systemic Issues & Solutions Internal fixes often stop at source integration boundaries. Systems needing fallback logic across multiple verification sources without breaking privacy promises require redesign. Multi-source verification coordination is critical - a function specialized platforms manage. ## Key Audit Risks - \\*\\*Latency\\*\\*: First sign of privacy gateway retrying against unresponsive sources - \\*\\*Audit Failure\\*\\*: Can't trace verification to authoritative sources due to architectural obfuscation - \\*\\*High Volume\\*\\*: Queues form, timeouts increase, manual review creates fraud risk ## Solution Approach If failures stem from source dependencies \\(not code\\), rebuilding won't help. Need systems designed for source failure, often requiring specialized verification layer integration. \\*Privacy-first KYC must balance data protection with reliable verification to survive compliance audits.\\*\n\nOkay\n\nTo view or add a comment, sign in\n\n2mo Edited\n\nThe mistake is thinking KYC fails at the verification step. It usually fails at the storage step. I keep seeing the same framing: people argue about whether platforms should verify users at all, as if the only choices are full document collection or no checks. That misses the real design problem. A lot of legacy KYC stacks still work by copying highly sensitive identity data into more databases, more vendors, and more long-live",
+    "title": "Privacy-First KYC Architecture Failing Under Global Compliance Audits | Md Shoaib posted on the topic | LinkedIn",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.326670+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/pvolnov_two-weeks-ago-we-publicly-launched-hevn-activity-7460589984492789761-vGli",
+    "author_type": "unknown",
+    "content": "Two weeks ago, we publicly launched HEVN, inc Since then, we\u2019ve opened 81 bank accounts across banks in the UAE, US, and EU for 20+ companies. Dozens more companies are currently in the onboarding\u2026 | Peter Volnov | 25 comments\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Peter Volnov\u2019s Post\n\n1w\n\nTwo weeks ago, we publicly launched HEVN, inc Since then, we\u2019ve opened 81 bank accounts across banks in the UAE, US, and EU for 20+ companies. Dozens more companies are currently in the onboarding process. It could be more, but right now we spend 3\u20134 hours per customer on calls, onboarding, compliance requests, collecting additional documents, and negotiations with banks and partners. What\u2019s even worse is that the feedback loop from banking partners takes days for each request, and we\u2019ve already lost several companies because we weren\u2019t moving fast enough. Last 2 weeks was crazy. Operations are starting to pile up quickly, and we need to fix a lot of internal processes, but I\u2019m genuinely happy for every company we\u2019ve helped.\n\nWhat\u2019s interesting here is that the challenge no longer looks like \u201cbanking,\u201d it looks like workflow orchestration at scale. Once onboarding volume increases, the real bottleneck becomes coordination between compliance, document collection, customer communication, partner-bank follow-ups, and internal ops. Feels like a very strong real-world use case for agentic AI systems internally, especially for onboarding pipelines, compliance loops, document verification, and async partner coordination. Also appreciate the honesty in sharing the operational side of growth. Most people only post the numbers.\n\nBernardo Simonassi Moura 1w\n\nHey Peter, I already dm'd you and I really think we can help.Our SLA is 24 hours for businesses. Approval really fast and RFI's through the API.\n\nReply 7 Reactions 8 Reactions\n\nStrong early traction, opening 81 accounts across UAE, US, and EU shows clear demand for streamlined cross-border banking infrastructure. At this volume, secure handling of sensitive financial documents and strict access controls across onboarding workflows become critical. Solid start, this is a high-friction space where execution speed really matters.\n\nThis is the side of scaling most people never see. From the outside, growth looks exciting. Internally, it\u2019s often operations, bottlenecks, compliance, constant process fixes, and trying to move fast e",
+    "title": "Two weeks ago, we publicly launched HEVN, inc\n\nSince then, we\u2019ve opened 81 bank accounts across banks in the UAE, US, and EU for 20+ companies. Dozens more companies are currently in the onboarding\u2026 | Peter Volnov | 25 comments",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.326843+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/high-risk-compliance-baas-correspondent-banks-vladislav-solodkiy-4eotc",
+    "author_type": "unknown",
+    "content": "High-Risk Compliance for BaaS and Correspondent Banks\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n- The regulator doesn't require you to \u2018know the Truth,\u2019 or \u2018to not make mistakes\u2019\n- No one is 100% bad or good: there's your (lack of) focus on the customer\n- No perfect KYC at onboarding will protect you from fraud\n- Compliance is about \u201cbeing trackable\u201d (the ability to trace, \u201cfollow the money\u201d)\n- Starting from January 1st, FinCEN introduced a new regulation, AMLA, which requires banks to conduct KYCC, which affects correspondent and BaaS banks the most\n\n\"Simply forget about KYC; let anyone who desires a bank account have one, and use AI/ML to track the bad actors,\" said David Birch, and he was correct. Soups Ranjan made a similar comment to me recently about working with high-risk clients - \"KYC is just the simplest part, the real interest starts afterward.\"\n\nRegulators aren't focused on the \"truth\" - what matters to them is that you've considered these types of risks. Compliance is often wrongly seen as a mechanism to differentiate good people from bad. In reality, compliance is about \"being trackable\" (the ability to trace, to \"follow the money\") through a set of dynamic parameters over time. It's vital to realize that no perfect KYC at the onboarding stage can safeguard you against fraud and scammers: only about 20% of malefactors can be caught upon registration.\n\nNo individual is wholly bad or entirely good; broadly speaking, compliance isn't about \"preventing September 11 from happening\" but rather, when something does happen, it's about \"quickly identifying who is involved.\" There's no black and white in this - it's all about focusing on the customer, understanding them, the risks they bring, and how to monitor and manage those risks effectively.\n\nEveryone has seen films where the FBI or other special services, exhausted from chasing a hacker, eventually propose they switch sides to assist in catching other hackers and criminals. So, why don't compliance departments hire individuals convicted (or currently imprisoned) for 'money laundering'? They understand compliance and can immediately spot suspicious patterns far better than any specialist. The same applies to risk and the creation of new credit products - instead of seeking advice from pampered business school graduates, who recommend stepping out of one's comfort zone while sipping 18-year-old whiske",
+    "title": "High-Risk Compliance for BaaS and Correspondent Banks",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.327010+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/pulse/interview-sarthak-goel-invoid-yc-w21-nicolae-cretu-zne5f",
+    "author_type": "business_owner",
+    "content": "Interview about Invoid\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\nDetails about Invoid from the YC startup directory\n\nInterview with the founder of Invoid, a Y Combinator startup from the W\u201921 batch. Invoid streamlined and automated individual onboarding and identity verification operations. The company's platform provided back-end services such as video, digital KYC, and document verification, enabling clients to onboard and detect fraudulent information, scale faster, and cut down on operations as well as expenses.\n\nSarthak, one of the founders of Invoid, walked us through all the early days up to the exit phase of Invoid.\n\nInvoid was a company that started with an initial investment of $10,000 and sustained on their revenue, essentially bootstrapping until the first round of investments from YC and other VCs. At their peak, they were making $200,000 MRR. It was an opportunity for them to exit, and they took that opportunity.\n\n\ud83c\udf89Invoid was acquired by Bureau ID in 2023.\ud83c\udf89\n\nEnjoy!\n\n---\n\nOriginally Posted Here:\n\n### Could you please introduce yourself and your startup?\n\nMy name is Sarthak. I co-founded a company called Invoid, where we help companies automate their KYC processes and create identity-based workflows in their onboarding journey.\n\nCompliance and KYC are fundamental for many companies. Some companies find it mandatory, while others use it for fraud checks and prevention on their platforms. We served companies across these domains.\n\nWe were probably the fastest-growing in the country, being the only developer-friendly KYC product available. Other products had become incumbent, requiring more integration time and not offering a full suite of services. Our competitive advantage was that we were full-stack and end-to-end in many cases, plus we were developer-friendly, which allowed us to serve various industries. This included fintech, banking, gaming, crypto, wealth tech, dating, and social networking. In most of these domains, KYC wasn't mandatory, but our service was easy to use and comparatively budget-friendly, which helped companies reduce fraud.\n\nWe also had a couple of proprietary AI models that we developed in-house, giving us a competitive edge. That's what Invoid did. We ran it for about 3 to 4 years before it was acquired by Bureau ID, a larger company in the same domain, funded by Octa and several VCs from India and Southeast Asia. They ar",
+    "title": "Interview about Invoid",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.327118+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  },
+  {
+    "source": "linkedin",
+    "subreddit_or_group": "linkedin",
+    "url": "https://www.linkedin.com/posts/varun-jain-stanford_the-most-common-thing-i-hear-from-early-stage-activity-7434591070287716352-y-dT",
+    "author_type": "business_owner",
+    "content": "The most common thing I hear from early-stage founders? \u201cWe spend more time on compliance than we do on product.\u201d Here's the math nobody talks about: A 15-person startup gets a SOC 2 request from\u2026 | Varun Jain\n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn\u2019s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Varun Jain\u2019s Post\n\n2mo\n\nThe most common thing I hear from early-stage founders? \u201cWe spend more time on compliance than we do on product.\u201d Here's the math nobody talks about: A 15-person startup gets a SOC 2 request from a potential customer. The CTO spends 3 hours/week on compliance. The senior engineer spends 5 hours/week gathering evidence. Someone on the team is manually answering security questionnaires. That's 15+ hours/week of NOT building product. Over a quarter, that's 250 hours. Gone. And the worst part? This repeats. Every year. With every new framework. With every new security questionnaire. Early-stage companies can't afford this tax. You didn't raise money to take screenshots of your AWS configs. You raised money to build something customers love. The fix isn't \"hire a compliance person.\" At 15 people, you can't justify that headcount. The fix is automation that connects to your actual infrastructure and does the evidence collection for you. So your engineers can go back to engineering. That's why we built ComplyJet. Because your engineers' time is too valuable to waste on screenshots.\n\nTo view or add a comment, sign in\n\n6,579 followers\n\n- 264 Posts\n- 1 Article\n\n## More from this author\n\n### Dots did connect, backwards.\n\n## Explore content categories\n\nShow more Show less",
+    "title": "The most common thing I hear from early-stage founders?\n\n\u201cWe spend more time on compliance than we do on product.\u201d\n\nHere's the math nobody talks about:\n\n\u00a0A 15-person startup gets a SOC 2 request from\u2026 | Varun Jain",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:11.327238+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "exa_neural_search"
+  }
+]

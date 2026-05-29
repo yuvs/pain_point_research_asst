@@ -1,0 +1,114 @@
+[
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/Paxos/status/2028574948495958144",
+    "author_type": "unknown",
+    "content": "What regulatory approvals does the custodian hold in your key markets? What are their SOC 2 Type II report findings and how recent is the audit?",
+    "title": "Paxos - The hidden cost of digital asset custody",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.842620+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/julibachi/status/2056396806469062806",
+    "author_type": "unknown",
+    "content": "Cybersecurity, identity, B2B software with compliance pages and SOC 2 reports, and sales cycles measured in quarters. ... fintech product team ...",
+    "title": "Bachi (@julibachi) on X - Twitter",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.842746+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/davut1karabulut/status/1978921469762515336",
+    "author_type": "unknown",
+    "content": "This approach solves core problems faced by traditional finance and digital economies, such as slow speeds, fraud, and cross-border transaction ...",
+    "title": "davut1karabulut (@davut1karabulut) on X",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.842905+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/JackSimison/status/2031401168866521542",
+    "author_type": "unknown",
+    "content": "Chargebacks, fraud reversal, and dispute resolution have been refined over decades and operate at global scale. If an agent books a flight ...",
+    "title": "J/\\ck (@JackSimison) on X",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.842913+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/legal_padi/status/2044096933082411148",
+    "author_type": "business_owner",
+    "content": "Your startup is not exempt. 3. No KYC structure, AML exposure. Many founders treat KYC as something to fix later. The CBN's framework sets how users are ...",
+    "title": "This story is verrrrrrryyy common in the founder ecosystem ...",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.843176+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/Altcoinist_com/status/1933461521943736440",
+    "author_type": "unknown",
+    "content": "One of Ribbit's most radical insights is flipping the script on compliance and KYC. Banks today see compliance as a sunk cost \u2013 hundreds of ...",
+    "title": "A \"Secret\" Whitepaper Of The Next Trillion-Dollar Fintech Stack What ...",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.843201+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  },
+  {
+    "source": "x",
+    "subreddit_or_group": "x.com",
+    "url": "https://x.com/idOS_network/status/2016880596484837469",
+    "author_type": "unknown",
+    "content": "To comply with Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations, each of these companies must build and maintain its own ...",
+    "title": "The Stablecoin Economy's Identity Crisis Our friends at ...",
+    "engagement": {
+      "upvotes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "scraped_at": "2026-05-27T14:43:59.843214+00:00",
+    "pain_point_signals": [],
+    "scrape_method": "firecrawl_search_snippet"
+  }
+]
